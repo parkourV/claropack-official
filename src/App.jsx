@@ -3,6 +3,7 @@ import { Routes, Route, NavLink, Link } from 'react-router-dom'
 import { Menu, MessageCircle } from 'lucide-react'
 import Home from './pages/Home.jsx'
 import Products from './pages/Products.jsx'
+import Category from './pages/Category.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 
@@ -49,10 +50,10 @@ function Footer() {
           <div>
             <h4>Products</h4>
             <ul>
-              <li><Link to="/products">PET Cold Cups</Link></li>
-              <li><Link to="/products">Injection PP Cups</Link></li>
-              <li><Link to="/products">Lids &amp; Sealing Films</Link></li>
-              <li><Link to="/products">Paper &amp; PLA Cups</Link></li>
+              <li><Link to="/products/pet-cold-cups">PET Cold Cups</Link></li>
+              <li><Link to="/products/injection-pp-cups">Injection PP Cups</Link></li>
+              <li><Link to="/products/lids-sealing-films">Lids &amp; Sealing Films</Link></li>
+              <li><Link to="/products/paper-pla-cups">Paper &amp; PLA Cups</Link></li>
             </ul>
           </div>
           <div>
@@ -102,6 +103,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/products/:slug" element={<Category />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

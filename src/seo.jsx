@@ -37,3 +37,15 @@ function setLink(rel, href) {
   }
   el.setAttribute('href', href)
 }
+
+// Injects a JSON-LD script for the current route; removed on unmount.
+export function useJsonLd(data) {
+  useEffect(() => {
+    if (!data) return
+    const el = document.createElement('script')
+    el.type = 'application/ld+json'
+    el.textContent = JSON.stringify(data)
+    document.head.appendChild(el)
+    return () => document.head.removeChild(el)
+  }, [JSON.stringify(data)])
+}

@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Package, Palette, Factory, ShieldCheck, Truck, Globe } from 'lucide-react'
-import { CupArt, LidArt, PaperCupArt, FactoryArt, PrintArt } from '../art.jsx'
+import { CupArt } from '../art.jsx'
+import { useSEO, useJsonLd } from '../seo.jsx'
 
 const categories = [
-  { title: 'PET Cold Cups', desc: 'Crystal-clear cups in 89 / 93 / 95 / 98 mm calibers, 12–22 oz, for boba, iced coffee and smoothies.', art: <img src="/assets/images/prod-pet.jpg" alt="PET Cold Cups" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-  { title: 'Injection PP Cups', desc: 'Durable hard PP cups for hot & cold drinks, reusable-grade thickness, custom molds available.', art: <img src="/assets/images/prod-pp-hard.jpg" alt="Injection PP Cups" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-  { title: 'Lids & Sealing Films', desc: 'Flat, dome and sipper lids plus PP/PET sealing films matched to every cup caliber.', art: <img src="/assets/images/prod-lids.jpg" alt="Lids & Sealing Films" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-  { title: 'Paper & PLA Cups', desc: 'Single/double/ripple-wall paper cups and compostable PLA cold cups for eco-focused brands.', art: <img src="/assets/images/prod-pla.jpg" alt="Paper & PLA Cups" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+  { title: 'PET Cold Cups', slug: 'pet-cold-cups', desc: 'Crystal-clear cups in 89 / 93 / 95 / 98 mm calibers, 12–22 oz, for boba, iced coffee and smoothies.', art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="Clear PET cold cups 16-20oz wholesale" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+  { title: 'Injection PP Cups', slug: 'injection-pp-cups', desc: 'Durable hard PP cups for hot & cold drinks, reusable-grade thickness, custom molds available.', art: <img src="https://s.alicdn.com/@sc04/kf/H77f91214e6bf4a3db9ed0c956b9ba389i/-95mm-500ML-750ML-PP-.jpg" alt="Injection PP hard cups 95mm 500-750ml" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+  { title: 'Lids & Sealing Films', slug: 'lids-sealing-films', desc: 'Flat, dome and sipper lids plus PP/PET sealing films matched to every cup caliber.', art: <img src="https://s.alicdn.com/@sc04/kf/Hec2b3d1cf1074a0c81ce65f186da4f18m/-PET-PP-.jpg" alt="PET PP cup lids dome flat sipper" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+  { title: 'Paper & PLA Cups', slug: 'paper-pla-cups', desc: 'Single/double/ripple-wall paper cups and compostable PLA cold cups for eco-focused brands.', art: <img src="https://s.alicdn.com/@sc04/kf/H1652bf8b18954d8ea83b0c786f88ccc1w/-PLA-98-.jpg" alt="Compostable PLA cold cups 98mm" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
 ]
 
 const whyItems = [
@@ -49,6 +50,16 @@ export default function Home() {
     title: 'PET Cups Manufacturer China | Custom Plastic Cups Wholesale — Claropack',
     description: 'Factory-direct PET cold cups, injection PP cups, lids and paper cups. Custom logo printing from 1,000 pcs, 89-98mm calibers, food-grade materials. Get a quote in 24h.',
   })
+  useJsonLd({
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Claropack',
+    url: 'https://claropack.com',
+    description: 'Factory-direct supplier of disposable PET cold cups, injection PP cups, lids, paper cups and food packaging.',
+    email: 'jackygary6666@gmail.com',
+    contactPoint: { '@type': 'ContactPoint', contactType: 'sales', telephone: '+86-181-0251-1685', availableLanguage: ['English', 'Chinese'] },
+    address: { '@type': 'PostalAddress', addressRegion: 'Guangdong', addressCountry: 'CN' },
+  })
   return (
     <>
       <section className="hero">
@@ -81,7 +92,7 @@ export default function Home() {
           </div>
           <div className="cat-grid">
             {categories.map((c) => (
-              <Link to="/products" className="cat-card" data-component="product-item" key={c.title}>
+              <Link to={`/products/${c.slug}`} className="cat-card" data-component="product-item" key={c.title}>
                 <div className="cat-art">{c.art}</div>
                 <div className="cat-body">
                   <h3>{c.title}</h3>

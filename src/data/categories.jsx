@@ -1,0 +1,101 @@
+// Category page data — one primary search intent per URL.
+export const categories = {
+  'pet-cold-cups': {
+    name: 'PET Cold Cups',
+    h1: 'PET Cold Cups Manufacturer — 89 / 93 / 95 / 98 mm Calibers',
+    title: 'PET Cold Cups Manufacturer China | 12-22oz Clear Plastic Cups — Claropack',
+    description: 'Factory-direct clear PET cold cups in 89/93/95/98mm calibers, 7-22oz. Custom logo printing from 1,000 pcs, matching dome/flat lids. FDA food-contact materials.',
+    img: 'https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg',
+    intro: 'Crystal-clear PET cups engineered for cold beverages — bubble tea, iced coffee, smoothies, juices and desserts. Every caliber ships with matching flat, dome or strawless lids, and supports offset logo printing from 1,000 pieces.',
+    features: ['Calibers 89 / 93 / 95 / 98 mm, capacities 7–22 oz', 'High-clarity food-grade PET resin', 'U-shaped, parfait and dessert formats', 'Matching lids for every caliber', 'Custom logo printing from 1,000 pcs', 'Export cartons optimized for container loading'],
+    specs: {
+      head: ['Series', 'Capacity', 'Volume', 'Top Dia. (mm)', 'Height (mm)'],
+      rows: [
+        ['89mm PET', '12 oz', '360 ml', '89', '119'],
+        ['89mm PET', '16 oz', '500 ml', '89', '132'],
+        ['93mm PET', '9 oz', '280 ml', '93', '82'],
+        ['95mm PET', '14 oz', '420 ml', '95', '110'],
+        ['95mm PET', '16 oz', '500 ml', '95', '118'],
+        ['98mm PET', '16 oz', '500 ml', '98', '116'],
+        ['98mm PET', '20 oz', '600 ml', '98', '135'],
+        ['98mm PET', '22 oz', '700 ml', '98', '150'],
+      ],
+    },
+    faqs: [
+      { q: 'What is the MOQ for custom printed PET cups?', a: 'Minimum order is 1,000 pieces per size for custom logo printing. Plain stock cups can ship in smaller trial quantities — contact us for details.' },
+      { q: 'Are PET cups suitable for hot drinks?', a: 'No. PET is designed for cold and ambient beverages (up to about 60°C). For hot drinks choose our injection PP cups or double-wall paper cups.' },
+      { q: 'Which lids fit which caliber?', a: 'Lids are matched by rim diameter: 89, 93, 95 and 98 mm. Tell us your cup model and we supply the exact matching flat, dome or sipper lid.' },
+      { q: 'Can PET cups be used with sealing film machines?', a: 'Yes — our 89-98mm PET cups work with standard cup sealing machines using PET sealing film. We supply matched film rolls.' },
+    ],
+    related: ['lids-sealing-films', 'injection-pp-cups'],
+  },
+  'injection-pp-cups': {
+    name: 'Injection PP Cups',
+    h1: 'Injection PP Cups — Hard-Wall Plastic Cups for Hot & Cold Drinks',
+    title: 'Injection PP Cups Wholesale | 90/95mm Hard Plastic Cups — Claropack',
+    description: 'Injection-molded PP cups with premium wall thickness. Hot & cold compatible, frosted finish options, custom molds, works with sealing machines. MOQ 1,000 pcs.',
+    img: 'https://s.alicdn.com/@sc04/kf/H4a85dd9a125749b7822c5547e2096465o/-FDA-CE-U-PP-8oz-10oz.jpg',
+    intro: 'Hard injection-molded PP cups with a premium in-hand feel for milk tea chains, fresh juice bars and yogurt brands. Compatible with both hot and cold drinks, and with standard cup sealing machines.',
+    features: ['90 / 95 mm calibers, 8–25 oz', 'Hot & cold compatible (-20°C to 100°C)', 'Frosted and clear finishes', 'Custom mold development for exclusive shapes', 'Stackable, transport-efficient design', 'FDA & CE food-contact compliance'],
+    specs: {
+      head: ['Series', 'Capacity', 'Caliber', 'Finish', 'Use'],
+      rows: [
+        ['PP 90mm', '8-16 oz', '90 mm', 'Clear / Frosted', 'Hot & cold'],
+        ['PP 95mm', '500-750 ml', '95 mm', 'Clear / Frosted', 'Hot & cold'],
+        ['PP U-shape', '8-10 oz', '90 mm', 'Frosted', 'Boba / dessert'],
+      ],
+    },
+    faqs: [
+      { q: 'What is the difference between PET and PP cups?', a: 'PET offers glass-like clarity but is cold-only. PP is slightly less clear, withstands hot drinks up to 100°C, and feels sturdier. Most tea chains use PP for hot and PET for iced drinks.' },
+      { q: 'Can you develop a custom cup shape?', a: 'Yes. We support custom injection molds for exclusive shapes and embossed logos. Mold lead time is typically 25-35 days; contact us with your design.' },
+      { q: 'Do PP cups work with sealing machines?', a: 'Yes, our 90/95mm PP cups are designed for standard sealing machines with PP sealing film.' },
+    ],
+    related: ['pet-cold-cups', 'lids-sealing-films'],
+  },
+  'lids-sealing-films': {
+    name: 'Lids & Sealing Films',
+    h1: 'Cup Lids & Sealing Films — Caliber-Matched for 89-98 mm Cups',
+    title: 'Plastic Cup Lids & Sealing Films Wholesale | Dome, Flat, Sipper — Claropack',
+    description: 'Dome lids, flat lids, sipper lids and PP/PET sealing film rolls matched to 89/93/95/98mm cups. Custom printed film available. One-stop cup + lid supply.',
+    img: 'https://s.alicdn.com/@sc04/kf/Hec2b3d1cf1074a0c81ce65f186da4f18m/-PET-PP-.jpg',
+    intro: 'One-stop lid matching: every cup we sell ships with the right lid or sealing film, so store operations stay simple and leak complaints stay at zero.',
+    features: ['Flat, dome and sipper lid types', 'PET clear and PP options', 'Sealing film rolls for PP & PET cups', 'Custom printed film with your brand', 'Caliber-matched: 89 / 93 / 95 / 98 mm', 'Straws, carriers and sleeves available'],
+    specs: {
+      head: ['Type', 'Fits Caliber', 'Material', 'Best For'],
+      rows: [
+        ['Dome lid', '89-98 mm', 'PET', 'Whipped-cream drinks, desserts'],
+        ['Flat lid', '89-98 mm', 'PET / PP', 'Iced coffee, takeaway'],
+        ['Sipper / strawless lid', '89-98 mm', 'PP', 'Strawless service'],
+        ['Sealing film roll', '89-98 mm cups', 'PP / PET', 'Sealing machines'],
+      ],
+    },
+    faqs: [
+      { q: 'How do I know which lid fits my cup?', a: 'Match by rim diameter. Measure the outer rim of your cup (89, 93, 95 or 98 mm) or send us your cup sample — we confirm fit before production.' },
+      { q: 'Can sealing film be custom printed?', a: 'Yes, we print your logo and artwork on PP and PET sealing film rolls. MOQ applies per design; send artwork for a quote.' },
+    ],
+    related: ['pet-cold-cups', 'injection-pp-cups'],
+  },
+  'paper-pla-cups': {
+    name: 'Paper & PLA Cups',
+    h1: 'Paper Cups & Compostable PLA Cold Cups',
+    title: 'Paper Cups & PLA Compostable Cups Wholesale | 2-32oz — Claropack',
+    description: 'Single/double/ripple-wall paper cups 2-32oz with PE or PLA coating, plus clear compostable PLA cold cups. Custom printing, low MOQ, factory-direct pricing.',
+    img: 'https://s.alicdn.com/@sc04/kf/H1652bf8b18954d8ea83b0c786f88ccc1w/-PLA-98-.jpg',
+    intro: 'Paper cups for hot drinks and compostable PLA cold cups for eco-focused brands — the same one-stop supply, printing and lid matching as our plastic lines.',
+    features: ['Single / double / ripple wall paper cups', '2–32 oz full size range', 'PE or water-based / PLA coating options', 'Clear PLA cold cups 98 mm', 'Custom full-color printing', 'Matching paper and plastic lids'],
+    specs: {
+      head: ['Series', 'Capacity', 'Wall', 'Coating', 'Use'],
+      rows: [
+        ['Single wall', '2-32 oz', 'Single', 'PE / PLA', 'Hot & cold'],
+        ['Double wall', '8-20 oz', 'Double', 'PE / PLA', 'Hot, insulated'],
+        ['Ripple wall', '4-20 oz', 'Ripple', 'PE', 'Hot, premium grip'],
+        ['PLA cold cup', '12-22 oz', 'Clear PLA', '—', 'Cold only, compostable'],
+      ],
+    },
+    faqs: [
+      { q: 'Are PLA cups really compostable?', a: 'PLA cups are industrially compostable where composting facilities exist (EN 13432 conditions). They are not suitable for hot drinks above 40°C and end-of-life outcomes vary by market.' },
+      { q: 'What coating should I choose for paper cups?', a: 'PE coating is the cost-effective standard. PLA or water-based coating suits markets with plastic-reduction regulations. We advise per destination market.' },
+    ],
+    related: ['pet-cold-cups', 'lids-sealing-films'],
+  },
+}

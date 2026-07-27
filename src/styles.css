@@ -188,6 +188,25 @@ a { color: inherit; text-decoration: none; }
 .process-step h4 { font-size: 0.95rem; color: var(--primary-deep); margin-bottom: 4px; }
 .process-step p { font-size: 0.82rem; color: var(--text-muted); }
 
+/* ---------- Breadcrumb & FAQ ---------- */
+.breadcrumb { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px; display: flex; gap: 8px; flex-wrap: wrap; }
+.breadcrumb a { color: var(--primary-ice-dark); }
+.breadcrumb a:hover { text-decoration: underline; }
+.faq-item {
+  background: var(--surface-white); border: 1px solid var(--border-frost);
+  border-radius: 10px; margin-bottom: 12px; overflow: hidden;
+}
+.faq-item summary {
+  padding: 16px 18px; font-weight: 600; color: var(--primary-deep);
+  cursor: pointer; list-style: none; position: relative; padding-right: 40px;
+}
+.faq-item summary::after {
+  content: "+"; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);
+  color: var(--primary-ice); font-size: 1.2rem; font-weight: 700;
+}
+.faq-item[open] summary::after { content: "−"; }
+.faq-item p { padding: 0 18px 16px; color: var(--text-muted); font-size: 0.93rem; }
+
 /* ---------- Contact / form ---------- */
 .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: start; }
 .contact-info h2 { font-size: 1.5rem; color: var(--primary-deep); margin-bottom: 12px; }
