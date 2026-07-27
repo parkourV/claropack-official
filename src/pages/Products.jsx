@@ -45,6 +45,10 @@ const petSpecs = [
 
 export default function Products() {
   const [cat, setCat] = useState(CATS[0])
+  useSEO({
+    title: 'PET Cold Cups, PP Cups & Lids Wholesale | 89-98mm Calibers — Claropack',
+    description: 'Browse disposable PET cold cups 12-22oz, injection PP cups, dome/flat lids and sealing films. MOQ 1,000 pcs, custom printing, matching lids for every caliber.',
+  })
   return (
     <>
       <section className="page-hero">

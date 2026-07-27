@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 
 export default function Contact() {
   const [sent, setSent] = useState(false)
+  useSEO({
+    title: 'Get a Quote | Custom PET & PP Cups MOQ 1,000 pcs — Claropack',
+    description: 'Request pricing for custom printed PET cold cups, PP cups and lids. Tell us size, quantity and logo — quotation within 24 hours. WhatsApp +86 181 0251 1685.',
+  })
 
   function handleSubmit(e) {
     e.preventDefault()

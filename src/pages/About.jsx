@@ -10,6 +10,10 @@ const steps = [
 ]
 
 export default function About() {
+  useSEO({
+    title: 'Production Base & Quality Control | Plastic Cup Factory China — Claropack',
+    description: 'Partner factories in Guangdong with raw material traceability, finished-product inspection, ODM/OEM custom molds and full-color logo printing on PET & PP cups.',
+  })
   return (
     <>
       <section className="page-hero">

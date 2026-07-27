@@ -45,6 +45,10 @@ const solutions = [
 ]
 
 export default function Home() {
+  useSEO({
+    title: 'PET Cups Manufacturer China | Custom Plastic Cups Wholesale — Claropack',
+    description: 'Factory-direct PET cold cups, injection PP cups, lids and paper cups. Custom logo printing from 1,000 pcs, 89-98mm calibers, food-grade materials. Get a quote in 24h.',
+  })
   return (
     <>
       <section className="hero">
