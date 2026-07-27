@@ -6,29 +6,29 @@ const CATS = ['PET Cold Cups', 'Injection PP Cups', 'Lids & Films', 'Paper & PLA
 
 const products = {
   'PET Cold Cups': [
-    { name: '89mm PET Cold Cup', specs: ['89mm caliber', '12–16 oz', 'Clear'], art: <img src="/assets/images/prod-pet.jpg" alt="PET Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: '93mm PET Dessert Cup', specs: ['93mm caliber', '7–12 oz', 'Parfait'], art: <img src="/assets/images/prod-pet.jpg" alt="Dessert Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: '95mm PET Cold Cup', specs: ['95mm caliber', '12–22 oz', 'U-shape'], art: <img src="/assets/images/prod-pet.jpg" alt="PET Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: '98mm PET Cold Cup', specs: ['98mm caliber', '12–22 oz', 'Clear'], art: <img src="/assets/images/prod-pet.jpg" alt="PET Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'PET Snow Cone / Ice Cup', specs: ['7–9 oz', 'Dessert'], art: <img src="/assets/images/prod-pet.jpg" alt="Snow Cone" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'PET Cup + Lid Set', specs: ['Caliber-matched', 'Leak-safe'], art: <img src="/assets/images/prod-pet.jpg" alt="Cup Set" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: '89mm PET Cold Cup', specs: ['89mm caliber', '12–16 oz', 'Clear'], art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="PET Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: '93mm PET Dessert Cup', specs: ['93mm caliber', '7–12 oz', 'Parfait'], art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="Dessert Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: '95mm PET Cold Cup', specs: ['95mm caliber', '12–22 oz', 'U-shape'], art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="PET Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: '98mm PET Cold Cup', specs: ['98mm caliber', '12–22 oz', 'Clear'], art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="PET Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'PET Snow Cone / Ice Cup', specs: ['7–9 oz', 'Dessert'], art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="Snow Cone" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'PET Cup + Lid Set', specs: ['Caliber-matched', 'Leak-safe'], art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="Cup Set" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
   ],
   'Injection PP Cups': [
-    { name: 'Injection PP Cup 90mm', specs: ['90mm caliber', 'Hot & cold', 'Hard wall'], art: <img src="/assets/images/prod-pp-hard.jpg" alt="PP Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'Injection PP Cup 95mm', specs: ['95mm caliber', 'Custom mold'], art: <img src="/assets/images/prod-pp-hard.jpg" alt="PP Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'Frosted PP Cup', specs: ['Frosted finish', 'Premium feel'], art: <img src="/assets/images/prod-pp-frosted.jpg" alt="Frosted Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Injection PP Cup 90mm', specs: ['90mm caliber', 'Hot & cold', 'Hard wall'], art: <img src="https://s.alicdn.com/@sc04/kf/H77f91214e6bf4a3db9ed0c956b9ba389i/-95mm-500ML-750ML-PP-.jpg" alt="PP Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Injection PP Cup 95mm', specs: ['95mm caliber', 'Custom mold'], art: <img src="https://s.alicdn.com/@sc04/kf/H77f91214e6bf4a3db9ed0c956b9ba389i/-95mm-500ML-750ML-PP-.jpg" alt="PP Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Frosted PP Cup', specs: ['Frosted finish', 'Premium feel'], art: <img src="https://s.alicdn.com/@sc04/kf/H4a85dd9a125749b7822c5547e2096465o/-FDA-CE-U-PP-8oz-10oz.jpg" alt="Frosted Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
   ],
   'Lids & Films': [
-    { name: 'Dome Lid', specs: ['89–98mm', 'PET clear'], art: <img src="/assets/images/prod-lids.jpg" alt="Dome Lid" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'Flat / Sipper Lid', specs: ['89–98mm', 'Strawless option'], art: <img src="/assets/images/prod-lids.jpg" alt="Flat Lid" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'Injection PP Lid', specs: ['With stopper', '90/95/98mm'], art: <img src="/assets/images/prod-lids.jpg" alt="PP Lid" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'Sealing Film Roll', specs: ['PP & PET cups', 'Custom print'], art: <img src="/assets/images/prod-lids.jpg" alt="Sealing Film" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Dome Lid', specs: ['89–98mm', 'PET clear'], art: <img src="https://s.alicdn.com/@sc04/kf/Hec2b3d1cf1074a0c81ce65f186da4f18m/-PET-PP-.jpg" alt="Dome Lid" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Flat / Sipper Lid', specs: ['89–98mm', 'Strawless option'], art: <img src="https://s.alicdn.com/@sc04/kf/Hec2b3d1cf1074a0c81ce65f186da4f18m/-PET-PP-.jpg" alt="Flat Lid" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Injection PP Lid', specs: ['With stopper', '90/95/98mm'], art: <img src="https://s.alicdn.com/@sc04/kf/Hec2b3d1cf1074a0c81ce65f186da4f18m/-PET-PP-.jpg" alt="PP Lid" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Sealing Film Roll', specs: ['PP & PET cups', 'Custom print'], art: <img src="https://s.alicdn.com/@sc04/kf/Hec2b3d1cf1074a0c81ce65f186da4f18m/-PET-PP-.jpg" alt="Sealing Film" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
   ],
   'Paper & PLA Cups': [
-    { name: 'Single Wall Paper Cup', specs: ['2–32 oz', 'PE / PLA coating'], art: <img src="/assets/images/prod-paper.jpg" alt="Paper Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'Double / Ripple Wall Cup', specs: ['Hot drinks', 'Insulated'], art: <img src="/assets/images/prod-paper.jpg" alt="Paper Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'PLA Compostable Cold Cup', specs: ['Clear PLA', 'Eco option'], art: <img src="/assets/images/prod-pla.jpg" alt="PLA Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'Paper Ice Cream Cup', specs: ['With lid', 'Custom print'], art: <img src="/assets/images/prod-paper.jpg" alt="Ice Cream Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Single Wall Paper Cup', specs: ['2–32 oz', 'PE / PLA coating'], art: <img src="https://s.alicdn.com/@sc04/kf/He02eeac3fde24809a48baf1deeb1ba1cI/-8-12-16-22-.png" alt="Paper Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Double / Ripple Wall Cup', specs: ['Hot drinks', 'Insulated'], art: <img src="https://s.alicdn.com/@sc04/kf/He02eeac3fde24809a48baf1deeb1ba1cI/-8-12-16-22-.png" alt="Paper Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'PLA Compostable Cold Cup', specs: ['Clear PLA', 'Eco option'], art: <img src="https://s.alicdn.com/@sc04/kf/H1652bf8b18954d8ea83b0c786f88ccc1w/-PLA-98-.jpg" alt="PLA Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Paper Ice Cream Cup', specs: ['With lid', 'Custom print'], art: <img src="https://s.alicdn.com/@sc04/kf/He02eeac3fde24809a48baf1deeb1ba1cI/-8-12-16-22-.png" alt="Ice Cream Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
   ],
 }
 

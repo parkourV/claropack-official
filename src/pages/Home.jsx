@@ -23,14 +23,14 @@ const solutions = [
   {
     title: 'PET Cold Cup Solutions',
     desc: 'Our core line: crystal-clear PET cups engineered for cold beverages, with matching lids for every caliber.',
-    art: <CupArt straw />,
+    art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="PET Cup" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />,
     points: ['Calibers 89 / 93 / 95 / 98 mm, capacities 7–22 oz', 'U-shaped, parfait and dessert cup formats', 'Custom logo printing from 1,000 pcs', 'Matching flat, dome and strawless lids'],
     apps: 'Bubble tea · Iced coffee · Smoothies · Desserts',
   },
   {
     title: 'Injection PP Cup Solutions',
     desc: 'Hard injection-molded PP cups with premium wall thickness for brands that want a sturdier in-hand feel.',
-    art: <CupArt tint="#38BDF8" body="#F0F9FF" />,
+    art: <img src="https://s.alicdn.com/@sc04/kf/H4a85dd9a125749b7822c5547e2096465o/-FDA-CE-U-PP-8oz-10oz.jpg" alt="PP Cup" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />,
     points: ['Hot & cold compatible', 'Custom mold development for exclusive shapes', 'Works with sealing film machines', 'Stackable, transport-efficient design'],
     apps: 'Milk tea chains · Fresh juice · Yogurt drinks',
     flip: true,
@@ -38,7 +38,7 @@ const solutions = [
   {
     title: 'Lids, Films & Accessories',
     desc: 'One-stop matching: every cup ships with the right lid or sealing film so your store operations stay simple.',
-    art: <LidArt />,
+    art: <img src="https://s.alicdn.com/@sc04/kf/Hec2b3d1cf1074a0c81ce65f186da4f18m/-PET-PP-.jpg" alt="Lids" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />,
     points: ['Flat / dome / sipper lid types', 'PP & PET sealing films by roll', 'Straws, carriers and sleeves available', 'Caliber-matched to avoid leak issues'],
     apps: 'Takeaway · Delivery platforms · Sealing machines',
   },
