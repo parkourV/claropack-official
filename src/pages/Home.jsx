@@ -4,10 +4,10 @@ import { Package, Palette, Factory, ShieldCheck, Truck, Globe } from 'lucide-rea
 import { CupArt, LidArt, PaperCupArt, FactoryArt, PrintArt } from '../art.jsx'
 
 const categories = [
-  { title: 'PET Cold Cups', desc: 'Crystal-clear cups in 89 / 93 / 95 / 98 mm calibers, 12–22 oz, for boba, iced coffee and smoothies.', art: <CupArt straw /> },
-  { title: 'Injection PP Cups', desc: 'Durable hard PP cups for hot & cold drinks, reusable-grade thickness, custom molds available.', art: <CupArt tint="#38BDF8" body="#F0F9FF" /> },
-  { title: 'Lids & Sealing Films', desc: 'Flat, dome and sipper lids plus PP/PET sealing films matched to every cup caliber.', art: <LidArt /> },
-  { title: 'Paper & PLA Cups', desc: 'Single/double/ripple-wall paper cups and compostable PLA cold cups for eco-focused brands.', art: <PaperCupArt /> },
+  { title: 'PET Cold Cups', desc: 'Crystal-clear cups in 89 / 93 / 95 / 98 mm calibers, 12–22 oz, for boba, iced coffee and smoothies.', art: <img src="/assets/images/prod-pet.jpg" alt="PET Cold Cups" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+  { title: 'Injection PP Cups', desc: 'Durable hard PP cups for hot & cold drinks, reusable-grade thickness, custom molds available.', art: <img src="/assets/images/prod-pp-hard.jpg" alt="Injection PP Cups" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+  { title: 'Lids & Sealing Films', desc: 'Flat, dome and sipper lids plus PP/PET sealing films matched to every cup caliber.', art: <img src="/assets/images/prod-lids.jpg" alt="Lids & Sealing Films" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+  { title: 'Paper & PLA Cups', desc: 'Single/double/ripple-wall paper cups and compostable PLA cold cups for eco-focused brands.', art: <img src="/assets/images/prod-pla.jpg" alt="Paper & PLA Cups" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
 ]
 
 const whyItems = [

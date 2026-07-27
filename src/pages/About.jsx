@@ -60,7 +60,7 @@ export default function About() {
 
       <section className="section">
         <div className="container about-grid">
-          <div className="sol-art"><PrintArt /></div>
+          <div className="sol-art" style={{ background: '#fff' }}><img src="/assets/images/prod-pp-hard.jpg" alt="Customization" style={{ width: '100%', borderRadius: '12px' }} /></div>
           <div>
             <h2>Customization Capability</h2>
             <p>

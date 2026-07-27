@@ -52,7 +52,10 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- Hero ---------- */
 .hero {
-  background: linear-gradient(160deg, #E0F2FE 0%, #F8FAFC 55%, #EFF9FF 100%);
+  background: linear-gradient(160deg, rgba(224, 242, 254, 0.8), rgba(248, 250, 252, 0.9)), url('/assets/images/hero-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
   padding: 84px 0 72px;
   position: relative;
   overflow: hidden;
