@@ -66,7 +66,7 @@ function Footer() {
           <div>
             <h4>Contact</h4>
             <ul>
-              <li>Email: sales@example.com</li>
+              <li>Email: jackygary6666@gmail.com</li>
               <li>WhatsApp: +86 000 0000 0000</li>
               <li>Guangdong, China</li>
             </ul>

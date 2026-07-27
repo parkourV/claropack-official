@@ -27,7 +27,7 @@ export default function Contact() {
               logo printing — we'll reply with pricing, lead time and shipping options.
             </p>
             <div className="contact-lines">
-              <div><strong>Email</strong><br /><span>sales@example.com</span></div>
+              <div><strong>Email</strong><br /><span>jackygary6666@gmail.com</span></div>
               <div><strong>WhatsApp / WeChat</strong><br /><span>+86 000 0000 0000</span></div>
               <div><strong>Factory</strong><br /><span>Guangdong, China</span></div>
               <div><strong>Response time</strong><br /><span>Within 24 hours on business days</span></div>
