@@ -28,7 +28,7 @@ export default function Contact() {
             </p>
             <div className="contact-lines">
               <div><strong>Email</strong><br /><span>jackygary6666@gmail.com</span></div>
-              <div><strong>WhatsApp / WeChat</strong><br /><span>+86 000 0000 0000</span></div>
+              <div><strong>WhatsApp / WeChat</strong><br /><span>+86 181 0251 1685</span></div>
               <div><strong>Factory</strong><br /><span>Guangdong, China</span></div>
               <div><strong>Response time</strong><br /><span>Within 24 hours on business days</span></div>
             </div>

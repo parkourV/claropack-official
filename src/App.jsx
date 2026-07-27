@@ -85,7 +85,7 @@ function WhatsAppFloat() {
     <a
       className="wa-float"
       data-component="whatsapp-anchor"
-      href="https://wa.me/8600000000000"
+      href="https://wa.me/8618102511685"
       target="_blank"
       rel="noreferrer"
     >
