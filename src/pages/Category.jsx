@@ -67,11 +67,22 @@ export default function Category() {
         </div>
       </section>
 
-      <section className="section alt">
+      {cat.why && (
+        <section className="section alt">
+          <div className="container" style={{ maxWidth: 860 }}>
+            <div className="section-head">
+              <h2>{cat.whyTitle}</h2>
+            </div>
+            <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.8 }}>{cat.why}</p>
+          </div>
+        </section>
+      )}
+
+      <section className="section">
         <div className="container">
           <div className="section-head">
             <h2>{cat.name} Size Reference</h2>
-            <p>Indicative specifications — request the full spec sheet and free samples.</p>
+            <p>Real production specifications from our catalog — request the full spec sheet and free samples.</p>
           </div>
           <div className="spec-table-wrap">
             <table className="spec-table">
@@ -102,7 +113,7 @@ export default function Category() {
         </div>
       </section>
 
-      <section className="section alt">
+      <section className="section">
         <div className="container">
           <div className="section-head">
             <h2>Related Product Lines</h2>
