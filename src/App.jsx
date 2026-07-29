@@ -22,7 +22,7 @@ function Header() {
         </Link>
         <nav className={`main-nav${open ? ' open' : ''}`}>
           <NavLink to="/" end onClick={close}>Home</NavLink>
-          <NavLink to="/products" onClick={close}>Products</NavLink>
+          <NavLink to="/products" end onClick={close}>Products</NavLink>
           <NavLink to="/about" onClick={close}>Factory</NavLink>
           <NavLink to="/contact" onClick={close}>Contact</NavLink>
           <Link to="/contact" className="btn btn-primary" onClick={close}>Get a Quote</Link>
@@ -68,7 +68,7 @@ function Footer() {
             <h4>Contact</h4>
             <ul>
               <li>Email: jackygary6666@gmail.com</li>
-              <li>WhatsApp: +86 000 0000 0000</li>
+              <li>WhatsApp: +86 181 0251 1685</li>
               <li>Guangdong, China</li>
             </ul>
           </div>
