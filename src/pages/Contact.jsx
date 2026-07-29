@@ -1,16 +1,40 @@
 import React, { useState } from 'react'
+import { useSEO } from '../seo.jsx'
+import { supabase } from '../supabaseClient'
 
 export default function Contact() {
   const [sent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
+
   useSEO({
     title: 'Get a Quote | Custom PET & PP Cups MOQ 1,000 pcs — Claropack',
     description: 'Request pricing for custom printed PET cold cups, PP cups and lids. Tell us size, quantity and logo — quotation within 24 hours. WhatsApp +86 181 0251 1685.',
   })
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
-    setSent(true)
-    e.target.reset()
+    setLoading(true)
+    setError(null)
+
+    const formData = new FormData(e.target)
+    const data = Object.fromEntries(formData.entries())
+
+    try {
+      const { error: sbError } = await supabase
+        .from('inquiries')
+        .insert([data])
+
+      if (sbError) throw sbError
+
+      setSent(true)
+      e.target.reset()
+    } catch (err) {
+      console.error('Error submitting inquiry:', err)
+      setError('Sorry, there was a problem sending your inquiry. Please try again or email us directly.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -42,7 +66,12 @@ export default function Contact() {
             {sent && (
               <div className="form-success">
                 Thank you! Your inquiry has been recorded. We will get back to you within 24 hours.
-                You can also email us directly at sales@example.com.
+                You can also email us directly at jackygary6666@gmail.com.
+              </div>
+            )}
+            {error && (
+              <div className="form-error" style={{ color: '#dc2626', background: '#fef2f2', padding: '12px', borderRadius: '6px', marginBottom: '16px', fontSize: '0.9rem' }}>
+                {error}
               </div>
             )}
             <div className="form-row">
@@ -68,21 +97,21 @@ export default function Contact() {
             <div className="form-row">
               <div className="form-field">
                 <label htmlFor="f-type">Inquiry Type *</label>
-                <select id="f-type" name="inquiryType" required defaultValue="">
+                <select id="f-type" name="inquiry_type" required defaultValue="">
                   <option value="" disabled>Select one</option>
-                  <option>Sample Request</option>
-                  <option>Bulk Order</option>
-                  <option>Customization / OEM</option>
+                  <option value="Sample Request">Sample Request</option>
+                  <option value="Bulk Order">Bulk Order</option>
+                  <option value="Customization / OEM">Customization / OEM</option>
                 </select>
               </div>
               <div className="form-field">
                 <label htmlFor="f-qty">Order Quantity</label>
                 <select id="f-qty" name="quantity" defaultValue="">
                   <option value="" disabled>Select range</option>
-                  <option>1,000 – 10,000 pcs</option>
-                  <option>10,000 – 50,000 pcs</option>
-                  <option>50,000 – 200,000 pcs</option>
-                  <option>Full container (20ft / 40HQ)</option>
+                  <option value="1,000 – 10,000 pcs">1,000 – 10,000 pcs</option>
+                  <option value="10,000 – 50,000 pcs">10,000 – 50,000 pcs</option>
+                  <option value="50,000 – 200,000 pcs">50,000 – 200,000 pcs</option>
+                  <option value="Full container (20ft / 40HQ)">Full container (20ft / 40HQ)</option>
                 </select>
               </div>
             </div>
@@ -90,11 +119,11 @@ export default function Contact() {
               <label htmlFor="f-cat">Product Category</label>
               <select id="f-cat" name="category" defaultValue="">
                 <option value="" disabled>Select category</option>
-                <option>PET Cold Cups</option>
-                <option>Injection PP Cups</option>
-                <option>Lids &amp; Sealing Films</option>
-                <option>Paper &amp; PLA Cups</option>
-                <option>Multiple / One-stop sourcing</option>
+                <option value="PET Cold Cups">PET Cold Cups</option>
+                <option value="Injection PP Cups">Injection PP Cups</option>
+                <option value="Lids & Sealing Films">Lids & Sealing Films</option>
+                <option value="Paper & PLA Cups">Paper & PLA Cups</option>
+                <option value="Multiple / One-stop sourcing">Multiple / One-stop sourcing</option>
               </select>
             </div>
             <div className="form-field">
@@ -107,8 +136,8 @@ export default function Contact() {
                 placeholder="Cup size / caliber, capacity, quantity, logo printing needs, target market..."
               />
             </div>
-            <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>
-              Send Inquiry
+            <button type="submit" className="btn btn-primary" style={{ width: '100%' }} disabled={loading}>
+              {loading ? 'Sending...' : 'Send Inquiry'}
             </button>
           </form>
         </div>

@@ -31,6 +31,20 @@ export default function Category() {
             acceptedAnswer: { '@type': 'Answer', text: f.a },
           })),
         },
+        {
+          '@type': 'ItemList',
+          name: cat.name,
+          itemListElement: cat.specs.rows.map((row, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            item: {
+              '@type': 'Product',
+              name: `${row[0]} ${cat.name}`,
+              description: `${row[2]} capacity, ${row[1]} caliber.`,
+              brand: { '@type': 'Brand', name: 'Claropack' }
+            }
+          }))
+        }
       ],
     }
   )
@@ -62,6 +76,17 @@ export default function Category() {
             <div style={{ display: 'flex', gap: 12, marginTop: 18, flexWrap: 'wrap' }}>
               <Link to="/contact" className="btn btn-primary">Request a Quote</Link>
               <a href="https://wa.me/8618102511685" target="_blank" rel="noreferrer" className="btn btn-outline">WhatsApp Us</a>
+            </div>
+
+            <div className="quick-facts" style={{ marginTop: 32, padding: '20px', background: '#F0F9FF', borderRadius: '12px', border: '1px solid #BAE6FD' }}>
+              <h3 style={{ fontSize: '1rem', color: '#0C4A6E', marginBottom: 12 }}>Quick Facts for Sourcing</h3>
+              <ul style={{ fontSize: '0.9rem', color: '#64748B', listStyle: 'none', padding: 0, display: 'grid', gap: '8px' }}>
+                <li>• <strong>MOQ:</strong> 1,000 pcs for custom printing</li>
+                <li>• <strong>Material:</strong> FDA food-grade certified</li>
+                <li>• <strong>Lead Time:</strong> Fast shipping with 98.6% on-time rate</li>
+                <li>• <strong>Calibers:</strong> 74 / 78 / 90 / 92 / 93 / 95 / 98 / 107 mm</li>
+                <li>• <strong>Customization:</strong> OEM/ODM mold & logo printing</li>
+              </ul>
             </div>
           </div>
         </div>
