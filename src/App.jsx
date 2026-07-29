@@ -6,6 +6,7 @@ import Products from './pages/Products.jsx'
 import Category from './pages/Category.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
+import ErrorBoundary from './ErrorBoundary.jsx'
 
 function Header() {
   const [open, setOpen] = useState(false)
@@ -70,6 +71,9 @@ function Footer() {
               <li>Email: jackygary6666@gmail.com</li>
               <li>WhatsApp: +86 181 0251 1685</li>
               <li>Guangdong, China</li>
+              <li style={{ marginTop: 8 }}>
+                <a href="https://wa.me/8618102511685" target="_blank" rel="noreferrer">Chat on WhatsApp →</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -100,13 +104,16 @@ export default function App() {
     <>
       <Header />
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/products/:slug" element={<Category />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <ErrorBoundary>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/products/:slug" element={<Category />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </ErrorBoundary>
       </main>
       <Footer />
       <WhatsAppFloat />

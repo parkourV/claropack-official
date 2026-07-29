@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CupArt, LidArt, PaperCupArt } from '../art.jsx'
+import { useSEO } from '../seo.jsx'
 
 const CATS = ['PET Cold Cups', 'Injection PP Cups', 'Lids & Films', 'Paper & PLA Cups']
 

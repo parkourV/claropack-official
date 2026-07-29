@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FactoryArt, PrintArt } from '../art.jsx'
+import { useSEO } from '../seo.jsx'
 
 const steps = [
   { num: 1, title: 'Raw Material QC', desc: 'Food-grade PET / PP resin with traceable batch records.' },
