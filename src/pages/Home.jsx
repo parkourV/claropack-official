@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom'
 import { Package, Palette, Factory, ShieldCheck, Truck, Globe } from 'lucide-react'
 import { CupArt } from '../art.jsx'
 import { useSEO, useJsonLd } from '../seo.jsx'
+import { posts } from '../data/posts.jsx'
+
+const featuredGuides = ['pet-vs-pp-cups', 'cup-lid-compatibility-guide', 'bubble-tea-cup-sizes-guide']
 
 const categories = [
-  { title: 'PET Cold Cups', slug: 'pet-cold-cups', desc: 'Crystal-clear cups from 74 to 107 mm, with capacities from 3 to 32 oz for boba, iced coffee and smoothies.', art: <img src="/assets/images/prod-pet.jpg" alt="Clear PET cold cups in multiple sizes" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
-  { title: 'Injection PP Cups', slug: 'injection-pp-cups', desc: 'Hard-wall PP cups for hot and cold drinks, in round, U-shape and square formats.', art: <img src="/assets/images/prod-pp-hard.jpg" alt="Injection PP hard cups" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
-  { title: 'Lids & Sealing Films', slug: 'lids-sealing-films', desc: 'Flat, dome and sipper lids plus PP/PET sealing films matched to each cup caliber.', art: <img src="/assets/images/prod-lids.jpg" alt="PET and PP cup lids and sealing films" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
-  { title: 'Paper & PLA Cups', slug: 'paper-pla-cups', desc: 'Single, double and ripple-wall paper cups alongside compostable PLA cold cup options.', art: <img src="/assets/images/prod-pla.jpg" alt="Paper and PLA beverage cups" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+  { title: 'PET Cold Cups', slug: 'pet-cold-cups', desc: 'Crystal-clear cups from 74 to 107 mm, with capacities from 3 to 32 oz for boba, iced coffee and smoothies.', art: <img src="/assets/images/prod-pet.webp" alt="Clear PET cold cups in multiple sizes" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+  { title: 'Injection PP Cups', slug: 'injection-pp-cups', desc: 'Hard-wall PP cups for hot and cold drinks, in round, U-shape and square formats.', art: <img src="/assets/images/prod-pp-hard.webp" alt="Injection PP hard cups" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+  { title: 'Lids & Sealing Films', slug: 'lids-sealing-films', desc: 'Flat, dome and sipper lids plus PP/PET sealing films matched to each cup caliber.', art: <img src="/assets/images/prod-lids.webp" alt="PET and PP cup lids and sealing films" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+  { title: 'Paper & PLA Cups', slug: 'paper-pla-cups', desc: 'Single, double and ripple-wall paper cups alongside compostable PLA cold cup options.', art: <img src="/assets/images/prod-pla.webp" alt="Paper and PLA beverage cups" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
 ]
 
 const whyItems = [
@@ -24,14 +27,14 @@ const solutions = [
   {
     title: 'PET Cold Cup Solutions',
     desc: 'Clear PET cups for cold beverages, with matched lids available across the core caliber range.',
-    art: <img src="/assets/images/prod-pet.jpg" alt="Clear PET cold cups" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} loading="lazy" />,
+    art: <img src="/assets/images/prod-pet.webp" alt="Clear PET cold cups" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} loading="lazy" />,
     points: ['74 / 78 / 90 / 93 / 95 / 98 / 107 mm options', '3 oz to 32 oz capacity range', 'Straight-wall, U-shape and dessert formats', 'Matching flat, dome and sipper lids'],
     apps: 'Bubble tea · Iced coffee · Smoothies · Desserts',
   },
   {
     title: 'Injection PP Cup Solutions',
     desc: 'Hard injection-molded PP cups in round, U-shape and square formats for hot and cold drinks.',
-    art: <img src="/assets/images/prod-pp-hard.jpg" alt="Injection PP beverage cups" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} loading="lazy" />,
+    art: <img src="/assets/images/prod-pp-hard.webp" alt="Injection PP beverage cups" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} loading="lazy" />,
     points: ['90 / 92 square / 95 mm caliber options', '360 ml to 960 ml capacity range', 'Clear and frosted finishes', 'Compatible with standard sealing machines'],
     apps: 'Milk tea chains · Fresh juice · Yogurt drinks',
     flip: true,
@@ -39,7 +42,7 @@ const solutions = [
   {
     title: 'Lids, Films & Accessories',
     desc: 'Match lid type and sealing film to the selected cup rim before ordering.',
-    art: <img src="/assets/images/prod-lids.jpg" alt="Cup lids and sealing films" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} loading="lazy" />,
+    art: <img src="/assets/images/prod-lids.webp" alt="Cup lids and sealing films" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} loading="lazy" />,
     points: ['Flat, dome, sipper and specialty lid types', 'PET and PP sealing film options', 'Straws, carriers and sleeves available', '90 / 92 / 95 / 98 / 119 mm matching options'],
     apps: 'Takeaway · Delivery platforms · Sealing machines',
   },
@@ -170,6 +173,32 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="section alt">
+        <div className="container">
+          <div className="section-head">
+            <h2>Packaging Guides &amp; Sourcing Insights</h2>
+            <p>Compare materials, calibers and sizes before you order.</p>
+          </div>
+          <div className="cat-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))' }}>
+            {featuredGuides.map((slug) => (
+              <Link to={`/blog/${slug}`} className="cat-card" key={slug}>
+                <div className="cat-art" style={{ height: 180 }}>
+                  <img src={posts[slug].img} alt={posts[slug].title} width="800" height="800" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px 12px 0 0' }} loading="lazy" />
+                </div>
+                <div className="cat-body">
+                  <h3>{posts[slug].title}</h3>
+                  <p>{posts[slug].excerpt}</p>
+                  <span className="text-link" style={{ marginTop: 'auto', display: 'inline-block', fontWeight: 500, color: '#0EA5E9' }}>Read Guide →</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div style={{ textAlign: 'center', marginTop: 28 }}>
+            <Link to="/blog" className="btn btn-outline">View All Guides</Link>
+          </div>
         </div>
       </section>
 

@@ -4,7 +4,7 @@ export const posts = {
     description: 'Which is better for your brand, PET or PP plastic cups? Compare transparency, temperature resistance, weight, and costs in this professional guide for the boba and coffee industry.',
     date: '2026-07-29',
     author: 'Claropack Experts',
-    img: '/assets/images/prod-pet.jpg',
+    img: '/assets/images/prod-pet.webp',
     excerpt: 'Choosing between PET and PP cups can significantly impact your beverage brand\'s presentation and bottom line. We compare the key differences in transparency, heat resistance, and cost.',
     quickFacts: [
       { label: 'Appearance', value: 'PET: crystal clear; PP: clear or frosted' },
@@ -55,7 +55,7 @@ export const posts = {
     description: 'Stop the leaks! Learn how to match PET and PP cup calibers (90mm, 95mm, 98mm) with the right flat, dome, and sipper lids. A must-read for bubble tea and coffee shop owners.',
     date: '2026-07-30',
     author: 'Claropack Technical Team',
-    img: '/assets/images/prod-lids.jpg',
+    img: '/assets/images/prod-lids.webp',
     excerpt: 'Lid mismatch is a top cause of customer complaints. Our engineering guide explains the caliber system and how to standardize your inventory with 90mm, 95mm, and 98mm universal lids.',
     quickFacts: [
       { label: 'Calibers', value: '90, 92, 95, 98, 107, 119 mm' },
@@ -100,7 +100,7 @@ export const posts = {
     description: 'The definitive guide to bubble tea cup sizes. Learn the difference between standard, jumbo, and U-shape boba cups to optimize your shop drink menu.',
     date: '2026-07-31',
     author: 'Claropack Sourcing Advisor',
-    img: '/assets/images/prod-pp-hard.jpg',
+    img: '/assets/images/prod-pp-hard.webp',
     excerpt: 'Which cup size is best for your boba menu? We break down the industry standard 12oz, 16oz, and 22oz sizes, and explain why the 95mm U-shape cup is taking over the market.',
     quickFacts: [
       { label: 'Small', value: '12 oz / 360 ml' },
@@ -144,7 +144,7 @@ export const posts = {
     description: 'A step-by-step guide for beverage brands on importing disposable cups from China. Learn about MOQ, custom logo printing, shipping costs, and quality inspection.',
     date: '2026-08-09',
     author: 'Claropack Logistics',
-    img: '/assets/images/prod-pla.jpg',
+    img: '/assets/images/prod-pla.webp',
     excerpt: 'Importing packaging can be complex. We simplify the process by explaining factory-direct MOQ, container loading, and how to verify food-grade quality certificates.',
     quickFacts: [
       { label: 'Custom-print MOQ', value: 'From 1,000 pcs per size' },
@@ -189,7 +189,7 @@ export const posts = {
     description: 'A sourcing guide to PET cup weight, using Claropack catalog values from 3.8g to 20g across the 74mm to 107mm series.',
     date: '2026-08-09',
     author: 'Claropack R&D',
-    img: '/assets/images/prod-pet.jpg',
+    img: '/assets/images/prod-pet.webp',
     excerpt: 'Not all plastic cups are equal. The weight of a cup (in grams) determines its rigidity and cost. We share our factory weight standards for the 74mm-107mm series.',
     quickFacts: [
       { label: 'Catalog Weight Range', value: '3.8 g to 20.0 g' },

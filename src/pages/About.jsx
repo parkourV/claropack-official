@@ -65,7 +65,7 @@ export default function About() {
 
       <section className="section">
         <div className="container about-grid">
-          <div className="sol-art" style={{ background: '#fff' }}><img src="/assets/images/prod-pp-hard.jpg" alt="Injection PP cup customization options" style={{ width: '100%', borderRadius: '12px' }} loading="lazy" /></div>
+          <div className="sol-art" style={{ background: '#fff' }}><img src="/assets/images/prod-pp-hard.webp" alt="Injection PP cup customization options" width="800" height="800" style={{ width: '100%', height: 'auto', borderRadius: '12px' }} loading="lazy" /></div>
           <div>
             <h2>Customization Capability</h2>
             <p>

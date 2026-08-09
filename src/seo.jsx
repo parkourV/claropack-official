@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 const SITE = 'https://claropack.com'
-const DEFAULT_OG_IMAGE = '/assets/images/hero-banner.jpg'
+const DEFAULT_OG_IMAGE = '/assets/images/hero-banner.webp'
 
 // Sets per-route title, description, canonical and social metadata.
 export function useSEO({ title, description, type = 'website', image }) {
