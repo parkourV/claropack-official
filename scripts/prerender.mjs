@@ -2,6 +2,7 @@ import puppeteer from "puppeteer-core";
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
+import { spawn } from "child_process";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = path.resolve(__dirname, "../dist");
@@ -15,13 +16,57 @@ const routes = [
   "/products/injection-pp-cups",
   "/products/lids-sealing-films",
   "/products/paper-pla-cups",
+  "/blog",
+  "/blog/pet-vs-pp-cups",
+  "/blog/cup-lid-compatibility-guide",
+  "/blog/bubble-tea-cup-sizes-guide",
+  "/blog/how-to-import-plastic-cups-from-china",
+  "/blog/pet-cup-weight-cost-guide",
   "/about",
   "/contact"
 ];
 
+async function waitForPreview() {
+  const deadline = Date.now() + 15000;
+
+  while (Date.now() < deadline) {
+    try {
+      const response = await fetch(`http://127.0.0.1:${PORT}/`);
+      if (response.ok) return;
+    } catch {
+      // The Vite preview process is still starting.
+    }
+
+    await new Promise((resolve) => setTimeout(resolve, 250));
+  }
+
+  throw new Error("Vite preview did not become ready within 15 seconds.");
+}
+
+async function stopPreview(preview) {
+  if (!preview || preview.exitCode !== null || preview.killed) return;
+
+  console.log("Stopping preview server...");
+  preview.kill();
+  await new Promise((resolve) => {
+    preview.once("exit", resolve);
+    setTimeout(resolve, 2000);
+  });
+}
+
 async function run() {
+  let preview;
   let browser;
+
   try {
+    console.log("Starting preview server...");
+    preview = spawn(
+      process.execPath,
+      [path.resolve(__dirname, "../node_modules/vite/bin/vite.js"), "preview", "--host", "127.0.0.1", "--port", PORT.toString()],
+      { stdio: "inherit" }
+    );
+    await waitForPreview();
+
     browser = await puppeteer.launch({
       executablePath: CHROME_PATH,
       headless: true
@@ -30,9 +75,8 @@ async function run() {
 
     for (const route of routes) {
       console.log(`Prerendering ${route}...`);
-      await page.goto(`http://localhost:${PORT}${route}`, { waitUntil: "networkidle0", timeout: 30000 });
+      await page.goto(`http://127.0.0.1:${PORT}${route}`, { waitUntil: "networkidle0", timeout: 30000 });
       const html = await page.content();
-      
       const filePath = path.join(DIST_DIR, route === "/" ? "index.html" : `${route}/index.html`);
       await fs.mkdir(path.dirname(filePath), { recursive: true });
       await fs.writeFile(filePath, html);
@@ -40,10 +84,10 @@ async function run() {
     }
   } catch (err) {
     console.error("Prerender failed:", err);
-    process.exit(1);
+    process.exitCode = 1;
   } finally {
     if (browser) await browser.close();
-    process.exit(0);
+    await stopPreview(preview);
   }
 }
 

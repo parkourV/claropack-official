@@ -83,7 +83,7 @@ export default function Category() {
               <ul style={{ fontSize: '0.9rem', color: '#64748B', listStyle: 'none', padding: 0, display: 'grid', gap: '8px' }}>
                 <li>• <strong>MOQ:</strong> 1,000 pcs for custom printing</li>
                 <li>• <strong>Material:</strong> FDA food-grade certified</li>
-                <li>• <strong>Lead Time:</strong> Fast shipping with 98.6% on-time rate</li>
+                <li>• <strong>Specification support:</strong> Material, caliber and matching-lid guidance before production</li>
                 <li>• <strong>Calibers:</strong> 74 / 78 / 90 / 92 / 93 / 95 / 98 / 107 mm</li>
                 <li>• <strong>Customization:</strong> OEM/ODM mold & logo printing</li>
               </ul>

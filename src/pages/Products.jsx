@@ -1,54 +1,53 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { CupArt, LidArt, PaperCupArt } from '../art.jsx'
 import { useSEO } from '../seo.jsx'
 
 const CATS = ['PET Cold Cups', 'Injection PP Cups', 'Lids & Films', 'Paper & PLA Cups']
 
 const products = {
   'PET Cold Cups': [
-    { name: '89mm PET Cold Cup', specs: ['89mm caliber', '12–16 oz', 'Clear'], art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="PET Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: '93mm PET Dessert Cup', specs: ['93mm caliber', '7–12 oz', 'Parfait'], art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="Dessert Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: '95mm PET Cold Cup', specs: ['95mm caliber', '12–22 oz', 'U-shape'], art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="PET Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: '98mm PET Cold Cup', specs: ['98mm caliber', '12–22 oz', 'Clear'], art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="PET Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'PET Snow Cone / Ice Cup', specs: ['7–9 oz', 'Dessert'], art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="Snow Cone" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'PET Cup + Lid Set', specs: ['Caliber-matched', 'Leak-safe'], art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="Cup Set" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: '74mm PET Dessert Cup', specs: ['74mm caliber', '3 oz', '3.8 g'], art: <img src="/assets/images/prod-pet.jpg" alt="74mm PET dessert cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+    { name: '78mm PET Cold Cup', specs: ['78mm caliber', '5.5–8 oz', '6 g'], art: <img src="/assets/images/prod-pet.jpg" alt="78mm PET cold cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+    { name: '93mm PET Cold Cup', specs: ['93mm caliber', '9–12 oz', '8–11 g'], art: <img src="/assets/images/prod-pet.jpg" alt="93mm PET cold cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+    { name: '95mm PET Cold Cup', specs: ['95mm caliber', '16–22 oz', '14–16 g'], art: <img src="/assets/images/prod-pet.jpg" alt="95mm PET cold cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+    { name: '107mm PET Jumbo Cup', specs: ['107mm caliber', '30–32 oz', '19–20 g'], art: <img src="/assets/images/prod-pet.jpg" alt="107mm PET jumbo cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
   ],
   'Injection PP Cups': [
-    { name: 'Injection PP Cup 90mm', specs: ['90mm caliber', 'Hot & cold', 'Hard wall'], art: <img src="https://s.alicdn.com/@sc04/kf/H77f91214e6bf4a3db9ed0c956b9ba389i/-95mm-500ML-750ML-PP-.jpg" alt="PP Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'Injection PP Cup 95mm', specs: ['95mm caliber', 'Custom mold'], art: <img src="https://s.alicdn.com/@sc04/kf/H77f91214e6bf4a3db9ed0c956b9ba389i/-95mm-500ML-750ML-PP-.jpg" alt="PP Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'Frosted PP Cup', specs: ['Frosted finish', 'Premium feel'], art: <img src="https://s.alicdn.com/@sc04/kf/H4a85dd9a125749b7822c5547e2096465o/-FDA-CE-U-PP-8oz-10oz.jpg" alt="Frosted Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Injection PP Cup 90mm', specs: ['90mm caliber', 'Hot & cold', 'Hard wall'], art: <img src="/assets/images/prod-pp-hard.jpg" alt="PP Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Injection PP Cup 95mm', specs: ['95mm caliber', 'Custom mold'], art: <img src="/assets/images/prod-pp-hard.jpg" alt="PP Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Frosted PP Cup', specs: ['Frosted finish', 'Premium feel'], art: <img src="/assets/images/prod-pp-frosted.jpg" alt="Frosted Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
   ],
   'Lids & Films': [
-    { name: 'Dome Lid', specs: ['89–98mm', 'PET clear'], art: <img src="https://s.alicdn.com/@sc04/kf/Hec2b3d1cf1074a0c81ce65f186da4f18m/-PET-PP-.jpg" alt="Dome Lid" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'Flat / Sipper Lid', specs: ['89–98mm', 'Strawless option'], art: <img src="https://s.alicdn.com/@sc04/kf/Hec2b3d1cf1074a0c81ce65f186da4f18m/-PET-PP-.jpg" alt="Flat Lid" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'Injection PP Lid', specs: ['With stopper', '90/95/98mm'], art: <img src="https://s.alicdn.com/@sc04/kf/Hec2b3d1cf1074a0c81ce65f186da4f18m/-PET-PP-.jpg" alt="PP Lid" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'Sealing Film Roll', specs: ['PP & PET cups', 'Custom print'], art: <img src="https://s.alicdn.com/@sc04/kf/Hec2b3d1cf1074a0c81ce65f186da4f18m/-PET-PP-.jpg" alt="Sealing Film" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Dome Lid', specs: ['89–98mm', 'PET clear'], art: <img src="/assets/images/prod-lids.jpg" alt="Dome Lid" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Flat / Sipper Lid', specs: ['89–98mm', 'Strawless option'], art: <img src="/assets/images/prod-lids.jpg" alt="Flat Lid" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Injection PP Lid', specs: ['With stopper', '90/95/98mm'], art: <img src="/assets/images/prod-lids.jpg" alt="PP Lid" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Sealing Film Roll', specs: ['PP & PET cups', 'Custom print'], art: <img src="/assets/images/prod-lids.jpg" alt="Sealing Film" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
   ],
   'Paper & PLA Cups': [
-    { name: 'Single Wall Paper Cup', specs: ['2–32 oz', 'PE / PLA coating'], art: <img src="https://s.alicdn.com/@sc04/kf/He02eeac3fde24809a48baf1deeb1ba1cI/-8-12-16-22-.png" alt="Paper Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'Double / Ripple Wall Cup', specs: ['Hot drinks', 'Insulated'], art: <img src="https://s.alicdn.com/@sc04/kf/He02eeac3fde24809a48baf1deeb1ba1cI/-8-12-16-22-.png" alt="Paper Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'PLA Compostable Cold Cup', specs: ['Clear PLA', 'Eco option'], art: <img src="https://s.alicdn.com/@sc04/kf/H1652bf8b18954d8ea83b0c786f88ccc1w/-PLA-98-.jpg" alt="PLA Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
-    { name: 'Paper Ice Cream Cup', specs: ['With lid', 'Custom print'], art: <img src="https://s.alicdn.com/@sc04/kf/He02eeac3fde24809a48baf1deeb1ba1cI/-8-12-16-22-.png" alt="Ice Cream Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Single Wall Paper Cup', specs: ['2–32 oz', 'PE / PLA coating'], art: <img src="/assets/images/prod-paper.jpg" alt="Paper Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Double / Ripple Wall Cup', specs: ['Hot drinks', 'Insulated'], art: <img src="/assets/images/prod-paper.jpg" alt="Paper Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'PLA Compostable Cold Cup', specs: ['Clear PLA', 'Eco option'], art: <img src="/assets/images/prod-pla.jpg" alt="PLA Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
+    { name: 'Paper Ice Cream Cup', specs: ['With lid', 'Custom print'], art: <img src="/assets/images/prod-paper.jpg" alt="Ice Cream Cup" style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> },
   ],
 }
 
 const petSpecs = [
-  ['89mm PET', '12 oz', '360 ml', '89', '119'],
-  ['89mm PET', '16 oz', '500 ml', '89', '132'],
-  ['93mm PET', '9 oz', '280 ml', '93', '82'],
-  ['95mm PET', '14 oz', '420 ml', '95', '110'],
-  ['95mm PET', '16 oz', '500 ml', '95', '118'],
-  ['98mm PET', '16 oz', '500 ml', '98', '116'],
-  ['98mm PET', '20 oz', '600 ml', '98', '135'],
-  ['98mm PET', '22 oz', '700 ml', '98', '150'],
+  ['74-7401', '3 oz', '74 mm', '39 mm', '3.8 g'],
+  ['5.5-7801', '5.5 oz', '78 mm', '54 mm', '6 g'],
+  ['8oz-7802', '8 oz', '78 mm', '80 mm', '6 g'],
+  ['93-9oz', '9 oz', '93 mm', '71 mm', '8 g'],
+  ['9301', '12 oz', '93 mm', '108 mm', '11 g'],
+  ['95-9507', '16 oz', '95 mm', '123 mm', '14 g'],
+  ['95-9508', '22 oz', '95 mm', '146 mm', '16 g'],
+  ['107-10703', '30 oz', '107 mm', '162 mm', '19 g'],
+  ['107-10701', '32 oz', '107 mm', '178 mm', '20 g'],
 ]
 
 export default function Products() {
   const [cat, setCat] = useState(CATS[0])
   useSEO({
-    title: 'PET Cold Cups, PP Cups & Lids Wholesale | 89-98mm Calibers — Claropack',
-    description: 'Browse disposable PET cold cups 12-22oz, injection PP cups, dome/flat lids and sealing films. MOQ 1,000 pcs, custom printing, matching lids for every caliber.',
+    title: 'PET Cold Cups, PP Cups & Lids Wholesale | 74-107mm Series — Claropack',
+    description: 'Browse PET cold cups from 3oz to 32oz, injection PP cups from 360ml to 960ml, plus dome, flat and sipper lids with matching sealing films.',
   })
   return (
     <>
@@ -98,9 +97,9 @@ export default function Products() {
               <div className="spec-table-wrap">
                 <table className="spec-table">
                   <thead>
-                    <tr>
-                      <th>Series</th><th>Capacity</th><th>Volume</th><th>Top Dia. (mm)</th><th>Height (mm)</th>
-                    </tr>
+                      <tr>
+                        <th>Model</th><th>Capacity</th><th>Caliber</th><th>Height</th><th>Weight</th>
+                      </tr>
                   </thead>
                   <tbody>
                     {petSpecs.map((row, i) => (

@@ -4,8 +4,11 @@ import { Menu, MessageCircle } from 'lucide-react'
 import Home from './pages/Home.jsx'
 import Products from './pages/Products.jsx'
 import Category from './pages/Category.jsx'
+import BlogList from './pages/BlogList.jsx'
+import BlogPost from './pages/BlogPost.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
+import NotFound from './pages/NotFound.jsx'
 import ErrorBoundary from './ErrorBoundary.jsx'
 
 function Header() {
@@ -24,6 +27,7 @@ function Header() {
         <nav className={`main-nav${open ? ' open' : ''}`}>
           <NavLink to="/" end onClick={close}>Home</NavLink>
           <NavLink to="/products" end onClick={close}>Products</NavLink>
+          <NavLink to="/blog" onClick={close}>Blog</NavLink>
           <NavLink to="/about" onClick={close}>Factory</NavLink>
           <NavLink to="/contact" onClick={close}>Contact</NavLink>
           <Link to="/contact" className="btn btn-primary" onClick={close}>Get a Quote</Link>
@@ -58,11 +62,12 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h4>Company</h4>
+            <h4>Guides</h4>
             <ul>
-              <li><Link to="/about">Factory &amp; QC</Link></li>
-              <li><Link to="/contact">Contact Us</Link></li>
-              <li><Link to="/contact">Request Samples</Link></li>
+              <li><Link to="/blog/pet-vs-pp-cups">PET vs PP Cups</Link></li>
+              <li><Link to="/blog/cup-lid-compatibility-guide">Cup Lid Size Chart</Link></li>
+              <li><Link to="/blog/bubble-tea-cup-sizes-guide">Bubble Tea Cup Sizes</Link></li>
+              <li><Link to="/blog">All Packaging Guides</Link></li>
             </ul>
           </div>
           <div>
@@ -109,9 +114,11 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:slug" element={<Category />} />
+            <Route path="/blog" element={<BlogList />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </ErrorBoundary>
       </main>

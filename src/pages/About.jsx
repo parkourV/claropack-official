@@ -37,8 +37,8 @@ export default function About() {
               mold development and full-color brand printing, with small-batch trial orders welcome.
             </p>
             <p>
-              With a 98.6% on-time dispatch rate and a 4.9/5 buyer rating, we focus on the two
-              things B2B buyers care about most: reliability and responsiveness.
+              We focus on the details B2B buyers need to compare before ordering: material,
+              caliber, capacity, matching lids and export-carton requirements.
             </p>
           </div>
           <div className="sol-art"><FactoryArt /></div>
@@ -65,7 +65,7 @@ export default function About() {
 
       <section className="section">
         <div className="container about-grid">
-          <div className="sol-art" style={{ background: '#fff' }}><img src="https://s.alicdn.com/@sc04/kf/H77f91214e6bf4a3db9ed0c956b9ba389i/-95mm-500ML-750ML-PP-.jpg" alt="Customization" style={{ width: '100%', borderRadius: '12px' }} /></div>
+          <div className="sol-art" style={{ background: '#fff' }}><img src="/assets/images/prod-pp-hard.jpg" alt="Injection PP cup customization options" style={{ width: '100%', borderRadius: '12px' }} loading="lazy" /></div>
           <div>
             <h2>Customization Capability</h2>
             <p>

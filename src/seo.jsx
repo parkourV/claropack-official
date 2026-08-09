@@ -3,8 +3,8 @@ import { useLocation } from 'react-router-dom'
 
 const SITE = 'https://claropack.com'
 
-// Sets per-route title, description and canonical for crawlers and social shares.
-export function useSEO({ title, description }) {
+// Sets per-route title, description, canonical and social metadata.
+export function useSEO({ title, description, type = 'website', image }) {
   const { pathname } = useLocation()
   useEffect(() => {
     document.title = title
@@ -12,10 +12,11 @@ export function useSEO({ title, description }) {
     setMeta('property', 'og:title', title)
     setMeta('property', 'og:description', description)
     setMeta('property', 'og:url', SITE + pathname)
-    setMeta('property', 'og:type', 'website')
+    setMeta('property', 'og:type', type)
+    if (image) setMeta('property', 'og:image', SITE + image)
     setLink('canonical', SITE + pathname)
     window.scrollTo(0, 0)
-  }, [title, description, pathname])
+  }, [title, description, type, image, pathname])
 }
 
 function setMeta(attr, key, content) {

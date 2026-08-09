@@ -5,42 +5,42 @@ import { CupArt } from '../art.jsx'
 import { useSEO, useJsonLd } from '../seo.jsx'
 
 const categories = [
-  { title: 'PET Cold Cups', slug: 'pet-cold-cups', desc: 'Crystal-clear cups in 89 / 93 / 95 / 98 mm calibers, 12–22 oz, for boba, iced coffee and smoothies.', art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="Clear PET cold cups 16-20oz wholesale" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
-  { title: 'Injection PP Cups', slug: 'injection-pp-cups', desc: 'Durable hard PP cups for hot & cold drinks, reusable-grade thickness, custom molds available.', art: <img src="https://s.alicdn.com/@sc04/kf/H77f91214e6bf4a3db9ed0c956b9ba389i/-95mm-500ML-750ML-PP-.jpg" alt="Injection PP hard cups 95mm 500-750ml" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
-  { title: 'Lids & Sealing Films', slug: 'lids-sealing-films', desc: 'Flat, dome and sipper lids plus PP/PET sealing films matched to every cup caliber.', art: <img src="https://s.alicdn.com/@sc04/kf/Hec2b3d1cf1074a0c81ce65f186da4f18m/-PET-PP-.jpg" alt="PET PP cup lids dome flat sipper" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
-  { title: 'Paper & PLA Cups', slug: 'paper-pla-cups', desc: 'Single/double/ripple-wall paper cups and compostable PLA cold cups for eco-focused brands.', art: <img src="https://s.alicdn.com/@sc04/kf/H1652bf8b18954d8ea83b0c786f88ccc1w/-PLA-98-.jpg" alt="Compostable PLA cold cups 98mm" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+  { title: 'PET Cold Cups', slug: 'pet-cold-cups', desc: 'Crystal-clear cups from 74 to 107 mm, with capacities from 3 to 32 oz for boba, iced coffee and smoothies.', art: <img src="/assets/images/prod-pet.jpg" alt="Clear PET cold cups in multiple sizes" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+  { title: 'Injection PP Cups', slug: 'injection-pp-cups', desc: 'Hard-wall PP cups for hot and cold drinks, in round, U-shape and square formats.', art: <img src="/assets/images/prod-pp-hard.jpg" alt="Injection PP hard cups" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+  { title: 'Lids & Sealing Films', slug: 'lids-sealing-films', desc: 'Flat, dome and sipper lids plus PP/PET sealing films matched to each cup caliber.', art: <img src="/assets/images/prod-lids.jpg" alt="PET and PP cup lids and sealing films" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
+  { title: 'Paper & PLA Cups', slug: 'paper-pla-cups', desc: 'Single, double and ripple-wall paper cups alongside compostable PLA cold cup options.', art: <img src="/assets/images/prod-pla.jpg" alt="Paper and PLA beverage cups" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },
 ]
 
 const whyItems = [
-  { icon: <Package size={22} />, title: 'Low MOQ from 1,000 pcs', desc: 'Trial orders and small-batch custom runs welcome — grow at your own pace.' },
-  { icon: <Palette size={22} />, title: 'Custom Logo Printing', desc: 'Up to full-color offset printing on PET, PP and paper cups. Free artwork check.' },
-  { icon: <Factory size={22} />, title: 'ODM / OEM Service', desc: 'Custom molds, calibers and capacities engineered around your product line.' },
-  { icon: <ShieldCheck size={22} />, title: 'Food-Grade Materials', desc: 'Food-contact safe raw materials with inspection reports available per batch.' },
-  { icon: <Truck size={22} />, title: 'Fast, Reliable Dispatch', desc: '98.6% on-time dispatch rate with agile supply chain and export packing.' },
-  { icon: <Globe size={22} />, title: 'Global B2B Support', desc: 'English-speaking sales team, response within hours across time zones.' },
+  { icon: <Package size={22} />, title: 'MOQ from 1,000 pcs', desc: 'Start with a size, quantity and artwork brief that matches your sourcing plan.' },
+  { icon: <Palette size={22} />, title: 'Custom Logo Printing', desc: 'PET, PP and paper cup lines can be specified for branded beverage programs.' },
+  { icon: <Factory size={22} />, title: 'ODM / OEM Coordination', desc: 'Discuss custom calibers, capacities and mold requirements with our sourcing team.' },
+  { icon: <ShieldCheck size={22} />, title: 'Specification-Led Sourcing', desc: 'Match material, caliber, capacity and lid style before production is arranged.' },
+  { icon: <Truck size={22} />, title: 'Export Packing Support', desc: 'Plan carton quantities and container loading around the selected cup specification.' },
+  { icon: <Globe size={22} />, title: 'B2B Inquiry Support', desc: 'Share your target market and use case to receive a more relevant quotation.' },
 ]
 
 const solutions = [
   {
     title: 'PET Cold Cup Solutions',
-    desc: 'Our core line: crystal-clear PET cups engineered for cold beverages, with matching lids for every caliber.',
-    art: <img src="https://s.alicdn.com/@sc04/kf/Hbefdbe16546f4659b0b19e34dd69d24c0/16-20-PET-.jpg" alt="PET Cup" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />,
-    points: ['Calibers 89 / 93 / 95 / 98 mm, capacities 7–22 oz', 'U-shaped, parfait and dessert cup formats', 'Custom logo printing from 1,000 pcs', 'Matching flat, dome and strawless lids'],
+    desc: 'Clear PET cups for cold beverages, with matched lids available across the core caliber range.',
+    art: <img src="/assets/images/prod-pet.jpg" alt="Clear PET cold cups" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} loading="lazy" />,
+    points: ['74 / 78 / 90 / 93 / 95 / 98 / 107 mm options', '3 oz to 32 oz capacity range', 'Straight-wall, U-shape and dessert formats', 'Matching flat, dome and sipper lids'],
     apps: 'Bubble tea · Iced coffee · Smoothies · Desserts',
   },
   {
     title: 'Injection PP Cup Solutions',
-    desc: 'Hard injection-molded PP cups with premium wall thickness for brands that want a sturdier in-hand feel.',
-    art: <img src="https://s.alicdn.com/@sc04/kf/H4a85dd9a125749b7822c5547e2096465o/-FDA-CE-U-PP-8oz-10oz.jpg" alt="PP Cup" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />,
-    points: ['Hot & cold compatible', 'Custom mold development for exclusive shapes', 'Works with sealing film machines', 'Stackable, transport-efficient design'],
+    desc: 'Hard injection-molded PP cups in round, U-shape and square formats for hot and cold drinks.',
+    art: <img src="/assets/images/prod-pp-hard.jpg" alt="Injection PP beverage cups" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} loading="lazy" />,
+    points: ['90 / 92 square / 95 mm caliber options', '360 ml to 960 ml capacity range', 'Clear and frosted finishes', 'Compatible with standard sealing machines'],
     apps: 'Milk tea chains · Fresh juice · Yogurt drinks',
     flip: true,
   },
   {
     title: 'Lids, Films & Accessories',
-    desc: 'One-stop matching: every cup ships with the right lid or sealing film so your store operations stay simple.',
-    art: <img src="https://s.alicdn.com/@sc04/kf/Hec2b3d1cf1074a0c81ce65f186da4f18m/-PET-PP-.jpg" alt="Lids" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />,
-    points: ['Flat / dome / sipper lid types', 'PP & PET sealing films by roll', 'Straws, carriers and sleeves available', 'Caliber-matched to avoid leak issues'],
+    desc: 'Match lid type and sealing film to the selected cup rim before ordering.',
+    art: <img src="/assets/images/prod-lids.jpg" alt="Cup lids and sealing films" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} loading="lazy" />,
+    points: ['Flat, dome, sipper and specialty lid types', 'PET and PP sealing film options', 'Straws, carriers and sleeves available', '90 / 92 / 95 / 98 / 119 mm matching options'],
     apps: 'Takeaway · Delivery platforms · Sealing machines',
   },
 ]
@@ -48,7 +48,7 @@ const solutions = [
 export default function Home() {
   useSEO({
     title: 'PET Cups Manufacturer China | Custom Plastic Cups Wholesale — Claropack',
-    description: 'Factory-direct PET cold cups, injection PP cups, lids and paper cups. Custom logo printing from 1,000 pcs, 89-98mm calibers, food-grade materials. Get a quote in 24h.',
+    description: 'Factory-direct PET cold cups, injection PP cups, lids and paper cups. PET sizes from 74mm to 107mm and 3oz to 32oz. Custom logo printing from 1,000 pcs.',
   })
   useJsonLd({
     '@context': 'https://schema.org',
@@ -107,10 +107,10 @@ export default function Home() {
       <section className="section alt">
         <div className="container">
           <div className="stats-row">
-            <div className="stat"><h3>9+</h3><p>Years in the industry</p></div>
-            <div className="stat"><h3>98.6%</h3><p>On-time dispatch rate</p></div>
-            <div className="stat"><h3>4.9/5</h3><p>Buyer store rating</p></div>
-            <div className="stat"><h3>1,000</h3><p>Pieces minimum order</p></div>
+            <div className="stat"><h3>74–107</h3><p>mm PET cup caliber range</p></div>
+            <div className="stat"><h3>3–32</h3><p>oz PET capacity range</p></div>
+            <div className="stat"><h3>360–960</h3><p>ml injection PP range</p></div>
+            <div className="stat"><h3>1,000</h3><p>pieces custom-print MOQ</p></div>
           </div>
         </div>
       </section>
@@ -140,11 +140,11 @@ export default function Home() {
             <p>Raw material traceability and finished-product inspection on every order.</p>
           </div>
           <div className="trust-row" data-component="trust-marquee">
-            <span className="trust-badge">SGS-Audited Supplier</span>
-            <span className="trust-badge">Food Contact Safe</span>
-            <span className="trust-badge">Trade Assurance</span>
-            <span className="trust-badge">Raw Material Traceability</span>
-            <span className="trust-badge">Finished Product Inspection</span>
+            <span className="trust-badge">Material &amp; caliber guidance</span>
+            <span className="trust-badge">Custom printing coordination</span>
+            <span className="trust-badge">Matched lids &amp; sealing film</span>
+            <span className="trust-badge">Export carton planning</span>
+            <span className="trust-badge">Specification tables by product line</span>
           </div>
         </div>
       </section>

@@ -14,9 +14,7 @@ const app = (
   </React.StrictMode>
 )
 
-// Prerendered HTML present -> hydrate; empty root -> normal render.
-if (root.hasChildNodes()) {
-  ReactDOM.hydrateRoot(root, app)
-} else {
-  ReactDOM.createRoot(root).render(app)
-}
+// The prerenderer serializes browser-normalized DOM values, which are not always
+// byte-identical to React's client style output. Keep the static HTML crawlable,
+// then replace it with a clean interactive client render to avoid hydration errors.
+ReactDOM.createRoot(root).render(app)
