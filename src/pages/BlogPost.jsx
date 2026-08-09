@@ -24,6 +24,7 @@ export default function BlogPost() {
           description: post.description,
           image: `https://claropack.com${post.img}`,
           datePublished: post.date,
+          dateModified: post.dateModified || post.date,
           mainEntityOfPage: `https://claropack.com/blog/${slug}`,
           author: {
             '@type': 'Organization',

@@ -36,6 +36,14 @@ async function checkFile(filePath, route) {
             throw new Error(`Brand keyword "Claropack" missing.`);
         }
 
+        // 6. Social sharing metadata must be present for rich link previews.
+        if (!content.includes('property="og:image"')) {
+            throw new Error('og:image missing. Social shares will render without a preview image.');
+        }
+        if (!content.includes('name="twitter:card"')) {
+            throw new Error('twitter:card missing. X/Twitter shares will not render a large card.');
+        }
+
         console.log(`✅ ${route} passed.`);
         return true;
     } catch (err) {

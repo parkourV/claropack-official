@@ -1,18 +1,44 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useSEO } from '../seo.jsx'
+import { useSEO, useJsonLd } from '../seo.jsx'
 import { posts } from '../data/posts.jsx'
 
 export default function BlogList() {
   useSEO({
     title: 'Packaging Insights & Guides | Claropack Blog',
-    description: 'Expert advice on beverage packaging, material comparisons, and sourcing tips for the food service industry.',
+    description: 'Guides and comparisons on beverage packaging, cup materials, sizes and sourcing for the food service industry.',
   })
 
   const postList = Object.entries(posts).map(([slug, data]) => ({
     slug,
     ...data
   }))
+
+  useJsonLd({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://claropack.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://claropack.com/blog' },
+        ],
+      },
+      {
+        '@type': 'Blog',
+        name: 'Claropack Packaging Insights',
+        url: 'https://claropack.com/blog',
+        blogPost: postList.map((post) => ({
+          '@type': 'BlogPosting',
+          headline: post.title,
+          description: post.description,
+          datePublished: post.date,
+          image: `https://claropack.com${post.img}`,
+          url: `https://claropack.com/blog/${post.slug}`,
+        })),
+      },
+    ],
+  })
 
   return (
     <>

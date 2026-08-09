@@ -2,18 +2,26 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 const SITE = 'https://claropack.com'
+const DEFAULT_OG_IMAGE = '/assets/images/hero-banner.jpg'
 
 // Sets per-route title, description, canonical and social metadata.
 export function useSEO({ title, description, type = 'website', image }) {
   const { pathname } = useLocation()
   useEffect(() => {
+    const ogImage = SITE + (image || DEFAULT_OG_IMAGE)
     document.title = title
     setMeta('name', 'description', description)
+    setMeta('property', 'og:site_name', 'Claropack')
+    setMeta('property', 'og:locale', 'en_US')
     setMeta('property', 'og:title', title)
     setMeta('property', 'og:description', description)
     setMeta('property', 'og:url', SITE + pathname)
     setMeta('property', 'og:type', type)
-    if (image) setMeta('property', 'og:image', SITE + image)
+    setMeta('property', 'og:image', ogImage)
+    setMeta('name', 'twitter:card', 'summary_large_image')
+    setMeta('name', 'twitter:title', title)
+    setMeta('name', 'twitter:description', description)
+    setMeta('name', 'twitter:image', ogImage)
     setLink('canonical', SITE + pathname)
     window.scrollTo(0, 0)
   }, [title, description, type, image, pathname])
