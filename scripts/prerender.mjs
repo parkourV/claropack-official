@@ -22,6 +22,10 @@ const routes = [
   "/blog/bubble-tea-cup-sizes-guide",
   "/blog/how-to-import-plastic-cups-from-china",
   "/blog/pet-cup-weight-cost-guide",
+  "/blog/cup-sealing-film-machine-guide",
+  "/blog/paper-vs-pla-cups-guide",
+  "/blog/cup-caliber-standardization-guide",
+  "/blog/square-injection-pp-cups-branding",
   "/about",
   "/contact"
 ];

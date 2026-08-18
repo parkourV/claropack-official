@@ -61,7 +61,11 @@ async function run() {
         'https://claropack.com/blog/cup-lid-compatibility-guide',
         'https://claropack.com/blog/bubble-tea-cup-sizes-guide',
         'https://claropack.com/blog/how-to-import-plastic-cups-from-china',
-        'https://claropack.com/blog/pet-cup-weight-cost-guide'
+        'https://claropack.com/blog/pet-cup-weight-cost-guide',
+        'https://claropack.com/blog/cup-sealing-film-machine-guide',
+        'https://claropack.com/blog/paper-vs-pla-cups-guide',
+        'https://claropack.com/blog/cup-caliber-standardization-guide',
+        'https://claropack.com/blog/square-injection-pp-cups-branding'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -83,7 +87,11 @@ async function run() {
         { path: 'blog/cup-lid-compatibility-guide/index.html', route: '/blog/cup-lid-compatibility-guide' },
         { path: 'blog/bubble-tea-cup-sizes-guide/index.html', route: '/blog/bubble-tea-cup-sizes-guide' },
         { path: 'blog/how-to-import-plastic-cups-from-china/index.html', route: '/blog/how-to-import-plastic-cups-from-china' },
-        { path: 'blog/pet-cup-weight-cost-guide/index.html', route: '/blog/pet-cup-weight-cost-guide' }
+        { path: 'blog/pet-cup-weight-cost-guide/index.html', route: '/blog/pet-cup-weight-cost-guide' },
+        { path: 'blog/cup-sealing-film-machine-guide/index.html', route: '/blog/cup-sealing-film-machine-guide' },
+        { path: 'blog/paper-vs-pla-cups-guide/index.html', route: '/blog/paper-vs-pla-cups-guide' },
+        { path: 'blog/cup-caliber-standardization-guide/index.html', route: '/blog/cup-caliber-standardization-guide' },
+        { path: 'blog/square-injection-pp-cups-branding/index.html', route: '/blog/square-injection-pp-cups-branding' }
     ];
 
     let allPassed = true;
