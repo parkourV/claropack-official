@@ -40,8 +40,17 @@ export default function Category() {
             item: {
               '@type': 'Product',
               name: `${row[0]} ${cat.name}`,
+              image: `https://claropack.com${cat.img}`,
               description: `${row[2]} capacity, ${row[1]} caliber.`,
-              brand: { '@type': 'Brand', name: 'Claropack' }
+              sku: `${slug}-${row[0].replace(/\s+/g, '-').toLowerCase()}`,
+              brand: { '@type': 'Brand', name: 'Claropack' },
+              offers: {
+                '@type': 'Offer',
+                availability: 'https://schema.org/InStock',
+                priceCurrency: 'USD',
+                price: '0.00',
+                url: `https://claropack.com/products/${slug}`
+              }
             }
           }))
         }

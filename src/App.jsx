@@ -62,12 +62,21 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h4>Guides</h4>
+            <h4>Packaging Guides</h4>
             <ul>
-              <li><Link to="/blog/pet-vs-pp-cups">PET vs PP Cups</Link></li>
+              <li><Link to="/blog/pet-vs-pp-cups">PET vs PP Comparison</Link></li>
               <li><Link to="/blog/cup-lid-compatibility-guide">Cup Lid Size Chart</Link></li>
-              <li><Link to="/blog/bubble-tea-cup-sizes-guide">Bubble Tea Cup Sizes</Link></li>
-              <li><Link to="/blog">All Packaging Guides</Link></li>
+              <li><Link to="/blog/bubble-tea-cup-sizes-guide">Boba Cup Sizes</Link></li>
+              <li><Link to="/blog/cup-caliber-standardization-guide">Caliber Standardization</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Sourcing Advice</h4>
+            <ul>
+              <li><Link to="/blog/how-to-import-plastic-cups-from-china">How to Import Guide</Link></li>
+              <li><Link to="/blog/pet-cup-weight-cost-guide">Weight &amp; Cost Guide</Link></li>
+              <li><Link to="/blog/cup-sealing-film-machine-guide">Sealing Film Guide</Link></li>
+              <li><Link to="/blog/paper-vs-pla-cups-guide">Paper vs PLA Guide</Link></li>
             </ul>
           </div>
           <div>
