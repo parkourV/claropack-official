@@ -26,6 +26,9 @@ const routes = [
   "/blog/paper-vs-pla-cups-guide",
   "/blog/cup-caliber-standardization-guide",
   "/blog/square-injection-pp-cups-branding",
+  "/blog/pet-cup-capacity-carton-planning-guide",
+  "/blog/injection-pp-cup-model-weight-guide",
+  "/blog/cup-lid-weight-caliber-guide",
   "/about",
   "/contact"
 ];

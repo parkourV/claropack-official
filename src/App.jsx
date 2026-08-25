@@ -77,6 +77,9 @@ function Footer() {
               <li><Link to="/blog/pet-cup-weight-cost-guide">Weight &amp; Cost Guide</Link></li>
               <li><Link to="/blog/cup-sealing-film-machine-guide">Sealing Film Guide</Link></li>
               <li><Link to="/blog/paper-vs-pla-cups-guide">Paper vs PLA Guide</Link></li>
+              <li><Link to="/blog/pet-cup-capacity-carton-planning-guide">PET Carton Planning</Link></li>
+              <li><Link to="/blog/injection-pp-cup-model-weight-guide">PP Model &amp; Weight Guide</Link></li>
+              <li><Link to="/blog/cup-lid-weight-caliber-guide">Lid Weight &amp; Caliber Guide</Link></li>
             </ul>
           </div>
           <div>

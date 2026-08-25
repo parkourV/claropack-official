@@ -65,7 +65,10 @@ async function run() {
         'https://claropack.com/blog/cup-sealing-film-machine-guide',
         'https://claropack.com/blog/paper-vs-pla-cups-guide',
         'https://claropack.com/blog/cup-caliber-standardization-guide',
-        'https://claropack.com/blog/square-injection-pp-cups-branding'
+        'https://claropack.com/blog/square-injection-pp-cups-branding',
+        'https://claropack.com/blog/pet-cup-capacity-carton-planning-guide',
+        'https://claropack.com/blog/injection-pp-cup-model-weight-guide',
+        'https://claropack.com/blog/cup-lid-weight-caliber-guide'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -91,7 +94,10 @@ async function run() {
         { path: 'blog/cup-sealing-film-machine-guide/index.html', route: '/blog/cup-sealing-film-machine-guide' },
         { path: 'blog/paper-vs-pla-cups-guide/index.html', route: '/blog/paper-vs-pla-cups-guide' },
         { path: 'blog/cup-caliber-standardization-guide/index.html', route: '/blog/cup-caliber-standardization-guide' },
-        { path: 'blog/square-injection-pp-cups-branding/index.html', route: '/blog/square-injection-pp-cups-branding' }
+        { path: 'blog/square-injection-pp-cups-branding/index.html', route: '/blog/square-injection-pp-cups-branding' },
+        { path: 'blog/pet-cup-capacity-carton-planning-guide/index.html', route: '/blog/pet-cup-capacity-carton-planning-guide' },
+        { path: 'blog/injection-pp-cup-model-weight-guide/index.html', route: '/blog/injection-pp-cup-model-weight-guide' },
+        { path: 'blog/cup-lid-weight-caliber-guide/index.html', route: '/blog/cup-lid-weight-caliber-guide' }
     ];
 
     let allPassed = true;

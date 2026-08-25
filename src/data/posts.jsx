@@ -433,5 +433,163 @@ export const posts = {
       { q: 'Do square cups work with standard sealing machines?', a: 'Square cups use square-fit sealing rather than a standard round seal head. Confirm your machine supports square-fit sealing before ordering.' },
       { q: 'Can I get a custom square cup shape or logo?', a: 'Yes. We support custom injection molds for exclusive shapes and embossed logos. Contact us with your design to discuss mold requirements.' }
     ]
+  },
+  'pet-cup-capacity-carton-planning-guide': {
+    title: 'PET Cup Capacity and Carton Planning Guide: Match Sizes to Your Menu',
+    description: 'Plan a PET cup range using verified caliber, capacity, weight and carton quantities. Compare 3oz to 32oz models before requesting a like-for-like quotation.',
+    date: '2026-08-25',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pet.webp',
+    excerpt: 'A cup range is easier to buy when every model is compared by caliber, capacity, weight and carton quantity. Use this verified PET reference before finalizing a menu or purchase plan.',
+    quickFacts: [
+      { label: 'Caliber Range', value: '74 / 78 / 93 / 95 / 107 mm in the listed PET models' },
+      { label: 'Capacity Range', value: '3 oz to 32 oz' },
+      { label: 'Catalog Weight', value: '3.8 g to 20 g in the listed PET models' },
+      { label: 'Carton Quantity', value: '600, 1,000 or 2,000 pcs depending on model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why Capacity Alone Is Not Enough',
+        body: 'A purchasing sheet that lists only ounces can hide important differences. The same PET program should be reviewed by rim caliber, capacity, cup height, base, weight and carton quantity. These fields affect lid matching, drink presentation, handling and how you organize replenishment. Use the catalog row as the unit of comparison rather than comparing capacity in isolation.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Verified PET Cup Planning Table',
+        body: 'The following models and values are transcribed from the PET cold cup specification table. Carton quantity is included where the catalog lists it.',
+        table: {
+          head: ['Model', 'Caliber', 'Capacity', 'Height', 'Weight', 'Carton'],
+          rows: [
+            ['74-7401', '74 mm', '3 oz', '39 mm', '3.8 g', '2000 pcs'],
+            ['5.5-7801', '78 mm', '5.5 oz', '54 mm', '6 g', '1000 pcs'],
+            ['8oz-7802', '78 mm', '8 oz', '80 mm', '6 g', '1000 pcs'],
+            ['95-9507', '95 mm', '16 oz', '123 mm', '14 g', '1000 pcs'],
+            ['95-9508', '95 mm', '22 oz', '146 mm', '16 g', '1000 pcs'],
+            ['107-10703', '107 mm', '30 oz', '162 mm', '19 g', '600 pcs'],
+            ['107-10701', '107 mm', '32 oz', '178 mm', '20 g', '600 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Group Menu Sizes by Shared Caliber',
+        body: 'The catalog shows why rim diameter should be planned alongside capacity. The listed 78mm models cover 5.5oz and 8oz, the listed 95mm models cover 16oz and 22oz, and the listed 107mm models cover 30oz and 32oz. Grouping menu sizes by shared caliber can simplify the lid conversation; confirm the exact matching lid for each model before ordering.'
+      },
+      {
+        type: 'text',
+        h2: 'Use Carton Quantity as a Replenishment Field',
+        body: 'Carton quantity varies across the listed PET models: the 74mm model is listed at 2,000 pieces per carton, the 78mm and 95mm models at 1,000 pieces, and the 107mm models at 600 pieces. Put carton quantity next to the model in your purchasing sheet so a sample order and a repeat order are discussed using the same unit. Confirm whether any custom configuration changes the carton quantity.'
+      }
+    ],
+    faqs: [
+      { q: 'Which PET models share a caliber in the listed table?', a: 'The listed table includes 78mm models at 5.5oz and 8oz, 95mm models at 16oz and 22oz, and 107mm models at 30oz and 32oz. Confirm lid compatibility by exact cup model before ordering.' },
+      { q: 'Does every PET model have the same carton quantity?', a: 'No. The listed catalog values are 2,000 pcs for model 74-7401, 1,000 pcs for the listed 78mm, 93mm and 95mm models, and 600 pcs for the listed 107mm models.' },
+      { q: 'Can I use the catalog table as a final quotation?', a: 'Use it as a specification reference, not as a final quotation. Confirm current production availability, artwork, carton configuration, lid fit and destination requirements with the factory.' }
+    ]
+  },
+  'injection-pp-cup-model-weight-guide': {
+    title: 'Injection PP Cup Model and Weight Guide: 500ml to 960ml Selection',
+    description: 'Compare verified injection PP cup models by caliber, capacity, height, base and weight. A practical guide for choosing round, U-shape and square formats.',
+    date: '2026-08-25',
+    author: 'Claropack Technical Team',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'Injection PP cups vary by format as well as capacity. Compare the listed 95mm round and U-shape models with the 92mm square series before choosing a cup for hot or cold service.',
+    quickFacts: [
+      { label: 'Listed Calibers', value: '92 mm square and 95 mm round/U-shape' },
+      { label: 'Listed Capacities', value: '500 ml to 960 ml' },
+      { label: 'Listed Weight', value: '14 g to 35 g' },
+      { label: 'Formats', value: 'Round, U-shape and square' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Choose the Format Before Comparing Weight',
+        body: 'Injection PP cups are not one uniform product. The specification table includes 95mm U-shape cups, 95mm round cups and a 92mm square series. Compare models within the same format first, then review capacity, height, base and weight. A heavier value is not automatically the right choice; the final selection should match the drink, presentation and sealing setup.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Verified Injection PP Model Reference',
+        body: 'All rows below use the model, caliber, capacity, height, base and weight fields shown in the injection PP category data.',
+        table: {
+          head: ['Model', 'Caliber', 'Capacity', 'Height', 'Base', 'Weight'],
+          rows: [
+            ['PP-95U', '95 mm', '500 ml (U)', '112 mm', '70 mm', '14.5 g'],
+            ['PP-95U', '95 mm', '700 ml (U)', '155 mm', '70 mm', '21 g'],
+            ['PP-95', '95 mm', '500 ml', '120 mm', '58 mm', '14 g'],
+            ['PP-95', '95 mm', '650 ml', '151 mm', '60 mm', '18 g'],
+            ['PP-95', '95 mm', '750 ml', '161 mm', '64 mm', '22 g'],
+            ['PP-92 Square', '92 mm', '650 ml', '140 mm', '65 mm', '28 g'],
+            ['PP-92 Square', '92 mm', '960 ml', '200 mm', '65 mm', '35 g']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Round 95mm vs Square 92mm',
+        body: 'The listed round and U-shape models use a 95mm caliber, while the square series uses a 92mm square format. That difference matters for the lid and sealing setup: do not treat a 92mm square cup as interchangeable with a 92mm round cup or a 95mm round cup. Confirm square-fit lid and sealing support before ordering the square series.'
+      },
+      {
+        type: 'text',
+        h2: 'Create a Like-for-Like Supplier Request',
+        body: 'When requesting a quotation, copy the complete row: model, caliber, capacity, height, base and weight. Add the required finish (clear or frosted), beverage temperature, lid or film requirement and artwork status. The catalog data does not list carton quantity for these PP rows, so leave that field open for factory confirmation rather than assuming it.'
+      }
+    ],
+    faqs: [
+      { q: 'What is the lightest listed injection PP model?', a: 'The listed PP-95 round 500ml model is 14 g, and the listed PP-95U 500ml U-shape model is 14.5 g. Compare the complete format and dimension fields before selecting.' },
+      { q: 'Which listed PP cups use a 92mm square format?', a: 'The PP-92 Square rows are listed at 650ml and 960ml, with 28 g and 35 g weights respectively. Both rows show a 92mm caliber, 65mm base and square format.' },
+      { q: 'Is carton quantity available for the PP models?', a: 'Carton quantity is not included in the visible injection PP specification table. Mark it as factory confirmation for the exact model, finish and order configuration.' }
+    ]
+  },
+  'cup-lid-weight-caliber-guide': {
+    title: 'Cup Lid Weight and Caliber Guide: Choosing PET and PP Lids',
+    description: 'Compare verified PET and PP lid weights, caliber ranges and use cases. Match flat, dome, sipper, specialty and injection lids to the correct cup rim.',
+    date: '2026-08-25',
+    author: 'Claropack Technical Team',
+    img: '/assets/images/prod-lids.webp',
+    excerpt: 'A lid is a fit-critical component, not a generic accessory. Use this verified weight and caliber table to compare PET and injection PP lid options before requesting samples.',
+    quickFacts: [
+      { label: 'PET Lid Range', value: '2.2 g to 4.5 g for listed types' },
+      { label: 'PP Injection Range', value: '6.6 g to 9 g for listed types' },
+      { label: 'Listed Calibers', value: '90-98 mm PET; 119 mm injection PP' },
+      { label: 'Fit Rule', value: 'Match the lid to the exact cup rim diameter' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Lid Selection Starts with Caliber',
+        body: 'A lid should be selected by the cup rim diameter before its appearance or weight. The listed product data covers PET lids for 90-98mm cups, a 90mm sip lid and panda lid, and 119mm injection PP lids. Use the exact caliber from the cup specification, then choose the lid style that fits the beverage and service method.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Verified Lid Weight and Fit Table',
+        body: 'The table below uses the listed lid type, fit caliber, material, weight and use fields from the lids and sealing films category.',
+        table: {
+          head: ['Lid Type', 'Fits Caliber', 'Material', 'Weight', 'Best For'],
+          rows: [
+            ['Flat lid', '90-98 mm', 'PET', '2.2 g', 'Iced coffee, takeaway'],
+            ['Dome / half-round', '90-98 mm', 'PET', '3.5 g', 'Whipped-cream, desserts'],
+            ['Sip / strawless lid', '90 mm', 'PET', '3.2 g', 'Strawless service'],
+            ['Panda lid', '90 mm', 'PET', '4.5 g', 'Branded specialty drinks'],
+            ['Single-hole lid', '119 mm', 'PP injection', '6.6 g', 'Jumbo cups'],
+            ['Phone-holder lid', '119 mm', 'PP injection', '9 g', 'Promotional / novelty']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'PET Lid Styles for Different Drinks',
+        body: 'The listed PET options support different serving needs. Flat lids fit the 90-98mm range and suit iced coffee and takeaway service. Dome or half-round lids also cover 90-98mm and provide room for whipped cream or desserts. The 90mm sip lid supports strawless service, while the 90mm panda lid is listed for branded specialty drinks.'
+      },
+      {
+        type: 'text',
+        h2: 'When an Injection PP Lid Is the Better Match',
+        body: 'The listed injection PP options are 119mm lids: single-hole at 6.6 g and phone-holder at 9 g. They should be considered for the matching 119mm cup program rather than mixed into a 90-98mm PET lid plan. Ask the factory to confirm the exact cup model and lid fit before bulk ordering.'
+      }
+    ],
+    faqs: [
+      { q: 'Does a heavier lid always prevent leaks better?', a: 'Not by itself. Fit depends first on the exact cup rim caliber and the lid design. Weight is a comparison field, but it does not replace a physical fit check.' },
+      { q: 'Which listed PET lid fits a 90mm cup?', a: 'The listed 90mm options include the sip/strawless lid at 3.2 g and the panda lid at 4.5 g. The flat and dome lids are listed for the broader 90-98mm range.' },
+      { q: 'Can a 119mm injection lid fit a 95mm cup?', a: 'No assumption should be made from the lid style alone. The listed injection lids are for 119mm, while the PET flat and dome range is 90-98mm. Confirm the exact cup rim and lid specification before ordering.' }
+    ]
   }
 }
