@@ -68,7 +68,10 @@ async function run() {
         'https://claropack.com/blog/square-injection-pp-cups-branding',
         'https://claropack.com/blog/pet-cup-capacity-carton-planning-guide',
         'https://claropack.com/blog/injection-pp-cup-model-weight-guide',
-        'https://claropack.com/blog/cup-lid-weight-caliber-guide'
+        'https://claropack.com/blog/cup-lid-weight-caliber-guide',
+        'https://claropack.com/blog/paper-cup-wall-types-guide',
+        'https://claropack.com/blog/u-shape-fat-cup-guide',
+        'https://claropack.com/blog/strawless-sipper-lids-guide'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -97,7 +100,10 @@ async function run() {
         { path: 'blog/square-injection-pp-cups-branding/index.html', route: '/blog/square-injection-pp-cups-branding' },
         { path: 'blog/pet-cup-capacity-carton-planning-guide/index.html', route: '/blog/pet-cup-capacity-carton-planning-guide' },
         { path: 'blog/injection-pp-cup-model-weight-guide/index.html', route: '/blog/injection-pp-cup-model-weight-guide' },
-        { path: 'blog/cup-lid-weight-caliber-guide/index.html', route: '/blog/cup-lid-weight-caliber-guide' }
+        { path: 'blog/cup-lid-weight-caliber-guide/index.html', route: '/blog/cup-lid-weight-caliber-guide' },
+        { path: 'blog/paper-cup-wall-types-guide/index.html', route: '/blog/paper-cup-wall-types-guide' },
+        { path: 'blog/u-shape-fat-cup-guide/index.html', route: '/blog/u-shape-fat-cup-guide' },
+        { path: 'blog/strawless-sipper-lids-guide/index.html', route: '/blog/strawless-sipper-lids-guide' }
     ];
 
     let allPassed = true;

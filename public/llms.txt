@@ -43,3 +43,6 @@ Beverage brands, milk tea chains, iced coffee shops, and food packaging distribu
 - [PET Capacity & Carton Planning](https://claropack.com/blog/pet-cup-capacity-carton-planning-guide): Compare PET caliber, capacity, weight and listed carton quantity.
 - [Injection PP Model & Weight Guide](https://claropack.com/blog/injection-pp-cup-model-weight-guide): Compare listed round, U-shape and square PP cup specifications.
 - [Cup Lid Weight & Caliber Guide](https://claropack.com/blog/cup-lid-weight-caliber-guide): Match listed PET and injection PP lids to cup rim diameter.
+- [Paper Cup Wall Types](https://claropack.com/blog/paper-cup-wall-types-guide): Compare single, double and ripple wall paper cups by capacity and coating.
+- [U-Shape Fat Cup Guide](https://claropack.com/blog/u-shape-fat-cup-guide): Verified 95mm U-shape PP cup specs and lid/sealing planning.
+- [Strawless & Sipper Lids](https://claropack.com/blog/strawless-sipper-lids-guide): Sipper and half-open lid options for plastic-reduction markets.

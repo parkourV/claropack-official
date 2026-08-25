@@ -29,6 +29,9 @@ const routes = [
   "/blog/pet-cup-capacity-carton-planning-guide",
   "/blog/injection-pp-cup-model-weight-guide",
   "/blog/cup-lid-weight-caliber-guide",
+  "/blog/paper-cup-wall-types-guide",
+  "/blog/u-shape-fat-cup-guide",
+  "/blog/strawless-sipper-lids-guide",
   "/about",
   "/contact"
 ];

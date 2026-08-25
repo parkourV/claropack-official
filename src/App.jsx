@@ -80,6 +80,9 @@ function Footer() {
               <li><Link to="/blog/pet-cup-capacity-carton-planning-guide">PET Carton Planning</Link></li>
               <li><Link to="/blog/injection-pp-cup-model-weight-guide">PP Model &amp; Weight Guide</Link></li>
               <li><Link to="/blog/cup-lid-weight-caliber-guide">Lid Weight &amp; Caliber Guide</Link></li>
+              <li><Link to="/blog/paper-cup-wall-types-guide">Paper Cup Wall Types</Link></li>
+              <li><Link to="/blog/u-shape-fat-cup-guide">U-Shape Fat Cup Guide</Link></li>
+              <li><Link to="/blog/strawless-sipper-lids-guide">Strawless &amp; Sipper Lids</Link></li>
             </ul>
           </div>
           <div>

@@ -5,7 +5,7 @@ import { CupArt } from '../art.jsx'
 import { useSEO, useJsonLd } from '../seo.jsx'
 import { posts } from '../data/posts.jsx'
 
-const featuredGuides = ['pet-cup-capacity-carton-planning-guide', 'injection-pp-cup-model-weight-guide', 'cup-lid-weight-caliber-guide', 'cup-sealing-film-machine-guide']
+const featuredGuides = ['paper-cup-wall-types-guide', 'u-shape-fat-cup-guide', 'strawless-sipper-lids-guide', 'pet-cup-capacity-carton-planning-guide']
 
 const categories = [
   { title: 'PET Cold Cups', slug: 'pet-cold-cups', desc: 'Crystal-clear cups from 74 to 107 mm, with capacities from 3 to 32 oz for boba, iced coffee and smoothies.', art: <img src="/assets/images/prod-pet.webp" alt="Clear PET cold cups in multiple sizes" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" /> },

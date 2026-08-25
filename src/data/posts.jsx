@@ -591,5 +591,151 @@ export const posts = {
       { q: 'Which listed PET lid fits a 90mm cup?', a: 'The listed 90mm options include the sip/strawless lid at 3.2 g and the panda lid at 4.5 g. The flat and dome lids are listed for the broader 90-98mm range.' },
       { q: 'Can a 119mm injection lid fit a 95mm cup?', a: 'No assumption should be made from the lid style alone. The listed injection lids are for 119mm, while the PET flat and dome range is 90-98mm. Confirm the exact cup rim and lid specification before ordering.' }
     ]
+  },
+  'paper-cup-wall-types-guide': {
+    title: 'Paper Cup Wall Types Explained: Single, Double and Ripple Wall',
+    description: 'Compare single-wall, double-wall and ripple-wall paper cups by capacity, coating and use case. A sourcing guide for choosing the right hot-cup construction.',
+    date: '2026-09-01',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pla.webp',
+    excerpt: 'The wall construction of a paper cup decides its insulation, grip and cost. This guide compares single, double and ripple wall using our verified paper cup specifications.',
+    quickFacts: [
+      { label: 'Single Wall', value: '2-32 oz, PE / PLA coating' },
+      { label: 'Double Wall', value: '8-20 oz, insulated' },
+      { label: 'Ripple Wall', value: '4-20 oz, premium grip' },
+      { label: 'Coating Options', value: 'PE or PLA / water-based' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Wall Construction Is a Sourcing Decision',
+        body: 'For hot drinks, the paper cup wall is the difference between a comfortable hold and a cup that is too hot to carry. The listed paper cup range covers single-wall, double-wall and ripple-wall construction, each with its own capacity band and best use. Choose the wall type by the drink and the customer experience you want, then confirm the coating for your destination market.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Paper Cup Wall Type Reference',
+        body: 'The table below uses the series, capacity, wall, coating and use fields from the paper and PLA cup category data.',
+        table: {
+          head: ['Series', 'Capacity', 'Wall', 'Coating', 'Use'],
+          rows: [
+            ['Single wall', '2-32 oz', 'Single', 'PE / PLA', 'Hot & cold'],
+            ['Double wall', '8-20 oz', 'Double', 'PE / PLA', 'Hot, insulated'],
+            ['Ripple wall', '4-20 oz', 'Ripple', 'PE', 'Hot, premium grip']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Single Wall: The Versatile Standard',
+        body: 'The listed single-wall series spans the widest range, 2-32 oz, and is marked for hot and cold use. It is the cost-effective default for espresso sizes through to large cold servings. Single-wall cups are available with PE or PLA coating, so the same construction can be specified for either a conventional or a plastic-reduction market.'
+      },
+      {
+        type: 'text',
+        h2: 'Double and Ripple Wall for Hot Drinks',
+        body: 'Double-wall cups (listed 8-20 oz) add an insulating air gap for hot drinks, reducing the need for a separate sleeve. Ripple-wall cups (listed 4-20 oz) use a textured outer layer for extra grip and a premium feel. Both are oriented to hot service; confirm the exact size, coating and lid match for your menu before ordering.'
+      }
+    ],
+    faqs: [
+      { q: 'Which paper cup wall type is best for hot coffee?', a: 'Double-wall and ripple-wall cups are oriented to hot service, adding insulation and grip. Single-wall cups also handle hot drinks and often pair with a sleeve. Match the wall type to your drink temperature and handling needs.' },
+      { q: 'What capacities are available for each wall type?', a: 'The listed ranges are single wall 2-32 oz, double wall 8-20 oz and ripple wall 4-20 oz. Confirm the exact size availability for your order.' },
+      { q: 'Can paper cups use a compostable coating?', a: 'The listed single-wall and double-wall series offer PE or PLA coating; ripple wall is listed with PE. PLA or water-based coating suits plastic-reduction markets. Confirm the right coating for your destination.' }
+    ]
+  },
+  'u-shape-fat-cup-guide': {
+    title: 'U-Shape Fat Cups for Bubble Tea: The 95mm Signature Format',
+    description: 'Why the 95mm U-shape fat cup became a bubble tea signature. Compare listed 500ml and 700ml U-shape PP specifications and plan lids and sealing.',
+    date: '2026-09-01',
+    author: 'Claropack Experts',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'The U-shape fat cup shows off boba and brown-sugar streaks like no tapered cup can. Here are the verified 95mm U-shape PP specifications and how to plan around them.',
+    quickFacts: [
+      { label: 'Caliber', value: '95 mm' },
+      { label: 'Listed Capacities', value: '500 ml, 700 ml (U-shape)' },
+      { label: 'Listed Weight', value: '14.5 g, 21 g' },
+      { label: 'Sealing', value: 'Standard round sealing machine' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why the U-Shape Became a Signature',
+        body: 'The U-shape or fat cup has a rounded base that showcases boba pearls, fruit layers and brown-sugar streaks. Compared with a traditional tapered cup, it reads as premium and photo-ready. The listed U-shape models use a 95mm caliber, which pairs with standard round sealing machines and dome lids.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Verified U-Shape PP Specifications',
+        body: 'These rows use the model, caliber, capacity, height, base and weight fields listed for the injection PP U-shape series.',
+        table: {
+          head: ['Model', 'Caliber', 'Capacity', 'Height', 'Base', 'Weight'],
+          rows: [
+            ['PP-95U', '95 mm', '500 ml (U)', '112 mm', '70 mm', '14.5 g'],
+            ['PP-95U', '95 mm', '700 ml (U)', '155 mm', '70 mm', '21 g']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Plan Lids and Sealing Around 95mm',
+        body: 'Because the listed U-shape cups are 95mm, they fit the same 95mm lid and sealing plan as other 95mm round cups. This makes it easier to standardize: a single 95mm caliber can serve U-shape signature drinks alongside standard round cups, reducing the number of lid and film types you stock.'
+      },
+      {
+        type: 'text',
+        h2: 'Choosing Between 500ml and 700ml',
+        body: 'The listed 500ml U-shape cup (14.5 g, 112mm tall) suits a regular signature drink, while the 700ml U-shape cup (21 g, 155mm tall) suits a large or topping-heavy serving. Confirm the finish, lid style and any custom printing with the factory before ordering.'
+      }
+    ],
+    faqs: [
+      { q: 'What caliber are the U-shape fat cups?', a: 'The listed U-shape PP cups use a 95mm caliber, so they pair with standard 95mm round lids and standard round sealing machines.' },
+      { q: 'What sizes do the listed U-shape cups come in?', a: 'The visible data lists 500ml (14.5 g) and 700ml (21 g) U-shape models. Confirm current availability and finish before ordering.' },
+      { q: 'Can U-shape cups be sealed with film?', a: 'Yes. As 95mm round-rim cups, the listed U-shape models run on standard round cup-sealing machines with matching film. Confirm your machine and film material.' }
+    ]
+  },
+  'strawless-sipper-lids-guide': {
+    title: 'Strawless and Sipper Lids: Meeting Plastic-Reduction Rules',
+    description: 'How sipper and half-open lids support strawless service in plastic-reduction markets. Compare listed PET sipper and dome lid options by caliber and weight.',
+    date: '2026-09-01',
+    author: 'Claropack Technical Team',
+    img: '/assets/images/prod-lids.webp',
+    excerpt: 'As more markets restrict single-use straws, sipper and half-open lids let customers drink straw-free. Here are the verified sipper lid specifications and where they fit.',
+    quickFacts: [
+      { label: 'Sip / Strawless Lid', value: '90 mm, PET, 3.2 g' },
+      { label: 'Dome / Half-Round', value: '90-98 mm, PET, 3.5 g' },
+      { label: 'Flat Lid', value: '90-98 mm, PET, 2.2 g' },
+      { label: 'Best Markets', value: 'Plastic-reduction regions' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why Strawless Lids Matter Now',
+        body: 'Plastic-reduction rules in the EU and parts of the US increasingly restrict single-use straws. A sipper or half-open lid lets customers drink directly from the cup, removing the straw from the service entirely. The listed lid range includes a sip/strawless option so brands can adapt without changing their whole cup program.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Strawless-Friendly Lid Options',
+        body: 'The table below uses the lid type, fit caliber, material and weight fields from the lids and sealing films category.',
+        table: {
+          head: ['Lid Type', 'Fits Caliber', 'Material', 'Weight', 'Best For'],
+          rows: [
+            ['Sip / strawless lid', '90 mm', 'PET', '3.2 g', 'Strawless service'],
+            ['Dome / half-round', '90-98 mm', 'PET', '3.5 g', 'Whipped-cream, desserts'],
+            ['Flat lid', '90-98 mm', 'PET', '2.2 g', 'Iced coffee, takeaway']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Match the Sipper Lid to a 90mm Cup',
+        body: 'The listed sip/strawless lid is a 90mm PET lid at 3.2 g. To adopt strawless service, align your cup program with the 90mm caliber for the drinks where you want to remove straws. Confirm the exact cup model and lid fit, since a lid must match the cup rim diameter precisely.'
+      },
+      {
+        type: 'text',
+        h2: 'A Phased Move to Strawless',
+        body: 'Many brands adopt strawless service gradually, starting with drinks that do not need a straw for toppings. Keep flat and dome lids for drinks that still require a straw or topping clearance, and introduce the sipper lid where it improves the experience. This keeps the change practical while meeting plastic-reduction expectations.'
+      }
+    ],
+    faqs: [
+      { q: 'What caliber is the listed sipper lid?', a: 'The listed sip/strawless lid is a 90mm PET lid weighing 3.2 g. Align the cup caliber to 90mm for strawless drinks and confirm the exact cup model fit.' },
+      { q: 'Are strawless lids required by law?', a: 'Requirements vary by market. The EU and parts of the US have restricted single-use straws, which is driving strawless adoption. Confirm the current rules for your destination market.' },
+      { q: 'Can I offer both straw and strawless options?', a: 'Yes. Many brands keep flat and dome lids for straw-based or topping-heavy drinks and add the 90mm sipper lid where it suits the drink. Match each lid to the exact cup rim.' }
+    ]
   }
 }
