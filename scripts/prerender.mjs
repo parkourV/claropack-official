@@ -32,6 +32,8 @@ const routes = [
   "/blog/paper-cup-wall-types-guide",
   "/blog/u-shape-fat-cup-guide",
   "/blog/strawless-sipper-lids-guide",
+  "/blog/injection-vs-thermoformed-cups",
+  "/blog/large-format-30-32oz-cups-guide",
   "/about",
   "/contact"
 ];

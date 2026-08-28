@@ -737,5 +737,96 @@ export const posts = {
       { q: 'Are strawless lids required by law?', a: 'Requirements vary by market. The EU and parts of the US have restricted single-use straws, which is driving strawless adoption. Confirm the current rules for your destination market.' },
       { q: 'Can I offer both straw and strawless options?', a: 'Yes. Many brands keep flat and dome lids for straw-based or topping-heavy drinks and add the 90mm sipper lid where it suits the drink. Match each lid to the exact cup rim.' }
     ]
+  },
+  'injection-vs-thermoformed-cups': {
+    title: 'Injection Molding vs Thermoforming: How Your Cup Is Actually Made',
+    description: 'Understand the two ways beverage cups are produced. Compare injection-molded PP cups and thermoformed PET cups by wall rigidity, weight and use, using verified Claropack specifications.',
+    date: '2026-08-28',
+    author: 'Claropack Technical Team',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'Two cups can look similar and be made in completely different ways. This guide explains injection molding versus thermoforming and how the process shapes weight, rigidity and cost.',
+    quickFacts: [
+      { label: 'Injection PP', value: 'Thick-wall, hot & cold' },
+      { label: 'Thermoformed PET', value: 'Thin-wall, cold only' },
+      { label: 'Weight Diff', value: 'Injection is heavier' },
+      { label: 'Custom Molds', value: 'Available for both' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Two Processes, Two Very Different Cups',
+        body: 'Injection molding and thermoforming are the two primary ways beverage cups are made. Injection molding involves injecting molten PP into a mold to create a thick, rigid wall. Thermoforming heats a PET sheet and uses a vacuum to pull it into a shape, resulting in a thin, glass-clear cup. The process you choose determines the cup weight, rigidity and suitable beverage temperature.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Weight & Process Comparison',
+        body: 'The table below compares the gram weight of listed injection-molded PP cups versus thermoformed PET cups of similar caliber, using verified specifications.',
+        table: {
+          head: ['Process', 'Model', 'Caliber', 'Capacity', 'Weight'],
+          rows: [
+            ['Thermoformed PET', '95-9507', '95 mm', '16 oz', '14 g'],
+            ['Thermoformed PET', '95-9508', '95 mm', '22 oz', '16 g'],
+            ['Injection PP', 'PP-95', '95 mm', '500 ml', '14 g'],
+            ['Injection PP', 'PP-95', '95 mm', '650 ml', '18 g'],
+            ['Injection PP', 'PP-95', '95 mm', '750 ml', '22 g'],
+            ['Injection PP', 'PP-92 Sq', '92 mm', '650 ml', '28 g'],
+            ['Injection PP', 'PP-92 Sq', '92 mm', '960 ml', '35 g']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Choosing the Process for Your Brand',
+        body: 'Choose injection-molded PP if you need a high-end "sturdy" feel, heat resistance for hot tea, or a square format. Choose thermoformed PET if you need maximum clarity for iced coffees or layered fruit teas. Both processes support custom mold development and high-quality printing, but the MOQ and lead times may vary. Confirm the exact production schedule with the factory.'
+      }
+    ],
+    faqs: [
+      { q: 'Why is an injection PP cup heavier than a PET cup?', a: 'Injection molding produces a thicker wall for rigidity and heat resistance. A 95mm injection cup can weigh 14-22g, while a similar caliber PET cup is typically 14-16g.' },
+      { q: 'Can I use the same lids for both processes?', a: 'Yes, if the rim caliber (caliber) is identical, e.g. 95mm. Lid fit depends on the rim diameter, not the manufacturing process.' },
+      { q: 'Which is better for hot beverages?', a: 'Injection-molded PP is the choice for hot drinks (tolerating up to 100°C). Thermoformed PET is cold-only and should not be used for drinks above 60°C.' }
+    ]
+  },
+  'large-format-30-32oz-cups-guide': {
+    title: 'Large-Format Cups (30-32oz): A Sourcing Guide for Smoothies & Shareables',
+    description: 'Source 30oz and 32oz large-format cups with confidence. Compare verified 107mm caliber specs, weight and carton quantity for smoothies and shareable drinks.',
+    date: '2026-08-28',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pet.webp',
+    excerpt: 'Jumbo drinks need cups that hold shape and ship efficiently. This guide covers verified 107mm 30-32oz specifications and how to plan lids and cartons for large-format menus.',
+    quickFacts: [
+      { label: 'Sizes', value: '30 oz, 32 oz' },
+      { label: 'Caliber', value: '107 mm' },
+      { label: 'Weight', value: '19 g - 20 g' },
+      { label: 'Carton', value: '600 pcs' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'When to Use Large-Format Cups',
+        body: 'Large-format cups (30oz and 32oz) are ideal for shareable smoothies, promotional "super-size" offers, and high-value bubble tea menus. These jumbo sizes require specific wall thickness and base support to handle the heavier liquid weight without buckling during service or transport.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Verified 107mm PET Specifications',
+        body: 'The specifications below are for the 107mm caliber PET series, used for the largest cold drink servings in our catalog.',
+        table: {
+          head: ['Model', 'Caliber', 'Capacity', 'Height', 'Weight', 'Carton'],
+          rows: [
+            ['107-10703', '107 mm', '30 oz', '162 mm', '19 g', '600 pcs'],
+            ['107-10701', '107 mm', '32 oz', '178 mm', '20 g', '600 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Carton Planning for Jumbo Cups',
+        body: 'Due to their height and width, 30-32oz cups are packed 600 pieces per carton, compared to the standard 1,000 pieces for standard sizes. This lower packing density affects your container loading and freight cost per unit. Factor this difference into your logistics planning when introducing a large-format cup range.'
+      }
+    ],
+    faqs: [
+      { q: 'What is the caliber of the 32oz cup?', a: 'The 32oz large-format PET cup has a 107mm caliber and is 178mm tall. It weighs 20g for improved rigidity at this height.' },
+      { q: 'Which lids fit the large cups?', a: '107mm is a large, specialty caliber. Match it with 107mm flat or dome lids. Confirm the specific lid model with us to ensure a leak-proof seal.' },
+      { q: 'Why is the carton count only 600 pcs?', a: 'Jumbo cups take more volume per piece. To keep shipping cartons to a manageable size, we pack 600 pieces per box. Standard 16/22oz cups typically ship in 1,000-piece cartons.' }
+    ]
   }
 }
