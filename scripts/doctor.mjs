@@ -71,7 +71,9 @@ async function run() {
         'https://claropack.com/blog/cup-lid-weight-caliber-guide',
         'https://claropack.com/blog/paper-cup-wall-types-guide',
         'https://claropack.com/blog/u-shape-fat-cup-guide',
-        'https://claropack.com/blog/strawless-sipper-lids-guide'
+        'https://claropack.com/blog/strawless-sipper-lids-guide',
+        'https://claropack.com/blog/injection-vs-thermoformed-cups',
+        'https://claropack.com/blog/large-format-30-32oz-cups-guide'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -103,7 +105,9 @@ async function run() {
         { path: 'blog/cup-lid-weight-caliber-guide/index.html', route: '/blog/cup-lid-weight-caliber-guide' },
         { path: 'blog/paper-cup-wall-types-guide/index.html', route: '/blog/paper-cup-wall-types-guide' },
         { path: 'blog/u-shape-fat-cup-guide/index.html', route: '/blog/u-shape-fat-cup-guide' },
-        { path: 'blog/strawless-sipper-lids-guide/index.html', route: '/blog/strawless-sipper-lids-guide' }
+        { path: 'blog/strawless-sipper-lids-guide/index.html', route: '/blog/strawless-sipper-lids-guide' },
+        { path: 'blog/injection-vs-thermoformed-cups/index.html', route: '/blog/injection-vs-thermoformed-cups' },
+        { path: 'blog/large-format-30-32oz-cups-guide/index.html', route: '/blog/large-format-30-32oz-cups-guide' }
     ];
 
     let allPassed = true;
