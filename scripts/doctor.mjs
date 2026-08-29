@@ -73,7 +73,11 @@ async function run() {
         'https://claropack.com/blog/u-shape-fat-cup-guide',
         'https://claropack.com/blog/strawless-sipper-lids-guide',
         'https://claropack.com/blog/injection-vs-thermoformed-cups',
-        'https://claropack.com/blog/large-format-30-32oz-cups-guide'
+        'https://claropack.com/blog/large-format-30-32oz-cups-guide',
+        'https://claropack.com/blog/cup-sealing-film-machine-guide',
+        'https://claropack.com/blog/leak-proof-takeaway-cups-and-carriers',
+        'https://claropack.com/blog/us-standard-98mm-pet-cups-guide',
+        'https://claropack.com/blog/pet-cups-cold-chain-performance'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -107,7 +111,11 @@ async function run() {
         { path: 'blog/u-shape-fat-cup-guide/index.html', route: '/blog/u-shape-fat-cup-guide' },
         { path: 'blog/strawless-sipper-lids-guide/index.html', route: '/blog/strawless-sipper-lids-guide' },
         { path: 'blog/injection-vs-thermoformed-cups/index.html', route: '/blog/injection-vs-thermoformed-cups' },
-        { path: 'blog/large-format-30-32oz-cups-guide/index.html', route: '/blog/large-format-30-32oz-cups-guide' }
+        { path: 'blog/large-format-30-32oz-cups-guide/index.html', route: '/blog/large-format-30-32oz-cups-guide' },
+        { path: 'blog/cup-sealing-film-machine-guide/index.html', route: '/blog/cup-sealing-film-machine-guide' },
+        { path: 'blog/leak-proof-takeaway-cups-and-carriers/index.html', route: '/blog/leak-proof-takeaway-cups-and-carriers' },
+        { path: 'blog/us-standard-98mm-pet-cups-guide/index.html', route: '/blog/us-standard-98mm-pet-cups-guide' },
+        { path: 'blog/pet-cups-cold-chain-performance/index.html', route: '/blog/pet-cups-cold-chain-performance' }
     ];
 
     let allPassed = true;

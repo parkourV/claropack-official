@@ -828,5 +828,134 @@ export const posts = {
       { q: 'Which lids fit the large cups?', a: '107mm is a large, specialty caliber. Match it with 107mm flat or dome lids. Confirm the specific lid model with us to ensure a leak-proof seal.' },
       { q: 'Why is the carton count only 600 pcs?', a: 'Jumbo cups take more volume per piece. To keep shipping cartons to a manageable size, we pack 600 pieces per box. Standard 16/22oz cups typically ship in 1,000-piece cartons.' }
     ]
+  },
+  'cup-sealing-film-machine-guide': {
+    title: 'Cup Sealing Film & Sealing Machine Guide: Choosing the Right Film for PET and PP Cups',
+    description: 'How to choose cup sealing film and match it to your cups and sealing machine. Compare PP vs PET film, 90/95/98mm caliber fit, round vs square cups, and custom-printed film for boba and coffee brands.',
+    date: '2026-08-18',
+    author: 'Claropack Technical Team',
+    img: '/assets/images/prod-lids.webp',
+    excerpt: 'Leaky seals and jammed machines usually trace back to the wrong film. This guide explains how to match PP or PET sealing film to your cup caliber, cup shape, and sealing machine.',
+    quickFacts: [
+      { label: 'Film Materials', value: 'PP / PET' },
+      { label: 'Fits Calibers', value: '90 / 95 / 98 mm' },
+      { label: 'Square Cups', value: '92mm square support' },
+      { label: 'Customization', value: 'Logo printing available' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Match the Film Material to the Cup',
+        body: 'The core rule is that the sealing film material must match the cup material for a reliable heat seal. PET film pairs with PET cold cups, while PP film pairs with injection PP cups. Using the wrong material will result in a weak seal that peels off or leaks during delivery.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Film-to-Cup Matching Chart',
+        body: 'Based on our factory standards, here is how to match your cups, film and machine.',
+        table: {
+          head: ['Cup Type', 'Caliber', 'Recommended Film', 'Machine'],
+          rows: [
+            ['PET cold cups', '90 / 95 / 98 mm', 'PET sealing film', 'Standard round machine'],
+            ['Injection PP round', '90 / 95 mm', 'PP sealing film', 'Standard round machine'],
+            ['Injection PP square', '92 mm (square)', 'Contact us', 'Square-fit support required']
+          ]
+        }
+      }
+    ],
+    faqs: [
+      { q: 'Can I use PET film on PP cups?', a: 'No. For a reliable heat seal, match the film material to the cup: PET for PET, PP for PP.' },
+      { q: 'Can the film be custom printed?', a: 'Yes. We print custom logos on both PP and PET film rolls. Minimum order quantities apply.' }
+    ]
+  },
+  'leak-proof-takeaway-cups-and-carriers': {
+    title: 'Leak-Proof Takeaway Cups & Carrier Solutions: A Delivery Reliability Guide',
+    description: 'How to stop drink spills in delivery. Match lids, sealing film and cup carriers to your cups for leak-proof takeaway.',
+    date: '2026-08-25',
+    author: 'Claropack Logistics',
+    img: '/assets/images/prod-lids.webp',
+    excerpt: 'A spilled drink in a delivery bag means a lost customer. This guide breaks down the three layers of leak protection — the right lid, a reliable seal, and a secure carrier.',
+    quickFacts: [
+      { label: 'Lid Types', value: 'Flat, Dome, Sipper, Panda' },
+      { label: 'Leak Protection', value: 'Snap-Lock rim design' },
+      { label: 'Sealing Option', value: 'PP/PET film for 90-98mm' },
+      { label: 'Carriers', value: 'Available for multi-cup' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Three Layers of Leak Protection',
+        body: 'Successful delivery requires three layers working together: the right lid, a reliable seal (often sealing film), and a secure carrier. Our PET lids feature a "Snap-Lock" rim design to prevent accidental pops during transport.'
+      }
+    ],
+    faqs: [
+      { q: 'Is film or a lid better for delivery?', a: 'For full or shaken drinks, a heat-sealed film is usually more spill-resistant. Many brands combine both: seal the film, then add a dome lid.' },
+      { q: 'Do you supply cup carriers?', a: 'Yes. We provide carriers and sleeves alongside our cup lines to keep drinks upright during delivery.' }
+    ]
+  },
+  'us-standard-98mm-pet-cups-guide': {
+    title: '98mm PET Cups: The Sourcing Standard for the US Beverage Market',
+    description: 'Why 98mm is the go-to caliber for the US beverage industry. Compare verified PET cup specifications from 12oz to 24oz.',
+    date: '2026-08-28',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pet.webp',
+    excerpt: '98mm is the dominant caliber in North America. This guide covers verified 98mm PET specifications for 12oz to 24oz models.',
+    quickFacts: [
+      { label: 'US Standard', value: '98 mm caliber' },
+      { label: 'Capacities', value: '12oz, 16oz, 20oz, 24oz' },
+      { label: 'Weight Range', value: '10.5g - 16.5g' },
+      { label: 'Carton', value: '1000 pcs' }
+    ],
+    content: [
+      {
+        type: 'comparison',
+        h2: '98mm Series Specifications',
+        body: 'Verified PET specifications for the North American standard 98mm series.',
+        table: {
+          head: ['Model', 'Caliber', 'Capacity', 'Height', 'Weight', 'Carton'],
+          rows: [
+            ['98-12oz', '98 mm', '12 oz', '85 mm', '10.5 g', '1000 pcs'],
+            ['98-16oz', '98 mm', '16 oz', '121 mm', '14.0 g', '1000 pcs'],
+            ['98-20oz', '98 mm', '20 oz', '140 mm', '15.5 g', '1000 pcs'],
+            ['98-24oz', '98 mm', '24 oz', '153 mm', '16.5 g', '1000 pcs']
+          ]
+        }
+      }
+    ],
+    faqs: [
+      { q: 'Is 98mm the standard for US coffee shops?', a: 'Yes. It allows you to use one lid size across 12oz, 16oz, 20oz and 24oz cups.' }
+    ]
+  },
+  'pet-cups-cold-chain-performance': {
+    title: 'How PET Cups Perform in Cold-Chain and Iced-Drink Service',
+    description: 'Why PET is the material of choice for cold beverages and chilled logistics. Understand PET temperature limits and clarity.',
+    date: '2026-08-29',
+    author: 'Claropack Experts',
+    img: '/assets/images/prod-pet.webp',
+    excerpt: 'Cold drinks and chilled transport put specific demands on a cup. This guide explains why PET suits iced-drink service and cold-chain handling.',
+    quickFacts: [
+      { label: 'Material', value: 'PET (Food-grade)' },
+      { label: 'Temp Limit', value: 'Up to 60°C (Cold-only)' },
+      { label: 'Transparency', value: 'High clarity condensation' },
+      { label: 'Carton Quantities', value: '2000, 1000, 600 pcs' }
+    ],
+    content: [
+      {
+        type: 'comparison',
+        h2: 'PET Specification vs Logistics Planning',
+        body: 'Use these verified specs to plan your cold-chain batching and delivery loads.',
+        table: {
+          head: ['Model', 'Capacity', 'Weight', 'Carton'],
+          rows: [
+            ['74-7401', '3 oz', '3.8 g', '2000 pcs'],
+            ['9301', '12 oz', '11 g', '1000 pcs'],
+            ['95-9507', '16 oz', '14 g', '1000 pcs'],
+            ['107-10703', '30 oz', '19 g', '600 pcs']
+          ]
+        }
+      }
+    ],
+    faqs: [
+      { q: 'Can PET handle cold/frozen drinks?', a: 'PET is designed for cold and ambient beverages up to 60°C. Chilled service is its ideal application.' }
+    ]
   }
 }
