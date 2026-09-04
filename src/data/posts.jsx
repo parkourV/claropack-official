@@ -829,44 +829,6 @@ export const posts = {
       { q: 'Why is the carton count only 600 pcs?', a: 'Jumbo cups take more volume per piece. To keep shipping cartons to a manageable size, we pack 600 pieces per box. Standard 16/22oz cups typically ship in 1,000-piece cartons.' }
     ]
   },
-  'cup-sealing-film-machine-guide': {
-    title: 'Cup Sealing Film & Sealing Machine Guide: Choosing the Right Film for PET and PP Cups',
-    description: 'How to choose cup sealing film and match it to your cups and sealing machine. Compare PP vs PET film, 90/95/98mm caliber fit, round vs square cups, and custom-printed film for boba and coffee brands.',
-    date: '2026-08-18',
-    author: 'Claropack Technical Team',
-    img: '/assets/images/prod-lids.webp',
-    excerpt: 'Leaky seals and jammed machines usually trace back to the wrong film. This guide explains how to match PP or PET sealing film to your cup caliber, cup shape, and sealing machine.',
-    quickFacts: [
-      { label: 'Film Materials', value: 'PP / PET' },
-      { label: 'Fits Calibers', value: '90 / 95 / 98 mm' },
-      { label: 'Square Cups', value: '92mm square support' },
-      { label: 'Customization', value: 'Logo printing available' }
-    ],
-    content: [
-      {
-        type: 'text',
-        h2: 'Match the Film Material to the Cup',
-        body: 'The core rule is that the sealing film material must match the cup material for a reliable heat seal. PET film pairs with PET cold cups, while PP film pairs with injection PP cups. Using the wrong material will result in a weak seal that peels off or leaks during delivery.'
-      },
-      {
-        type: 'comparison',
-        h2: 'Film-to-Cup Matching Chart',
-        body: 'Based on our factory standards, here is how to match your cups, film and machine.',
-        table: {
-          head: ['Cup Type', 'Caliber', 'Recommended Film', 'Machine'],
-          rows: [
-            ['PET cold cups', '90 / 95 / 98 mm', 'PET sealing film', 'Standard round machine'],
-            ['Injection PP round', '90 / 95 mm', 'PP sealing film', 'Standard round machine'],
-            ['Injection PP square', '92 mm (square)', 'Contact us', 'Square-fit support required']
-          ]
-        }
-      }
-    ],
-    faqs: [
-      { q: 'Can I use PET film on PP cups?', a: 'No. For a reliable heat seal, match the film material to the cup: PET for PET, PP for PP.' },
-      { q: 'Can the film be custom printed?', a: 'Yes. We print custom logos on both PP and PET film rolls. Minimum order quantities apply.' }
-    ]
-  },
   'leak-proof-takeaway-cups-and-carriers': {
     title: 'Leak-Proof Takeaway Cups & Carrier Solutions: A Delivery Reliability Guide',
     description: 'How to stop drink spills in delivery. Match lids, sealing film and cup carriers to your cups for leak-proof takeaway.',
@@ -956,6 +918,56 @@ export const posts = {
     ],
     faqs: [
       { q: 'Can PET handle cold/frozen drinks?', a: 'PET is designed for cold and ambient beverages up to 60°C. Chilled service is its ideal application.' }
+    ]
+  },
+  'hot-drink-cup-selection-guide': {
+    title: 'Hot Drink Cup Selection Guide: PP, Double-Wall and Ripple-Wall Options',
+    description: 'Which cups are safe for hot drinks? Compare injection PP cups and double/ripple-wall paper cups by temperature tolerance, insulation and grip, using verified Claropack specifications.',
+    date: '2026-08-31',
+    author: 'Claropack Technical Team',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'Not every cup survives a hot drink. PET cracks above 60°C, so hot service needs injection PP or insulated paper. This guide matches the right hot-drink cup to your menu.',
+    quickFacts: [
+      { label: 'PP Temp Range', value: 'Up to 100°C' },
+      { label: 'PET Limit', value: 'Cold only (~60°C)' },
+      { label: 'Insulated Options', value: 'Double / ripple wall' },
+      { label: 'Calibers', value: '90 / 92 / 95 mm PP' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why PET Is Not an Option for Hot Drinks',
+        body: 'PET cold cups are designed for beverages up to about 60°C and will deform or crack with hot liquids. For any hot service — hot milk tea, americano, hot chocolate — you need either injection-molded PP cups (heat tolerant up to about 100°C) or insulated paper cups. Choosing the wrong material is the single most common hot-drink packaging mistake.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Hot-Drink Cup Options Compared',
+        body: 'Verified options for hot beverage service from our PP and paper lines.',
+        table: {
+          head: ['Cup Type', 'Caliber / Size', 'Heat Tolerance', 'Best For'],
+          rows: [
+            ['Injection PP round', '90 / 95 mm', 'Up to ~100°C', 'Hot milk tea, premium hot drinks'],
+            ['Injection PP square', '92 mm', 'Up to ~100°C', 'Branded hot specialty drinks'],
+            ['Double-wall paper', '8-20 oz', 'Hot, insulated', 'Coffee to-go, no sleeve needed'],
+            ['Ripple-wall paper', '4-20 oz', 'Hot, premium grip', 'Specialty coffee, artisan feel']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'PP Cups: Rigid and Reusable-Feel',
+        body: 'Injection PP cups hold shape when filled with hot drinks and resist cracking during transport. They are available in 90, 92 (square) and 95mm calibers, in clear and frosted finishes, and are sealing-machine ready with PP film. This makes them the go-to for tea chains serving both hot and cold from one cup format.'
+      },
+      {
+        type: 'text',
+        h2: 'Insulated Paper: Double vs Ripple Wall',
+        body: 'Double-wall paper cups add an air gap that keeps hands comfortable without a separate sleeve, available 8-20oz. Ripple-wall cups use an embossed outer layer for premium grip and a craft look, available 4-20oz. Both suit hot coffee; choose PE or PLA/water-based coating to match your destination market regulations.'
+      }
+    ],
+    faqs: [
+      { q: 'Can I use one cup for both hot and cold drinks?', a: 'Injection PP cups handle both hot (up to ~100°C) and cold service, making them a flexible single-format choice. PET remains cold-only.' },
+      { q: 'Do double-wall cups need a sleeve?', a: 'No. The double-wall construction adds an insulating air gap, so a separate cardboard sleeve is usually unnecessary.' },
+      { q: 'Which is better for hot drinks, PP or paper?', a: 'PP gives a rigid, reusable feel and works with sealing machines; insulated paper offers a classic coffee-to-go format and eco-coating options. The best choice depends on your brand and market.' }
     ]
   }
 }

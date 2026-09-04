@@ -83,6 +83,9 @@ function Footer() {
               <li><Link to="/blog/paper-cup-wall-types-guide">Paper Cup Wall Types</Link></li>
               <li><Link to="/blog/u-shape-fat-cup-guide">U-Shape Fat Cup Guide</Link></li>
               <li><Link to="/blog/strawless-sipper-lids-guide">Strawless &amp; Sipper Lids</Link></li>
+              <li><Link to="/blog/us-standard-98mm-pet-cups-guide">98mm US Standard</Link></li>
+              <li><Link to="/blog/pet-cups-cold-chain-performance">PET Cold-Chain Guide</Link></li>
+              <li><Link to="/blog/hot-drink-cup-selection-guide">Hot Drink Cup Guide</Link></li>
             </ul>
           </div>
           <div>
@@ -98,6 +101,10 @@ function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
+          <div style={{ marginBottom: 8, display: 'flex', gap: 16, justifyContent: 'center', fontSize: '0.8rem', color: '#94A3B8' }}>
+            <Link to="/contact">Privacy Policy</Link>
+            <Link to="/contact">Terms of Service</Link>
+          </div>
           © {new Date().getFullYear()} Claropack. All rights reserved.
         </div>
       </div>

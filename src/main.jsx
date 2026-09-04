@@ -14,7 +14,10 @@ const app = (
   </React.StrictMode>
 )
 
-// The prerenderer serializes browser-normalized DOM values, which are not always
-// byte-identical to React's client style output. Keep the static HTML crawlable,
-// then replace it with a clean interactive client render to avoid hydration errors.
-ReactDOM.createRoot(root).render(app)
+// Use hydrateRoot to preserve the pre-rendered HTML and attach event listeners.
+// This ensures that interactivity (like form submissions) works correctly immediately after load.
+if (root.hasChildNodes()) {
+  ReactDOM.hydrateRoot(root, app)
+} else {
+  ReactDOM.createRoot(root).render(app)
+}

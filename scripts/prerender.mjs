@@ -34,10 +34,10 @@ const routes = [
   "/blog/strawless-sipper-lids-guide",
   "/blog/injection-vs-thermoformed-cups",
   "/blog/large-format-30-32oz-cups-guide",
-  "/blog/cup-sealing-film-machine-guide",
   "/blog/leak-proof-takeaway-cups-and-carriers",
   "/blog/us-standard-98mm-pet-cups-guide",
   "/blog/pet-cups-cold-chain-performance",
+  "/blog/hot-drink-cup-selection-guide",
   "/about",
   "/contact"
 ];
