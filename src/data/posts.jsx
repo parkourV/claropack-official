@@ -54,6 +54,7 @@ export const posts = {
     title: 'Plastic Cup Lid Size Chart: The Complete Guide to 90mm, 95mm, and 98mm Compatibility',
     description: 'Stop the leaks! Learn how to match PET and PP cup calibers (90mm, 95mm, 98mm) with the right flat, dome, and sipper lids. A must-read for bubble tea and coffee shop owners.',
     date: '2026-07-30',
+    dateModified: '2026-09-05',
     author: 'Claropack Technical Team',
     img: '/assets/images/prod-lids.webp',
     excerpt: 'Lid mismatch is a top cause of customer complaints. Our engineering guide explains the caliber system and how to standardize your inventory with 90mm, 95mm, and 98mm universal lids.',
@@ -96,47 +97,77 @@ export const posts = {
     ]
   },
   'bubble-tea-cup-sizes-guide': {
-    title: 'Bubble Tea Cup Sizes Guide: 12oz, 16oz, 22oz and U-Shape Options',
-    description: 'The definitive guide to bubble tea cup sizes. Learn the difference between standard, jumbo, and U-shape boba cups to optimize your shop drink menu.',
+    title: 'Bubble Tea Cup Sizes Chart: 12oz, 16oz, 22oz in oz & ml (Boba Guide)',
+    description: 'Complete bubble tea cup sizes chart in oz and ml. Compare small, medium, large and jumbo boba cups, see how Gong Cha and CoCo size their drinks, and pick the right caliber for your shop.',
     date: '2026-07-31',
+    dateModified: '2026-09-05',
     author: 'Claropack Sourcing Advisor',
     img: '/assets/images/prod-pp-hard.webp',
-    excerpt: 'Which cup size is best for your boba menu? We break down the industry standard 12oz, 16oz, and 22oz sizes, and explain why the 95mm U-shape cup is taking over the market.',
+    excerpt: 'Which cup size is right for your boba menu? This chart breaks down 12oz, 16oz and 22oz boba cups in both oz and ml, shows how major chains name their sizes, and explains why the 95mm U-shape cup is taking over.',
     quickFacts: [
       { label: 'Small', value: '12 oz / 360 ml' },
-      { label: 'Medium', value: '16 oz / 500 ml' },
+      { label: 'Medium (most popular)', value: '16 oz / 500 ml' },
       { label: 'Large', value: '22 oz / 700 ml' },
-      { label: 'Jumbo', value: '32 oz / 960 ml' }
+      { label: 'Jumbo', value: '32 oz / 960 ml' },
+      { label: 'Signature Format', value: '95 mm U-shape fat cup' },
+      { label: 'Standard Caliber', value: '95 mm (fits most sealers)' }
     ],
     content: [
       {
         type: 'text',
         h2: 'Standard Boba Cup Sizes and Volumes',
-        body: 'In the international bubble tea market, consistency is key. Most global chains (like Gong Cha or CoCo) standardize their drink sizes into three categories: Small (12oz/360ml), Medium (16oz/500ml), and Large (22oz/700ml). Choosing these standard sizes allows you to use universal cup-sealing machines and standard-length straws.'
+        body: 'In the international bubble tea market, consistency is key. Most global chains standardize their drink sizes into three categories: Small (12oz/360ml), Medium (16oz/500ml), and Large (22oz/700ml), with an optional Jumbo (32oz/960ml) for promotions. Choosing these standard sizes lets you use universal cup-sealing machines and standard-length straws, and keeps your lid inventory simple.'
       },
       {
         type: 'comparison',
-        h2: 'Boba Cup Size Reference Table',
-        body: 'Our injection PP and thermoformed PET cups are available in these industry-standard dimensions.',
+        h2: 'Bubble Tea Cup Size Chart (oz to ml)',
+        body: 'The core boba cup size chart, with both US ounces and metric millilitres, plus the caliber and best use for each size.',
         table: {
-          head: ['Size', 'Volume (ml)', 'Popular Material', 'Best For'],
+          head: ['Size', 'oz', 'ml', 'Caliber', 'Best For'],
           rows: [
-            ['Small', '360 ml (12oz)', 'Injection PP / PET', 'Kids drinks, hot milk tea'],
-            ['Medium', '500 ml (16oz)', 'Injection PP / PET', 'Standard boba, fruit tea'],
-            ['Large', '700 ml (22oz)', 'Injection PP / PET', 'Iced teas, signature drinks'],
-            ['Jumbo', '960 ml (32oz)', 'Injection PP', 'Promotional / XL sharing cups']
+            ['Small', '12 oz', '360 ml', '90 / 95 mm', 'Kids drinks, hot milk tea'],
+            ['Medium', '16 oz', '500 ml', '95 mm', 'Standard boba, fruit tea'],
+            ['Large', '22 oz', '700 ml', '95 mm', 'Iced teas, signature drinks'],
+            ['Jumbo', '32 oz', '960 ml', '107 mm', 'Promotional / XL sharing cups']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'How Big Chains Name Their Sizes (Gong Cha, CoCo & More)',
+        body: 'Different chains use different names for what are essentially the same volumes. Customers searching "gong cha cup sizes" or "coco milk tea large ml" are really asking about the same 500-700ml range. The table below maps the common naming so you can align your own menu to what buyers already expect.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Chain Size Naming vs Volume',
+        body: 'A rough guide to how popular bubble tea chains label their cup sizes. Names vary by region; volumes are the industry-standard equivalents.',
+        table: {
+          head: ['Common Name', 'Typical Volume', 'Equivalent Size'],
+          rows: [
+            ['Regular / Medium', '500 ml (16 oz)', 'Medium'],
+            ['Large', '700 ml (22 oz)', 'Large'],
+            ['Small / Kids', '360 ml (12 oz)', 'Small'],
+            ['Jumbo / Sharing', '960 ml (32 oz)', 'Jumbo']
           ]
         }
       },
       {
         type: 'text',
         h2: 'The Rise of the 95mm U-Shape Cup',
-        body: 'The "U-Shape" or "Fat Cup" has become the visual signature of premium bubble tea. Unlike traditional tapered cups, the U-shape has a rounded bottom that showcases boba pearls and brown sugar streaks beautifully. Most U-shape cups use a 95mm caliber, which is compatible with most automatic sealing machines and dome lids.'
+        body: 'The "U-Shape" or "Fat Cup" has become the visual signature of premium bubble tea. Unlike traditional tapered cups, the U-shape has a rounded bottom that showcases boba pearls and brown sugar streaks beautifully. Most U-shape cups use a 95mm caliber, which is compatible with most automatic sealing machines and dome lids. See our verified 95mm U-shape specifications on the injection PP cups page.'
+      },
+      {
+        type: 'text',
+        h2: 'Which Material for Which Size?',
+        body: 'For iced, visual drinks (fruit teas, layered lattes) choose crystal-clear PET cold cups. For hot milk tea or a premium in-hand feel, choose injection PP cups, which handle heat up to ~100°C. Both are available in the 95mm caliber, so you can standardize one lid and one sealing film across your whole menu regardless of material. Browse the PET cold cups and injection PP cups pages for full spec tables, then request a quote with your chosen sizes.'
       }
     ],
     faqs: [
-      { q: 'What is the most popular size for bubble tea?', a: 'The 16oz (500ml) is the global standard for "Regular" and the 22oz (700ml) is the standard for "Large".' },
-      { q: 'Can I use sealing film on U-shape cups?', a: 'Yes, as long as the caliber is 95mm or 98mm, standard sealing machines will work perfectly with the rounded U-shape design.' }
+      { q: 'What is the most popular size for bubble tea?', a: 'The 16oz (500ml) is the global standard for "Regular" or "Medium", and the 22oz (700ml) is the standard for "Large". Most shops build their core menu around these two.' },
+      { q: 'What are bubble tea cup sizes in ml?', a: 'The standard boba sizes are 360ml (12oz / Small), 500ml (16oz / Medium), 700ml (22oz / Large) and 960ml (32oz / Jumbo).' },
+      { q: 'What size cup do Gong Cha and CoCo use?', a: 'Major chains use the same industry-standard volumes — roughly 500ml for a regular and 700ml for a large — even though the size names differ by brand and region.' },
+      { q: 'Can I use sealing film on U-shape cups?', a: 'Yes. As long as the caliber is 95mm or 98mm, standard cup-sealing machines work perfectly with the rounded U-shape design.' },
+      { q: 'What caliber should I standardize on?', a: 'Most boba shops standardize on the 95mm caliber, which covers 16oz and 22oz cups with a single lid and sealing film, minimizing inventory.' }
     ]
   },
   'how-to-import-plastic-cups-from-china': {
