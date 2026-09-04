@@ -38,6 +38,12 @@ const routes = [
   "/blog/us-standard-98mm-pet-cups-guide",
   "/blog/pet-cups-cold-chain-performance",
   "/blog/hot-drink-cup-selection-guide",
+  "/blog/custom-printed-cups-guide",
+  "/blog/coffee-cup-sizes-guide",
+  "/blog/food-grade-cups-fda-guide",
+  "/blog/cup-accessories-sleeves-carriers-guide",
+  "/blog/clear-vs-frosted-pp-cups-guide",
+  "/blog/cup-moq-small-order-guide",
   "/about",
   "/contact"
 ];

@@ -77,7 +77,13 @@ async function run() {
         'https://claropack.com/blog/leak-proof-takeaway-cups-and-carriers',
         'https://claropack.com/blog/us-standard-98mm-pet-cups-guide',
         'https://claropack.com/blog/pet-cups-cold-chain-performance',
-        'https://claropack.com/blog/hot-drink-cup-selection-guide'
+        'https://claropack.com/blog/hot-drink-cup-selection-guide',
+        'https://claropack.com/blog/custom-printed-cups-guide',
+        'https://claropack.com/blog/coffee-cup-sizes-guide',
+        'https://claropack.com/blog/food-grade-cups-fda-guide',
+        'https://claropack.com/blog/cup-accessories-sleeves-carriers-guide',
+        'https://claropack.com/blog/clear-vs-frosted-pp-cups-guide',
+        'https://claropack.com/blog/cup-moq-small-order-guide'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -115,7 +121,13 @@ async function run() {
         { path: 'blog/leak-proof-takeaway-cups-and-carriers/index.html', route: '/blog/leak-proof-takeaway-cups-and-carriers' },
         { path: 'blog/us-standard-98mm-pet-cups-guide/index.html', route: '/blog/us-standard-98mm-pet-cups-guide' },
         { path: 'blog/pet-cups-cold-chain-performance/index.html', route: '/blog/pet-cups-cold-chain-performance' },
-        { path: 'blog/hot-drink-cup-selection-guide/index.html', route: '/blog/hot-drink-cup-selection-guide' }
+        { path: 'blog/hot-drink-cup-selection-guide/index.html', route: '/blog/hot-drink-cup-selection-guide' },
+        { path: 'blog/custom-printed-cups-guide/index.html', route: '/blog/custom-printed-cups-guide' },
+        { path: 'blog/coffee-cup-sizes-guide/index.html', route: '/blog/coffee-cup-sizes-guide' },
+        { path: 'blog/food-grade-cups-fda-guide/index.html', route: '/blog/food-grade-cups-fda-guide' },
+        { path: 'blog/cup-accessories-sleeves-carriers-guide/index.html', route: '/blog/cup-accessories-sleeves-carriers-guide' },
+        { path: 'blog/clear-vs-frosted-pp-cups-guide/index.html', route: '/blog/clear-vs-frosted-pp-cups-guide' },
+        { path: 'blog/cup-moq-small-order-guide/index.html', route: '/blog/cup-moq-small-order-guide' }
     ];
 
     let allPassed = true;

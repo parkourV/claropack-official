@@ -969,5 +969,311 @@ export const posts = {
       { q: 'Do double-wall cups need a sleeve?', a: 'No. The double-wall construction adds an insulating air gap, so a separate cardboard sleeve is usually unnecessary.' },
       { q: 'Which is better for hot drinks, PP or paper?', a: 'PP gives a rigid, reusable feel and works with sealing machines; insulated paper offers a classic coffee-to-go format and eco-coating options. The best choice depends on your brand and market.' }
     ]
+  },
+  'custom-printed-cups-guide': {
+    title: 'Custom Printed Cups: A Guide to Logo Printing, MOQ and Artwork',
+    description: 'How to order custom printed PET, PP and paper cups. Understand the 1,000 pcs custom-print MOQ, artwork requirements, printing methods and what to confirm before production.',
+    date: '2026-09-05',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pet.webp',
+    excerpt: 'Branded cups turn every drink into a marketing impression. This guide covers the custom-print MOQ, artwork preparation and the decisions to confirm before you place a printing order.',
+    quickFacts: [
+      { label: 'Custom-print MOQ', value: 'From 1,000 pcs per size' },
+      { label: 'Printable Lines', value: 'PET, PP and paper cups' },
+      { label: 'Also Printable', value: 'Sealing film rolls' },
+      { label: 'Confirm Before Order', value: 'Size, caliber, artwork and finish' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why Custom Printing Is Worth It',
+        body: 'A branded cup is one of the most cost-efficient marketing surfaces a beverage brand owns. Every takeaway drink becomes a moving advertisement, and a consistent logo across cups, lids and film reinforces a premium impression. The starting point is a clear specification: cup line, size, caliber and the artwork you want to print.'
+      },
+      {
+        type: 'comparison',
+        h2: 'What to Prepare for a Custom Print Order',
+        body: 'Use this checklist to align your custom-print request before requesting a quotation.',
+        table: {
+          head: ['Item', 'What to Provide', 'Why It Matters'],
+          rows: [
+            ['Cup line', 'PET / PP / paper', 'Determines printing method and finish'],
+            ['Size & caliber', 'e.g. 95mm 16oz', 'Sets the print area and lid match'],
+            ['Artwork', 'Vector logo / full-wrap design', 'Ensures crisp, correctly placed print'],
+            ['Colors', 'Number of print colors', 'Affects tooling and cost'],
+            ['Quantity', 'From 1,000 pcs per size', 'Meets the custom-print MOQ']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Understanding the 1,000 pcs MOQ',
+        body: 'Custom logo printing starts at 1,000 pieces per size. This lets small and medium beverage brands get professionally branded packaging without committing to a full container of a single size. If you run several sizes, each printed size is counted against the MOQ, so plan your menu around a few core calibers to keep the order efficient.'
+      },
+      {
+        type: 'text',
+        h2: 'Print the Film, Not Just the Cup',
+        body: 'Sealing film is prime brand real estate — it is the first thing a customer sees when a sealed drink arrives. Because one film roll covers every cup size, custom-printed film is one of the cheapest ways to brand your entire menu at once. Many brands combine a lightly branded cup with a boldly printed film for maximum impact.'
+      }
+    ],
+    faqs: [
+      { q: 'What is the minimum order for custom printed cups?', a: 'Custom logo printing starts at 1,000 pieces per size. Plain stock cups can often ship in smaller trial quantities — confirm the exact terms for your chosen line.' },
+      { q: 'What artwork format should I send?', a: 'Send a vector logo or full-wrap design with your color count and placement notes. The team confirms the print area against your chosen cup size and caliber before production.' },
+      { q: 'Can I print cups, lids and film together?', a: 'Yes. PET, PP and paper cups plus PP/PET sealing film can all be custom printed. Printing the film is a cost-efficient way to brand every size at once.' }
+    ]
+  },
+  'coffee-cup-sizes-guide': {
+    title: 'Coffee Cup Sizes Guide: 8oz, 12oz and 16oz Hot and Iced Standards',
+    description: 'A practical guide to coffee cup sizes for hot and iced service. Compare 8oz, 12oz and 16oz standards and choose between paper hot cups and PET iced cups.',
+    date: '2026-09-05',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-paper.webp',
+    excerpt: 'Coffee runs on a different size language than boba. This guide covers the 8/12/16oz hot-cup standards, the PET route for iced coffee, and how to keep lids consistent across a coffee menu.',
+    quickFacts: [
+      { label: 'Espresso / Small', value: '8 oz' },
+      { label: 'Regular', value: '12 oz' },
+      { label: 'Large', value: '16 oz' },
+      { label: 'Iced Coffee', value: 'PET, up to 24-32 oz' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'The Coffee Size Language',
+        body: 'Coffee shops standardize around three hot sizes: 8oz for espresso-based short drinks, 12oz for a regular coffee, and 16oz for a large. Iced coffee moves to clear PET cups so the drink and its ice look appealing. Understanding this hot-versus-cold split is the first step to a clean, low-SKU coffee packaging plan.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Coffee Cup Size Reference',
+        body: 'A quick reference for matching coffee drinks to cup type and size.',
+        table: {
+          head: ['Size', 'Typical Drink', 'Cup Type', 'Notes'],
+          rows: [
+            ['8 oz', 'Espresso, flat white, cortado', 'Paper (hot)', 'Small, often double-wall'],
+            ['12 oz', 'Regular latte, cappuccino', 'Paper (hot)', 'Most common hot size'],
+            ['16 oz', 'Large latte, filter coffee', 'Paper (hot)', 'Double or ripple wall for grip'],
+            ['16 oz', 'Iced coffee, cold brew', 'PET (cold)', 'Clear, cold-only up to ~60°C'],
+            ['24-32 oz', 'Large iced / cold brew', 'PET (cold)', '98mm or 107mm caliber']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Hot Coffee: Paper Wall Types',
+        body: 'For hot coffee, choose the paper wall type by how the cup is held. Single-wall works with a separate sleeve, double-wall adds an insulating air gap so no sleeve is needed, and ripple-wall gives a premium textured grip. All three suit 8-16oz coffee service; pick the coating (PE or PLA) based on your destination market.'
+      },
+      {
+        type: 'text',
+        h2: 'Iced Coffee: The PET Route',
+        body: 'Iced coffee and cold brew are best served in clear PET cups, which stay crystal clear even with condensation. Our 98mm caliber covers 12-24oz in a single lid size, which is the dominant standard in North American coffee shops. For large cold brew, the 107mm 30-32oz format handles shareable servings.'
+      }
+    ],
+    faqs: [
+      { q: 'What is the most common coffee cup size?', a: '12oz is the standard for a regular hot coffee such as a latte or cappuccino, with 8oz for espresso drinks and 16oz for large sizes.' },
+      { q: 'Should iced coffee use paper or PET cups?', a: 'Iced coffee is best in clear PET cold cups, which showcase the drink and resist condensation. Paper cups are reserved for hot service.' },
+      { q: 'Can one lid size cover my coffee menu?', a: 'Yes. Standardizing hot cups around one caliber, and iced PET cups around 98mm, lets a single lid cover multiple sizes and reduces your inventory.' }
+    ]
+  },
+  'food-grade-cups-fda-guide': {
+    title: 'Are Plastic Cups Food Safe? PET, PP and FDA Food-Grade Explained',
+    description: 'Understand what food-grade means for disposable cups. Learn how PET and PP food-contact materials, recycling codes and temperature limits affect food safety for beverages.',
+    date: '2026-09-05',
+    author: 'Claropack Technical Team',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'Food safety is the first question serious buyers ask. This guide explains food-grade PET and PP, recycling codes, temperature limits and what to confirm with any cup supplier.',
+    quickFacts: [
+      { label: 'PET Material', value: 'Food-grade, recycling code 1' },
+      { label: 'PP Material', value: 'Food-grade, recycling code 5' },
+      { label: 'PET Temp Limit', value: 'Cold only, up to ~60°C' },
+      { label: 'PP Temp Limit', value: 'Hot & cold, up to ~100°C' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'What "Food-Grade" Actually Means',
+        body: 'Food-grade means the material is manufactured from food-contact-approved resin and is intended for direct contact with beverages. Both PET and PP used for beverage cups are standard food-contact plastics. The key for buyers is to confirm the resin grade and to match the material to the drink temperature, since using a cup outside its temperature range is the most common safety mistake.'
+      },
+      {
+        type: 'comparison',
+        h2: 'PET vs PP: Food-Safety Profile',
+        body: 'A material-level comparison to inform your food-safety and sourcing decisions.',
+        table: {
+          head: ['Property', 'PET', 'PP'],
+          rows: [
+            ['Recycling code', '1 (PETE)', '5 (PP)'],
+            ['Food contact', 'Food-grade resin', 'Food-grade resin'],
+            ['Temperature use', 'Cold only (~60°C max)', 'Hot & cold (~100°C max)'],
+            ['Typical drinks', 'Iced coffee, juice, boba', 'Hot tea, hot coffee, hot & cold'],
+            ['Clarity', 'Crystal clear', 'Clear to frosted']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Temperature Is a Safety Boundary',
+        body: 'The single most important safety rule is temperature. PET is engineered for cold and ambient drinks up to about 60°C and will deform if filled with hot liquid — so it should never be used for hot beverages. PP tolerates up to about 100°C, making it the correct choice for hot tea and coffee. Insulated paper cups are the other hot-drink option.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm With Any Supplier',
+        body: 'Before ordering, confirm the resin is food-grade, ask which market certifications apply to your destination, and match each cup to its intended drink temperature. A responsible supplier will state the material grade and temperature range for every cup line rather than making blanket claims.'
+      }
+    ],
+    faqs: [
+      { q: 'Are PET and PP cups food safe?', a: 'Yes, when produced from food-grade resin and used within their temperature range. PET is for cold drinks up to ~60°C; PP handles hot and cold up to ~100°C.' },
+      { q: 'What do the recycling numbers mean?', a: 'PET cups are code 1 (the most widely recycled plastic) and PP cups are code 5. Both are food-contact plastics; recyclability depends on local facilities.' },
+      { q: 'Why can\'t I put hot coffee in a PET cup?', a: 'PET softens above about 60°C and will deform. For hot drinks use PP cups or insulated paper cups, both of which tolerate higher temperatures.' }
+    ]
+  },
+  'cup-accessories-sleeves-carriers-guide': {
+    title: 'Cup Accessories Guide: Sleeves, Carriers, Trays and Straws',
+    description: 'A sourcing guide to cup accessories — sleeves, cup carriers, trays and straws — that complete a takeaway and delivery packaging program alongside your cups and lids.',
+    date: '2026-09-05',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-lids.webp',
+    excerpt: 'Cups and lids are only half the takeaway story. Sleeves, carriers, trays and straws protect drinks in delivery and lift the unboxing experience. Here is how to plan the accessory layer.',
+    quickFacts: [
+      { label: 'Sleeves', value: 'Grip & insulation for hot cups' },
+      { label: 'Carriers', value: 'Multi-cup delivery stability' },
+      { label: 'Straws', value: 'Standard and strawless options' },
+      { label: 'One-stop', value: 'Supplied with cup lines' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'The Accessory Layer of Takeaway',
+        body: 'A drink program does not end at the cup and lid. Sleeves, carriers, trays and straws are the accessory layer that keeps drinks safe in transit and makes the handover feel considered. For delivery-heavy brands, these items are the difference between a drink that arrives upright and one that spills in the bag.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Takeaway Accessories at a Glance',
+        body: 'How each accessory contributes to a complete takeaway and delivery setup.',
+        table: {
+          head: ['Accessory', 'Purpose', 'Best For'],
+          rows: [
+            ['Cup sleeve', 'Heat insulation and grip', 'Hot single-wall paper cups'],
+            ['Cup carrier', 'Holds 2-4 cups upright', 'Delivery and multi-drink orders'],
+            ['Tray', 'Flat multi-cup transport', 'Dine-in and catering'],
+            ['Straw', 'Standard drinking straw', 'Iced drinks, boba (wide-bore)'],
+            ['Sipper lid', 'Strawless drinking', 'Plastic-reduction markets']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Carriers Protect the Delivery Experience',
+        body: 'For delivery platforms, a cup carrier is essential. It locks two to four cups in place so they do not tip during transport, which is the top cause of leaked-drink complaints. Pairing a sealed film, a secure lid and a carrier gives you three layers of spill protection from store to doorstep.'
+      },
+      {
+        type: 'text',
+        h2: 'Plan Accessories With Your Cups',
+        body: 'Because we supply straws, carriers and sleeves alongside our cup lines, you can specify the whole takeaway kit in one sourcing conversation. Match the sleeve to your hot-cup diameter, the carrier to your cup count per order, and choose between standard straws or strawless sipper lids based on your market rules.'
+      }
+    ],
+    faqs: [
+      { q: 'Do you supply cup carriers and sleeves?', a: 'Yes. We provide carriers, sleeves, trays and straws alongside our cup lines so you can source a complete takeaway kit in one place.' },
+      { q: 'Do I still need straws if I use sipper lids?', a: 'Not necessarily. Sipper (strawless) lids let customers drink without a straw and are increasingly required in plastic-reduction markets. Many brands offer both depending on the drink.' },
+      { q: 'What keeps drinks from spilling in delivery?', a: 'Combine three layers: a heat-sealed film or secure lid, plus a cup carrier that holds cups upright. This is the most reliable setup for delivery platforms.' }
+    ]
+  },
+  'clear-vs-frosted-pp-cups-guide': {
+    title: 'Clear vs Frosted PP Cups: Which Finish Fits Your Brand',
+    description: 'Compare clear and frosted injection PP cups for your beverage brand. Understand how finish affects premium perception, drink visibility and shelf differentiation.',
+    date: '2026-09-05',
+    author: 'Claropack Experts',
+    img: '/assets/images/prod-pp-frosted.webp',
+    excerpt: 'Both clear and frosted injection PP cups feel premium in the hand — but they send different brand signals. This guide helps you choose the finish that fits your drinks and positioning.',
+    quickFacts: [
+      { label: 'Material', value: 'Injection-molded PP' },
+      { label: 'Finishes', value: 'High-clarity or frosted' },
+      { label: 'Calibers', value: '90 / 92 square / 95 mm' },
+      { label: 'Temperature', value: 'Hot & cold, up to ~100°C' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Same Cup, Two Personalities',
+        body: 'Injection PP cups come in two finishes that change the whole feel of a drink. High-clarity PP shows the beverage in full color, while frosted PP diffuses the view for a soft, matte, premium look. Both use the same rigid injection-molded wall and are hot- and cold-compatible; the choice is about brand personality, not performance.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Clear vs Frosted: Decision Table',
+        body: 'Use this comparison to match the finish to your brand and drink type.',
+        table: {
+          head: ['Factor', 'Clear PP', 'Frosted PP'],
+          rows: [
+            ['Drink visibility', 'Full, vivid color', 'Softened, diffused'],
+            ['Brand feel', 'Fresh, playful, colorful', 'Minimal, premium, matte'],
+            ['Best drinks', 'Fruit tea, layered drinks', 'Milk tea, signature drinks'],
+            ['Logo contrast', 'Standard', 'High (stands out on matte)'],
+            ['Rigidity / temp', 'Same rigid PP', 'Same rigid PP']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'When to Choose Clear',
+        body: 'Choose high-clarity PP when the drink itself is the hero — fruit teas, layered lattes, colorful sodas and anything designed to look vivid on social media. Clear cups maximize the visual pop of bright ingredients and toppings, which is why fruit-forward brands favor them.'
+      },
+      {
+        type: 'text',
+        h2: 'When to Choose Frosted',
+        body: 'Choose frosted PP for a minimal, high-end aesthetic. The matte surface reads as premium and makes a printed logo stand out with strong contrast. It suits milk-tea and signature-drink brands that want a restrained, design-led look rather than maximum drink visibility. Both finishes are available across the 90/92/95mm caliber range.'
+      }
+    ],
+    faqs: [
+      { q: 'Is there any performance difference between clear and frosted PP?', a: 'No. Both use the same rigid injection-molded PP wall and are hot- and cold-compatible up to ~100°C. The difference is purely visual.' },
+      { q: 'Which finish makes a logo stand out more?', a: 'Frosted PP gives higher logo contrast because the matte surface makes printed artwork pop. Clear PP shows the drink more vividly.' },
+      { q: 'Can I order both finishes?', a: 'Yes. Our 90/92/95mm injection PP series is available in both clear and frosted finishes, so you can split by drink type within one caliber system.' }
+    ]
+  },
+  'cup-moq-small-order-guide': {
+    title: 'Cup MOQ Explained: How to Start Small With Custom Cups',
+    description: 'Understand minimum order quantity (MOQ) for disposable cups. Learn how the 1,000 pcs custom-print MOQ works and how small brands can start lean before scaling.',
+    date: '2026-09-05',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pla.webp',
+    excerpt: 'MOQ is the number that decides whether a small brand can get branded cups at all. This guide explains how the 1,000 pcs custom-print MOQ works and how to plan a lean first order.',
+    quickFacts: [
+      { label: 'Custom-print MOQ', value: 'From 1,000 pcs per size' },
+      { label: 'Counted by', value: 'Each printed size' },
+      { label: 'Stock cups', value: 'Smaller trial quantities possible' },
+      { label: 'Lean tactic', value: 'Fewer sizes, shared caliber' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'What MOQ Means and Why It Exists',
+        body: 'MOQ (minimum order quantity) is the smallest run a factory will produce for a given item. For custom-printed cups it exists because printing setup — plates, tooling and machine time — has a fixed cost that only makes sense above a certain volume. Understanding how MOQ is counted lets a small brand plan an affordable first order.'
+      },
+      {
+        type: 'comparison',
+        h2: 'How to Plan a Lean First Order',
+        body: 'Tactics to keep a first custom order small without breaking the MOQ math.',
+        table: {
+          head: ['Tactic', 'How', 'Benefit'],
+          rows: [
+            ['Limit sizes', 'Launch 1-2 core sizes', 'Fewer MOQ multiples to hit'],
+            ['Share a caliber', 'Pick sizes on one rim (e.g. 95mm)', 'One lid, less inventory'],
+            ['Print the film', 'Brand via sealing film', 'One roll covers all sizes'],
+            ['Start with stock', 'Plain cups + printed film', 'Lower entry volume'],
+            ['Scale later', 'Add sizes as demand proves out', 'Cash-flow friendly']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'The 1,000 pcs Custom-Print MOQ',
+        body: 'Custom logo printing starts at 1,000 pieces per size. If you launch a single 16oz cup, that is one MOQ unit; add a 22oz and you have two. This is why size discipline matters early on — a two-size menu keeps a branded launch at a manageable 2,000 pieces total rather than spreading thin across five sizes.'
+      },
+      {
+        type: 'text',
+        h2: 'A Lean Path for New Brands',
+        body: 'New brands can start with plain stock cups paired with custom-printed sealing film. Because one film roll brands every cup size at once, you get a branded look at a lower entry volume, then move to fully printed cups once your best-selling sizes are proven. This keeps the first order affordable while still looking professional.'
+      }
+    ],
+    faqs: [
+      { q: 'What is the MOQ for custom printed cups?', a: 'Custom logo printing starts at 1,000 pieces per size. Each printed size counts toward the MOQ, so launching fewer sizes keeps the total order smaller.' },
+      { q: 'Can a small brand order below the MOQ?', a: 'For fully custom-printed cups the 1,000 pcs-per-size minimum applies. A lean alternative is plain stock cups with custom-printed film, which can start at a lower volume.' },
+      { q: 'How do I keep my first order affordable?', a: 'Limit yourself to one or two core sizes on a shared caliber, and consider branding through printed sealing film so one roll covers every size.' }
+    ]
   }
 }
