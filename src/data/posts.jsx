@@ -1306,5 +1306,156 @@ export const posts = {
       { q: 'Can a small brand order below the MOQ?', a: 'For fully custom-printed cups the 1,000 pcs-per-size minimum applies. A lean alternative is plain stock cups with custom-printed film, which can start at a lower volume.' },
       { q: 'How do I keep my first order affordable?', a: 'Limit yourself to one or two core sizes on a shared caliber, and consider branding through printed sealing film so one roll covers every size.' }
     ]
+  },
+  'smoothie-and-slush-cup-sizes-guide': {
+    title: 'Smoothie & Slush Cup Sizes: 16oz, 22oz & 32oz in oz and ml',
+    description: 'A cup sizing guide for smoothies, slushies and blended drinks. Compare 16oz, 22oz and 32oz cups in oz and ml, and choose the right clear PET cup and dome lid for thick, layered drinks.',
+    date: '2026-09-06',
+    dateModified: '2026-09-06',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pet.webp',
+    excerpt: 'Smoothies and slushies need taller cups and dome lids to show off texture and hold toppings. Here is how to size your smoothie menu using the same standard calibers as your boba range.',
+    quickFacts: [
+      { label: 'Regular', value: '16 oz / 500 ml' },
+      { label: 'Large', value: '22 oz / 700 ml' },
+      { label: 'Jumbo', value: '32 oz / 960 ml' },
+      { label: 'Best Material', value: 'Crystal-clear PET' },
+      { label: 'Recommended Lid', value: 'Dome lid (space for toppings)' },
+      { label: 'Standard Caliber', value: '95 mm / 98 mm' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why Smoothie Cups Differ from Standard Cups',
+        body: 'Smoothies, slushies and blended fruit drinks are thicker and often layered, so they present best in a tall, crystal-clear cup that shows the color and texture. A dome lid adds headroom for whipped cream, fruit or granola toppings. Because blended drinks are served cold, clear PET is the natural fit — the same material used for iced tea and fruit tea. This lets you standardize one cup family across your cold menu.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Smoothie & Slush Cup Size Chart',
+        body: 'Recommended smoothie and slush sizes in both oz and ml, with the caliber and lid style that works best for each.',
+        table: {
+          head: ['Size', 'oz', 'ml', 'Caliber', 'Suggested Lid'],
+          rows: [
+            ['Regular', '16 oz', '500 ml', '95 mm', 'Dome lid'],
+            ['Large', '22 oz', '700 ml', '95 mm', 'Dome lid'],
+            ['Jumbo', '32 oz', '960 ml', '107 mm', 'Dome lid'],
+            ['Kids', '12 oz', '360 ml', '90 / 95 mm', 'Flat lid']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Match Your Smoothie Cups to the Rest of Your Menu',
+        body: 'If you already run a bubble tea or iced coffee menu, you can keep the same 95mm caliber for most smoothie sizes so a single lid and sealing film covers everything. For the full boba-side breakdown, see our bubble tea cup sizes chart. For the cups themselves, our crystal-clear PET cold cups page lists verified capacities and dimensions — request a quote once you have picked your sizes.'
+      }
+    ],
+    faqs: [
+      { q: 'What size cup is best for smoothies?', a: 'The 16oz (500ml) and 22oz (700ml) are the most popular smoothie sizes. Use 32oz (960ml) for sharing or promotional drinks.' },
+      { q: 'Should I use a dome lid for smoothies?', a: 'Yes. Dome lids add headroom for toppings like whipped cream, fruit and granola, which flat lids cannot accommodate.' },
+      { q: 'Which material is best for slush and smoothies?', a: 'Crystal-clear PET is ideal for cold blended drinks because it shows the color and layers clearly and performs well at low temperatures.' },
+      { q: 'Can I use the same caliber as my boba cups?', a: 'Yes. Standardizing on the 95mm caliber lets you use one lid and one sealing film across smoothies, boba and iced coffee.' }
+    ]
+  },
+  'sustainable-cup-sourcing-guide': {
+    title: 'Sustainable Cup Sourcing: PLA, Paper & Recyclable Options Explained',
+    description: 'A practical guide to sourcing more sustainable disposable cups. Compare PLA, paper and recyclable plastic options, what certifications to ask for, and how to balance cost with eco goals.',
+    date: '2026-09-06',
+    dateModified: '2026-09-06',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pla.webp',
+    excerpt: 'Eco-conscious buyers want greener cups without blowing the budget. Here is how PLA, paper and recyclable plastic compare, and what to verify before you place a sustainable cup order.',
+    quickFacts: [
+      { label: 'Compostable Option', value: 'PLA-lined paper / PLA cups' },
+      { label: 'Recyclable Plastic', value: 'PET (widely recycled)' },
+      { label: 'Best for Hot', value: 'PLA-lined paper' },
+      { label: 'Best for Cold', value: 'PET or PLA cold cups' },
+      { label: 'Key Question', value: 'Ask for food-grade & compostability docs' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'The Main Sustainable Cup Options',
+        body: 'There is no single "green" cup — the right choice depends on your drink, your market and your disposal infrastructure. The three practical routes are: PLA (a plant-based bioplastic that is compostable in industrial facilities), PLA-lined paper (paper with a compostable lining instead of standard PE plastic), and conventional PET, which is not compostable but is one of the most widely recycled plastics. Understanding the trade-offs helps you set an honest sustainability message.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Sustainable Cup Material Comparison',
+        body: 'How the main options compare on end-of-life, temperature and typical use. Always confirm local disposal options with your market.',
+        table: {
+          head: ['Material', 'End of Life', 'Hot / Cold', 'Best For'],
+          rows: [
+            ['PLA cold cups', 'Industrially compostable', 'Cold only', 'Iced drinks, eco-first brands'],
+            ['PLA-lined paper', 'Industrially compostable', 'Hot & warm', 'Coffee, hot tea'],
+            ['PE-lined paper', 'Recyclable in some streams', 'Hot & warm', 'Budget hot cups'],
+            ['PET plastic', 'Widely recyclable', 'Cold only', 'Clear cold drinks']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'What to Verify Before a Sustainable Order',
+        body: 'Green claims carry real compliance risk, so verify before you print "compostable" on a cup. Ask your supplier for food-grade documentation and, for compostable claims, look for recognized certifications such as those covering industrial compostability. Confirm whether the cups need industrial composting (most PLA does) versus home composting, since this affects what you can honestly tell customers. For a deeper material breakdown, see our paper vs PLA cups comparison, and browse verified specs on the paper & PLA cups page before requesting a quote.'
+      }
+    ],
+    faqs: [
+      { q: 'Are PLA cups really compostable?', a: 'PLA is compostable in industrial composting facilities, not typically in home compost. Always state which is required so customers dispose of them correctly.' },
+      { q: 'Is PET recyclable?', a: 'Yes. PET is one of the most widely accepted plastics in recycling streams, though acceptance still varies by local facility.' },
+      { q: 'Which is greener, PLA or paper?', a: 'It depends on disposal infrastructure. PLA-lined paper is compostable where industrial composting exists; recyclable PET may be better where recycling is strong but composting is not.' },
+      { q: 'What certification should I ask for?', a: 'Request food-grade documentation, and for compostable claims ask for recognized compostability certifications. Avoid unverified "eco" language on packaging.' }
+    ]
+  },
+  'cafe-cup-buying-guide': {
+    title: 'Cafe Cup Buying Guide: How to Choose Cups, Sizes & Suppliers',
+    description: 'A complete buying guide for cafes and drink shops. Learn how to choose cup material, sizes, lids and a supplier, and how to plan MOQ and custom printing for your first order.',
+    date: '2026-09-06',
+    dateModified: '2026-09-06',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'Opening or restocking a cafe? This guide walks through every cup decision — material, size, lid, MOQ and branding — and links to the detailed reference for each step.',
+    quickFacts: [
+      { label: 'Cold Drinks', value: 'Clear PET cups' },
+      { label: 'Hot Drinks', value: 'PP cups or paper cups' },
+      { label: 'Core Sizes', value: '12 / 16 / 22 oz' },
+      { label: 'Typical Start MOQ', value: 'From 1,000 pcs (custom print)' },
+      { label: 'Inventory Tip', value: 'Standardize one caliber' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Step 1: Choose Your Materials',
+        body: 'Start by splitting your menu into cold and hot. Cold drinks (iced coffee, fruit tea, smoothies) present best in crystal-clear PET. Hot drinks (lattes, hot milk tea) need PP cups or insulated paper cups that tolerate heat. Most cafes carry both. For a full breakdown of the trade-offs, see our PET vs PP cups comparison.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Quick Decision Table',
+        body: 'A shortcut for the most common cafe cup decisions.',
+        table: {
+          head: ['Need', 'Recommended', 'Reference'],
+          rows: [
+            ['Iced / clear drinks', 'PET cold cups', 'PET vs PP guide'],
+            ['Hot drinks', 'PP or paper cups', 'Hot drink cup guide'],
+            ['Right size', '12 / 16 / 22 oz', 'Bubble tea sizes chart'],
+            ['Custom logo', 'Print from 1,000 pcs', 'Custom printed cups'],
+            ['Small first order', 'One or two core sizes', 'Cup MOQ guide']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Step 2: Standardize Sizes and Lids',
+        body: 'Pick a small set of core sizes — most cafes do well with 12oz, 16oz and 22oz — and standardize on one caliber (commonly 95mm) so a single lid and sealing film covers your range. This minimizes inventory and simplifies restocking. See the bubble tea cup sizes chart for the full size-to-ml breakdown and caliber notes.'
+      },
+      {
+        type: 'text',
+        h2: 'Step 3: Plan MOQ and Branding',
+        body: 'Custom-printed cups typically start from around 1,000 pieces per size. If you are just starting, keep the first order lean — limit sizes and consider branding through printed sealing film so one roll covers every cup. See our cup MOQ guide and custom printed cups guide for details, then request a quote with your chosen sizes and materials.'
+      }
+    ],
+    faqs: [
+      { q: 'What cups do I need to open a cafe?', a: 'At minimum: clear PET cups for cold drinks, PP or paper cups for hot drinks, matching lids, and sealing film if you serve boba. Standardize sizes to keep it simple.' },
+      { q: 'How many sizes should a cafe stock?', a: 'Most cafes run three core sizes (12/16/22oz). Fewer sizes on a shared caliber means simpler inventory and lower MOQ commitments.' },
+      { q: 'What is the minimum order for custom cups?', a: 'Custom printing usually starts from about 1,000 pieces per size. Stock (unprinted) cups can often be ordered in smaller quantities.' },
+      { q: 'How do I brand cups on a small budget?', a: 'Print your logo on the sealing film instead of every cup size — one printed roll brands all your cups at once, keeping your first order affordable.' }
+    ]
   }
 }

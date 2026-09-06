@@ -83,7 +83,10 @@ async function run() {
         'https://claropack.com/blog/food-grade-cups-fda-guide',
         'https://claropack.com/blog/cup-accessories-sleeves-carriers-guide',
         'https://claropack.com/blog/clear-vs-frosted-pp-cups-guide',
-        'https://claropack.com/blog/cup-moq-small-order-guide'
+        'https://claropack.com/blog/cup-moq-small-order-guide',
+        'https://claropack.com/blog/smoothie-and-slush-cup-sizes-guide',
+        'https://claropack.com/blog/sustainable-cup-sourcing-guide',
+        'https://claropack.com/blog/cafe-cup-buying-guide'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -127,7 +130,10 @@ async function run() {
         { path: 'blog/food-grade-cups-fda-guide/index.html', route: '/blog/food-grade-cups-fda-guide' },
         { path: 'blog/cup-accessories-sleeves-carriers-guide/index.html', route: '/blog/cup-accessories-sleeves-carriers-guide' },
         { path: 'blog/clear-vs-frosted-pp-cups-guide/index.html', route: '/blog/clear-vs-frosted-pp-cups-guide' },
-        { path: 'blog/cup-moq-small-order-guide/index.html', route: '/blog/cup-moq-small-order-guide' }
+        { path: 'blog/cup-moq-small-order-guide/index.html', route: '/blog/cup-moq-small-order-guide' },
+        { path: 'blog/smoothie-and-slush-cup-sizes-guide/index.html', route: '/blog/smoothie-and-slush-cup-sizes-guide' },
+        { path: 'blog/sustainable-cup-sourcing-guide/index.html', route: '/blog/sustainable-cup-sourcing-guide' },
+        { path: 'blog/cafe-cup-buying-guide/index.html', route: '/blog/cafe-cup-buying-guide' }
     ];
 
     let allPassed = true;

@@ -44,6 +44,9 @@ const routes = [
   "/blog/cup-accessories-sleeves-carriers-guide",
   "/blog/clear-vs-frosted-pp-cups-guide",
   "/blog/cup-moq-small-order-guide",
+  "/blog/smoothie-and-slush-cup-sizes-guide",
+  "/blog/sustainable-cup-sourcing-guide",
+  "/blog/cafe-cup-buying-guide",
   "/about",
   "/contact"
 ];
