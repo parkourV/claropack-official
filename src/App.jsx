@@ -86,6 +86,7 @@ function Footer() {
               <li><Link to="/blog/us-standard-98mm-pet-cups-guide">98mm US Standard</Link></li>
               <li><Link to="/blog/pet-cups-cold-chain-performance">PET Cold-Chain Guide</Link></li>
               <li><Link to="/blog/hot-drink-cup-selection-guide">Hot Drink Cup Guide</Link></li>
+              <li><Link to="/blog/cup-custom-printing-methods-guide">Custom Printing Guide</Link></li>
             </ul>
           </div>
           <div>

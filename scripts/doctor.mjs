@@ -86,7 +86,8 @@ async function run() {
         'https://claropack.com/blog/cup-moq-small-order-guide',
         'https://claropack.com/blog/smoothie-and-slush-cup-sizes-guide',
         'https://claropack.com/blog/sustainable-cup-sourcing-guide',
-        'https://claropack.com/blog/cafe-cup-buying-guide'
+        'https://claropack.com/blog/cafe-cup-buying-guide',
+        'https://claropack.com/blog/cup-custom-printing-methods-guide'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -133,7 +134,8 @@ async function run() {
         { path: 'blog/cup-moq-small-order-guide/index.html', route: '/blog/cup-moq-small-order-guide' },
         { path: 'blog/smoothie-and-slush-cup-sizes-guide/index.html', route: '/blog/smoothie-and-slush-cup-sizes-guide' },
         { path: 'blog/sustainable-cup-sourcing-guide/index.html', route: '/blog/sustainable-cup-sourcing-guide' },
-        { path: 'blog/cafe-cup-buying-guide/index.html', route: '/blog/cafe-cup-buying-guide' }
+        { path: 'blog/cafe-cup-buying-guide/index.html', route: '/blog/cafe-cup-buying-guide' },
+        { path: 'blog/cup-custom-printing-methods-guide/index.html', route: '/blog/cup-custom-printing-methods-guide' }
     ];
 
     let allPassed = true;

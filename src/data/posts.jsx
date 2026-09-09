@@ -1457,5 +1457,62 @@ export const posts = {
       { q: 'What is the minimum order for custom cups?', a: 'Custom printing usually starts from about 1,000 pieces per size. Stock (unprinted) cups can often be ordered in smaller quantities.' },
       { q: 'How do I brand cups on a small budget?', a: 'Print your logo on the sealing film instead of every cup size — one printed roll brands all your cups at once, keeping your first order affordable.' }
     ]
+  },
+  'cup-custom-printing-methods-guide': {
+    title: 'Custom Logo Printing for Disposable Cups: Offset vs. Silk Screen Methods',
+    description: 'Learn the differences between offset and silk screen printing for PET, PP, and paper cups. Compare color accuracy, MOQ, and cost to find the best branding method for your beverage shop.',
+    date: '2026-09-09',
+    author: 'Claropack Branding Team',
+    img: '/assets/images/prod-pet.webp',
+    excerpt: 'Your cup is a walking billboard. We compare the two most common printing methods—Offset and Silk Screen—to help you choose the right one for your logo and budget.',
+    quickFacts: [
+      { label: 'Custom MOQ', value: 'From 1,000 pcs per size' },
+      { label: 'Offset Printing', value: 'High speed, full color, cost-effective for large runs' },
+      { label: 'Silk Screen', value: 'Vibrant spot colors, best for simple logos' },
+      { label: 'Lead Time', value: '7-15 days after artwork approval' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why the Printing Method Matters',
+        body: 'In the beverage industry, branding is everything. A high-quality print on your cups, lids, or sealing film reinforces your brand identity and makes your drinks look premium. However, not all printing methods are created equal. The choice between offset and silk screen depends on your logo design, the number of colors, and your total order volume.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Offset vs. Silk Screen Printing',
+        body: 'Based on our production lines, here is a direct comparison of the two primary printing methods used for Claropack cups.',
+        table: {
+          head: ['Feature', 'Offset Printing', 'Silk Screen Printing'],
+          rows: [
+            ['Best For', 'Complex designs, full color', 'Simple logos, spot colors'],
+            ['Color Accuracy', 'High (CMYK or Pantone)', 'Excellent (Vibrant spot colors)'],
+            ['Ink Texture', 'Thin, smooth layer', 'Thicker, slightly raised'],
+            ['MOQ', 'From 1,000 pcs', 'From 1,000 pcs'],
+            ['Cost Advantage', 'Cheaper for bulk orders', 'Competitive for spot colors']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Offset Printing: The Full-Color Choice',
+        body: 'Offset printing is the industry standard for full-color or highly detailed designs. It uses CMYK or multiple Pantone plates to transfer ink with high precision. If your logo has gradients, shadows, or more than three colors, offset printing on PET or PP cups provides the most professional result at a high production speed.'
+      },
+      {
+        type: 'text',
+        h2: 'Silk Screen Printing: Vibrant and Bold',
+        body: 'Silk screen printing (often called spot color printing) is ideal for bold, simple logos with 1 or 2 colors. Because the ink is applied through a mesh screen, it results in a thicker, more vibrant color layer that pops against the clear cup. It is a favorite for craft coffee shops and minimalist tea brands that want a tactile, high-contrast logo.'
+      },
+      {
+        type: 'text',
+        h2: 'Getting the Artwork Ready',
+        body: 'Regardless of the method, high-quality printing starts with high-quality artwork. We require vector files (AI, PDF, or EPS) to ensure the sharpest possible print. Our team provides a free print layout for your approval before bulk production begins. See our custom printed cups guide for a full checklist of artwork requirements.'
+      }
+    ],
+    faqs: [
+      { q: 'What is the MOQ for printed cups?', a: 'At Claropack, our custom logo printing starts at just 1,000 pieces per size, making branded packaging accessible for new and small brands.' },
+      { q: 'How many colors can I print?', a: 'Most standard runs support 1-4 colors. For full-color designs or photographic prints, we use multi-color offset printing. Share your artwork with us for a specific color count check.' },
+      { q: 'Do you charge a plate fee?', a: 'There is a one-time plate/setup fee per color for new designs. This fee is not charged on exact re-orders within a certain timeframe.' },
+      { q: 'Can you print on the bottom of the cup?', a: 'Printing is primarily done on the side walls. For bottom printing or embossed logos, custom mold development is required. Contact us to discuss specialty requirements.' }
+    ]
   }
 }

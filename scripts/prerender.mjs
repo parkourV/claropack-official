@@ -47,25 +47,30 @@ const routes = [
   "/blog/smoothie-and-slush-cup-sizes-guide",
   "/blog/sustainable-cup-sourcing-guide",
   "/blog/cafe-cup-buying-guide",
+  "/blog/cup-custom-printing-methods-guide",
   "/about",
   "/contact"
 ];
 
 async function waitForPreview() {
-  const deadline = Date.now() + 15000;
+  const deadline = Date.now() + 20000;
 
   while (Date.now() < deadline) {
     try {
       const response = await fetch(`http://127.0.0.1:${PORT}/`);
-      if (response.ok) return;
+      if (response.ok) {
+        // Give the server an extra second to settle
+        await new Promise(r => setTimeout(r, 1000));
+        return;
+      }
     } catch {
       // The Vite preview process is still starting.
     }
 
-    await new Promise((resolve) => setTimeout(resolve, 250));
+    await new Promise((resolve) => setTimeout(resolve, 500));
   }
 
-  throw new Error("Vite preview did not become ready within 15 seconds.");
+  throw new Error("Vite preview did not become ready within 20 seconds.");
 }
 
 async function stopPreview(preview) {
@@ -73,10 +78,42 @@ async function stopPreview(preview) {
 
   console.log("Stopping preview server...");
   preview.kill();
+  // Ensure the process is truly dead
+  try {
+    process.kill(preview.pid, 0);
+    preview.kill('SIGKILL');
+  } catch (e) {}
+
   await new Promise((resolve) => {
     preview.once("exit", resolve);
     setTimeout(resolve, 2000);
   });
+}
+
+async function renderRoute(page, route, maxRetries = 2) {
+  for (let i = 0; i <= maxRetries; i++) {
+    try {
+      console.log(`Prerendering ${route} (Attempt ${i + 1})...`);
+      await page.goto(`http://127.0.0.1:${PORT}${route}`, { 
+        waitUntil: "networkidle0", 
+        timeout: 45000 
+      });
+      
+      const html = await page.content();
+      
+      // Basic sanity check: content should be reasonably long and contain the brand name
+      if (html.length > 2000 && html.includes("Claropack")) {
+        return html;
+      }
+      
+      console.warn(`⚠️  Render for ${route} seems too short or missing brand keyword. Retrying...`);
+    } catch (err) {
+      console.error(`❌  Failed to render ${route}:`, err.message);
+      if (i === maxRetries) throw err;
+    }
+    // Exponential backoff
+    await new Promise(r => setTimeout(r, 1000 * (i + 1)));
+  }
 }
 
 async function run() {
@@ -94,14 +131,13 @@ async function run() {
 
     browser = await puppeteer.launch({
       executablePath: CHROME_PATH,
-      headless: true
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
     const page = await browser.newPage();
 
     for (const route of routes) {
-      console.log(`Prerendering ${route}...`);
-      await page.goto(`http://127.0.0.1:${PORT}${route}`, { waitUntil: "networkidle0", timeout: 30000 });
-      const html = await page.content();
+      const html = await renderRoute(page, route);
       const filePath = path.join(DIST_DIR, route === "/" ? "index.html" : `${route}/index.html`);
       await fs.mkdir(path.dirname(filePath), { recursive: true });
       await fs.writeFile(filePath, html);
