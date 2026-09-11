@@ -1514,5 +1514,53 @@ export const posts = {
       { q: 'Do you charge a plate fee?', a: 'There is a one-time plate/setup fee per color for new designs. This fee is not charged on exact re-orders within a certain timeframe.' },
       { q: 'Can you print on the bottom of the cup?', a: 'Printing is primarily done on the side walls. For bottom printing or embossed logos, custom mold development is required. Contact us to discuss specialty requirements.' }
     ]
+  },
+  'pet-dessert-cups-sourcing-guide': {
+    title: '74mm PET Dessert Cups: A Sourcing Guide for Parfaits, Yogurts and Samples',
+    description: 'How to source 3oz (74mm) PET dessert cups. Compare 3.8g thermoformed PET specs, lid options and why the 74mm caliber is the industry standard for miniature packaging.',
+    date: '2026-09-11',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pet.webp',
+    excerpt: 'Miniature packaging needs the same clarity and seal quality as large drinkware. This guide covers the verified 74mm PET dessert cup specs and how to plan lids for parfaits and samples.',
+    quickFacts: [
+      { label: 'Caliber', value: '74 mm' },
+      { label: 'Capacity', value: '3 oz (approx. 90 ml)' },
+      { label: 'Catalog Weight', value: '3.8 g' },
+      { label: 'Carton Quantity', value: '2000 pcs' },
+      { label: 'Material', value: 'High-clarity PET' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'The Role of Miniature Packaging in Food Service',
+        body: '3oz PET dessert cups are the workhorses of the catering and retail food industry. They provide a high-clarity, glass-like presentation for yogurt parfaits, fruit salads, puddings and cold-food samples. Because they are thermoformed from food-grade PET, they maintain maximum visibility while being lightweight and shatterproof for takeaway and display use.'
+      },
+      {
+        type: 'comparison',
+        h2: '74mm PET Dessert Cup Specifications',
+        body: 'The specifications below are for our standard 74mm caliber dessert model, engineered for high-speed filling lines and retail display.',
+        table: {
+          head: ['Model', 'Caliber', 'Capacity', 'Height', 'Weight', 'Carton'],
+          rows: [
+            ['74-7401', '74 mm', '3 oz', '39 mm', '3.8 g', '2000 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Standardizing Around the 74mm Caliber',
+        body: 'The 74mm rim is the industry standard for small-format cold service. Standardizing on this caliber lets you use one set of flat or dome lids across multiple mini-cup depths if you expand your dessert line. Claropack 74mm cups feature a precision-engineered rim to ensure a "Snap-Lock" fit with matching PET lids, preventing leaks and spills in grab-and-go environments.'
+      },
+      {
+        type: 'text',
+        h2: 'Sourcing Considerations for Dessert Cups',
+        body: 'When sourcing 3oz dessert cups, plan for a higher carton density. The 74-7401 model is packed 2000 pieces per carton, which is double the density of standard 16oz cups. This makes them highly efficient for container loading and storage. For brands that need custom logo printing, the standard 1,000-piece MOQ applies per size, allowing you to launch a branded dessert range with minimal inventory risk.'
+      }
+    ],
+    faqs: [
+      { q: 'Can 74mm dessert cups be custom printed?', a: 'Yes. We offer custom logo printing on the 74mm series starting from 1,000 pieces. Vector artwork is required for the best print quality.' },
+      { q: 'Which lids fit the 3oz dessert cup?', a: 'Match the 74mm caliber with either a flat PET lid for stacking or a dome lid for toppings like whipped cream or granola. Confirm the specific lid model before ordering.' },
+      { q: 'Are these cups suitable for warm desserts?', a: 'No. As PET material, these cups are cold-only and should not be used for food or liquids above 60°C. For warm desserts, consider our PP injection options.' }
+    ]
   }
 }
