@@ -102,7 +102,7 @@ export const posts = {
     date: '2026-07-31',
     dateModified: '2026-09-05',
     author: 'Claropack Sourcing Advisor',
-    img: '/assets/images/prod-pp-hard.webp',
+    img: 'https://s.alicdn.com/@sc04/kf/Hb3463c6798a948c49607ec5077bef457c/-U-10-12-14-16-18.jpg',
     excerpt: 'Which cup size is right for your boba menu? This chart breaks down 12oz, 16oz and 22oz boba cups in both oz and ml, shows how major chains name their sizes, and explains why the 95mm U-shape cup is taking over.',
     quickFacts: [
       { label: 'Small', value: '12 oz / 360 ml' },
@@ -422,7 +422,7 @@ export const posts = {
     description: 'The 92mm square injection PP cup is a distinctive on-shelf format for brands that want to stand out. Learn its specs, finishes and branding advantages over round cups.',
     date: '2026-08-18',
     author: 'Claropack Experts',
-    img: '/assets/images/prod-pp-hard.webp',
+    img: 'https://s.alicdn.com/@sc04/kf/H65d52da855444a21bcf176295e5ef55ay/-10oz-12oz-14oz-16oz-20oz-22oz.jpg',
     excerpt: 'When every boba shop uses round cups, a square cup stops the scroll. We look at the 92mm square injection PP series and how its shape and finishes create brand differentiation.',
     quickFacts: [
       { label: 'Caliber', value: '92 mm square' },
@@ -677,7 +677,7 @@ export const posts = {
     description: 'Why the 95mm U-shape fat cup became a bubble tea signature. Compare listed 500ml and 700ml U-shape PP specifications and plan lids and sealing.',
     date: '2026-09-01',
     author: 'Claropack Experts',
-    img: '/assets/images/prod-pp-hard.webp',
+    img: 'https://s.alicdn.com/@sc04/kf/H990f57f30f3e4baaba8fb457a45ceb86q/-U-PET-89-.jpg',
     excerpt: 'The U-shape fat cup shows off boba and brown-sugar streaks like no tapered cup can. Here are the verified 95mm U-shape PP specifications and how to plan around them.',
     quickFacts: [
       { label: 'Caliber', value: '95 mm' },
@@ -1210,7 +1210,7 @@ export const posts = {
     description: 'Compare clear and frosted injection PP cups for your beverage brand. Understand how finish affects premium perception, drink visibility and shelf differentiation.',
     date: '2026-09-05',
     author: 'Claropack Experts',
-    img: '/assets/images/prod-pp-frosted.webp',
+    img: 'https://s.alicdn.com/@sc04/kf/Hfc50011a9cb349408416a4b179203361S/-ins-PET.jpg',
     excerpt: 'Both clear and frosted injection PP cups feel premium in the hand — but they send different brand signals. This guide helps you choose the finish that fits your drinks and positioning.',
     quickFacts: [
       { label: 'Material', value: 'Injection-molded PP' },
@@ -1561,6 +1561,110 @@ export const posts = {
       { q: 'Can 74mm dessert cups be custom printed?', a: 'Yes. We offer custom logo printing on the 74mm series starting from 1,000 pieces. Vector artwork is required for the best print quality.' },
       { q: 'Which lids fit the 3oz dessert cup?', a: 'Match the 74mm caliber with either a flat PET lid for stacking or a dome lid for toppings like whipped cream or granola. Confirm the specific lid model before ordering.' },
       { q: 'Are these cups suitable for warm desserts?', a: 'No. As PET material, these cups are cold-only and should not be used for food or liquids above 60°C. For warm desserts, consider our PP injection options.' }
+    ]
+  },
+  'u-shape-pet-vs-pp-cups-comparison': {
+    title: 'U-Shape PET vs PP Cups: Choosing the Right Rounded Bottom for Your Brand',
+    description: 'Compare thermoformed PET U-shape cups with injection-molded PP U-shape cups. Learn the differences in clarity, rigidity, and price point for premium boba and fruit tea packaging.',
+    date: '2026-09-12',
+    author: 'Claropack Sourcing Advisor',
+    img: 'https://s.alicdn.com/@sc04/kf/H990f57f30f3e4baaba8fb457a45ceb86q/-U-PET-89-.jpg',
+    excerpt: 'The rounded "U" bottom is a signature boba look, but should you choose PET or PP? We compare the high-clarity PET U-shape with the heavy-duty injection PP version to find your ideal match.',
+    quickFacts: [
+      { label: 'PET U-Shape', value: 'Crystal clear, lightweight, 90/95mm' },
+      { label: 'PP U-Shape', value: 'Rigid wall, heavy-duty, 95mm' },
+      { label: 'Best Use', value: 'PET: Iced fruit teas; PP: Premium Boba' },
+      { label: 'Customization', value: 'Full color printing from 1,000 pcs' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'The Visual Power of the Rounded Bottom',
+        body: 'The U-shape cup (also known as the "fat cup") has redefined the boba and specialty drink market. Its rounded base allows toppings like pearls, jelly, and brown sugar streaks to be showcased without getting stuck in sharp corners. While the shape is iconic, buyers must choose between two very different materials: Thermoformed PET and Injection-Molded PP.'
+      },
+      {
+        type: 'comparison',
+        h2: 'PET vs PP U-Shape Specifications',
+        body: 'Based on our catalog, here is a direct comparison of our core U-shape offerings. PET U-shape cups are optimized for clarity, while PP U-shape cups are built for a sturdy in-hand feel.',
+        table: {
+          head: ['Feature', 'PET U-Shape (Thermoformed)', 'PP U-Shape (Injection)'],
+          rows: [
+            ['Calibers', '90 mm / 95 mm', '95 mm'],
+            ['Clarity', 'Crystal Clear (Glass-like)', 'Translucent to High-Clarity'],
+            ['Wall Rigidity', 'Flexible', 'Rigid & Hard'],
+            ['Weight (500ml)', 'Approx. 12-14g', '14.5 g (PP-95U)'],
+            ['Temperature', 'Cold only (< 60°C)', 'Hot & Cold (< 100°C)'],
+            ['Standard Packing', '1000 pcs / ctn', 'Contact us for PP ctn specs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'When to Source PET U-Shape Cups',
+        body: 'If your menu is focused on iced fruit teas, colorful mojitos, or layered smoothies, PET is the superior choice. Its unmatched transparency makes drink colors pop. The PET U-shape is typically more lightweight and cost-effective than the injection PP version, making it ideal for high-volume cold-drink operations that still want a premium rounded look.'
+      },
+      {
+        type: 'text',
+        h2: 'The Advantage of Injection PP U-Shape',
+        body: 'Injection-molded PP U-shape cups (like our PP-95U series) are the "heavy-duty" option. They feel more substantial in the hand and can handle hot beverages up to 100°C. For brands that serve both hot milk tea and iced boba in the same format, the PP U-shape provides a consistent premium experience and works perfectly with standard PP sealing films.'
+      }
+    ],
+    faqs: [
+      { q: 'Can I use the same lids for PET and PP U-shape cups?', a: 'Yes, as long as the caliber matches. Our 95mm PET U-shape and 95mm PP U-shape both fit standard 95mm dome or flat lids.' },
+      { q: 'Which material is better for custom printing?', a: 'Both PET and PP U-shape cups support high-quality offset and silk-screen printing. PET\'s clarity provides a slightly higher contrast for logos on clear liquids.' },
+      { q: 'Is the U-shape bottom compatible with cup holders?', a: 'Yes. Most standard drink carriers and automotive cup holders are designed to accommodate the tapered mid-section of the U-shape cup.' }
+    ]
+  },
+  'u-shape-pet-vs-pp-cups-comparison': {
+    title: 'U-Shape PET vs PP Cups: Choosing the Right Rounded Bottom for Your Brand',
+    description: 'Compare thermoformed PET U-shape cups with injection-molded PP U-shape cups. Learn the differences in clarity, rigidity, and price point for premium boba and fruit tea packaging.',
+    date: '2026-09-12',
+    author: 'Claropack Sourcing Advisor',
+    img: 'https://s.alicdn.com/@sc04/kf/H990f57f30f3e4baaba8fb457a45ceb86q/-U-PET-89-.jpg',
+    excerpt: 'The rounded "U" bottom is a signature boba look, but should you choose PET or PP? We compare the high-clarity PET U-shape with the heavy-duty injection PP version to find your ideal match.',
+    quickFacts: [
+      { label: 'PET U-Shape', value: 'Crystal clear, lightweight, 90/95mm' },
+      { label: 'PP U-Shape', value: 'Rigid wall, heavy-duty, 95mm' },
+      { label: 'Best Use', value: 'PET: Iced fruit teas; PP: Premium Boba' },
+      { label: 'Customization', value: 'Full color printing from 1,000 pcs' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'The Visual Power of the Rounded Bottom',
+        body: 'The U-shape cup (also known as the "fat cup") has redefined the boba and specialty drink market. Its rounded base allows toppings like pearls, jelly, and brown sugar streaks to be showcased without getting stuck in sharp corners. While the shape is iconic, buyers must choose between two very different materials: Thermoformed PET and Injection-Molded PP.'
+      },
+      {
+        type: 'comparison',
+        h2: 'PET vs PP U-Shape Specifications',
+        body: 'Based on our catalog, here is a direct comparison of our core U-shape offerings. PET U-shape cups are optimized for clarity, while PP U-shape cups are built for a sturdy in-hand feel.',
+        table: {
+          head: ['Feature', 'PET U-Shape (Thermoformed)', 'PP U-Shape (Injection)'],
+          rows: [
+            ['Calibers', '90 mm / 95 mm', '95 mm'],
+            ['Clarity', 'Crystal Clear (Glass-like)', 'Translucent to High-Clarity'],
+            ['Wall Rigidity', 'Flexible', 'Rigid & Hard'],
+            ['Weight (500ml)', 'Approx. 12-14g', '14.5 g (PP-95U)'],
+            ['Temperature', 'Cold only (< 60°C)', 'Hot & Cold (< 100°C)'],
+            ['Standard Packing', '1000 pcs / ctn', 'Contact us for PP ctn specs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'When to Source PET U-Shape Cups',
+        body: 'If your menu is focused on iced fruit teas, colorful mojitos, or layered smoothies, PET is the superior choice. Its unmatched transparency makes drink colors pop. The PET U-shape is typically more lightweight and cost-effective than the injection PP version, making it ideal for high-volume cold-drink operations that still want a premium rounded look.'
+      },
+      {
+        type: 'text',
+        h2: 'The Advantage of Injection PP U-Shape',
+        body: 'Injection-molded PP U-shape cups (like our PP-95U series) are the "heavy-duty" option. They feel more substantial in the hand and can handle hot beverages up to 100°C. For brands that serve both hot milk tea and iced boba in the same format, the PP U-shape provides a consistent premium experience and works perfectly with standard PP sealing films.'
+      }
+    ],
+    faqs: [
+      { q: 'Can I use the same lids for PET and PP U-shape cups?', a: 'Yes, as long as the caliber matches. Our 95mm PET U-shape and 95mm PP U-shape both fit standard 95mm dome or flat lids.' },
+      { q: 'Which material is better for custom printing?', a: 'Both PET and PP U-shape cups support high-quality offset and silk-screen printing. PET\'s clarity provides a slightly higher contrast for logos on clear liquids.' },
+      { q: 'Is the U-shape bottom compatible with cup holders?', a: 'Yes. Most standard drink carriers and automotive cup holders are designed to accommodate the tapered mid-section of the U-shape cup.' }
     ]
   }
 }

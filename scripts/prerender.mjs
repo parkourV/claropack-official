@@ -49,6 +49,7 @@ const routes = [
   "/blog/cafe-cup-buying-guide",
   "/blog/cup-custom-printing-methods-guide",
   "/blog/pet-dessert-cups-sourcing-guide",
+  "/blog/u-shape-pet-vs-pp-cups-comparison",
   "/about",
   "/contact"
 ];
