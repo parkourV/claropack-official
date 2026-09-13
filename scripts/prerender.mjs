@@ -53,6 +53,7 @@ const routes = [
   "/blog/pet-cup-printing-design-guide",
   "/blog/90mm-injection-lid-selection-guide",
   "/blog/starbucks-vs-dunkin-iced-cup-sizes",
+  "/blog/custom-cup-printing-cost-guide",
   "/about",
   "/contact"
 ];

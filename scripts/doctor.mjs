@@ -92,7 +92,8 @@ async function run() {
         'https://claropack.com/blog/u-shape-pet-vs-pp-cups-comparison',
         'https://claropack.com/blog/pet-cup-printing-design-guide',
         'https://claropack.com/blog/90mm-injection-lid-selection-guide',
-        'https://claropack.com/blog/starbucks-vs-dunkin-iced-cup-sizes'
+        'https://claropack.com/blog/starbucks-vs-dunkin-iced-cup-sizes',
+        'https://claropack.com/blog/custom-cup-printing-cost-guide'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -145,7 +146,8 @@ async function run() {
         { path: 'blog/u-shape-pet-vs-pp-cups-comparison/index.html', route: '/blog/u-shape-pet-vs-pp-cups-comparison' },
         { path: 'blog/pet-cup-printing-design-guide/index.html', route: '/blog/pet-cup-printing-design-guide' },
         { path: 'blog/90mm-injection-lid-selection-guide/index.html', route: '/blog/90mm-injection-lid-selection-guide' },
-        { path: 'blog/starbucks-vs-dunkin-iced-cup-sizes/index.html', route: '/blog/starbucks-vs-dunkin-iced-cup-sizes' }
+        { path: 'blog/starbucks-vs-dunkin-iced-cup-sizes/index.html', route: '/blog/starbucks-vs-dunkin-iced-cup-sizes' },
+        { path: 'blog/custom-cup-printing-cost-guide/index.html', route: '/blog/custom-cup-printing-cost-guide' }
     ];
 
     let allPassed = true;

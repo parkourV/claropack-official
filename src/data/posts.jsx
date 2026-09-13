@@ -98,7 +98,7 @@ export const posts = {
   },
   'bubble-tea-cup-sizes-guide': {
     title: 'Bubble Tea Cup Sizes Chart: 12oz, 16oz, 22oz in oz & ml (Boba Guide)',
-    description: 'Complete bubble tea cup sizes chart in oz and ml. Compare small, medium, large and jumbo boba cups, see how Gong Cha and CoCo size their drinks, and pick the right caliber for your shop.',
+    description: 'Complete bubble tea cup sizes chart. Compare small/medium/large boba volumes, factory specs for 12/16/22oz, and request free samples. Verified factory-direct data.',
     date: '2026-07-31',
     dateModified: '2026-09-05',
     author: 'Claropack Sourcing Advisor',
@@ -1824,6 +1824,57 @@ export const posts = {
       { q: 'What is the most popular iced coffee size?', a: 'The 16oz (Grande/Medium) is the global standard, followed by the 24oz for iced lattes and cold brews.' },
       { q: 'Does Claropack offer "Trenta" size cups?', a: 'Yes. Our 32oz PET cup (Model 107-10701) is the industry standard for XL promotional and sharing drinks.' },
       { q: 'Can I use one lid for all coffee sizes?', a: 'Yes, if you use the 98mm series. It covers 12oz, 16oz, 20oz, and 24oz PET cups with a single 98mm flat or dome lid.' }
+    ]
+  },
+  'custom-cup-printing-cost-guide': {
+    title: 'Custom Cup Printing Costs: Understanding Plate Fees and Unit Prices',
+    description: 'A detailed breakdown of custom printing costs for PET and PP cups. Learn about one-time plate fees, unit price factors, and how to get the best ROI on branded packaging.',
+    date: '2026-09-13',
+    author: 'Claropack Finance Team',
+    img: 'https://s.alicdn.com/@sc04/kf/He421727905ae43eaa260d37aa6f3774aH/-12-14-16-420-PET-89.png',
+    excerpt: 'The most common question from new brands is "How much does custom printing cost?" We pull back the curtain on factory pricing, from setup fees to bulk discounts.',
+    quickFacts: [
+      { label: 'Plate Fee', value: 'One-time fee per color' },
+      { label: 'Min Order', value: '1,000 pcs per size' },
+      { label: 'Price Drivers', value: 'Color count, quantity, cup size' },
+      { label: 'Sample Policy', value: 'Free stock samples available' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Breaking Down the Two Cost Components',
+        body: 'When you order custom-branded cups from Claropack, your invoice consists of two main parts: the One-Time Plate Fee and the Unit Price. Understanding these helps you plan your initial investment and ongoing operational costs.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Cost Factors for Branded Packaging',
+        body: 'Here is what influences your final quotation when you move from plain stock to custom printing.',
+        table: {
+          head: ['Factor', 'Type', 'Impact on Cost'],
+          rows: [
+            ['Plate/Setup Fee', 'One-time', 'Charged per color; waived on re-orders'],
+            ['Color Count', 'Per Unit', 'More colors = higher ink & setup cost'],
+            ['Order Quantity', 'Per Unit', 'Higher volume significantly lowers unit cost'],
+            ['Cup Material', 'Per Unit', 'Injection PP is higher than Thermoformed PET'],
+            ['Packing Density', 'Logistics', 'Affects freight cost per individual cup']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'The Efficiency of the 1,000-Piece MOQ',
+        body: 'Many factories require 10,000+ pieces for custom printing. At Claropack, we have optimized our lines to support a 1,000-piece MOQ. While the unit price at 1,000 pieces is slightly higher than at 50,000 pieces, it drastically reduces your upfront cash outlay and storage requirements, making it perfect for seasonal promotions or new brand launches.'
+      },
+      {
+        type: 'text',
+        h2: 'How to Get the Best Price',
+        body: 'To maximize your ROI, we recommend standardizing your logo to 1 or 2 solid colors for your first run. This keeps your plate fees low. Additionally, printing your brand on sealing film rolls is extremely cost-effective as one roll covers thousands of cups across all sizes.'
+      }
+    ],
+    faqs: [
+      { q: 'Do I have to pay plate fees every time?', a: 'No. Plate fees are a one-time setup cost. As long as your logo design remains the same, you only pay for the cups on subsequent orders.' },
+      { q: 'Is there a discount for bulk orders?', a: 'Yes. Our pricing scales significantly with volume. Orders for full containers (20ft/40ft) receive our most competitive factory-direct pricing.' },
+      { q: 'Can I see a sample before paying plate fees?', a: 'We provide free stock samples so you can verify the cup quality first. Digital layouts are free, and physical custom samples can be produced for a nominal fee.' }
     ]
   }
 }
