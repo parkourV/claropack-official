@@ -90,7 +90,8 @@ async function run() {
         'https://claropack.com/blog/cup-custom-printing-methods-guide',
         'https://claropack.com/blog/pet-dessert-cups-sourcing-guide',
         'https://claropack.com/blog/u-shape-pet-vs-pp-cups-comparison',
-        'https://claropack.com/blog/pet-cup-printing-design-guide'
+        'https://claropack.com/blog/pet-cup-printing-design-guide',
+        'https://claropack.com/blog/90mm-injection-lid-selection-guide'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -141,7 +142,8 @@ async function run() {
         { path: 'blog/cup-custom-printing-methods-guide/index.html', route: '/blog/cup-custom-printing-methods-guide' },
         { path: 'blog/pet-dessert-cups-sourcing-guide/index.html', route: '/blog/pet-dessert-cups-sourcing-guide' },
         { path: 'blog/u-shape-pet-vs-pp-cups-comparison/index.html', route: '/blog/u-shape-pet-vs-pp-cups-comparison' },
-        { path: 'blog/pet-cup-printing-design-guide/index.html', route: '/blog/pet-cup-printing-design-guide' }
+        { path: 'blog/pet-cup-printing-design-guide/index.html', route: '/blog/pet-cup-printing-design-guide' },
+        { path: 'blog/90mm-injection-lid-selection-guide/index.html', route: '/blog/90mm-injection-lid-selection-guide' }
     ];
 
     let allPassed = true;

@@ -1717,5 +1717,55 @@ export const posts = {
       { q: 'Can you print full-wrap designs?', a: 'Yes. We support nearly 360-degree printing on both PET and PP cups. A small vertical gap is required for the machine registration mark.' },
       { q: 'Do you provide a digital proof?', a: 'Yes. We provide a free digital mockup for every custom order. Production only begins once you have signed off on the print layout and color count.' }
     ]
+  },
+  '90mm-injection-lid-selection-guide': {
+    title: '90mm Injection Lid Guide: Funnel, Switch, and Double-Hole Options',
+    description: 'Choose the right 90mm injection lid for your boba or coffee shop. Compare funnel lids, switch/heart lids, and double-hole designs for leak-proof delivery and premium branding.',
+    date: '2026-09-13',
+    author: 'Claropack Technical Team',
+    img: 'https://s.alicdn.com/@sc04/kf/H36ca355dfda5454992e5cee9b5d0c6cap/JH-PP-90-.jpg',
+    excerpt: 'The 90mm injection lid is the premium standard for modern beverage chains. We break down the functional differences between funnel lids and switch lids to help you pick the perfect seal.',
+    quickFacts: [
+      { label: 'Compatible Caliber', value: '90 mm (Standard)' },
+      { label: 'Material', value: 'High-density PP (Injection)' },
+      { label: 'Weight Range', value: 'Approx. 5g - 9g' },
+      { label: 'MOQ', value: 'From 1,000 pcs for custom colors' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why the 90mm Injection Lid is the Premium Choice',
+        body: 'Unlike thin thermoformed lids, injection-molded lids offer a rigid, secure fit that "snaps" onto the cup rim with high precision. This is critical for delivery-heavy brands. The 90mm caliber is the industry standard for both PET cold cups and hard PP injection cups, making these lids the most versatile accessory in your inventory.'
+      },
+      {
+        type: 'comparison',
+        h2: '90mm Injection Lid Types Compared',
+        body: 'Match your lid choice to your beverage type to prevent spills and improve the customer sipping experience.',
+        table: {
+          head: ['Lid Style', 'Best For', 'Functional Advantage'],
+          rows: [
+            ['Funnel Lid', 'Cream-top / Macchiato', 'Allows sipping cream and tea together'],
+            ['Switch / Heart Lid', 'Standard Milk Tea', 'Plug ensures zero leaks during transport'],
+            ['Double-Hole Lid', 'Iced Coffee / Bubble Tea', 'Accommodates both a straw and a sip-hole'],
+            ['U-Mouth Lid', 'Smoothies / Fruit Tea', 'Wider opening for chunky toppings']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Functional Design for Delivery Reliability',
+        body: 'At Claropack, our 90mm injection lids are engineered with a secondary "Leak-Guard" inner ring. This creates a dual-seal barrier that prevents liquid from seeping through the rim-lid interface even if the cup is tilted during delivery. For boba shops, we recommend pairing these lids with our 90mm hard PP cups for a 100% leak-proof system.'
+      },
+      {
+        type: 'text',
+        h2: 'Customization: Beyond Just Black and White',
+        body: 'While black and white are the defaults, custom-colored lids (like translucent red, yellow, or pink) are a low-cost way to differentiate your brand. We can produce custom lid colors starting from 1,000 pieces. Adding a branded plug (such as a heart-shaped plug) further reinforces your brand identity with every sip.'
+      }
+    ],
+    faqs: [
+      { q: 'Will these lids fit any 90mm cup?', a: 'Yes. They are designed to fit standard 90mm caliber PET thermoformed cups and 90mm injection PP cups. We always recommend a physical fit check with your specific cup model.' },
+      { q: 'Are injection lids recyclable?', a: 'Yes, they are made from PP (polypropylene, recycling code 5), which is widely recyclable alongside other plastic beverage containers.' },
+      { q: 'Do you offer strawless designs?', a: 'Many of our 90mm injection designs, like the funnel and U-mouth styles, are specifically built for strawless sipping to meet plastic-reduction goals.' }
+    ]
   }
 }

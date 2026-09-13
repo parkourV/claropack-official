@@ -51,6 +51,7 @@ const routes = [
   "/blog/pet-dessert-cups-sourcing-guide",
   "/blog/u-shape-pet-vs-pp-cups-comparison",
   "/blog/pet-cup-printing-design-guide",
+  "/blog/90mm-injection-lid-selection-guide",
   "/about",
   "/contact"
 ];
