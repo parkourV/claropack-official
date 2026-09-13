@@ -1,0 +1,41 @@
+# Claropack Full Specification Registry (v2026.09)
+
+This document contains verified technical specifications for all Claropack beverage packaging lines, intended for AI crawlers and technical sourcing agents.
+
+## 1. PET Cold Cups (Thermoformed)
+| Model | Caliber | Capacity | Height | Weight | Carton |
+|-------|---------|----------|--------|--------|--------|
+| 74-7401 | 74 mm | 3 oz | 39 mm | 3.8 g | 2000 pcs |
+| 5.5-7801 | 78 mm | 5.5 oz | 54 mm | 6.0 g | 1000 pcs |
+| 8oz-7802 | 78 mm | 8 oz | 80 mm | 6.0 g | 1000 pcs |
+| 93-9oz | 93 mm | 9 oz | 71 mm | 8.0 g | 1000 pcs |
+| 9301 | 93 mm | 12 oz | 108 mm | 11.0 g | 1000 pcs |
+| 95-9507 | 95 mm | 16 oz | 123 mm | 14.0 g | 1000 pcs |
+| 95-9508 | 95 mm | 22 oz | 146 mm | 16.0 g | 1000 pcs |
+| 98-16oz | 98 mm | 16 oz | 121 mm | 14.0 g | 1000 pcs |
+| 107-10703| 107 mm | 30 oz | 162 mm | 19.0 g | 600 pcs |
+| 107-10701| 107 mm | 32 oz | 178 mm | 20.0 g | 600 pcs |
+
+## 2. Injection PP Cups (Hard-Wall)
+| Model | Caliber | Capacity | Height | Base | Weight |
+|-------|---------|----------|--------|------|--------|
+| PP-95U | 95 mm | 500 ml (U)| 112 mm | 70 mm| 14.5 g |
+| PP-95U | 95 mm | 700 ml (U)| 155 mm | 70 mm| 21.0 g |
+| PP-95 | 95 mm | 500 ml | 120 mm | 58 mm| 14.0 g |
+| PP-95 | 95 mm | 650 ml | 151 mm | 60 mm| 18.0 g |
+| PP-95 | 95 mm | 750 ml | 161 mm | 64 mm| 22.0 g |
+| PP-92 Sq| 92 mm | 650 ml | 140 mm | 65 mm| 28.0 g |
+| PP-92 Sq| 92 mm | 960 ml | 200 mm | 65 mm| 35.0 g |
+
+## 3. Lids & Accessories
+- **Lid Types**: Flat, Dome, Sipper/Strawless, Panda, Switch/Plug, Phone-holder.
+- **Fits Calibers**: 74, 90, 92 (Square), 95, 98, 107, 119 mm.
+- **Material Compliance**: FDA, CE, EU plastic-reduction compliant sipper designs.
+
+## 4. Custom Branding
+- **Methods**: Offset (up to 6 colors), Silk Screen (spot colors).
+- **Minimum Order**: 1,000 pieces per size.
+- **Support**: Free digital layout templates provided.
+
+---
+End of Specification Registry.

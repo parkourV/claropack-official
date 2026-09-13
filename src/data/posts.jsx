@@ -1767,5 +1767,63 @@ export const posts = {
       { q: 'Are injection lids recyclable?', a: 'Yes, they are made from PP (polypropylene, recycling code 5), which is widely recyclable alongside other plastic beverage containers.' },
       { q: 'Do you offer strawless designs?', a: 'Many of our 90mm injection designs, like the funnel and U-mouth styles, are specifically built for strawless sipping to meet plastic-reduction goals.' }
     ]
+  },
+  'starbucks-vs-dunkin-iced-cup-sizes': {
+    title: 'Starbucks vs Dunkin Iced Cup Sizes: A PET Sourcing Guide',
+    description: 'Compare Starbucks (Tall, Grande, Venti, Trenta) and Dunkin (Small, Medium, Large) iced cup sizes in oz and ml. Learn which PET cup calibers (98mm, 107mm) match these industry standards.',
+    date: '2026-09-13',
+    author: 'Claropack Sourcing Advisor',
+    img: 'https://s.alicdn.com/@sc04/kf/He421727905ae43eaa260d37aa6f3774aH/-12-14-16-420-PET-89.png',
+    excerpt: 'When sourcing for a coffee shop, matching the "look and feel" of Starbucks or Dunkin is often the benchmark. We break down their iced cup volumes and the PET calibers required to achieve them.',
+    quickFacts: [
+      { label: 'Starbucks Range', value: '12 oz (Tall) to 31 oz (Trenta)' },
+      { label: 'Dunkin Range', value: '16 oz (Small) to 32 oz (Large)' },
+      { label: 'Standard Caliber', value: '98 mm (US Market Default)' },
+      { label: 'Jumbo Caliber', value: '107 mm (Trenta / XL size)' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why Coffee Shop Iced Sizes Differ from Boba',
+        body: 'In the North American coffee market, iced beverages are dominated by the 98mm caliber PET cup. Unlike the 95mm standard common in Asian boba shops, the 98mm width provides a wider profile that accommodates larger amounts of ice and fits universal US cup holders. Understanding how giants like Starbucks and Dunkin size their drinks is key to choosing your own inventory.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Starbucks Iced Cup Sizes (oz to ml)',
+        body: 'Starbucks uses unique names for its volumes. If you want to offer a "Trenta" equivalent, you need our 107mm jumbo series.',
+        table: {
+          head: ['Name', 'oz', 'ml', 'Sourcing Equivalent'],
+          rows: [
+            ['Tall', '12 oz', '355 ml', '98-12oz (98mm)'],
+            ['Grande', '16 oz', '473 ml', '98-16oz (98mm)'],
+            ['Venti', '24 oz', '709 ml', '98-24oz (98mm)'],
+            ['Trenta', '31 oz', '916 ml', '107-10701 (32oz)']
+          ]
+        }
+      },
+      {
+        type: 'comparison',
+        h2: 'Dunkin Iced Cup Sizes (oz to ml)',
+        body: 'Dunkin sizes are typically larger than Starbucks at the "Small" and "Medium" tiers, favoring high-volume iced coffee drinkers.',
+        table: {
+          head: ['Name', 'oz', 'ml', 'Sourcing Equivalent'],
+          rows: [
+            ['Small', '16 oz', '473 ml', '98-16oz (98mm)'],
+            ['Medium', '24 oz', '709 ml', '98-24oz (98mm)'],
+            ['Large', '32 oz', '946 ml', '107-10701 (32oz)']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Choosing the Right Caliber for Coffee',
+        body: 'If you are targeting the US or European coffee market, we recommend standardizing on the 98mm PET caliber. This allows you to use one lid size across 12oz, 16oz, and 24oz cups, significantly reducing storage needs. For premium "Trenta" or 32oz sharing sizes, the 107mm caliber (Model 107-10701) provides the necessary structural rigidity for heavy, ice-filled drinks.'
+      }
+    ],
+    faqs: [
+      { q: 'What is the most popular iced coffee size?', a: 'The 16oz (Grande/Medium) is the global standard, followed by the 24oz for iced lattes and cold brews.' },
+      { q: 'Does Claropack offer "Trenta" size cups?', a: 'Yes. Our 32oz PET cup (Model 107-10701) is the industry standard for XL promotional and sharing drinks.' },
+      { q: 'Can I use one lid for all coffee sizes?', a: 'Yes, if you use the 98mm series. It covers 12oz, 16oz, 20oz, and 24oz PET cups with a single 98mm flat or dome lid.' }
+    ]
   }
 }
