@@ -4,22 +4,19 @@ import { Package, Palette, Factory, ShieldCheck, Truck, Globe } from 'lucide-rea
 import { CupArt } from '../art.jsx'
 import { useSEO, useJsonLd } from '../seo.jsx'
 import { posts } from '../data/posts.jsx'
-import { verifiedImages, getVerifiedImage } from '../data/verifiedImages.js'
+import { fallbackImages, verifiedImages, getImage, getPostFallback, getVerifiedImage } from '../data/verifiedImages.js'
 
 const featuredGuides = ['cup-custom-printing-methods-guide', 'hot-drink-cup-selection-guide', 'pet-cups-cold-chain-performance', 'us-standard-98mm-pet-cups-guide']
 
-function verifiedArt(src, alt) {
-  const image = getVerifiedImage(src)
-  return image
-    ? <img src={image} alt={alt} style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" />
-    : <div style={{ height: '100%', minHeight: 180, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24, color: '#64748b', textAlign: 'center', background: '#f8fafc' }}>Verified category photo pending</div>
+function verifiedArt(src, fallback, alt) {
+  return <img src={getImage(src, fallback)} alt={alt} style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" />
 }
 
 const categories = [
-  { title: 'PET Cold Cups', slug: 'pet-cold-cups', desc: 'Crystal-clear cups from 74 to 107 mm, with capacities from 3 to 32 oz for boba, iced coffee and smoothies.', art: verifiedArt(null, 'Clear PET cold cups in multiple sizes') },
-  { title: 'Injection PP Cups', slug: 'injection-pp-cups', desc: 'Hard-wall PP cups for hot and cold drinks, in round, U-shape and square formats.', art: verifiedArt(null, 'Injection PP hard cups') },
-  { title: 'Lids & Sealing Films', slug: 'lids-sealing-films', desc: 'Flat, dome and sipper lids plus PP/PET sealing films matched to each cup caliber.', art: verifiedArt(verifiedImages.ppFlatLid, 'Verified injection PP flat lid') },
-  { title: 'Paper & PLA Cups', slug: 'paper-pla-cups', desc: 'Single, double and ripple-wall paper cups alongside compostable PLA cold cup options.', art: verifiedArt(null, 'Paper and PLA beverage cups') },
+  { title: 'PET Cold Cups', slug: 'pet-cold-cups', desc: 'Crystal-clear cups from 74 to 107 mm, with capacities from 3 to 32 oz for boba, iced coffee and smoothies.', art: verifiedArt(null, fallbackImages.pet, 'Clear PET cold cups in multiple sizes') },
+  { title: 'Injection PP Cups', slug: 'injection-pp-cups', desc: 'Hard-wall PP cups for hot and cold drinks, in round, U-shape and square formats.', art: verifiedArt(null, fallbackImages.pp, 'Injection PP hard cups') },
+  { title: 'Lids & Sealing Films', slug: 'lids-sealing-films', desc: 'Flat, dome and sipper lids plus PP/PET sealing films matched to each cup caliber.', art: verifiedArt(verifiedImages.ppFlatLid, fallbackImages.lids, 'Verified injection PP flat lid') },
+  { title: 'Paper & PLA Cups', slug: 'paper-pla-cups', desc: 'Single, double and ripple-wall paper cups alongside compostable PLA cold cup options.', art: verifiedArt(null, fallbackImages.paper, 'Paper and PLA beverage cups') },
 ]
 
 const whyItems = [
@@ -35,14 +32,14 @@ const solutions = [
   {
     title: 'PET Cold Cup Solutions',
     desc: 'Clear PET cups for cold beverages, with matched lids available across the core caliber range.',
-    art: verifiedArt(null, 'Clear PET cold cups'),
+    art: verifiedArt(null, fallbackImages.pet, 'Clear PET cold cups'),
     points: ['74 / 78 / 90 / 93 / 95 / 98 / 107 mm options', '3 oz to 32 oz capacity range', 'Straight-wall, U-shape and dessert formats', 'Matching flat, dome and sipper lids'],
     apps: 'Bubble tea · Iced coffee · Smoothies · Desserts',
   },
   {
     title: 'Injection PP Cup Solutions',
     desc: 'Hard injection-molded PP cups in round, U-shape and square formats for hot and cold drinks.',
-    art: verifiedArt(null, 'Injection PP beverage cups'),
+    art: verifiedArt(null, fallbackImages.pp, 'Injection PP beverage cups'),
     points: ['90 / 92 square / 95 mm caliber options', '360 ml to 960 ml capacity range', 'Clear and frosted finishes', 'Compatible with standard sealing machines'],
     apps: 'Milk tea chains · Fresh juice · Yogurt drinks',
     flip: true,
@@ -50,7 +47,7 @@ const solutions = [
   {
     title: 'Lids, Films & Accessories',
     desc: 'Match lid type and sealing film to the selected cup rim before ordering.',
-    art: verifiedArt(verifiedImages.ppFlatLid, 'Verified injection PP flat lid'),
+    art: verifiedArt(verifiedImages.ppFlatLid, fallbackImages.lids, 'Verified injection PP flat lid'),
     points: ['Flat, dome, sipper and specialty lid types', 'PET and PP sealing film options', 'Straws, carriers and sleeves available', '90 / 92 / 95 / 98 / 119 mm matching options'],
     apps: 'Takeaway · Delivery platforms · Sealing machines',
   },
@@ -194,7 +191,7 @@ export default function Home() {
             {featuredGuides.map((slug) => (
               <Link to={`/blog/${slug}`} className="cat-card" key={slug}>
                 <div className="cat-art" style={{ height: 180 }}>
-                  {getVerifiedImage(posts[slug].img) ? <img src={getVerifiedImage(posts[slug].img)} alt={posts[slug].title} width="800" height="800" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px 12px 0 0' }} loading="lazy" /> : <div style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24, color: '#64748b', textAlign: 'center', background: '#f8fafc' }}>Verified article photo pending</div>}
+                  <img src={getImage(posts[slug].img, getPostFallback(slug))} alt={posts[slug].title} width="800" height="800" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px 12px 0 0' }} loading="lazy" />
                 </div>
                 <div className="cat-body">
                   <h3>{posts[slug].title}</h3>

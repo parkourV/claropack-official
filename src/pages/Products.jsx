@@ -1,43 +1,40 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useSEO } from '../seo.jsx'
-import { verifiedImages } from '../data/verifiedImages.js'
+import { verifiedImages, fallbackImages, getImage } from '../data/verifiedImages.js'
 
 const CATS = ['PET Cold Cups', 'Injection PP Cups', 'Lids & Films', 'Paper & PLA Cups']
 
 const imageStyle = { width: '100%', height: '100%', objectFit: 'contain' }
 
-function productArt(src, alt) {
-  if (!src) {
-    return <div style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24, color: '#64748b', textAlign: 'center', background: '#f8fafc' }}>Verified product photo pending</div>
-  }
-  return <img src={src} alt={alt} style={imageStyle} loading="lazy" />
+function productArt(src, fallback, alt) {
+  return <img src={getImage(src, fallback)} alt={alt} style={imageStyle} loading="lazy" />
 }
 
 const products = {
   'PET Cold Cups': [
-    { name: '74mm PET Dessert Cup', specs: ['74mm caliber', '3 oz', '3.8 g'], art: productArt(null, '74mm PET dessert cup') },
-    { name: '78mm PET Cold Cup', specs: ['78mm caliber', '5.5–8 oz', '6 g'], art: productArt(null, '78mm PET cold cup') },
-    { name: '93mm PET Cold Cup', specs: ['93mm caliber', '9–12 oz', '8–11 g'], art: productArt(null, '93mm PET cold cup') },
-    { name: '95mm PET Cold Cup', specs: ['95mm caliber', '16–22 oz', '14–16 g'], art: productArt(null, '95mm PET cold cup') },
-    { name: '107mm PET Jumbo Cup', specs: ['107mm caliber', '30–32 oz', '19–20 g'], art: productArt(null, '107mm PET jumbo cup') },
+    { name: '74mm PET Dessert Cup', specs: ['74mm caliber', '3 oz', '3.8 g'], art: productArt(null, fallbackImages.pet, '74mm PET dessert cup') },
+    { name: '78mm PET Cold Cup', specs: ['78mm caliber', '5.5–8 oz', '6 g'], art: productArt(null, fallbackImages.pet, '78mm PET cold cup') },
+    { name: '93mm PET Cold Cup', specs: ['93mm caliber', '9–12 oz', '8–11 g'], art: productArt(null, fallbackImages.pet, '93mm PET cold cup') },
+    { name: '95mm PET Cold Cup', specs: ['95mm caliber', '16–22 oz', '14–16 g'], art: productArt(null, fallbackImages.pet, '95mm PET cold cup') },
+    { name: '107mm PET Jumbo Cup', specs: ['107mm caliber', '30–32 oz', '19–20 g'], art: productArt(null, fallbackImages.pet, '107mm PET jumbo cup') },
   ],
   'Injection PP Cups': [
-    { name: 'Injection PP Cup 90mm', specs: ['90mm caliber', 'Hot & cold', 'Hard wall'], art: productArt(null, '90mm injection PP cup') },
-    { name: 'Injection PP Cup 95mm', specs: ['95mm caliber', 'Custom mold'], art: productArt(null, '95mm injection PP cup') },
-    { name: 'Frosted PP Cup', specs: ['Frosted finish', 'Premium feel'], art: productArt(null, 'Frosted injection PP cup') },
+    { name: 'Injection PP Cup 90mm', specs: ['90mm caliber', 'Hot & cold', 'Hard wall'], art: productArt(null, fallbackImages.pp, '90mm injection PP cup') },
+    { name: 'Injection PP Cup 95mm', specs: ['95mm caliber', 'Custom mold'], art: productArt(null, fallbackImages.pp, '95mm injection PP cup') },
+    { name: 'Frosted PP Cup', specs: ['Frosted finish', 'Premium feel'], art: productArt(null, fallbackImages.ppFrosted, 'Frosted injection PP cup') },
   ],
   'Lids & Films': [
-    { name: 'Dome Lid', specs: ['89–98mm', 'PET clear'], art: productArt(null, 'PET dome lid') },
-    { name: 'Flat / Sipper Lid', specs: ['89–98mm', 'Strawless option'], art: productArt(verifiedImages.ppFlatLid, 'Verified injection PP flat lid') },
-    { name: 'Injection PP Lid', specs: ['With stopper', '90/95/98mm'], art: productArt(null, 'Injection PP lid') },
-    { name: 'Sealing Film Roll', specs: ['PP & PET cups', 'Custom print'], art: productArt(verifiedImages.petSealingFilm, 'Verified PET sealing film roll') },
+    { name: 'Dome Lid', specs: ['89–98mm', 'PET clear'], art: productArt(null, fallbackImages.lids, 'PET dome lid') },
+    { name: 'Flat / Sipper Lid', specs: ['89–98mm', 'Strawless option'], art: productArt(verifiedImages.ppFlatLid, fallbackImages.lids, 'Verified injection PP flat lid') },
+    { name: 'Injection PP Lid', specs: ['With stopper', '90/95/98mm'], art: productArt(null, fallbackImages.lids, 'Injection PP lid') },
+    { name: 'Sealing Film Roll', specs: ['PP & PET cups', 'Custom print'], art: productArt(verifiedImages.petSealingFilm, fallbackImages.lids, 'Verified PET sealing film roll') },
   ],
   'Paper & PLA Cups': [
-    { name: 'Single Wall Paper Cup', specs: ['2–32 oz', 'PE / PLA coating'], art: productArt(null, 'Single wall paper cup') },
-    { name: 'Double / Ripple Wall Cup', specs: ['Hot drinks', 'Insulated'], art: productArt(null, 'Double and ripple wall paper cup') },
-    { name: 'PLA Compostable Cold Cup', specs: ['Clear PLA', 'Eco option'], art: productArt(null, 'PLA compostable cold cup') },
-    { name: 'Paper Ice Cream Cup', specs: ['With lid', 'Custom print'], art: productArt(null, 'Paper ice cream cup') },
+    { name: 'Single Wall Paper Cup', specs: ['2–32 oz', 'PE / PLA coating'], art: productArt(null, fallbackImages.paper, 'Single wall paper cup') },
+    { name: 'Double / Ripple Wall Cup', specs: ['Hot drinks', 'Insulated'], art: productArt(null, fallbackImages.paper, 'Double and ripple wall paper cup') },
+    { name: 'PLA Compostable Cold Cup', specs: ['Clear PLA', 'Eco option'], art: productArt(null, fallbackImages.pla, 'PLA compostable cold cup') },
+    { name: 'Paper Ice Cream Cup', specs: ['With lid', 'Custom print'], art: productArt(null, fallbackImages.paper, 'Paper ice cream cup') },
   ],
 }
 

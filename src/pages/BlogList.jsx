@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSEO, useJsonLd } from '../seo.jsx'
 import { posts } from '../data/posts.jsx'
-import { getVerifiedImage } from '../data/verifiedImages.js'
+import { getImage, getPostFallback, getVerifiedImage } from '../data/verifiedImages.js'
 
 export default function BlogList() {
   useSEO({
@@ -34,7 +34,7 @@ export default function BlogList() {
           headline: post.title,
           description: post.description,
           datePublished: post.date,
-          image: getVerifiedImage(post.img) || undefined,
+          image: getImage(post.img, getPostFallback(post.slug)),
           url: `https://claropack.com/blog/${post.slug}`,
         })),
       },
@@ -59,7 +59,7 @@ export default function BlogList() {
             {postList.map((post) => (
               <Link to={`/blog/${post.slug}`} className="cat-card" key={post.slug}>
                 <div className="cat-art" style={{ height: 200 }}>
-                  {getVerifiedImage(post.img) ? <img src={getVerifiedImage(post.img)} alt={post.title} style={{ height: '100%', objectFit: 'cover', borderRadius: '12px 12px 0 0' }} loading="lazy" /> : <div style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24, color: '#64748b', textAlign: 'center', background: '#f8fafc' }}>Verified article photo pending</div>}
+                  <img src={getImage(post.img, getPostFallback(post.slug))} alt={post.title} style={{ height: '100%', objectFit: 'cover', borderRadius: '12px 12px 0 0' }} loading="lazy" />
                 </div>
                 <div className="cat-body">
                   <div style={{ fontSize: '0.8rem', color: '#64748B', marginBottom: 8 }}>{post.date} • {post.author}</div>
