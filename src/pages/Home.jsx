@@ -4,7 +4,7 @@ import { Package, Palette, Factory, ShieldCheck, Truck, Globe } from 'lucide-rea
 import { CupArt } from '../art.jsx'
 import { useSEO, useJsonLd } from '../seo.jsx'
 import { posts } from '../data/posts.jsx'
-import { fallbackImages, verifiedImages, getImage, getPostFallback, getVerifiedImage } from '../data/verifiedImages.js'
+import { fallbackImages, productImages, verifiedImages, getImage, getPostFallback } from '../data/verifiedImages.js'
 
 const featuredGuides = ['cup-custom-printing-methods-guide', 'hot-drink-cup-selection-guide', 'pet-cups-cold-chain-performance', 'us-standard-98mm-pet-cups-guide']
 
@@ -13,8 +13,8 @@ function verifiedArt(src, fallback, alt) {
 }
 
 const categories = [
-  { title: 'PET Cold Cups', slug: 'pet-cold-cups', desc: 'Crystal-clear cups from 74 to 107 mm, with capacities from 3 to 32 oz for boba, iced coffee and smoothies.', art: verifiedArt(null, fallbackImages.pet, 'Clear PET cold cups in multiple sizes') },
-  { title: 'Injection PP Cups', slug: 'injection-pp-cups', desc: 'Hard-wall PP cups for hot and cold drinks, in round, U-shape and square formats.', art: verifiedArt(null, fallbackImages.pp, 'Injection PP hard cups') },
+  { title: 'PET Cold Cups', slug: 'pet-cold-cups', desc: 'Crystal-clear cups from 74 to 107 mm, with capacities from 3 to 32 oz for boba, iced coffee and smoothies.', art: verifiedArt(productImages.pet93, fallbackImages.pet, 'Clear PET cold cups in multiple sizes') },
+  { title: 'Injection PP Cups', slug: 'injection-pp-cups', desc: 'Hard-wall PP cups for hot and cold drinks, in round, U-shape and square formats.', art: verifiedArt(productImages.ppRound700, fallbackImages.pp, 'Injection PP hard cups') },
   { title: 'Lids & Sealing Films', slug: 'lids-sealing-films', desc: 'Flat, dome and sipper lids plus PP/PET sealing films matched to each cup caliber.', art: verifiedArt(verifiedImages.ppFlatLid, fallbackImages.lids, 'Verified injection PP flat lid') },
   { title: 'Paper & PLA Cups', slug: 'paper-pla-cups', desc: 'Single, double and ripple-wall paper cups alongside compostable PLA cold cup options.', art: verifiedArt(null, fallbackImages.paper, 'Paper and PLA beverage cups') },
 ]
@@ -32,14 +32,14 @@ const solutions = [
   {
     title: 'PET Cold Cup Solutions',
     desc: 'Clear PET cups for cold beverages, with matched lids available across the core caliber range.',
-    art: verifiedArt(null, fallbackImages.pet, 'Clear PET cold cups'),
+    art: verifiedArt(productImages.pet95, fallbackImages.pet, 'Clear PET cold cups'),
     points: ['74 / 78 / 90 / 93 / 95 / 98 / 107 mm options', '3 oz to 32 oz capacity range', 'Straight-wall, U-shape and dessert formats', 'Matching flat, dome and sipper lids'],
     apps: 'Bubble tea · Iced coffee · Smoothies · Desserts',
   },
   {
     title: 'Injection PP Cup Solutions',
     desc: 'Hard injection-molded PP cups in round, U-shape and square formats for hot and cold drinks.',
-    art: verifiedArt(null, fallbackImages.pp, 'Injection PP beverage cups'),
+    art: verifiedArt(productImages.ppFrosted90, fallbackImages.pp, 'Injection PP beverage cups'),
     points: ['90 / 92 square / 95 mm caliber options', '360 ml to 960 ml capacity range', 'Clear and frosted finishes', 'Compatible with standard sealing machines'],
     apps: 'Milk tea chains · Fresh juice · Yogurt drinks',
     flip: true,

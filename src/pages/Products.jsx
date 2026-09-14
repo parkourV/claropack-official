@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useSEO } from '../seo.jsx'
-import { verifiedImages, fallbackImages, getImage } from '../data/verifiedImages.js'
+import { fallbackImages, productImages, verifiedImages, getImage } from '../data/verifiedImages.js'
 
 const CATS = ['PET Cold Cups', 'Injection PP Cups', 'Lids & Films', 'Paper & PLA Cups']
 
@@ -13,19 +13,19 @@ function productArt(src, fallback, alt) {
 
 const products = {
   'PET Cold Cups': [
-    { name: '74mm PET Dessert Cup', specs: ['74mm caliber', '3 oz', '3.8 g'], art: productArt(null, fallbackImages.pet, '74mm PET dessert cup') },
-    { name: '78mm PET Cold Cup', specs: ['78mm caliber', '5.5–8 oz', '6 g'], art: productArt(null, fallbackImages.pet, '78mm PET cold cup') },
-    { name: '93mm PET Cold Cup', specs: ['93mm caliber', '9–12 oz', '8–11 g'], art: productArt(null, fallbackImages.pet, '93mm PET cold cup') },
-    { name: '95mm PET Cold Cup', specs: ['95mm caliber', '16–22 oz', '14–16 g'], art: productArt(null, fallbackImages.pet, '95mm PET cold cup') },
-    { name: '107mm PET Jumbo Cup', specs: ['107mm caliber', '30–32 oz', '19–20 g'], art: productArt(null, fallbackImages.pet, '107mm PET jumbo cup') },
+    { name: '74mm PET Dessert Cup', specs: ['74mm caliber', '3 oz', '3.8 g'], art: productArt(null, fallbackImages.pet, '74mm PET dessert cup; exact 74mm store photo pending') },
+    { name: '78mm PET Cold Cup', specs: ['78mm caliber', '5.5–8 oz', '6 g'], art: productArt(productImages.pet78, fallbackImages.pet, '78mm PET cold cup real product photo') },
+    { name: '93mm PET Cold Cup', specs: ['93mm caliber', '9–12 oz', '8–11 g'], art: productArt(productImages.pet93, fallbackImages.pet, '93mm PET cold cup real product photo') },
+    { name: '95mm PET Cold Cup', specs: ['95mm caliber', '16–22 oz', '14–16 g'], art: productArt(productImages.pet95, fallbackImages.pet, '95mm PET cold cup real product photo') },
+    { name: '107mm PET Jumbo Cup', specs: ['107mm caliber', '30–32 oz', '19–20 g'], art: productArt(productImages.pet107, fallbackImages.pet, '107mm PET jumbo cup real product photo') },
   ],
   'Injection PP Cups': [
-    { name: 'Injection PP Cup 90mm', specs: ['90mm caliber', 'Hot & cold', 'Hard wall'], art: productArt(null, fallbackImages.pp, '90mm injection PP cup') },
-    { name: 'Injection PP Cup 95mm', specs: ['95mm caliber', 'Custom mold'], art: productArt(null, fallbackImages.pp, '95mm injection PP cup') },
-    { name: 'Frosted PP Cup', specs: ['Frosted finish', 'Premium feel'], art: productArt(null, fallbackImages.ppFrosted, 'Frosted injection PP cup') },
+    { name: 'Injection PP Cup 90mm', specs: ['90mm caliber', 'Hot & cold', 'Hard wall'], art: productArt(productImages.ppRound500, fallbackImages.pp, '90mm injection PP round cup real product photo') },
+    { name: 'Injection PP Cup 95mm', specs: ['95mm caliber', 'Custom mold'], art: productArt(productImages.ppRound700, fallbackImages.pp, '95mm injection PP round cup real product photo') },
+    { name: 'Frosted PP Cup', specs: ['Frosted finish', 'Premium feel'], art: productArt(productImages.ppFrosted90, fallbackImages.ppFrosted, 'Frosted injection PP cup real product photo') },
   ],
   'Lids & Films': [
-    { name: 'Dome Lid', specs: ['89–98mm', 'PET clear'], art: productArt(null, fallbackImages.lids, 'PET dome lid') },
+    { name: 'Dome Lid', specs: ['89–98mm', 'PET clear'], art: productArt(null, fallbackImages.lids, 'PET dome lid product photo') },
     { name: 'Flat / Sipper Lid', specs: ['89–98mm', 'Strawless option'], art: productArt(verifiedImages.ppFlatLid, fallbackImages.lids, 'Verified injection PP flat lid') },
     { name: 'Injection PP Lid', specs: ['With stopper', '90/95/98mm'], art: productArt(null, fallbackImages.lids, 'Injection PP lid') },
     { name: 'Sealing Film Roll', specs: ['PP & PET cups', 'Custom print'], art: productArt(verifiedImages.petSealingFilm, fallbackImages.lids, 'Verified PET sealing film roll') },
