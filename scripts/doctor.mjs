@@ -94,7 +94,8 @@ async function run() {
         'https://claropack.com/blog/90mm-injection-lid-selection-guide',
         'https://claropack.com/blog/starbucks-vs-dunkin-iced-cup-sizes',
         'https://claropack.com/blog/custom-cup-printing-cost-guide',
-        'https://claropack.com/blog/pet-cup-recycling-sustainability-guide'
+        'https://claropack.com/blog/pet-cup-recycling-sustainability-guide',
+        'https://claropack.com/blog/80mm-caliber-high-foot-injection-cups'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -149,7 +150,8 @@ async function run() {
         { path: 'blog/90mm-injection-lid-selection-guide/index.html', route: '/blog/90mm-injection-lid-selection-guide' },
         { path: 'blog/starbucks-vs-dunkin-iced-cup-sizes/index.html', route: '/blog/starbucks-vs-dunkin-iced-cup-sizes' },
         { path: 'blog/custom-cup-printing-cost-guide/index.html', route: '/blog/custom-cup-printing-cost-guide' },
-        { path: 'blog/pet-cup-recycling-sustainability-guide/index.html', route: '/blog/pet-cup-recycling-sustainability-guide' }
+        { path: 'blog/pet-cup-recycling-sustainability-guide/index.html', route: '/blog/pet-cup-recycling-sustainability-guide' },
+        { path: 'blog/80mm-caliber-high-foot-injection-cups/index.html', route: '/blog/80mm-caliber-high-foot-injection-cups' }
     ];
 
     let allPassed = true;

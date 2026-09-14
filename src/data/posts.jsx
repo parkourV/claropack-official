@@ -175,7 +175,7 @@ export const posts = {
     description: 'A step-by-step guide for beverage brands on importing disposable cups from China. Learn about MOQ, custom logo printing, shipping costs, and quality inspection.',
     date: '2026-08-09',
     author: 'Claropack Logistics',
-    img: '/assets/images/prod-pla.webp',
+    img: 'https://sc04.alicdn.com/kf/H16d834346eca4364843bf1c5be295cccg/277911013/H16d834346eca4364843bf1c5be295cccg.jpg',
     excerpt: 'Importing packaging can be complex. We simplify the process by explaining factory-direct MOQ, container loading, and how to verify food-grade quality certificates.',
     quickFacts: [
       { label: 'Custom-print MOQ', value: 'From 1,000 pcs per size' },
@@ -774,7 +774,7 @@ export const posts = {
     description: 'Understand the two ways beverage cups are produced. Compare injection-molded PP cups and thermoformed PET cups by wall rigidity, weight and use, using verified Claropack specifications.',
     date: '2026-08-28',
     author: 'Claropack Technical Team',
-    img: '/assets/images/prod-pp-hard.webp',
+    img: 'https://sc04.alicdn.com/kf/H5d65f2f3b70e4747885020dbda86e7706/277911013/H5d65f2f3b70e4747885020dbda86e7706.jpg',
     excerpt: 'Two cups can look similar and be made in completely different ways. This guide explains injection molding versus thermoforming and how the process shapes weight, rigidity and cost.',
     quickFacts: [
       { label: 'Injection PP', value: 'Thick-wall, hot & cold' },
@@ -1006,7 +1006,7 @@ export const posts = {
     description: 'How to order custom printed PET, PP and paper cups. Understand the 1,000 pcs custom-print MOQ, artwork requirements, printing methods and what to confirm before production.',
     date: '2026-09-05',
     author: 'Claropack Sourcing Advisor',
-    img: '/assets/images/prod-pet.webp',
+    img: 'https://sc04.alicdn.com/kf/S762fb78064724a9587096e674227c6d2F/277911013/S762fb78064724a9587096e674227c6d2F.jpg',
     excerpt: 'Branded cups turn every drink into a marketing impression. This guide covers the custom-print MOQ, artwork preparation and the decisions to confirm before you place a printing order.',
     quickFacts: [
       { label: 'Custom-print MOQ', value: 'From 1,000 pcs per size' },
@@ -1108,7 +1108,7 @@ export const posts = {
     description: 'Understand what food-grade means for disposable cups. Learn how PET and PP food-contact materials, recycling codes and temperature limits affect food safety for beverages.',
     date: '2026-09-05',
     author: 'Claropack Technical Team',
-    img: '/assets/images/prod-pp-hard.webp',
+    img: 'https://sc04.alicdn.com/kf/A54c37877967647febb925f07b9a65f8ef/277911013/A54c37877967647febb925f07b9a65f8ef.jpg',
     excerpt: 'Food safety is the first question serious buyers ask. This guide explains food-grade PET and PP, recycling codes, temperature limits and what to confirm with any cup supplier.',
     quickFacts: [
       { label: 'PET Material', value: 'Food-grade, recycling code 1' },
@@ -1463,7 +1463,7 @@ export const posts = {
     description: 'Learn the differences between offset and silk screen printing for PET, PP, and paper cups. Compare color accuracy, MOQ, and cost to find the best branding method for your beverage shop.',
     date: '2026-09-09',
     author: 'Claropack Branding Team',
-    img: '/assets/images/prod-pet.webp',
+    img: 'https://sc04.alicdn.com/kf/Hb6f3a2d7d82247beb2f33ef50111b5ffn/277911013/Hb6f3a2d7d82247beb2f33ef50111b5ffn.jpg',
     excerpt: 'Your cup is a walking billboard. We compare the two most common printing methods—Offset and Silk Screen—to help you choose the right one for your logo and budget.',
     quickFacts: [
       { label: 'Custom MOQ', value: 'From 1,000 pcs per size' },
@@ -1920,6 +1920,43 @@ export const posts = {
       { q: 'Are your PET cups BPA-free?', a: 'Yes. Our cups are manufactured from virgin food-grade PET resin which is naturally BPA-free and tested for food-contact safety under FDA and CE standards.' },
       { q: 'Can PET cups be composted?', a: 'No. PET is highly recyclable but not compostable. If your market requires compostable packaging, we recommend our clear PLA cold cup line.' },
       { q: 'Do you offer rPET (Recycled PET) options?', a: 'Yes. For brands targeting markets with recycled-content mandates, we can produce cups using certified rPET. Please note that availability and pricing depend on the current rPET resin market.' }
+    ]
+  },
+  '80mm-caliber-high-foot-injection-cups': {
+    title: 'The 80mm Caliber Injection Cup: Engineering High-Foot Elegance',
+    description: 'A technical review of the 80mm high-foot injection PP series. Compare 360ml (12.5g) and 500ml (18.5g) specifications directly from the Richpack factory catalog.',
+    date: '2026-09-14',
+    author: 'Claropack Engineering',
+    img: 'https://sc04.alicdn.com/kf/Hfc50011a9cb349408416a4b179203361S/-ins-PET.jpg',
+    excerpt: 'The 80mm "high-foot" or "slim" injection cup is becoming the choice for premium specialty teas. We break down the precise grammage and height specs that make this series stand out.',
+    quickFacts: [
+      { label: 'Standard Caliber', value: '80 mm' },
+      { label: '360ml Weight', value: '12.5g ± 0.5g' },
+      { label: '500ml Weight', value: '18.5g ± 0.5g' },
+      { label: 'Material', value: 'High-clarity/Frosted PP' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why the 80mm High-Foot Format?',
+        body: 'In an industry dominated by 90mm and 95mm cups, the 80mm high-foot series offers a slimmer, more elegant silhouette. This format is specifically engineered for specialty drinks like matcha lattes and fruit smoothies where a vertical, layered presentation is key. Because these are injection-molded, they maintain a rigid wall that feels like premium glassware.'
+      },
+      {
+        type: 'comparison',
+        h2: '80mm Series Catalog Specifications',
+        body: 'The following data is transcribed from the 2026 Richpack official product registry.',
+        table: {
+          head: ['Model', 'Capacity', 'Height', 'Weight', 'Base'],
+          rows: [
+            ['RP-80-360', '360 ml', '123 mm', '12.5 g', '52 mm'],
+            ['RP-80-500', '500 ml', '170 mm', '18.5 g', '52 mm']
+          ]
+        }
+      }
+    ],
+    faqs: [
+      { q: 'Is the 80mm caliber compatible with standard lids?', a: 'The 80mm caliber requires specific 80mm injection lids. We supply matching clear and frosted lids for the entire high-foot series.' },
+      { q: 'Can I order these in a frosted finish?', a: 'Yes. Both the 360ml and 500ml models are available in high-clarity and premium frosted PP finishes.' }
     ]
   }
 }

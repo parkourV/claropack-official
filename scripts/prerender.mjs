@@ -55,6 +55,7 @@ const routes = [
   "/blog/starbucks-vs-dunkin-iced-cup-sizes",
   "/blog/custom-cup-printing-cost-guide",
   "/blog/pet-cup-recycling-sustainability-guide",
+  "/blog/80mm-caliber-high-foot-injection-cups",
   "/about",
   "/contact"
 ];
