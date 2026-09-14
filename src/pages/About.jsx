@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FactoryArt, PrintArt } from '../art.jsx'
 import { useSEO } from '../seo.jsx'
+import { getVerifiedImage } from '../data/verifiedImages.js'
 
 const steps = [
   { num: 1, title: 'Raw Material QC', desc: 'Food-grade PET / PP resin with traceable batch records.' },
@@ -65,7 +66,9 @@ export default function About() {
 
       <section className="section">
         <div className="container about-grid">
-          <div className="sol-art" style={{ background: '#fff' }}><img src="/assets/images/prod-pp-hard.webp" alt="Injection PP cup customization options" width="800" height="800" style={{ width: '100%', height: 'auto', borderRadius: '12px' }} loading="lazy" /></div>
+          <div className="sol-art" style={{ background: '#fff' }}>
+            {getVerifiedImage(null) ? <img src={getVerifiedImage(null)} alt="Injection PP cup customization options" width="800" height="800" style={{ width: '100%', height: 'auto', borderRadius: '12px' }} loading="lazy" /> : <div style={{ minHeight: 260, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24, color: '#64748b', textAlign: 'center', background: '#f8fafc', borderRadius: '12px' }}>Verified production photo pending</div>}
+          </div>
           <div>
             <h2>Customization Capability</h2>
             <p>

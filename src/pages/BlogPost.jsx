@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, useParams, Navigate } from 'react-router-dom'
 import { useSEO, useJsonLd } from '../seo.jsx'
 import { posts } from '../data/posts.jsx'
+import { getVerifiedImage } from '../data/verifiedImages.js'
 
 export default function BlogPost() {
   const { slug } = useParams()
@@ -11,7 +12,7 @@ export default function BlogPost() {
     title: post ? post.title : 'Blog — Claropack',
     description: post ? post.description : '',
     type: 'article',
-    image: post?.img,
+    image: getVerifiedImage(post?.img),
   })
 
   useJsonLd(
@@ -22,7 +23,7 @@ export default function BlogPost() {
           '@type': 'Article',
           headline: post.title,
           description: post.description,
-          image: `https://claropack.com${post.img}`,
+          image: getVerifiedImage(post.img) || undefined,
           datePublished: post.date,
           dateModified: post.dateModified || post.date,
           mainEntityOfPage: `https://claropack.com/blog/${slug}`,
@@ -71,7 +72,7 @@ export default function BlogPost() {
 
       <article className="section">
         <div className="container" style={{ maxWidth: 800 }}>
-          <img src={post.img} alt={post.title} style={{ width: '100%', borderRadius: '12px', marginBottom: 40 }} />
+          {getVerifiedImage(post.img) ? <img src={getVerifiedImage(post.img)} alt={post.title} style={{ width: '100%', borderRadius: '12px', marginBottom: 40 }} /> : <div style={{ minHeight: 260, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24, color: '#64748b', textAlign: 'center', background: '#f8fafc', borderRadius: '12px', marginBottom: 40 }}>Verified article photo pending</div>}
           
           {post.quickFacts && (
             <div className="quick-facts" style={{ marginBottom: 40, padding: '24px', background: '#F0F9FF', borderRadius: '12px', border: '1px solid #BAE6FD' }}>

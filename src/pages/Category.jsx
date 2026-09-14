@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, useParams, Navigate } from 'react-router-dom'
 import { useSEO, useJsonLd } from '../seo.jsx'
 import { categories } from '../data/categories.jsx'
+import { getVerifiedImage } from '../data/verifiedImages.js'
 
 export default function Category() {
   const { slug } = useParams()
@@ -41,7 +42,7 @@ export default function Category() {
             item: {
               '@type': 'Product',
               name: `${row[0]} ${cat.name}`,
-              image: imgIdx !== -1 ? row[imgIdx] : cat.img,
+              image: getVerifiedImage(imgIdx !== -1 ? row[imgIdx] : cat.img) || undefined,
               description: `${row[2]} capacity, ${row[1]} caliber.`,
               sku: `${slug}-${row[0].replace(/\s+/g, '-').toLowerCase()}`,
               brand: { '@type': 'Brand', name: 'Claropack' }
@@ -69,7 +70,8 @@ export default function Category() {
       <section className="section">
         <div className="container about-grid">
           <div className="sol-art" style={{ background: '#fff' }}>
-            <img src={cat.img} alt={cat.name} style={{ width: '100%', borderRadius: '12px' }} loading="lazy" />
+              {getVerifiedImage(cat.img) ? <img src={getVerifiedImage(cat.img)} alt={cat.name} style={{ width: '100%', borderRadius: '12px' }} loading="lazy" /> : <div style={{ minHeight: 220, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24, color: '#64748b', textAlign: 'center', background: '#f8fafc', borderRadius: '12px' }}>Verified category photo pending</div>}
+
           </div>
           <div>
             <h2>Key Features</h2>
@@ -116,11 +118,15 @@ export default function Category() {
             {cat.specs.rows.map((row, i) => (
               <div key={i} className="product-card" style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
                 <div style={{ height: '220px', background: '#f8fafc', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
-                  <img 
-                    src={imgIdx !== -1 ? row[imgIdx] : cat.img} 
-                    alt={row[0]} 
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-                  />
+                  {getVerifiedImage(imgIdx !== -1 ? row[imgIdx] : cat.img) ? (
+                    <img 
+                      src={getVerifiedImage(imgIdx !== -1 ? row[imgIdx] : cat.img)} 
+                      alt={row[0]} 
+                      style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                    />
+                  ) : (
+                    <div style={{ padding: 24, color: '#64748b', textAlign: 'center' }}>Verified product photo pending</div>
+                  )}
                 </div>
                 <div style={{ padding: '20px', flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <h3 style={{ fontSize: '1.1rem', marginBottom: '12px' }}>{row[0]} {cat.name}</h3>
@@ -175,7 +181,7 @@ export default function Category() {
             {cat.related.map((r) => (
               <Link to={`/products/${r}`} className="cat-card" key={r}>
                 <div className="cat-art">
-                  <img src={categories[r].img} alt={categories[r].name} style={{ height: 110, objectFit: 'contain' }} loading="lazy" />
+                  {getVerifiedImage(categories[r].img) ? <img src={getVerifiedImage(categories[r].img)} alt={categories[r].name} style={{ height: 110, objectFit: 'contain' }} loading="lazy" /> : <div style={{ height: 110, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#64748b', textAlign: 'center', padding: 12 }}>Verified photo pending</div>}
                 </div>
                 <div className="cat-body">
                   <h3>{categories[r].name}</h3>
