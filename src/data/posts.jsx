@@ -1876,5 +1876,50 @@ export const posts = {
       { q: 'Is there a discount for bulk orders?', a: 'Yes. Our pricing scales significantly with volume. Orders for full containers (20ft/40ft) receive our most competitive factory-direct pricing.' },
       { q: 'Can I see a sample before paying plate fees?', a: 'We provide free stock samples so you can verify the cup quality first. Digital layouts are free, and physical custom samples can be produced for a nominal fee.' }
     ]
+  },
+  'pet-cup-recycling-sustainability-guide': {
+    title: 'PET Cup Recycling Guide: Navigating Global Sustainability Regulations',
+    description: 'Understand PET (Recycling Code 1) circularity. Learn about food-grade certification, plastic-reduction policies in EU/US, and how to choose sustainable packaging for your beverage brand.',
+    date: '2026-09-14',
+    author: 'Claropack Sustainability Team',
+    img: 'https://s.alicdn.com/@sc04/kf/He421727905ae43eaa260d37aa6f3774aH/-12-14-16-420-PET-89.png',
+    excerpt: 'Sustainability is no longer optional. We break down the recyclability of PET cups, global labeling requirements, and why PET remains the most circular plastic for the drink industry.',
+    quickFacts: [
+      { label: 'Recycling Code', value: '1 (PETE)' },
+      { label: 'Circularity', value: 'Most widely recycled plastic globally' },
+      { label: 'Compliance', value: 'FDA / CE Food-Grade Resin' },
+      { label: 'Eco-Alternative', value: 'Compostable PLA available' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'The Circularity of PET Packaging',
+        body: 'PET (Polyethylene Terephthalate) is recognized globally as the most recycled plastic. Unlike multi-layer materials, clear PET cups can be easily sorted and processed back into food-grade rPET resin or other high-value industrial materials. For beverage brands, using PET represents a commitment to an established circular economy, provided the infrastructure exists in their target market.'
+      },
+      {
+        type: 'comparison',
+        h2: 'Global Plastic Regulation Checklist',
+        body: 'If you are exporting drinks to these regions, ensure your PET cup sourcing aligns with local labeling and recycled-content laws.',
+        table: {
+          head: ['Region', 'Regulation Focus', 'Claropack Compliance'],
+          rows: [
+            ['EU (SUP Directive)', 'Single-use plastic reduction & sipper lids', 'Strawless lids & PLA options available'],
+            ['North America (FDA)', 'Food-contact material safety', '100% Virgin Food-Grade PET Resin'],
+            ['UK (Plastic Tax)', 'Tax on packaging with <30% rPET', 'rPET sourcing support upon request'],
+            ['Global', 'Recycling symbol (Code 1) visibility', 'Clear embossed recycling marks on cup base']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Labeling and Consumer Perception',
+        body: 'Beyond technical recyclability, consumer perception is driven by clear labeling. Our standard PET series (from 74mm to 107mm) features an embossed "Recycle Code 1" on the base. This ensures customers know the material is recyclable and helps municipal sorting facilities identify the resin type accurately.'
+      }
+    ],
+    faqs: [
+      { q: 'Are your PET cups BPA-free?', a: 'Yes. Our cups are manufactured from virgin food-grade PET resin which is naturally BPA-free and tested for food-contact safety under FDA and CE standards.' },
+      { q: 'Can PET cups be composted?', a: 'No. PET is highly recyclable but not compostable. If your market requires compostable packaging, we recommend our clear PLA cold cup line.' },
+      { q: 'Do you offer rPET (Recycled PET) options?', a: 'Yes. For brands targeting markets with recycled-content mandates, we can produce cups using certified rPET. Please note that availability and pricing depend on the current rPET resin market.' }
+    ]
   }
 }
