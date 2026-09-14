@@ -39,10 +39,34 @@ export function getImage(url, fallback) {
   return url && (verifiedImageSet.has(url) || productImageSet.has(url)) ? url : fallback
 }
 
+export const blogCovers = {
+  pet: '/assets/blog/pet-cups-cover.png',
+  printing: '/assets/blog/printing-cover.png',
+  lids: '/assets/blog/lids-cover.png',
+  sustainability: '/assets/blog/sustainability-cover.png',
+  logistics: '/assets/blog/logistics-cover.png',
+  pp: '/assets/blog/pp-cups-cover.png',
+}
+
+const coverGroups = {
+  printing: new Set(['cup-custom-printing-methods-guide', 'custom-printed-cups-guide', 'pet-cup-printing-design-guide', 'custom-cup-printing-cost-guide']),
+  lids: new Set(['cup-lid-compatibility-guide', 'cup-lid-weight-caliber-guide', 'strawless-sipper-lids-guide', '90mm-injection-lid-selection-guide']),
+  sustainability: new Set(['sustainable-cup-sourcing-guide', 'pet-cup-recycling-sustainability-guide', 'paper-vs-pla-cups-guide']),
+  logistics: new Set(['how-to-import-plastic-cups-from-china', 'leak-proof-takeaway-cups-and-carriers']),
+  pp: new Set(['pet-vs-pp-cups', 'injection-vs-thermoformed-cups', 'square-injection-pp-cups-branding', 'injection-pp-cup-model-weight-guide', 'clear-vs-frosted-pp-cups-guide', 'u-shape-fat-cup-guide', 'u-shape-pet-vs-pp-cups-comparison', '80mm-caliber-high-foot-injection-cups']),
+}
+
 export function getPostFallback(slug = '') {
   const key = slug.toLowerCase()
   if (key.includes('lid') || key.includes('sealing') || key.includes('accessor')) return fallbackImages.lids
   if (key.includes('paper') || key.includes('pla') || key.includes('sustainable')) return fallbackImages.paper
   if (key.includes('pp') || key.includes('injection') || key.includes('square') || key.includes('frosted') || key.includes('u-shape')) return fallbackImages.pp
   return fallbackImages.pet
+}
+
+export function getBlogImage(slug, originalImage) {
+  for (const [group, slugs] of Object.entries(coverGroups)) {
+    if (slugs.has(slug)) return blogCovers[group]
+  }
+  return originalImage || blogCovers.pet
 }

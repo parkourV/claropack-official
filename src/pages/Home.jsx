@@ -4,7 +4,7 @@ import { Package, Palette, Factory, ShieldCheck, Truck, Globe } from 'lucide-rea
 import { CupArt } from '../art.jsx'
 import { useSEO, useJsonLd } from '../seo.jsx'
 import { posts } from '../data/posts.jsx'
-import { fallbackImages, productImages, verifiedImages, getImage, getPostFallback } from '../data/verifiedImages.js'
+import { fallbackImages, productImages, verifiedImages, getBlogImage, getImage } from '../data/verifiedImages.js'
 
 const featuredGuides = ['cup-custom-printing-methods-guide', 'hot-drink-cup-selection-guide', 'pet-cups-cold-chain-performance', 'us-standard-98mm-pet-cups-guide']
 
@@ -191,7 +191,7 @@ export default function Home() {
             {featuredGuides.map((slug) => (
               <Link to={`/blog/${slug}`} className="cat-card" key={slug}>
                 <div className="cat-art" style={{ height: 180 }}>
-                  <img src={getImage(posts[slug].img, getPostFallback(slug))} alt={posts[slug].title} width="800" height="800" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px 12px 0 0' }} loading="lazy" />
+                  <img src={getBlogImage(slug, posts[slug].img)} alt={posts[slug].title} width="800" height="800" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px 12px 0 0' }} loading="lazy" />
                 </div>
                 <div className="cat-body">
                   <h3>{posts[slug].title}</h3>
