@@ -1672,7 +1672,7 @@ export const posts = {
     description: 'Master custom logo printing on clear PET cups. Learn about safe printing margins, color opacity on transparent plastic, and how to prepare artwork for our 1,000 pcs MOQ lines.',
     date: '2026-09-12',
     author: 'Claropack Design Team',
-    img: 'https://s.alicdn.com/@sc04/kf/He421727905ae43eaa260d37aa6f3774aH/-12-14-16-420-PET-89.png',
+    img: 'https://sc04.alicdn.com/kf/Hb6f3a2d7d82247beb2f33ef50111b5ffn/277911013/Hb6f3a2d7d82247beb2f33ef50111b5ffn.jpg',
     excerpt: 'A great logo can look terrible if not adjusted for a curved, transparent cup. This guide shares 5 factory-verified tips for designing crisp, vibrant branded PET cups.',
     quickFacts: [
       { label: 'Artwork Format', value: 'Vector (AI, PDF, EPS)' },
@@ -1773,7 +1773,7 @@ export const posts = {
     description: 'Compare Starbucks (Tall, Grande, Venti, Trenta) and Dunkin (Small, Medium, Large) iced cup sizes in oz and ml. Learn which PET cup calibers (98mm, 107mm) match these industry standards.',
     date: '2026-09-13',
     author: 'Claropack Sourcing Advisor',
-    img: 'https://s.alicdn.com/@sc04/kf/He421727905ae43eaa260d37aa6f3774aH/-12-14-16-420-PET-89.png',
+    img: 'https://s.alicdn.com/@sc04/kf/H315c7fed8f6a4272a09f308bd7593a11u.jpg',
     excerpt: 'When sourcing for a coffee shop, matching the "look and feel" of Starbucks or Dunkin is often the benchmark. We break down their iced cup volumes and the PET calibers required to achieve them.',
     quickFacts: [
       { label: 'Starbucks Range', value: '12 oz (Tall) to 31 oz (Trenta)' },
@@ -1831,7 +1831,7 @@ export const posts = {
     description: 'A detailed breakdown of custom printing costs for PET and PP cups. Learn about one-time plate fees, unit price factors, and how to get the best ROI on branded packaging.',
     date: '2026-09-13',
     author: 'Claropack Finance Team',
-    img: 'https://s.alicdn.com/@sc04/kf/He421727905ae43eaa260d37aa6f3774aH/-12-14-16-420-PET-89.png',
+    img: 'https://sc04.alicdn.com/kf/Ha6ee2076261f4b7196edbbc1c95a2877I/277911013/Ha6ee2076261f4b7196edbbc1c95a2877I.jpg',
     excerpt: 'The most common question from new brands is "How much does custom printing cost?" We pull back the curtain on factory pricing, from setup fees to bulk discounts.',
     quickFacts: [
       { label: 'Plate Fee', value: 'One-time fee per color' },
@@ -1882,7 +1882,7 @@ export const posts = {
     description: 'Understand PET (Recycling Code 1) circularity. Learn about food-grade certification, plastic-reduction policies in EU/US, and how to choose sustainable packaging for your beverage brand.',
     date: '2026-09-14',
     author: 'Claropack Sustainability Team',
-    img: 'https://s.alicdn.com/@sc04/kf/He421727905ae43eaa260d37aa6f3774aH/-12-14-16-420-PET-89.png',
+    img: 'https://sc04.alicdn.com/kf/Hda46d3302d8f45c2820ccbea15c86c76Y/-PLA-.jpg',
     excerpt: 'Sustainability is no longer optional. We break down the recyclability of PET cups, global labeling requirements, and why PET remains the most circular plastic for the drink industry.',
     quickFacts: [
       { label: 'Recycling Code', value: '1 (PETE)' },

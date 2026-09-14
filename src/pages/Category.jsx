@@ -6,6 +6,7 @@ import { categories } from '../data/categories.jsx'
 export default function Category() {
   const { slug } = useParams()
   const cat = categories[slug]
+  const imgIdx = cat?.specs?.head?.indexOf('Img') ?? -1
 
   useSEO({
     title: cat ? cat.title : 'Products — Claropack',
@@ -40,7 +41,7 @@ export default function Category() {
             item: {
               '@type': 'Product',
               name: `${row[0]} ${cat.name}`,
-              image: `https://claropack.com${cat.img}`,
+              image: imgIdx !== -1 ? row[imgIdx] : cat.img,
               description: `${row[2]} capacity, ${row[1]} caliber.`,
               sku: `${slug}-${row[0].replace(/\s+/g, '-').toLowerCase()}`,
               brand: { '@type': 'Brand', name: 'Claropack' }
@@ -111,14 +112,39 @@ export default function Category() {
             <h2>{cat.name} Size Reference</h2>
             <p>Real production specifications from our catalog — request the full spec sheet and free samples.</p>
           </div>
+          <div className="product-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '24px', marginBottom: '48px' }}>
+            {cat.specs.rows.map((row, i) => (
+              <div key={i} className="product-card" style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+                <div style={{ height: '220px', background: '#f8fafc', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                  <img 
+                    src={imgIdx !== -1 ? row[imgIdx] : cat.img} 
+                    alt={row[0]} 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                  />
+                </div>
+                <div style={{ padding: '20px', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                  <h3 style={{ fontSize: '1.1rem', marginBottom: '12px' }}>{row[0]} {cat.name}</h3>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
+                    <span style={{ fontSize: '0.8rem', padding: '4px 10px', background: '#f1f5f9', borderRadius: '4px', color: '#475569' }}>{row[1]} caliber</span>
+                    <span style={{ fontSize: '0.8rem', padding: '4px 10px', background: '#f1f5f9', borderRadius: '4px', color: '#475569' }}>{row[2]}</span>
+                    <span style={{ fontSize: '0.8rem', padding: '4px 10px', background: '#f1f5f9', borderRadius: '4px', color: '#475569' }}>{row[5]}</span>
+                  </div>
+                  <p style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '20px' }}>MOQ: 1,000 pcs · Custom print available</p>
+                  <Link to="/contact" className="btn btn-primary" style={{ marginTop: 'auto', textAlign: 'center' }}>Request Quote</Link>
+                </div>
+              </div>
+            ))}
+          </div>
+          
           <div className="spec-table-wrap">
+            <h3 style={{ fontSize: '1.2rem', marginBottom: '16px' }}>Technical Specification Table</h3>
             <table className="spec-table">
               <thead>
-                <tr>{cat.specs.head.map((h) => <th key={h}>{h}</th>)}</tr>
+                <tr>{cat.specs.head.filter((h) => h !== 'Img').map((h) => <th key={h}>{h}</th>)}</tr>
               </thead>
               <tbody>
                 {cat.specs.rows.map((row, i) => (
-                  <tr key={i}>{row.map((cell, j) => <td key={j}>{cell}</td>)}</tr>
+                  <tr key={i}>{row.filter((_, j) => j !== imgIdx).map((cell, j) => <td key={j}>{cell}</td>)}</tr>
                 ))}
               </tbody>
             </table>
