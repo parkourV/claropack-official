@@ -1958,5 +1958,58 @@ export const posts = {
       { q: 'Is the 80mm caliber compatible with standard lids?', a: 'The 80mm caliber requires specific 80mm injection lids. We supply matching clear and frosted lids for the entire high-foot series.' },
       { q: 'Can I order these in a frosted finish?', a: 'Yes. Both the 360ml and 500ml models are available in high-clarity and premium frosted PP finishes.' }
     ]
+  },
+  '78mm-pet-cups-5-5oz-8oz-selection-guide': {
+    title: '78mm PET Cups: How to Choose Between 5.5oz and 8oz Models',
+    description: 'Compare the 78mm PET 5.5oz and 8oz cup models by capacity, height, base diameter, weight and carton quantity using Claropack catalog specifications.',
+    date: '2026-09-15',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/blog/pet-cups-cover.png',
+    excerpt: 'The 78mm PET series includes both 5.5oz and 8oz models. Use this side-by-side specification guide to align cup height and serving volume with your menu.',
+    quickFacts: [
+      { label: 'Shared Caliber', value: '78 mm' },
+      { label: 'Model A', value: '5.5 oz / 54 mm height / 52 mm base' },
+      { label: 'Model B', value: '8 oz / 80 mm height / 48 mm base' },
+      { label: 'Catalog Weight', value: '6 g for both listed models' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why the Same 78mm Caliber Has Two Formats',
+        body: 'A cup caliber describes the rim diameter, not the full serving volume. In the Claropack PET catalog, the 78mm series includes a shorter 5.5oz model and a taller 8oz model. Both are listed at 6g, but their height and base dimensions differ, so buyers should select by menu volume and shelf presentation rather than caliber alone.'
+      },
+      {
+        type: 'comparison',
+        h2: '78mm PET Cup Specification Comparison',
+        body: 'Use the following catalog values to prepare a like-for-like inquiry. Confirm final drawings and packing details with the factory before production.',
+        table: {
+          head: ['Model', 'Caliber', 'Capacity', 'Height', 'Base', 'Weight', 'Carton Quantity'],
+          rows: [
+            ['5.5-7801', '78 mm', '5.5 oz', '54 mm', '52 mm', '6 g', '1,000 pcs'],
+            ['8oz-7802', '78 mm', '8 oz', '80 mm', '48 mm', '6 g', '1,000 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'When the 5.5oz Model Makes More Sense',
+        body: 'Choose the 5.5oz format when the menu needs a compact serving profile and a shorter 54mm cup height. Its 52mm base is also different from the 8oz model, so the cup holder, carrier and display footprint should be checked against the actual model rather than inferred from the shared 78mm rim.'
+      },
+      {
+        type: 'text',
+        h2: 'When to Specify the 8oz Model',
+        body: 'The 8oz model is the taller option in this 78mm pair, with an 80mm height and 48mm base listed in the catalog. It may suit menus that need a larger listed volume while keeping the same rim caliber, but the final lid, carrier and sealing setup should be confirmed against the selected cup drawing.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before Ordering',
+        body: 'Include the model code, capacity, 78mm caliber, height, base diameter and carton quantity in the inquiry. Printing requirements, artwork tolerances, lid matching and any destination-specific documentation are not specified in the catalog excerpt used for this guide and remain待工厂确认.'
+      }
+    ],
+    faqs: [
+      { q: 'Are the 5.5oz and 8oz models the same height?', a: 'No. The catalog lists 54mm for the 5.5oz model and 80mm for the 8oz model.' },
+      { q: 'Do both 78mm models have the same weight?', a: 'The listed catalog weight is 6g for both models. Confirm production tolerance with the factory before placing a bulk order.' },
+      { q: 'Can I use the same lid because both cups are 78mm?', a: 'The shared 78mm caliber suggests the same rim standard, but final lid fit should be confirmed with the supplier using the selected model and drawing.' }
+    ]
   }
 }
