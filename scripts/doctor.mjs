@@ -96,7 +96,8 @@ async function run() {
         'https://claropack.com/blog/custom-cup-printing-cost-guide',
         'https://claropack.com/blog/pet-cup-recycling-sustainability-guide',
         'https://claropack.com/blog/80mm-caliber-high-foot-injection-cups',
-        'https://claropack.com/blog/78mm-pet-cups-5-5oz-8oz-selection-guide'
+        'https://claropack.com/blog/78mm-pet-cups-5-5oz-8oz-selection-guide',
+        'https://claropack.com/blog/93mm-pet-cups-9oz-12oz-selection-guide'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -153,7 +154,8 @@ async function run() {
         { path: 'blog/custom-cup-printing-cost-guide/index.html', route: '/blog/custom-cup-printing-cost-guide' },
         { path: 'blog/pet-cup-recycling-sustainability-guide/index.html', route: '/blog/pet-cup-recycling-sustainability-guide' },
         { path: 'blog/80mm-caliber-high-foot-injection-cups/index.html', route: '/blog/80mm-caliber-high-foot-injection-cups' },
-        { path: 'blog/78mm-pet-cups-5-5oz-8oz-selection-guide/index.html', route: '/blog/78mm-pet-cups-5-5oz-8oz-selection-guide' }
+        { path: 'blog/78mm-pet-cups-5-5oz-8oz-selection-guide/index.html', route: '/blog/78mm-pet-cups-5-5oz-8oz-selection-guide' },
+        { path: 'blog/93mm-pet-cups-9oz-12oz-selection-guide/index.html', route: '/blog/93mm-pet-cups-9oz-12oz-selection-guide' }
     ];
 
     let allPassed = true;

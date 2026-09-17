@@ -57,6 +57,7 @@ const routes = [
   "/blog/pet-cup-recycling-sustainability-guide",
   "/blog/80mm-caliber-high-foot-injection-cups",
   "/blog/78mm-pet-cups-5-5oz-8oz-selection-guide",
+  "/blog/93mm-pet-cups-9oz-12oz-selection-guide",
   "/about",
   "/contact"
 ];

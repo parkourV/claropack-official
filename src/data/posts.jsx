@@ -2011,5 +2011,58 @@ export const posts = {
       { q: 'Do both 78mm models have the same weight?', a: 'The listed catalog weight is 6g for both models. Confirm production tolerance with the factory before placing a bulk order.' },
       { q: 'Can I use the same lid because both cups are 78mm?', a: 'The shared 78mm caliber suggests the same rim standard, but final lid fit should be confirmed with the supplier using the selected model and drawing.' }
     ]
+  },
+  '93mm-pet-cups-9oz-12oz-selection-guide': {
+    title: '93mm PET Cups: Choosing Between 9oz and 12oz Models',
+    description: 'Compare the 93mm PET 9oz and 12oz cup models by capacity, height, base diameter, weight and carton quantity using Claropack catalog specifications.',
+    date: '2026-09-17',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/blog/pet-cups-cover.png',
+    excerpt: 'The 93mm PET range includes a compact 9oz model and a taller 12oz model. Compare the listed dimensions before selecting a cup for your menu.',
+    quickFacts: [
+      { label: 'Shared Caliber', value: '93 mm' },
+      { label: '9oz Model', value: '71 mm height / 55 mm base / 8 g' },
+      { label: '12oz Model', value: '108 mm height / 58 mm base / 11 g' },
+      { label: 'Carton Quantity', value: '1,000 pcs for both listed models' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'What the 93mm Caliber Tells You',
+        body: 'The 93mm caliber identifies the cup rim diameter, while the capacity and vertical profile determine how the drink presents. Claropack lists two 93mm PET models: 93-9oz for a shorter serving format and 9301 for a taller 12oz format. Buyers should compare the complete row rather than choosing by rim size alone.'
+      },
+      {
+        type: 'comparison',
+        h2: '93mm PET Cup Specification Comparison',
+        body: 'The values below are taken from the PET cold cup category specification table. Confirm final drawings and any custom configuration with the factory before production.',
+        table: {
+          head: ['Model', 'Caliber', 'Capacity', 'Height', 'Base', 'Weight', 'Carton Quantity'],
+          rows: [
+            ['93-9oz', '93 mm', '9 oz', '71 mm', '55 mm', '8 g', '1,000 pcs'],
+            ['9301', '93 mm', '12 oz', '108 mm', '58 mm', '11 g', '1,000 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'When to Select the 9oz Model',
+        body: 'The 9oz model is the shorter option, listed at 71mm high with a 55mm base and 8g weight. It fits menus that need a smaller listed volume while retaining the 93mm rim standard. Check the actual cup holder, carrier and filling setup against the 71mm height before ordering.'
+      },
+      {
+        type: 'text',
+        h2: 'When the 12oz Model Is the Better Match',
+        body: 'The 12oz 9301 model is listed at 108mm high, with a 58mm base and 11g weight. Its taller profile may better suit a 12oz drink presentation, but the final choice should follow the menu volume and the operating equipment used at the filling, sealing and delivery stages.'
+      },
+      {
+        type: 'text',
+        h2: 'Create a Complete 93mm Inquiry',
+        body: 'Include the model code, 93mm caliber, capacity, height, base, weight and carton quantity in the sourcing request. Printing specifications, artwork tolerances, exact lid model and destination documentation are not included in the category table and remain待工厂确认.'
+      }
+    ],
+    faqs: [
+      { q: 'Are the 93mm 9oz and 12oz cups the same height?', a: 'No. The catalog lists 71mm for the 9oz model and 108mm for the 12oz model.' },
+      { q: 'What is the listed weight of the 93mm 9oz model?', a: 'The 93-9oz row lists 8g. Confirm production tolerance with the factory before a bulk order.' },
+      { q: 'Do both 93mm models have the same carton quantity?', a: 'Both listed rows show 1,000 pcs. Confirm the final carton configuration if the product is customized.' }
+    ]
   }
 }
