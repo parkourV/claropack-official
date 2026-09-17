@@ -2064,5 +2064,60 @@ export const posts = {
       { q: 'What is the listed weight of the 93mm 9oz model?', a: 'The 93-9oz row lists 8g. Confirm production tolerance with the factory before a bulk order.' },
       { q: 'Do both 93mm models have the same carton quantity?', a: 'Both listed rows show 1,000 pcs. Confirm the final carton configuration if the product is customized.' }
     ]
+  },
+  'pet-cup-size-comparison-78mm-93mm': {
+    title: 'PET Cup Size Comparison: 78mm vs 93mm Models for Beverage Menus',
+    description: 'Compare four listed PET cup models across 78mm and 93mm calibers by capacity, height, base diameter, weight and carton quantity before standardizing a beverage menu.',
+    date: '2026-09-17',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/blog/pet-cups-cover.png',
+    excerpt: 'A 78mm or 93mm rim is only one part of the specification. Compare four catalog PET models to see how capacity, height, base and weight change together.',
+    quickFacts: [
+      { label: '78mm Models', value: '5.5 oz and 8 oz' },
+      { label: '93mm Models', value: '9 oz and 12 oz' },
+      { label: 'Listed Weight Range', value: '6 g to 11 g' },
+      { label: 'Listed Carton Quantity', value: '1,000 pcs for all four models' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why Compare Caliber, Capacity and Profile Together',
+        body: 'A PET cup comparison is more useful when it includes the rim caliber, capacity, height, base diameter and weight. The 78mm and 93mm rows in the Claropack catalog show that a larger listed capacity is accompanied by changes in the vertical profile, base and grammage. Use the full row when checking a menu, carrier or filling setup.'
+      },
+      {
+        type: 'comparison',
+        h2: '78mm vs 93mm PET Catalog Reference',
+        body: 'All values below are copied from the PET cold cup category specification table. The table is a sourcing reference, not a final quotation or production drawing.',
+        table: {
+          head: ['Model', 'Caliber', 'Capacity', 'Height', 'Base', 'Weight', 'Carton Quantity'],
+          rows: [
+            ['5.5-7801', '78 mm', '5.5 oz', '54 mm', '52 mm', '6 g', '1,000 pcs'],
+            ['8oz-7802', '78 mm', '8 oz', '80 mm', '48 mm', '6 g', '1,000 pcs'],
+            ['93-9oz', '93 mm', '9 oz', '71 mm', '55 mm', '8 g', '1,000 pcs'],
+            ['9301', '93 mm', '12 oz', '108 mm', '58 mm', '11 g', '1,000 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'How the 78mm Pair Fits a Smaller Menu Tier',
+        body: 'The 78mm rows cover 5.5oz and 8oz. The 5.5oz model is listed at 54mm high with a 52mm base, while the 8oz model is 80mm high with a 48mm base. Because the base and height are not identical, confirm the selected model against the carrier, holder and filling equipment rather than assuming one footprint.'
+      },
+      {
+        type: 'text',
+        h2: 'How the 93mm Pair Extends the Menu',
+        body: 'The 93mm rows cover 9oz and 12oz. The 9oz model is listed at 71mm high, 55mm base and 8g; the 12oz model is 108mm high, 58mm base and 11g. This gives buyers a larger-volume comparison set, but the exact lid model and sealing arrangement still need to be checked against the selected cup.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Put in the Supplier Request',
+        body: 'State the model code first, then caliber, capacity, height, base, weight and carton quantity. Printing details, final drawings, exact lid fit, production tolerance and destination documentation are not contained in this catalog table and remain待工厂确认.'
+      }
+    ],
+    faqs: [
+      { q: 'Are all four models packed at the same carton quantity?', a: 'The listed PET catalog rows show 1,000 pcs for all four models. Confirm the final carton configuration for any customized order.' },
+      { q: 'Does a 93mm cup always have a larger base than a 78mm cup?', a: 'Not necessarily. The listed 8oz 78mm model has a 48mm base, while the listed 9oz and 12oz 93mm models have 55mm and 58mm bases. Compare the exact model row.' },
+      { q: 'Can I choose a lid from the caliber alone?', a: 'Use caliber as the starting point, but confirm exact lid fit with the selected model and supplier drawing before bulk production.' }
+    ]
   }
 }
