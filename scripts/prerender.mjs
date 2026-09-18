@@ -59,6 +59,7 @@ const routes = [
   "/blog/78mm-pet-cups-5-5oz-8oz-selection-guide",
   "/blog/93mm-pet-cups-9oz-12oz-selection-guide",
   "/blog/pet-cup-size-comparison-78mm-93mm",
+  "/blog/95mm-pet-cups-16oz-22oz-selection-guide",
   "/about",
   "/contact"
 ];

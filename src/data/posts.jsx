@@ -2119,5 +2119,58 @@ export const posts = {
       { q: 'Does a 93mm cup always have a larger base than a 78mm cup?', a: 'Not necessarily. The listed 8oz 78mm model has a 48mm base, while the listed 9oz and 12oz 93mm models have 55mm and 58mm bases. Compare the exact model row.' },
       { q: 'Can I choose a lid from the caliber alone?', a: 'Use caliber as the starting point, but confirm exact lid fit with the selected model and supplier drawing before bulk production.' }
     ]
+  },
+  '95mm-pet-cups-16oz-22oz-selection-guide': {
+    title: '95mm PET Cups: How to Choose Between 16oz and 22oz Models',
+    description: 'Compare the 95mm PET 16oz and 22oz cup models by capacity, height, base diameter, weight and carton quantity using Claropack catalog specifications.',
+    date: '2026-09-18',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/blog/pet-cups-cover.png',
+    excerpt: 'The 95mm PET series pairs two menu sizes with one rim caliber. Compare the listed 16oz and 22oz dimensions before choosing a cup for bubble tea, iced coffee or smoothies.',
+    quickFacts: [
+      { label: 'Shared Caliber', value: '95 mm' },
+      { label: '16oz Model', value: '123 mm height / 66 mm base / 14 g' },
+      { label: '22oz Model', value: '146 mm height / 66 mm base / 16 g' },
+      { label: 'Carton Quantity', value: '1,000 pcs for both listed models' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why 95mm Is a Useful Menu Pairing',
+        body: 'The PET category lists both 16oz and 22oz models at a shared 95mm rim caliber. That makes the two capacities a practical comparison for buyers planning a core and large drink tier, but the shared rim does not mean the cups have the same vertical profile or weight.'
+      },
+      {
+        type: 'comparison',
+        h2: '95mm PET Cup Specification Comparison',
+        body: 'The following values are taken directly from the PET cold cup category table. Confirm final drawings and any custom configuration with the factory before production.',
+        table: {
+          head: ['Model', 'Caliber', 'Capacity', 'Height', 'Base', 'Weight', 'Carton Quantity'],
+          rows: [
+            ['95-9507', '95 mm', '16 oz', '123 mm', '66 mm', '14 g', '1,000 pcs'],
+            ['95-9508', '95 mm', '22 oz', '146 mm', '66 mm', '16 g', '1,000 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'When to Choose the 16oz Model',
+        body: 'The 16oz 95-9507 model is listed at 123mm high, with a 66mm base and 14g weight. It fits a regular or medium menu tier when the drink program needs a 95mm rim. Check the actual carrier, cup holder and filling clearance against the 123mm height before ordering.'
+      },
+      {
+        type: 'text',
+        h2: 'When to Specify the 22oz Model',
+        body: 'The 22oz 95-9508 model is the taller option, listed at 146mm high with the same 66mm base and a 16g weight. Its height should be checked against delivery bags, carriers and sealing equipment; these operating-fit details are not specified in the category table.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before Ordering',
+        body: 'Include the model code, 95mm caliber, capacity, height, base, weight and carton quantity in the inquiry. Exact lid model, printing specifications, artwork tolerances, production tolerance and destination documentation are not included in the category table and remain待工厂确认.'
+      }
+    ],
+    faqs: [
+      { q: 'Do the 95mm 16oz and 22oz models use the same rim caliber?', a: 'Yes. Both listed PET models use a 95mm caliber, while their heights and weights differ.' },
+      { q: 'Are the 95mm 16oz and 22oz cups the same height?', a: 'No. The catalog lists 123mm for the 16oz model and 146mm for the 22oz model.' },
+      { q: 'Do both 95mm models have the same base diameter?', a: 'Yes. Both listed rows show a 66mm base. Confirm the production drawing for the final order.' }
+    ]
   }
 }

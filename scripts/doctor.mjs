@@ -98,7 +98,8 @@ async function run() {
         'https://claropack.com/blog/80mm-caliber-high-foot-injection-cups',
         'https://claropack.com/blog/78mm-pet-cups-5-5oz-8oz-selection-guide',
         'https://claropack.com/blog/93mm-pet-cups-9oz-12oz-selection-guide',
-        'https://claropack.com/blog/pet-cup-size-comparison-78mm-93mm'
+        'https://claropack.com/blog/pet-cup-size-comparison-78mm-93mm',
+        'https://claropack.com/blog/95mm-pet-cups-16oz-22oz-selection-guide'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -157,7 +158,8 @@ async function run() {
         { path: 'blog/80mm-caliber-high-foot-injection-cups/index.html', route: '/blog/80mm-caliber-high-foot-injection-cups' },
         { path: 'blog/78mm-pet-cups-5-5oz-8oz-selection-guide/index.html', route: '/blog/78mm-pet-cups-5-5oz-8oz-selection-guide' },
         { path: 'blog/93mm-pet-cups-9oz-12oz-selection-guide/index.html', route: '/blog/93mm-pet-cups-9oz-12oz-selection-guide' },
-        { path: 'blog/pet-cup-size-comparison-78mm-93mm/index.html', route: '/blog/pet-cup-size-comparison-78mm-93mm' }
+        { path: 'blog/pet-cup-size-comparison-78mm-93mm/index.html', route: '/blog/pet-cup-size-comparison-78mm-93mm' },
+        { path: 'blog/95mm-pet-cups-16oz-22oz-selection-guide/index.html', route: '/blog/95mm-pet-cups-16oz-22oz-selection-guide' }
     ];
 
     let allPassed = true;
