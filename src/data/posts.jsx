@@ -2172,5 +2172,60 @@ export const posts = {
       { q: 'Are the 95mm 16oz and 22oz cups the same height?', a: 'No. The catalog lists 123mm for the 16oz model and 146mm for the 22oz model.' },
       { q: 'Do both 95mm models have the same base diameter?', a: 'Yes. Both listed rows show a 66mm base. Confirm the production drawing for the final order.' }
     ]
+  },
+  '95mm-pet-pp-menu-planning-guide': {
+    title: '95mm PET vs PP Cups: A Same-Caliber Menu Planning Guide',
+    description: 'Compare listed 95mm PET and injection PP cup models by material, capacity, height, base and weight before building a mixed cold and hot beverage menu.',
+    date: '2026-09-20',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/blog/pet-cups-cover.png',
+    excerpt: 'A shared 95mm rim does not make PET and PP cups interchangeable. Compare the listed models and keep material, capacity and operating use separate in your purchase plan.',
+    quickFacts: [
+      { label: 'PET Models', value: '16 oz and 22 oz' },
+      { label: 'PP Models', value: '500 ml and 700 ml U-shape' },
+      { label: 'Shared Caliber', value: '95 mm' },
+      { label: 'Listed Weight Range', value: '14 g to 21 g' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why Same-Caliber Planning Needs a Material Check',
+        body: 'The category data lists both PET and injection PP cups at 95mm, but the material and model rows are different. A menu planner should record material, model code, capacity, height, base and weight together instead of treating every 95mm cup as the same product.'
+      },
+      {
+        type: 'comparison',
+        h2: '95mm PET and Injection PP Reference Table',
+        body: 'The following values are transcribed from the PET cold cup and injection PP category tables. Keep the rows as separate specifications and confirm the final use case with the factory.',
+        table: {
+          head: ['Material', 'Model', 'Caliber', 'Capacity', 'Height', 'Base', 'Weight'],
+          rows: [
+            ['PET', '95-9507', '95 mm', '16 oz', '123 mm', '66 mm', '14 g'],
+            ['PET', '95-9508', '95 mm', '22 oz', '146 mm', '66 mm', '16 g'],
+            ['Injection PP', 'PP-95U', '95 mm', '500 ml (U)', '112 mm', '70 mm', '14.5 g'],
+            ['Injection PP', 'PP-95U', '95 mm', '700 ml (U)', '155 mm', '70 mm', '21 g']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Use the PET Rows for the Listed 16oz and 22oz Sizes',
+        body: 'The PET table lists model 95-9507 at 16oz, 123mm high, with a 66mm base and 14g weight. Model 95-9508 is listed at 22oz, 146mm high, with the same 66mm base and 16g weight. Keep these as the PET options in the menu plan and confirm the final lid and sealing setup for the selected model.'
+      },
+      {
+        type: 'text',
+        h2: 'Use the PP Rows for the Listed U-Shape Formats',
+        body: 'The injection PP table lists two PP-95U rows at the same 95mm caliber and 70mm base: 500ml (U) at 112mm and 14.5g, and 700ml (U) at 155mm and 21g. The catalog identifies these as injection PP models, so keep their model code and material visible in the purchasing sheet rather than grouping them with the PET rows.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before a Mixed-Material Order',
+        body: 'State the material, model code, caliber, capacity, height, base and weight for every line item. Exact lid compatibility, sealing-film material, beverage temperature, artwork, production tolerance and destination documentation are not fully specified in the category tables and remain待工厂确认.'
+      }
+    ],
+    faqs: [
+      { q: 'Are the PET and PP rows the same product because both use 95mm?', a: 'No. The catalog lists them as different materials and model series. Use the complete row, including material and model code.' },
+      { q: 'Do the listed PET 16oz and PP 500ml rows have the same height?', a: 'No. The PET 16oz row is listed at 123mm, while the PP-95U 500ml (U) row is listed at 112mm.' },
+      { q: 'Do the PET and PP rows have the same base diameter?', a: 'No. The PET rows list a 66mm base, while the PP-95U rows list a 70mm base.' }
+    ]
   }
 }
