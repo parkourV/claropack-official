@@ -100,7 +100,8 @@ async function run() {
         'https://claropack.com/blog/93mm-pet-cups-9oz-12oz-selection-guide',
         'https://claropack.com/blog/pet-cup-size-comparison-78mm-93mm',
         'https://claropack.com/blog/95mm-pet-cups-16oz-22oz-selection-guide',
-        'https://claropack.com/blog/95mm-pet-pp-menu-planning-guide'
+        'https://claropack.com/blog/95mm-pet-pp-menu-planning-guide',
+        'https://claropack.com/blog/74mm-pet-dessert-cups-sourcing-guide'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -161,7 +162,8 @@ async function run() {
         { path: 'blog/93mm-pet-cups-9oz-12oz-selection-guide/index.html', route: '/blog/93mm-pet-cups-9oz-12oz-selection-guide' },
         { path: 'blog/pet-cup-size-comparison-78mm-93mm/index.html', route: '/blog/pet-cup-size-comparison-78mm-93mm' },
         { path: 'blog/95mm-pet-cups-16oz-22oz-selection-guide/index.html', route: '/blog/95mm-pet-cups-16oz-22oz-selection-guide' },
-        { path: 'blog/95mm-pet-pp-menu-planning-guide/index.html', route: '/blog/95mm-pet-pp-menu-planning-guide' }
+        { path: 'blog/95mm-pet-pp-menu-planning-guide/index.html', route: '/blog/95mm-pet-pp-menu-planning-guide' },
+        { path: 'blog/74mm-pet-dessert-cups-sourcing-guide/index.html', route: '/blog/74mm-pet-dessert-cups-sourcing-guide' }
     ];
 
     let allPassed = true;
