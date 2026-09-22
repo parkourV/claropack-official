@@ -2216,5 +2216,53 @@ export const posts = {
       { q: 'Does the 74mm model have a matching lid?', a: 'Lids for the 74mm caliber must be matched by rim diameter. Tell the supplier the 74-7401 model code to receive the correct flat or dome lid specification.' },
       { q: 'What is the listed weight of the 3oz PET model?', a: 'The 74-7401 row lists 3.8g. Confirm production tolerance with the factory before a bulk order.' }
     ]
+  },
+  '92mm-square-injection-pp-cups-selection-guide': {
+    title: '92mm Square Injection PP Cups: Choosing Between 650ml and 960ml',
+    description: 'Compare the 92mm square injection-molded PP cup models by capacity, height, base diameter, and weight using Claropack catalog specifications.',
+    date: '2026-09-22',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/blog/pp-cups-cover.png',
+    excerpt: 'The 92mm square series offers a modern, premium alternative to traditional round cups. Compare the listed 650ml and 960ml specifications before standardizing your specialty drink menu.',
+    quickFacts: [
+      { label: 'Unique Format', value: '92mm Square Injection PP' },
+      { label: '650ml Model', value: '140mm height / 28g weight' },
+      { label: '960ml Model', value: '200mm height / 35g weight' },
+      { label: 'Base Diameter', value: '65 mm for both models' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why Brands Choose Square Formats',
+        body: 'Square-profile cups provide an immediate visual differentiation on the shelf and in the hand. While traditional boba and tea menus rely on round or U-shape formats, the 92mm square series is often selected for premium juice programs, dessert-heavy drinks, and limited-edition seasonal releases. Use the catalog specifications to ensure the chosen height fits your delivery and filling equipment.'
+      },
+      {
+        type: 'comparison',
+        h2: '92mm Square PP Catalog Reference',
+        body: 'The following values are transcribed directly from the injection PP category table. Confirm final drawings and any custom configuration with the factory.',
+        table: {
+          head: ['Model', 'Caliber', 'Capacity', 'Height', 'Base', 'Weight'],
+          rows: [
+            ['PP-92 Square', '92 mm', '650 ml', '140 mm', '65 mm', '28 g'],
+            ['PP-92 Square', '92 mm', '960 ml', '200 mm', '65 mm', '35 g']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Use Base Diameter for Cup Holder Planning',
+        body: 'Both the 650ml and 960ml square models share a listed 65mm base diameter. However, because the profile is square rather than round, confirm fit with your existing cup holders, car holders, and carriers before a bulk order. The 200mm height of the 960ml model also requires checking vertical clearance at the filling station.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Put in the Supplier Request',
+        body: 'State the model code "PP-92 Square" first, then the caliber, capacity, height, base, and weight for the selected sizes. Custom square-fit sealing film, printing specifications, artwork tolerances, and destination documentation remain待工厂确认.'
+      }
+    ],
+    faqs: [
+      { q: 'Do square cups use standard 92mm round lids?', a: 'Lids for square cups must be verified for fit. While the nominal caliber is 92mm, always confirm the matching square-fit lid model with the supplier before ordering.' },
+      { q: 'Is the 960ml square cup suitable for hot drinks?', a: 'Yes. As an injection-molded PP product, it is designed to withstand temperatures up to about 100\u00b0C, making it suitable for both hot and cold beverage programs.' },
+      { q: 'What is the listed weight of the 650ml square model?', a: 'The PP-92 Square 650ml row lists 28g. Confirm production tolerance with the factory before a bulk order.' }
+    ]
   }
 }
