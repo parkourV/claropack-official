@@ -63,6 +63,7 @@ const routes = [
   "/blog/95mm-pet-pp-menu-planning-guide",
   "/blog/74mm-pet-dessert-cups-sourcing-guide",
   "/blog/92mm-square-injection-pp-cups-selection-guide",
+  "/blog/107mm-pet-jumbo-cups-30oz-32oz-guide",
   "/about",
   "/contact"
 ];

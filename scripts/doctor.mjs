@@ -102,7 +102,8 @@ async function run() {
         'https://claropack.com/blog/95mm-pet-cups-16oz-22oz-selection-guide',
         'https://claropack.com/blog/95mm-pet-pp-menu-planning-guide',
         'https://claropack.com/blog/74mm-pet-dessert-cups-sourcing-guide',
-        'https://claropack.com/blog/92mm-square-injection-pp-cups-selection-guide'
+        'https://claropack.com/blog/92mm-square-injection-pp-cups-selection-guide',
+        'https://claropack.com/blog/107mm-pet-jumbo-cups-30oz-32oz-guide'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}</loc>`)) {
@@ -165,7 +166,8 @@ async function run() {
         { path: 'blog/95mm-pet-cups-16oz-22oz-selection-guide/index.html', route: '/blog/95mm-pet-cups-16oz-22oz-selection-guide' },
         { path: 'blog/95mm-pet-pp-menu-planning-guide/index.html', route: '/blog/95mm-pet-pp-menu-planning-guide' },
         { path: 'blog/74mm-pet-dessert-cups-sourcing-guide/index.html', route: '/blog/74mm-pet-dessert-cups-sourcing-guide' },
-        { path: 'blog/92mm-square-injection-pp-cups-selection-guide/index.html', route: '/blog/92mm-square-injection-pp-cups-selection-guide' }
+        { path: 'blog/92mm-square-injection-pp-cups-selection-guide/index.html', route: '/blog/92mm-square-injection-pp-cups-selection-guide' },
+        { path: 'blog/107mm-pet-jumbo-cups-30oz-32oz-guide/index.html', route: '/blog/107mm-pet-jumbo-cups-30oz-32oz-guide' }
     ];
 
     let allPassed = true;

@@ -2264,5 +2264,53 @@ export const posts = {
       { q: 'Is the 960ml square cup suitable for hot drinks?', a: 'Yes. As an injection-molded PP product, it is designed to withstand temperatures up to about 100\u00b0C, making it suitable for both hot and cold beverage programs.' },
       { q: 'What is the listed weight of the 650ml square model?', a: 'The PP-92 Square 650ml row lists 28g. Confirm production tolerance with the factory before a bulk order.' }
     ]
+  },
+  '107mm-pet-jumbo-cups-30oz-32oz-guide': {
+    title: '107mm PET Jumbo Cups: 30oz and 32oz Model Specifications and Lid Matching',
+    description: 'Compare the 107mm jumbo PET cup models by capacity, height, base diameter, weight and carton quantity using Claropack catalog specifications.',
+    date: '2026-09-23',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/blog/pet-cups-cover.png',
+    excerpt: 'The 107mm PET series represents the largest format in our cold cup catalog. Compare the listed 30oz and 32oz dimensions before finalizing your jumbo drink or dessert menu.',
+    quickFacts: [
+      { label: 'Jumbo Format', value: '107 mm Caliber PET' },
+      { label: '30oz Model', value: '162 mm height / 63 mm base / 19 g' },
+      { label: '32oz Model', value: '178 mm height / 20 g weight' },
+      { label: 'Carton Quantity', value: '600 pcs for both jumbo models' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'The Largest Format in the PET Catalog',
+        body: 'For brands serving jumbo milkshakes, oversized iced coffees, or family-sized desserts, the 107mm caliber is the definitive choice. The 30oz and 32oz models offer a significant volume increase over standard 16oz or 22oz cups. Using these larger formats requires specific consideration of vertical shelf clearance, filling equipment reach, and carrier weight limits.'
+      },
+      {
+        type: 'comparison',
+        h2: '107mm Jumbo PET Cup Catalog Reference',
+        body: 'The following values are transcribed directly from the PET cold cup category table. Confirm final drawings and any custom configuration with the factory.',
+        table: {
+          head: ['Model', 'Caliber', 'Capacity', 'Height', 'Base', 'Weight', 'Carton Quantity'],
+          rows: [
+            ['107-10703', '107 mm', '30 oz', '162 mm', '63 mm', '19 g', '600 pcs'],
+            ['107-10701', '107 mm', '32 oz', '178 mm', '\u2014', '20 g', '600 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Planning for Jumbo Logistics',
+        body: 'The 107mm models are packed at 600 pieces per carton, reflecting their significantly larger individual volume compared to the standard 1,000-piece cartons used for 95mm cups. Buyers should adjust their storage footprints and replenishment logic to account for this lower carton density.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Put in the Supplier Request',
+        body: 'State the model codes 107-10703 or 107-10701 first, then the 107mm caliber, capacity, height, base, weight and 600-count carton quantity. Precise 107mm lid model compatibility, printing specifications, artwork tolerances and destination documentation remain待工厂确认.'
+      }
+    ],
+    faqs: [
+      { q: 'Is the 107mm cup suitable for standard drink carriers?', a: 'Because the 107mm rim and the cup height (up to 178mm) are larger than standard beverage sizes, verify your carrier dimensions and structural weight capacity before ordering.' },
+      { q: 'Do you offer a matching lid for the 107mm caliber?', a: 'Yes. We supply specific lids matched to the 107mm rim. Lids are typically available in flat or dome formats; confirm the exact model with the supplier.' },
+      { q: 'What is the weight difference between the 30oz and 32oz models?', a: 'The catalog lists the 30oz model at 19g and the 32oz model at 20g. Confirm production tolerance with the factory.' }
+    ]
   }
 }
