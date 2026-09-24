@@ -2312,5 +2312,54 @@ export const posts = {
       { q: 'Do you offer a matching lid for the 107mm caliber?', a: 'Yes. We supply specific lids matched to the 107mm rim. Lids are typically available in flat or dome formats; confirm the exact model with the supplier.' },
       { q: 'What is the weight difference between the 30oz and 32oz models?', a: 'The catalog lists the 30oz model at 19g and the 32oz model at 20g. Confirm production tolerance with the factory.' }
     ]
+  },
+  '95mm-round-injection-pp-cups-selection-guide': {
+    title: '95mm Round Injection PP Cups: Choosing Between 500ml, 650ml and 750ml',
+    description: 'Compare the 95mm round injection-molded PP cup models by capacity, height, base diameter and weight using Claropack catalog specifications.',
+    date: '2026-09-24',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/blog/pp-cups-cover.png',
+    excerpt: 'The 95mm round PP series offers three listed capacities for different beverage menus. Compare the complete specification rows before selecting a model for sampling or production.',
+    quickFacts: [
+      { label: 'Format', value: '95 mm Round Injection PP' },
+      { label: 'Listed Capacities', value: '500 ml / 650 ml / 750 ml' },
+      { label: 'Height Range', value: '120 mm / 151 mm / 161 mm' },
+      { label: 'Weight Range', value: '14 g / 18 g / 22 g' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'One Caliber, Three Round Cup Sizes',
+        body: 'A shared 95mm caliber does not make every cup interchangeable. The listed round PP series uses the same nominal rim size across three capacities, while height, base diameter and weight change by model. Put the complete row in your purchasing sheet so sampling, lid matching and production discussions refer to the same specification.'
+      },
+      {
+        type: 'comparison',
+        h2: '95mm Round PP Catalog Reference',
+        body: 'The following values are transcribed directly from the injection PP category table. Confirm final drawings and any custom configuration with the factory.',
+        table: {
+          head: ['Model', 'Caliber', 'Capacity', 'Height', 'Base', 'Weight'],
+          rows: [
+            ['PP-95', '95 mm', '500 ml', '120 mm', '58 mm', '14 g'],
+            ['PP-95', '95 mm', '650 ml', '151 mm', '60 mm', '18 g'],
+            ['PP-95', '95 mm', '750 ml', '161 mm', '64 mm', '22 g']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Compare Height and Base Alongside Capacity',
+        body: 'The listed 500ml model is 120mm high with a 58mm base, the 650ml model is 151mm high with a 60mm base, and the 750ml model is 161mm high with a 64mm base. Use these fields when checking cup holders, carriers, shelf clearance and filling equipment. Final fit remains待工厂确认.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Put in the Supplier Request',
+        body: 'State PP-95 and the selected capacity first, then copy the caliber, height, base and weight from the matching row. Confirm finish, lid or sealing-film compatibility, carton quantity, printing specifications, artwork tolerances and destination documentation with the factory; missing fields remain待工厂确认.'
+      }
+    ],
+    faqs: [
+      { q: 'Do all three listed round models use a 95mm caliber?', a: 'Yes. The three PP-95 rows are listed at 95mm, but their capacity, height, base and weight differ. Confirm the exact matching lid and sealing setup for the selected model.' },
+      { q: 'Which listed round PP model has the smallest base?', a: 'The 500ml PP-95 row lists a 58mm base. Confirm production tolerance and final drawing dimensions with the factory.' },
+      { q: 'Is carton quantity listed for these three PP models?', a: 'Carton quantity is not included in the visible specification rows for these PP models. Mark the carton configuration as待工厂确认 for the exact order.' }
+    ]
   }
 }
