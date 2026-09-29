@@ -13,6 +13,7 @@ export default function Category() {
   useSEO({
     title: cat ? cat.title : 'Products — Claropack',
     description: cat ? cat.description : '',
+    imageAlt: cat ? `${cat.name} catalog product range` : 'Claropack product catalog',
   })
   useJsonLd(
     cat && {
@@ -34,7 +35,7 @@ export default function Category() {
             acceptedAnswer: { '@type': 'Answer', text: f.a },
           })),
         },
-        {
+        cat.specs.head.includes('Model') && {
           '@type': 'ItemList',
           name: cat.name,
           itemListElement: cat.specs.rows.map((row, i) => ({
@@ -42,15 +43,16 @@ export default function Category() {
             position: i + 1,
             item: {
               '@type': 'Product',
-              name: `${row[0]} ${cat.name}`,
+              name: `${row[0]} ${cat.name} ${row[2]}`,
               image: getImage(imgIdx !== -1 ? row[imgIdx] : cat.img, categoryFallback),
               description: `${row[2]} capacity, ${row[1]} caliber.`,
-              sku: `${slug}-${row[0].replace(/\s+/g, '-').toLowerCase()}`,
+              url: `https://claropack.com/products/${slug}/#${row[0].replace(/\s+/g, '-').toLowerCase()}`,
+              sku: `${slug}-${row[0].replace(/\s+/g, '-').toLowerCase()}-${row[2].replace(/\s+/g, '-').toLowerCase()}`,
               brand: { '@type': 'Brand', name: 'Claropack' }
             }
           }))
         }
-      ],
+      ].filter(Boolean),
     }
   )
 
@@ -87,11 +89,10 @@ export default function Category() {
             <div className="quick-facts" style={{ marginTop: 32, padding: '20px', background: '#F0F9FF', borderRadius: '12px', border: '1px solid #BAE6FD' }}>
               <h3 style={{ fontSize: '1rem', color: '#0C4A6E', marginBottom: 12 }}>Quick Facts for Sourcing</h3>
               <ul style={{ fontSize: '0.9rem', color: '#64748B', listStyle: 'none', padding: 0, display: 'grid', gap: '8px' }}>
-                <li>• <strong>MOQ:</strong> 1,000 pcs for custom printing</li>
-                <li>• <strong>Material:</strong> FDA food-grade certified</li>
-                <li>• <strong>Specification support:</strong> Material, caliber and matching-lid guidance before production</li>
-                <li>• <strong>Calibers:</strong> 74 / 78 / 90 / 92 / 93 / 95 / 98 / 107 mm</li>
-                <li>• <strong>Customization:</strong> OEM/ODM mold & logo printing</li>
+                <li>• <strong>Order quantity:</strong> Confirm the minimum for your selected model and artwork.</li>
+                <li>• <strong>Documents:</strong> Request material and food-contact reports for your destination market.</li>
+                <li>• <strong>Fit:</strong> Confirm the cup, lid and sealing material with a physical sample.</li>
+                <li>• <strong>Specifications:</strong> Use the series table below as a starting point; request final drawings.</li>
               </ul>
             </div>
           </div>
@@ -113,7 +114,7 @@ export default function Category() {
         <div className="container">
           <div className="section-head">
             <h2>{cat.name} Size Reference</h2>
-            <p>Real production specifications from our catalog — request the full spec sheet and free samples.</p>
+            <p>Listed catalog specifications — request a final drawing and sample for your selected model.</p>
           </div>
           <div className="product-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '24px', marginBottom: '48px' }}>
             {cat.specs.rows.map((row, i) => (
@@ -128,11 +129,10 @@ export default function Category() {
                 <div style={{ padding: '20px', flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <h3 style={{ fontSize: '1.1rem', marginBottom: '12px' }}>{row[0]} {cat.name}</h3>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
-                    <span style={{ fontSize: '0.8rem', padding: '4px 10px', background: '#f1f5f9', borderRadius: '4px', color: '#475569' }}>{row[1]} caliber</span>
-                    <span style={{ fontSize: '0.8rem', padding: '4px 10px', background: '#f1f5f9', borderRadius: '4px', color: '#475569' }}>{row[2]}</span>
-                    <span style={{ fontSize: '0.8rem', padding: '4px 10px', background: '#f1f5f9', borderRadius: '4px', color: '#475569' }}>{row[5]}</span>
+                    {cat.specs.head.slice(1, 3).map((heading, j) => <span key={heading} style={{ fontSize: '0.8rem', padding: '4px 10px', background: '#f1f5f9', borderRadius: '4px', color: '#475569' }}>{heading}: {row[j + 1]}</span>)}
+                    {cat.specs.head.includes('Weight') && <span style={{ fontSize: '0.8rem', padding: '4px 10px', background: '#f1f5f9', borderRadius: '4px', color: '#475569' }}>Weight: {row[cat.specs.head.indexOf('Weight')]}</span>}
                   </div>
-                  <p style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '20px' }}>MOQ: 1,000 pcs · Custom print available</p>
+                  <p style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '20px' }}>Confirm order quantity, print options and final specifications.</p>
                   <Link to="/contact" className="btn btn-primary" style={{ marginTop: 'auto', textAlign: 'center' }}>Request Quote</Link>
                 </div>
               </div>
@@ -192,8 +192,8 @@ export default function Category() {
 
       <section className="cta-band">
         <div className="container">
-          <h2>Source {cat.name} at factory-direct pricing</h2>
-          <p>Send your size, quantity and logo — quotation within 24 hours.</p>
+          <h2>Find the right {cat.name} specification</h2>
+              <p>Share the exact model, quantity, destination and artwork requirements to request a quotation.</p>
           <Link to="/contact" className="btn btn-primary">Start Your Inquiry</Link>
         </div>
       </section>

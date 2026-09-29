@@ -56,6 +56,36 @@ const coverGroups = {
   pp: new Set(['pet-vs-pp-cups', 'injection-vs-thermoformed-cups', 'square-injection-pp-cups-branding', 'injection-pp-cup-model-weight-guide', 'clear-vs-frosted-pp-cups-guide', 'u-shape-fat-cup-guide', 'u-shape-pet-vs-pp-cups-comparison', '80mm-caliber-high-foot-injection-cups']),
 }
 
+// Product-only cover replacements sourced from the current PET and injection PP catalog image set.
+const productBlogImages = {
+  'pet-vs-pp-cups': productImages.pet95,
+  'bubble-tea-cup-sizes-guide': productImages.petUShape90,
+  'pet-cup-weight-cost-guide': productImages.pet93,
+  'cup-caliber-standardization-guide': productImages.pet95,
+  'pet-cup-capacity-carton-planning-guide': productImages.pet107,
+  'large-format-30-32oz-cups-guide': productImages.pet107,
+  'us-standard-98mm-pet-cups-guide': productImages.pet95,
+  'pet-cups-cold-chain-performance': productImages.pet93,
+  'smoothie-and-slush-cup-sizes-guide': productImages.pet95,
+  'pet-dessert-cups-sourcing-guide': productImages.pet93,
+  'u-shape-pet-vs-pp-cups-comparison': productImages.petUShape90,
+  '107mm-pet-jumbo-cups-30oz-32oz-guide': productImages.pet107,
+  'injection-pp-cup-model-weight-guide': productImages.ppRound700,
+  'square-injection-pp-cups-branding': productImages.ppSquare650,
+  'clear-vs-frosted-pp-cups-guide': productImages.ppFrosted90,
+  'injection-vs-thermoformed-cups': productImages.ppRound500,
+  '80mm-caliber-high-foot-injection-cups': productImages.ppRound500,
+  'u-shape-fat-cup-guide': productImages.ppRound700,
+  '95mm-round-injection-pp-cups-selection-guide': productImages.ppRound700,
+  '92mm-square-injection-pp-cups-selection-guide': productImages.ppSquare650,
+  'hot-drink-cup-selection-guide': productImages.ppRound500,
+  'cup-lid-compatibility-guide': verifiedImages.ppFlatLid,
+  'cup-lid-weight-caliber-guide': verifiedImages.ppFlatLid,
+  'strawless-sipper-lids-guide': verifiedImages.ppFlatLid,
+  '90mm-injection-lid-selection-guide': verifiedImages.ppFlatLid,
+  'cup-sealing-film-machine-guide': verifiedImages.petSealingFilm,
+}
+
 export function getPostFallback(slug = '') {
   const key = slug.toLowerCase()
   if (key.includes('lid') || key.includes('sealing') || key.includes('accessor')) return fallbackImages.lids
@@ -65,6 +95,7 @@ export function getPostFallback(slug = '') {
 }
 
 export function getBlogImage(slug, originalImage) {
+  if (productBlogImages[slug]) return productBlogImages[slug]
   for (const [group, slugs] of Object.entries(coverGroups)) {
     if (slugs.has(slug)) return blogCovers[group]
   }

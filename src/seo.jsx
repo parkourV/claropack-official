@@ -5,24 +5,27 @@ const SITE = 'https://claropack.com'
 const DEFAULT_OG_IMAGE = '/assets/images/hero-banner.webp'
 
 // Sets per-route title, description, canonical and social metadata.
-export function useSEO({ title, description, type = 'website', image }) {
+export function useSEO({ title, description, type = 'website', image, imageAlt }) {
   const { pathname } = useLocation()
   useEffect(() => {
-    const ogImage = SITE + (image || DEFAULT_OG_IMAGE)
+    const selectedImage = image || DEFAULT_OG_IMAGE
+    const ogImage = selectedImage.startsWith('http') ? selectedImage : SITE + selectedImage
+    const canonicalUrl = SITE + (pathname === '/' ? '/' : `${pathname.replace(/\/+$/, '')}/`)
     document.title = title
     setMeta('name', 'description', description)
     setMeta('property', 'og:site_name', 'Claropack')
     setMeta('property', 'og:locale', 'en_US')
     setMeta('property', 'og:title', title)
     setMeta('property', 'og:description', description)
-    setMeta('property', 'og:url', SITE + pathname)
+    setMeta('property', 'og:url', canonicalUrl)
     setMeta('property', 'og:type', type)
     setMeta('property', 'og:image', ogImage)
+    setMeta('property', 'og:image:alt', imageAlt || title)
     setMeta('name', 'twitter:card', 'summary_large_image')
     setMeta('name', 'twitter:title', title)
     setMeta('name', 'twitter:description', description)
     setMeta('name', 'twitter:image', ogImage)
-    setLink('canonical', SITE + pathname)
+    setLink('canonical', canonicalUrl)
     window.scrollTo(0, 0)
   }, [title, description, type, image, pathname])
 }

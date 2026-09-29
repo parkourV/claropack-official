@@ -4,10 +4,13 @@ import { useSEO, useJsonLd } from '../seo.jsx'
 import { posts } from '../data/posts.jsx'
 import { getBlogImage } from '../data/verifiedImages.js'
 
+const SITE = 'https://claropack.com'
+const toAbsoluteUrl = (value) => value.startsWith('http') ? value : `${SITE}${value}`
+
 export default function BlogList() {
   useSEO({
-    title: 'Packaging Insights & Guides | Claropack Blog',
-    description: 'Guides and comparisons on beverage packaging, cup materials, sizes and sourcing for the food service industry.',
+    title: 'Cup Size Charts, Lid Compatibility & Packaging Guides | Claropack',
+    description: 'Compare bubble tea cup sizes, PET and PP materials, cup lid fit and paper/PLA options with practical beverage packaging guides.',
   })
 
   const postList = Object.entries(posts).map(([slug, data]) => ({
@@ -34,8 +37,8 @@ export default function BlogList() {
           headline: post.title,
           description: post.description,
           datePublished: post.date,
-          image: getBlogImage(post.slug, post.img),
-          url: `https://claropack.com/blog/${post.slug}`,
+          image: toAbsoluteUrl(getBlogImage(post.slug, post.img)),
+          url: `${SITE}/blog/${post.slug}/`,
         })),
       },
     ],

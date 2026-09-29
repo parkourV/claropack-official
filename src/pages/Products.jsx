@@ -1,9 +1,16 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useSEO } from '../seo.jsx'
-import { fallbackImages, productImages, verifiedImages, getImage } from '../data/verifiedImages.js'
+import { fallbackImages, verifiedImages, getImage } from '../data/verifiedImages.js'
+import { categories } from '../data/categories.jsx'
 
-const CATS = ['PET Cold Cups', 'Injection PP Cups', 'Lids & Films', 'Paper & PLA Cups']
+const categoryKeys = [
+  ['PET Cold Cups', 'pet-cold-cups'],
+  ['Injection PP Cups', 'injection-pp-cups'],
+  ['Lids & Films', 'lids-sealing-films'],
+  ['Paper & PLA Cups', 'paper-pla-cups'],
+]
+const CATS = categoryKeys.map(([label]) => label)
 
 const imageStyle = { width: '100%', height: '100%', objectFit: 'contain' }
 
@@ -11,57 +18,37 @@ function productArt(src, fallback, alt) {
   return <img src={getImage(src, fallback)} alt={alt} style={imageStyle} loading="lazy" />
 }
 
-const products = {
-  'PET Cold Cups': [
-    { name: '74mm PET Dessert Cup', specs: ['74mm caliber', '3 oz', '3.8 g'], art: productArt(null, fallbackImages.pet, '74mm PET dessert cup; exact 74mm store photo pending') },
-    { name: '78mm PET Cold Cup', specs: ['78mm caliber', '5.5–8 oz', '6 g'], art: productArt(productImages.pet78, fallbackImages.pet, '78mm PET cold cup real product photo') },
-    { name: '93mm PET Cold Cup', specs: ['93mm caliber', '9–12 oz', '8–11 g'], art: productArt(productImages.pet93, fallbackImages.pet, '93mm PET cold cup real product photo') },
-    { name: '95mm PET Cold Cup', specs: ['95mm caliber', '16–22 oz', '14–16 g'], art: productArt(productImages.pet95, fallbackImages.pet, '95mm PET cold cup real product photo') },
-    { name: '107mm PET Jumbo Cup', specs: ['107mm caliber', '30–32 oz', '19–20 g'], art: productArt(productImages.pet107, fallbackImages.pet, '107mm PET jumbo cup real product photo') },
-  ],
-  'Injection PP Cups': [
-    { name: 'Injection PP Cup 90mm', specs: ['90mm caliber', 'Hot & cold', 'Hard wall'], art: productArt(productImages.ppRound500, fallbackImages.pp, '90mm injection PP round cup real product photo') },
-    { name: 'Injection PP Cup 95mm', specs: ['95mm caliber', 'Custom mold'], art: productArt(productImages.ppRound700, fallbackImages.pp, '95mm injection PP round cup real product photo') },
-    { name: 'Frosted PP Cup', specs: ['Frosted finish', 'Premium feel'], art: productArt(productImages.ppFrosted90, fallbackImages.ppFrosted, 'Frosted injection PP cup real product photo') },
-  ],
-  'Lids & Films': [
-    { name: 'Dome Lid', specs: ['89–98mm', 'PET clear'], art: productArt(null, fallbackImages.lids, 'PET dome lid product photo') },
-    { name: 'Flat / Sipper Lid', specs: ['89–98mm', 'Strawless option'], art: productArt(verifiedImages.ppFlatLid, fallbackImages.lids, 'Verified injection PP flat lid') },
-    { name: 'Injection PP Lid', specs: ['With stopper', '90/95/98mm'], art: productArt(null, fallbackImages.lids, 'Injection PP lid') },
-    { name: 'Sealing Film Roll', specs: ['PP & PET cups', 'Custom print'], art: productArt(verifiedImages.petSealingFilm, fallbackImages.lids, 'Verified PET sealing film roll') },
-  ],
-  'Paper & PLA Cups': [
-    { name: 'Single Wall Paper Cup', specs: ['2–32 oz', 'PE / PLA coating'], art: productArt(null, fallbackImages.paper, 'Single wall paper cup') },
-    { name: 'Double / Ripple Wall Cup', specs: ['Hot drinks', 'Insulated'], art: productArt(null, fallbackImages.paper, 'Double and ripple wall paper cup') },
-    { name: 'PLA Compostable Cold Cup', specs: ['Clear PLA', 'Eco option'], art: productArt(null, fallbackImages.pla, 'PLA compostable cold cup') },
-    { name: 'Paper Ice Cream Cup', specs: ['With lid', 'Custom print'], art: productArt(null, fallbackImages.paper, 'Paper ice cream cup') },
-  ],
+function fallbackFor(slug) {
+  if (slug === 'injection-pp-cups') return fallbackImages.pp
+  if (slug === 'lids-sealing-films') return fallbackImages.lids
+  if (slug === 'paper-pla-cups') return fallbackImages.paper
+  return fallbackImages.pet
 }
 
-const petSpecs = [
-  ['74-7401', '3 oz', '74 mm', '39 mm', '3.8 g'],
-  ['5.5-7801', '5.5 oz', '78 mm', '54 mm', '6 g'],
-  ['8oz-7802', '8 oz', '78 mm', '80 mm', '6 g'],
-  ['93-9oz', '9 oz', '93 mm', '71 mm', '8 g'],
-  ['9301', '12 oz', '93 mm', '108 mm', '11 g'],
-  ['95-9507', '16 oz', '95 mm', '123 mm', '14 g'],
-  ['95-9508', '22 oz', '95 mm', '146 mm', '16 g'],
-  ['107-10703', '30 oz', '107 mm', '162 mm', '19 g'],
-  ['107-10701', '32 oz', '107 mm', '178 mm', '20 g'],
-]
+const products = Object.fromEntries(categoryKeys.map(([label, slug]) => {
+  const category = categories[slug]
+  const imgIndex = category.specs.head.indexOf('Img')
+  return [label, category.specs.rows.slice(0, 12).map((row) => ({
+    name: `${row[0]} ${category.name}`,
+    specs: [row[1], row[2], row[4]],
+    art: productArt(imgIndex >= 0 ? row[imgIndex] : category.img, fallbackFor(slug), `${row[0]} ${category.name} catalog product`),
+  }))]
+}))
+
+const petSpecs = categories['pet-cold-cups'].specs.rows.slice(0, 12).map((row) => [row[0], row[2], row[1], row[3], row[4]])
 
 export default function Products() {
   const [cat, setCat] = useState(CATS[0])
   useSEO({
-    title: 'PET Cold Cups, PP Cups & Lids Wholesale | 74-107mm Series — Claropack',
-    description: 'Browse PET cold cups from 3oz to 32oz, injection PP cups from 360ml to 960ml, plus dome, flat and sipper lids with matching sealing films.',
+    title: 'PET & Injection PP Cups: Latest Catalog Size Charts | Claropack',
+    description: 'Browse the latest PET and injection PP cup catalog rows by caliber, capacity, dimensions, weight and carton quantity. Confirm final fit and documents per model.',
   })
   return (
     <>
       <section className="page-hero">
         <div className="container">
           <h1>Products</h1>
-          <p>All items support custom logo printing. MOQ from 1,000 pieces.</p>
+          <p>Browse the latest PET and injection PP catalog rows. Printing, MOQ, documents and final fit are confirmed per model.</p>
         </div>
       </section>
 
@@ -88,7 +75,7 @@ export default function Products() {
                   <div className="spec-tags">
                     {p.specs.map((s) => <span className="spec-tag" key={s}>{s}</span>)}
                   </div>
-                  <p className="prod-moq">MOQ: 1,000 pcs · Custom print available</p>
+                  <p className="prod-moq">MOQ, printing and documents: confirm for this model</p>
                   <Link to="/contact" className="btn btn-primary" style={{ textAlign: 'center' }}>Request Quote</Link>
                 </div>
               </div>

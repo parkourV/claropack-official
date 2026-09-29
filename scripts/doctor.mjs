@@ -21,7 +21,7 @@ async function checkFile(filePath, route) {
         }
 
         // 3. Ensure each generated page exposes its canonical URL to crawlers.
-        const canonical = `https://claropack.com${route}`;
+        const canonical = `https://claropack.com${route === '/' ? '/' : `${route}/`}`;
         if (!content.includes(`rel="canonical" href="${canonical}"`)) {
             throw new Error(`Canonical URL missing or incorrect: ${canonical}`);
         }
@@ -104,10 +104,11 @@ async function run() {
         'https://claropack.com/blog/74mm-pet-dessert-cups-sourcing-guide',
         'https://claropack.com/blog/92mm-square-injection-pp-cups-selection-guide',
         'https://claropack.com/blog/107mm-pet-jumbo-cups-30oz-32oz-guide',
-        'https://claropack.com/blog/95mm-round-injection-pp-cups-selection-guide'
+        'https://claropack.com/blog/95mm-round-injection-pp-cups-selection-guide',
+        'https://claropack.com/blog/117mm-pet-cup-sizes-330ml-1000ml'
     ];
     for (const url of requiredSitemapUrls) {
-        if (!sitemap.includes(`<loc>${url}</loc>`)) {
+        if (!sitemap.includes(`<loc>${url}/</loc>`)) {
             throw new Error(`Sitemap is missing ${url}`);
         }
     }
@@ -169,7 +170,8 @@ async function run() {
         { path: 'blog/74mm-pet-dessert-cups-sourcing-guide/index.html', route: '/blog/74mm-pet-dessert-cups-sourcing-guide' },
         { path: 'blog/92mm-square-injection-pp-cups-selection-guide/index.html', route: '/blog/92mm-square-injection-pp-cups-selection-guide' },
         { path: 'blog/107mm-pet-jumbo-cups-30oz-32oz-guide/index.html', route: '/blog/107mm-pet-jumbo-cups-30oz-32oz-guide' },
-        { path: 'blog/95mm-round-injection-pp-cups-selection-guide/index.html', route: '/blog/95mm-round-injection-pp-cups-selection-guide' }
+        { path: 'blog/95mm-round-injection-pp-cups-selection-guide/index.html', route: '/blog/95mm-round-injection-pp-cups-selection-guide' },
+        { path: 'blog/117mm-pet-cup-sizes-330ml-1000ml/index.html', route: '/blog/117mm-pet-cup-sizes-330ml-1000ml' }
     ];
 
     let allPassed = true;
