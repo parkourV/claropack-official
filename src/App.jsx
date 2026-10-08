@@ -106,7 +106,7 @@ function Footer() {
             <Link to="/contact">Privacy Policy</Link>
             <Link to="/contact">Terms of Service</Link>
           </div>
-          © {new Date().getFullYear()} Claropack. All rights reserved.
+          {`© ${new Date().getFullYear()} Claropack. All rights reserved.`}
         </div>
       </div>
     </footer>

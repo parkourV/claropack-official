@@ -65,7 +65,7 @@ export default function BlogList() {
                   <img src={getBlogImage(post.slug, post.img)} alt={post.title} style={{ height: '100%', objectFit: 'cover', borderRadius: '12px 12px 0 0' }} loading="lazy" />
                 </div>
                 <div className="cat-body">
-                  <div style={{ fontSize: '0.8rem', color: '#64748B', marginBottom: 8 }}>{post.date} • {post.author}</div>
+                  <div style={{ fontSize: '0.8rem', color: '#64748B', marginBottom: 8 }}>{`${post.date} • ${post.author}`}</div>
                   <h3>{post.title}</h3>
                   <p>{post.excerpt}</p>
                   <span className="text-link" style={{ marginTop: 'auto', display: 'inline-block', fontWeight: 500, color: '#0EA5E9' }}>Read Guide →</span>

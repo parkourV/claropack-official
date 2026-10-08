@@ -66,6 +66,7 @@ const routes = [
   "/blog/107mm-pet-jumbo-cups-30oz-32oz-guide",
   "/blog/95mm-round-injection-pp-cups-selection-guide",
   "/blog/117mm-pet-cup-sizes-330ml-1000ml",
+  "/blog/90mm-flat-bottom-injection-pp-cup-size-chart",
   "/about",
   "/contact"
 ];
