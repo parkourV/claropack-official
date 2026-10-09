@@ -73,7 +73,7 @@ export default function BlogPost() {
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link to="/">Home</Link> <span>/</span> <Link to="/blog">Blog</Link> <span>/</span> <strong>Article</strong>
           </nav>
-          <div style={{ fontSize: '0.9rem', color: '#64748B', marginBottom: 12 }}>{post.date} • By {post.author}</div>
+          <div style={{ fontSize: '0.9rem', color: '#64748B', marginBottom: 12 }}>{`${post.date} • By ${post.author}`}</div>
           <h1 style={{ maxWidth: 800 }}>{post.title}</h1>
         </div>
       </section>
@@ -155,7 +155,7 @@ export default function BlogPost() {
           <div className="author-bio" style={{ marginTop: 32, padding: '30px', borderTop: '1px solid #E2E8F0', display: 'flex', gap: '20px', alignItems: 'center' }}>
             <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#0EA5E9', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', fontWeight: 'bold', flexShrink: 0 }}>C</div>
             <div>
-              <div style={{ fontWeight: 600, color: '#0F172A' }}>Prepared by {post.author}</div>
+              <div style={{ fontWeight: 600, color: '#0F172A' }}>{`Prepared by ${post.author}`}</div>
               <p style={{ fontSize: '0.9rem', color: '#64748B', marginTop: '4px' }}>This guide is published by Claropack and is intended to help buyers compare packaging specifications before requesting a quotation.</p>
             </div>
           </div>

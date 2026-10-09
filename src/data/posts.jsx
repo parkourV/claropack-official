@@ -2365,8 +2365,7 @@ export const posts = {
   '117mm-pet-cup-sizes-330ml-1000ml': {
     title: '117mm PET Cup Size Chart: 330ml to 1,000ml | Claropack',
     description: 'Compare six listed 117mm PET cup models by capacity, dimensions, weight and carton quantity. Use the catalog rows to plan samples and confirm lid fit.',
-    date: '2026-10-08',
-    dateModified: '2026-10-08',
+    date: '2026-09-29',
     author: 'Claropack Sourcing Advisor',
     img: '/assets/images/prod-pet.webp',
     excerpt: 'Six 117mm PET catalog rows span 330ml to 1,000ml. Compare their dimensions and weights before requesting drawings and matching-lid samples.',
@@ -2414,6 +2413,59 @@ export const posts = {
       { q: 'Is the carton quantity the same across these six rows?', a: 'Each of the six listed 117mm PET rows shows 500 pieces per carton. Confirm the final packing configuration for the chosen model and order.' },
       { q: 'Can one 117mm lid fit every model?', a: 'A shared nominal caliber does not prove a compatible rim profile. Exact lid fit and any sealing-film or machine fit are Pending factory confirmation; test the selected cup and lid together.' },
       { q: 'Are these cups approved for hot drinks?', a: 'The supplied PET catalog does not state a verified temperature rating for these models. Temperature use is Pending factory confirmation.' }
+    ]
+  },
+  '90mm-flat-bottom-injection-pp-cup-size-chart': {
+    title: '90mm Flat-Bottom Injection PP Cup Size Chart | Claropack',
+    description: 'Compare six 90mm flat-bottom injection PP cup models from 360ml to 1,000ml using catalog dimensions, weight and carton counts. Confirm final fit before ordering.',
+    date: '2026-10-08',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'The 90mm flat-bottom PP catalog lists multiple capacities, but weights and carton quantities differ. Compare six clear specification rows before requesting samples.',
+    quickFacts: [
+      { label: 'Catalog format', value: '90mm flat-bottom injection PP cup' },
+      { label: 'Compared capacities', value: '360 / 400 / 500 / 600 / 700 / 1,000ml' },
+      { label: 'Listed weights', value: '10.5 / 13 / 15 / 17 / 22 / 33g' },
+      { label: 'Carton quantities', value: '500 pcs; 1,000ml model: 250 pcs' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why the Full Model Row Matters',
+        body: 'All six models below belong to the 90mm flat-bottom injection PP series in the supplied product catalog. The shared nominal caliber is only a starting point: capacity, catalog dimensions, weight and carton count vary by model. Compare the full row rather than ordering by rim size alone. The figures are catalog references; request the final drawing and sample before confirming an order.'
+      },
+      {
+        type: 'comparison',
+        h2: '90mm Flat-Bottom PP Cup Catalog Comparison',
+        body: 'Dimensions are transcribed in the same three-value order as the supplied catalog. The catalog does not define a universal measurement convention for this summary; use the final factory drawing to confirm each dimension and tolerance.',
+        table: {
+          head: ['Catalog model', 'Caliber', 'Capacity', 'Catalog dimensions', 'Weight', 'Carton'],
+          rows: [
+            ['90-360 Flat-Bottom PP', '90 mm', '360 ml', '90 × 99 × 57 mm', '10.5 g', '500 pcs'],
+            ['90-400 Flat-Bottom PP', '90 mm', '400 ml', '90 × 114 × 55 mm', '13 g', '500 pcs'],
+            ['90-500 Flat-Bottom PP', '90 mm', '500 ml', '90 × 135 × 57 mm', '15 g', '500 pcs'],
+            ['90-600 Flat-Bottom PP', '90 mm', '600 ml', '90 × 155 × 57 mm', '17 g', '500 pcs'],
+            ['90-700 Flat-Bottom PP', '90 mm', '700 ml', '90 × 178 × 57 mm', '22 g', '500 pcs'],
+            ['90-1000 Flat-Bottom PP', '90 mm', '1,000 ml', '90 × 235 × 57 mm', '33 g', '250 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Plan Samples and Cartons by Exact Model',
+        body: 'For a 500ml reference, the 90-500 row lists 90 × 135 × 57mm, 15g and 500 pieces per carton. The 1,000ml row lists 90 × 235 × 57mm, 33g and 250 pieces per carton. These are distinct purchasing and packing references even though both are nominally 90mm. Confirm the usable fill level, final packed-carton dimensions and production tolerances with the factory; the catalog values alone do not establish them.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Include in a Supplier Inquiry',
+        body: 'State the exact model code and copy its listed caliber, capacity, dimensions, weight and carton count. Ask for a sample cup and a final drawing before testing your lid, carrier or sealing setup. Lid and film compatibility, food-contact documents for the destination market, temperature rating, printing options, minimum order quantity, price and lead time are Pending factory confirmation. See the Injection PP Cups product page for the wider catalog and to request a quotation.'
+      }
+    ],
+    faqs: [
+      { q: 'Which 90mm flat-bottom PP capacities are compared here?', a: 'This chart compares six listed catalog models: 360, 400, 500, 600, 700 and 1,000ml. Confirm the exact model code when ordering.' },
+      { q: 'Do all six models have the same carton quantity?', a: 'No. The five compared models from 360 to 700ml list 500 pieces per carton; the 1,000ml model lists 250 pieces per carton.' },
+      { q: 'Does a 90mm caliber guarantee one matching lid for all models?', a: 'No. A shared nominal caliber is not proof of rim-profile or lid compatibility. Test the selected cup and lid together; the exact match is Pending factory confirmation.' },
+      { q: 'Is this series suitable for hot beverages?', a: 'The supplied catalog does not verify a temperature rating for the compared models. Hot-service suitability is Pending factory confirmation.' }
     ]
   }
 }
