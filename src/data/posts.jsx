@@ -2365,7 +2365,8 @@ export const posts = {
   '117mm-pet-cup-sizes-330ml-1000ml': {
     title: '117mm PET Cup Size Chart: 330ml to 1,000ml | Claropack',
     description: 'Compare six listed 117mm PET cup models by capacity, dimensions, weight and carton quantity. Use the catalog rows to plan samples and confirm lid fit.',
-    date: '2026-09-29',
+    date: '2026-10-08',
+    dateModified: '2026-10-08',
     author: 'Claropack Sourcing Advisor',
     img: '/assets/images/prod-pet.webp',
     excerpt: 'Six 117mm PET catalog rows span 330ml to 1,000ml. Compare their dimensions and weights before requesting drawings and matching-lid samples.',
