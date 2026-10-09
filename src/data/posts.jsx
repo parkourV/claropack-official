@@ -2361,5 +2361,59 @@ export const posts = {
       { q: 'Which listed round PP model has the smallest base?', a: 'The 500ml PP-95 row lists a 58mm base. Confirm production tolerance and final drawing dimensions with the factory.' },
       { q: 'Is carton quantity listed for these three PP models?', a: 'Carton quantity is not included in the visible specification rows for these PP models. Mark the carton configuration as待工厂确认 for the exact order.' }
     ]
+  },
+  '117mm-pet-cup-sizes-330ml-1000ml': {
+    title: '117mm PET Cup Size Chart: 330ml to 1,000ml | Claropack',
+    description: 'Compare six listed 117mm PET cup models by capacity, dimensions, weight and carton quantity. Use the catalog rows to plan samples and confirm lid fit.',
+    date: '2026-10-08',
+    dateModified: '2026-10-08',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pet.webp',
+    excerpt: 'Six 117mm PET catalog rows span 330ml to 1,000ml. Compare their dimensions and weights before requesting drawings and matching-lid samples.',
+    quickFacts: [
+      { label: 'Catalog series', value: '117mm PET cups' },
+      { label: 'Listed capacities', value: '330 / 430 / 480 / 550 / 750 / 1,000ml' },
+      { label: 'Listed weights', value: '10.5 / 13.5 / 14.5 / 16 / 22.5 / 24g' },
+      { label: 'Carton quantity', value: '500 pcs per listed model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why Compare the Full 117mm PET Cup Row?',
+        body: 'The 117mm PET series in the current Claropack product catalog includes six capacities. A shared nominal caliber does not mean that height, base dimension or weight is the same. Choose a model by copying its full specification row into your sourcing request, then ask for the final drawing and a physical sample. These catalog values are references, not a guarantee of lid or sealing-machine compatibility.'
+      },
+      {
+        type: 'comparison',
+        h2: '117mm PET Cup Catalog Specifications',
+        body: 'Dimensions are reproduced in the same three-value order shown in the PET product catalog. Request a final drawing to confirm which measurement corresponds to each part of the cup and to verify tolerances.',
+        table: {
+          head: ['Model', 'Caliber', 'Capacity', 'Catalog dimensions', 'Weight', 'Carton'],
+          rows: [
+            ['117-330 PET', '117 mm', '330 ml', '117 × 47 × 98 mm', '10.5 g', '500 pcs'],
+            ['117-430 PET', '117 mm', '430 ml', '117 × 59 × 95 mm', '13.5 g', '500 pcs'],
+            ['117-480 PET', '117 mm', '480 ml', '117 × 70 × 94 mm', '14.5 g', '500 pcs'],
+            ['117-550 PET', '117 mm', '550 ml', '117 × 78 × 93 mm', '16 g', '500 pcs'],
+            ['117-750 PET', '117 mm', '750 ml', '117 × 108 × 92 mm', '22.5 g', '500 pcs'],
+            ['117-1000 PET', '117 mm', '1,000 ml', '117 × 148 × 82 mm', '24 g', '500 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'How to Shortlist the Right Capacity',
+        body: 'Start with your intended fill volume, then compare the catalog dimensions and weight for the matching row. For example, the 117-330 PET row lists 330ml, 10.5g and 117 × 47 × 98mm; the 117-1000 PET row lists 1,000ml, 24g and 117 × 148 × 82mm. Do not treat these values as fill-line, carrier or lid-fit approvals. Check the physical sample against your serving and packaging setup.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before Ordering',
+        body: 'Include the exact model code, capacity, catalog dimensions, weight and 500-piece carton reference in your inquiry. Ask for a final drawing, rim-profile and lid samples. Temperature rating, food-contact documents for your destination, printing method, minimum order quantity, lead time and sealing-film compatibility are Pending factory confirmation. Compare the full PET range on the PET Cold Cups product page before requesting a quotation.'
+      }
+    ],
+    faqs: [
+      { q: 'What 117mm PET capacities are listed?', a: 'The current product catalog lists 330, 430, 480, 550, 750 and 1,000ml models in the 117mm PET series.' },
+      { q: 'Is the carton quantity the same across these six rows?', a: 'Each of the six listed 117mm PET rows shows 500 pieces per carton. Confirm the final packing configuration for the chosen model and order.' },
+      { q: 'Can one 117mm lid fit every model?', a: 'A shared nominal caliber does not prove a compatible rim profile. Exact lid fit and any sealing-film or machine fit are Pending factory confirmation; test the selected cup and lid together.' },
+      { q: 'Are these cups approved for hot drinks?', a: 'The supplied PET catalog does not state a verified temperature rating for these models. Temperature use is Pending factory confirmation.' }
+    ]
   }
 }

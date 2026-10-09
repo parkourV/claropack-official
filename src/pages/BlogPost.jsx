@@ -4,6 +4,13 @@ import { useSEO, useJsonLd } from '../seo.jsx'
 import { posts } from '../data/posts.jsx'
 import { getBlogImage } from '../data/verifiedImages.js'
 
+const relatedGuides = {
+  'bubble-tea-cup-sizes-guide': ['cup-lid-compatibility-guide', 'pet-cup-size-comparison-78mm-93mm', '95mm-round-injection-pp-cups-selection-guide'],
+  'cup-lid-compatibility-guide': ['90mm-injection-lid-selection-guide', 'strawless-sipper-lids-guide', 'cup-sealing-film-machine-guide'],
+  'paper-vs-pla-cups-guide': ['paper-cup-wall-types-guide', 'sustainable-cup-sourcing-guide', 'hot-drink-cup-selection-guide'],
+  'pet-vs-pp-cups': ['95mm-pet-pp-menu-planning-guide', 'injection-pp-cup-model-weight-guide', 'pet-cup-weight-cost-guide'],
+}
+
 export default function BlogPost() {
   const { slug } = useParams()
   const post = posts[slug]
@@ -13,6 +20,7 @@ export default function BlogPost() {
     description: post ? post.description : '',
     type: 'article',
     image: getBlogImage(slug, post?.img),
+    imageAlt: post ? post.title : 'Claropack beverage packaging guide',
   })
 
   useJsonLd(
@@ -23,9 +31,10 @@ export default function BlogPost() {
           '@type': 'Article',
           headline: post.title,
           description: post.description,
-          image: getBlogImage(slug, post.img),          datePublished: post.date,
+          image: getBlogImage(slug, post.img).startsWith('http') ? getBlogImage(slug, post.img) : `https://claropack.com${getBlogImage(slug, post.img)}`,
+          datePublished: post.date,
           dateModified: post.dateModified || post.date,
-          mainEntityOfPage: `https://claropack.com/blog/${slug}`,
+          mainEntityOfPage: `https://claropack.com/blog/${slug}/`,
           author: {
             '@type': 'Organization',
             name: 'Claropack'
@@ -134,9 +143,12 @@ export default function BlogPost() {
           <aside style={{ marginTop: 24, padding: '28px', borderTop: '1px solid #E2E8F0' }}>
             <h3 style={{ marginBottom: 14 }}>Continue reading</h3>
             <ul style={{ display: 'grid', gap: '8px', paddingLeft: '20px', color: '#0C4A6E' }}>
-              {Object.entries(posts).filter(([relatedSlug]) => relatedSlug !== slug).map(([relatedSlug, relatedPost]) => (
-                <li key={relatedSlug}><Link to={`/blog/${relatedSlug}`}>{relatedPost.title}</Link></li>
-              ))}
+              {(relatedGuides[slug] || ['bubble-tea-cup-sizes-guide', 'cup-lid-compatibility-guide', 'pet-vs-pp-cups', 'paper-vs-pla-cups-guide'])
+                .filter((relatedSlug) => relatedSlug !== slug && posts[relatedSlug])
+                .slice(0, 3)
+                .map((relatedSlug) => (
+                  <li key={relatedSlug}><Link to={`/blog/${relatedSlug}`}>{posts[relatedSlug].title}</Link></li>
+                ))}
             </ul>
           </aside>
 
