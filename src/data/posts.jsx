@@ -2519,5 +2519,56 @@ export const posts = {
       { q: 'Do all four 119mm models use the same carton quantity?', a: 'No. The standard 119-1000 PP row lists 500 pieces per carton; the three Fruit Bucket rows list 300 pieces per carton.' },
       { q: 'Can one 119mm lid fit all four models?', a: 'A shared nominal caliber does not prove a shared rim profile. Exact lid and sealing setup compatibility is 待工厂确认; test the selected cup and lid together.' }
     ]
+  },
+  '109mm-pp-fruit-bucket-torch-cup-size-chart': {
+    title: '109mm PP Cup Size Chart: Fruit Bucket and Torch Models | Claropack',
+    description: 'Compare three listed large-format PP cup models by format, capacity, dimensions, weight and carton quantity. Confirm the catalog dimension convention and final fit before ordering.',
+    date: '2026-10-10',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'The PP catalog lists 109mm Fruit Bucket rows and a 109mm Torch row. Compare their complete model data and resolve the catalog dimension-label difference with a final drawing.',
+    quickFacts: [
+      { label: 'Catalog formats', value: 'Fruit Bucket PP and Torch PP' },
+      { label: 'Listed capacities', value: '380 / 500 / 750 / 1,000ml' },
+      { label: 'Listed weights', value: '23 / 25 / 29 / 35g' },
+      { label: 'Carton quantities', value: '240 pcs or 300 pcs by model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why Compare the 109mm Format by Model?',
+        body: 'The supplied PP catalog groups three Fruit Bucket rows under 109mm and also lists a 109-1000 Torch PP row. The Fruit Bucket models cover 380ml, 500ml and 750ml, while the Torch row is listed at 1,000ml. Use the exact model name and complete catalog row in a sourcing inquiry rather than treating the 109mm label as proof of one shared design.'
+      },
+      {
+        type: 'comparison',
+        h2: '109mm PP Catalog Specifications',
+        body: 'The table below reproduces the supplied catalog values. The Torch row is labeled 109mm in the model name, while its visible dimensions begin with 107mm; preserve that source discrepancy and request a final drawing before making a tooling, lid or carrier decision.',
+        table: {
+          head: ['Catalog model', 'Format', 'Capacity', 'Catalog dimensions', 'Weight', 'Carton'],
+          rows: [
+            ['109-380 Fruit Bucket PP', 'Fruit Bucket PP', '380 ml', '109 × 70 × 88 mm', '23 g', '240 pcs'],
+            ['109-500 Fruit Bucket PP', 'Fruit Bucket PP', '500 ml', '109 × 88 × 88 mm', '25 g', '240 pcs'],
+            ['109-750 Fruit Bucket PP', 'Fruit Bucket PP', '750 ml', '109 × 125 × 88 mm', '29 g', '240 pcs'],
+            ['109-1000 Torch PP', 'Torch PP', '1,000 ml', '107 × 182 × 66 mm', '35 g', '300 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Use Capacity and Packing Data Together',
+        body: 'The three Fruit Bucket rows increase from 380ml to 750ml and list 240 pieces per carton, with weights from 23g to 29g. The Torch row lists 1,000ml, 35g and 300 pieces per carton. These are catalog references for shortlisting and carton planning; they do not establish usable fill volume, carrier fit or production tolerance.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before Ordering',
+        body: 'Copy the exact model name, format, capacity, catalog dimensions, weight and carton quantity into the supplier inquiry. Ask the factory to reconcile the Torch model label and its 107mm-leading dimension in a final drawing. Rim-profile fit, lid and sealing-film compatibility, temperature rating, food-contact documents, printing, MOQ, price and lead time are 待工厂确认 for the selected model.'
+      }
+    ],
+    faqs: [
+      { q: 'Which capacities are listed for the 109mm Fruit Bucket models?', a: 'The three listed Fruit Bucket rows cover 380ml, 500ml and 750ml. Each row shows 240 pieces per carton.' },
+      { q: 'What capacity is listed for the 109mm Torch PP row?', a: 'The 109-1000 Torch PP row is listed at 1,000ml, 35g and 300 pieces per carton.' },
+      { q: 'Why does the Torch row show 107mm in its dimensions?', a: 'The catalog names the row 109-1000 Torch PP but shows dimensions beginning 107 × 182 × 66mm. Treat this as a source-data discrepancy and request the final factory drawing.' },
+      { q: 'Can one lid fit all four models?', a: 'A shared or similar nominal caliber does not prove a shared rim profile. Exact lid and sealing setup compatibility is 待工厂确认; test the selected cup and lid together.' }
+    ]
   }
 }
