@@ -2468,5 +2468,56 @@ export const posts = {
       { q: 'Does a 90mm caliber guarantee one matching lid for all models?', a: 'No. A shared nominal caliber is not proof of rim-profile or lid compatibility. Test the selected cup and lid together; the exact match is Pending factory confirmation.' },
       { q: 'Is this series suitable for hot beverages?', a: 'The supplied catalog does not verify a temperature rating for the compared models. Hot-service suitability is Pending factory confirmation.' }
     ]
+  },
+  '119mm-pp-cup-size-chart-700ml-1000ml': {
+    title: '119mm PP Cup Size Chart: 700ml and 1,000ml Formats | Claropack',
+    description: 'Compare four listed 119mm PP cup models by format, capacity, dimensions, weight and carton quantity. Use the catalog rows to plan samples and confirm fit.',
+    date: '2026-10-10',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'The 119mm PP catalog includes a standard 1,000ml row and fruit-bucket formats at 700ml and 1,000ml. Compare their complete specification rows before requesting samples.',
+    quickFacts: [
+      { label: 'Catalog series', value: '119mm injection PP cups' },
+      { label: 'Listed capacities', value: '700ml and 1,000ml' },
+      { label: 'Listed weights', value: '27g / 33g / 45g / 47g' },
+      { label: 'Carton quantities', value: '300 pcs or 500 pcs by model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why Separate 119mm PP Formats by Model?',
+        body: 'The current injection PP catalog includes four 119mm rows, but they do not represent one interchangeable cup design. The standard 119-1000 PP row is listed separately from the 119-700 and two 119-1000 Fruit Bucket rows. Compare the complete row before choosing a model for a large beverage, fruit or dessert application.'
+      },
+      {
+        type: 'comparison',
+        h2: '119mm PP Cup Catalog Specifications',
+        body: 'Dimensions are reproduced in the same three-value order shown in the supplied PP product catalog. Request the final drawing to confirm each measurement and production tolerance.',
+        table: {
+          head: ['Catalog model', 'Format', 'Capacity', 'Catalog dimensions', 'Weight', 'Carton'],
+          rows: [
+            ['119-1000 PP', 'Standard PP', '1,000 ml', '119 × 163 × 72 mm', '27 g', '500 pcs'],
+            ['119-700 Fruit Bucket PP', 'Fruit Bucket PP', '700 ml', '119 × 108 × 86 mm', '33 g', '300 pcs'],
+            ['119-1000 Fruit Bucket PP A', 'Fruit Bucket PP', '1,000 ml', '119 × 140 × 86 mm', '45 g', '300 pcs'],
+            ['119-1000 Fruit Bucket PP B', 'Fruit Bucket PP', '1,000 ml', '119 × 147 × 86 mm', '47 g', '300 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Compare Capacity, Shape and Packing Together',
+        body: 'The standard 119-1000 PP row lists 1,000ml, 119 × 163 × 72mm, 27g and 500 pieces per carton. The two 1,000ml Fruit Bucket rows list 119 × 140 × 86mm and 119 × 147 × 86mm, with weights of 45g and 47g and 300 pieces per carton. These catalog differences affect sample selection and carton planning; they do not establish usable fill level, carrier fit or lid compatibility.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before Ordering',
+        body: 'Copy the exact model name, format, capacity, dimensions, weight and carton quantity into the supplier inquiry. Request a final drawing and a physical cup-and-lid sample. Rim-profile fit, sealing-film and machine compatibility, temperature rating, food-contact documents, printing, MOQ, price and lead time are 待工厂确认 for the selected model.'
+      }
+    ],
+    faqs: [
+      { q: 'Which 119mm PP capacities are listed in the catalog?', a: 'The four listed 119mm rows cover one 700ml Fruit Bucket model and three 1,000ml models: one standard PP row and two Fruit Bucket rows.' },
+      { q: 'Do the three 1,000ml 119mm rows have the same dimensions?', a: 'No. The standard row lists 119 × 163 × 72mm, while the two Fruit Bucket rows list 119 × 140 × 86mm and 119 × 147 × 86mm. Confirm the final drawing for the selected model.' },
+      { q: 'Do all four 119mm models use the same carton quantity?', a: 'No. The standard 119-1000 PP row lists 500 pieces per carton; the three Fruit Bucket rows list 300 pieces per carton.' },
+      { q: 'Can one 119mm lid fit all four models?', a: 'A shared nominal caliber does not prove a shared rim profile. Exact lid and sealing setup compatibility is 待工厂确认; test the selected cup and lid together.' }
+    ]
   }
 }

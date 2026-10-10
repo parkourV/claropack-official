@@ -106,7 +106,8 @@ async function run() {
         'https://claropack.com/blog/107mm-pet-jumbo-cups-30oz-32oz-guide',
         'https://claropack.com/blog/95mm-round-injection-pp-cups-selection-guide',
         'https://claropack.com/blog/117mm-pet-cup-sizes-330ml-1000ml',
-        'https://claropack.com/blog/90mm-flat-bottom-injection-pp-cup-size-chart'
+        'https://claropack.com/blog/90mm-flat-bottom-injection-pp-cup-size-chart',
+        'https://claropack.com/blog/119mm-pp-cup-size-chart-700ml-1000ml'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}/</loc>`)) {
@@ -173,7 +174,8 @@ async function run() {
         { path: 'blog/107mm-pet-jumbo-cups-30oz-32oz-guide/index.html', route: '/blog/107mm-pet-jumbo-cups-30oz-32oz-guide' },
         { path: 'blog/95mm-round-injection-pp-cups-selection-guide/index.html', route: '/blog/95mm-round-injection-pp-cups-selection-guide' },
         { path: 'blog/117mm-pet-cup-sizes-330ml-1000ml/index.html', route: '/blog/117mm-pet-cup-sizes-330ml-1000ml' },
-        { path: 'blog/90mm-flat-bottom-injection-pp-cup-size-chart/index.html', route: '/blog/90mm-flat-bottom-injection-pp-cup-size-chart' }
+        { path: 'blog/90mm-flat-bottom-injection-pp-cup-size-chart/index.html', route: '/blog/90mm-flat-bottom-injection-pp-cup-size-chart' },
+        { path: 'blog/119mm-pp-cup-size-chart-700ml-1000ml/index.html', route: '/blog/119mm-pp-cup-size-chart-700ml-1000ml' }
     ];
 
     let allPassed = true;
