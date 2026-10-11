@@ -2570,5 +2570,55 @@ export const posts = {
       { q: 'Why does the Torch row show 107mm in its dimensions?', a: 'The catalog names the row 109-1000 Torch PP but shows dimensions beginning 107 × 182 × 66mm. Treat this as a source-data discrepancy and request the final factory drawing.' },
       { q: 'Can one lid fit all four models?', a: 'A shared or similar nominal caliber does not prove a shared rim profile. Exact lid and sealing setup compatibility is 待工厂确认; test the selected cup and lid together.' }
     ]
+  },
+  '85mm-anti-scald-screw-lid-pp-cup-chart': {
+    title: '85mm PP Cup Size Chart: Anti-Scald and Screw-Lid Models | Claropack',
+    description: 'Compare three listed 85mm PP cup models by format, capacity, dimensions, weight and carton quantity. Confirm use, lid fit and final documents before ordering.',
+    date: '2026-10-11',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'The injection PP catalog lists one 85mm anti-scald model and two screw-lid models. Compare their complete rows before requesting a sample or quotation.',
+    quickFacts: [
+      { label: 'Catalog formats', value: 'Anti-Scald PP and Screw-Lid PP' },
+      { label: 'Listed capacities', value: '500ml and 700ml' },
+      { label: 'Listed weights', value: '32g / 38g / 41g' },
+      { label: 'Carton quantities', value: '240 pcs or 300 pcs by model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why Separate 85mm PP Formats by Use and Lid Style?',
+        body: 'The supplied injection PP catalog lists an 85-700 Anti-Scald PP model and two 85mm Screw-Lid PP models. The anti-scald row is listed at 700ml, while the screw-lid rows cover 500ml and 700ml. These are separate catalog formats, so compare the exact model row rather than treating the shared 85mm caliber as proof of interchangeability.'
+      },
+      {
+        type: 'comparison',
+        h2: '85mm PP Catalog Specifications',
+        body: 'The table below reproduces the values shown in the supplied PP catalog. The catalog does not establish a universal temperature rating or lid interchangeability; request the final drawing and supporting documents for the selected model.',
+        table: {
+          head: ['Catalog model', 'Format', 'Capacity', 'Catalog dimensions', 'Weight', 'Carton'],
+          rows: [
+            ['85-700 Anti-Scald PP', 'Anti-Scald PP', '700 ml', '85 × 175 × 57 mm', '41 g', '240 pcs'],
+            ['85-500 Screw-Lid PP', 'Screw-Lid PP', '500 ml', '85 × 136 × 57 mm', '32 g', '300 pcs'],
+            ['85-700 Screw-Lid PP', 'Screw-Lid PP', '700 ml', '85 × 175 × 57 mm', '38 g', '300 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Compare Weight and Packing by Exact Model',
+        body: 'The 85-700 Anti-Scald row lists 41g and 240 pieces per carton. The 85-500 and 85-700 Screw-Lid rows list 32g and 38g, with 300 pieces per carton. The two 700ml rows therefore have different listed formats, weights and carton quantities even though their catalog dimensions are both 85 × 175 × 57mm.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before Ordering',
+        body: 'State the exact model name, format, capacity, catalog dimensions, weight and carton quantity in the supplier inquiry. Ask for the final drawing, lid or closure details and written use documentation. Temperature rating, anti-scald performance, screw-lid fit, food-contact documents, printing, MOQ, price and lead time are 待工厂确认 for the selected model.'
+      }
+    ],
+    faqs: [
+      { q: 'Which 85mm PP models are listed?', a: 'The catalog lists one 85-700 Anti-Scald PP model, one 85-500 Screw-Lid PP model and one 85-700 Screw-Lid PP model.' },
+      { q: 'Do the anti-scald and screw-lid 700ml rows have the same weight?', a: 'No. The anti-scald row lists 41g, while the screw-lid row lists 38g. Confirm production tolerance with the factory.' },
+      { q: 'Do all three 85mm models have the same carton quantity?', a: 'No. The anti-scald row lists 240 pieces per carton; both screw-lid rows list 300 pieces per carton.' },
+      { q: 'Does the anti-scald label verify a temperature rating?', a: 'No. The catalog label alone does not provide a verified temperature specification or certification. Request written documents for the selected model.' }
+    ]
   }
 }
