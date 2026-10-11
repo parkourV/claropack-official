@@ -2620,5 +2620,53 @@ export const posts = {
       { q: 'Do all three 85mm models have the same carton quantity?', a: 'No. The anti-scald row lists 240 pieces per carton; both screw-lid rows list 300 pieces per carton.' },
       { q: 'Does the anti-scald label verify a temperature rating?', a: 'No. The catalog label alone does not provide a verified temperature specification or certification. Request written documents for the selected model.' }
     ]
+  },
+  '108mm-1000ml-injection-pp-cup-guide': {
+    title: '108mm 1,000ml Injection PP Cup Size Guide | Claropack',
+    description: 'Review the listed 108mm 1,000ml injection PP cup specification, including catalog dimensions, weight and carton quantity, before requesting samples.',
+    date: '2026-10-11',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'The injection PP catalog lists one 108mm 1,000ml model. Use its complete row for sample planning and confirm the final drawing, lid fit and production documents.',
+    quickFacts: [
+      { label: 'Catalog model', value: '108-1000 PP' },
+      { label: 'Listed capacity', value: '1,000ml' },
+      { label: 'Catalog dimensions', value: '108 × 180 × 70mm' },
+      { label: 'Weight / carton', value: '29g / 500 pcs' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'What the 108-1000 PP Row Covers',
+        body: 'The supplied injection PP catalog lists one 108-1000 PP model at a nominal 108mm caliber and 1,000ml capacity. The row provides dimensions, weight and carton quantity for an initial sourcing comparison. It does not provide enough information to assume a lid, carrier, sealing machine or end-use compatibility.'
+      },
+      {
+        type: 'comparison',
+        h2: '108mm 1,000ml PP Catalog Specification',
+        body: 'The following values reproduce the single 108-1000 PP row in the supplied catalog. Request a final drawing to confirm the dimension order, tolerances and production revision before placing an order.',
+        table: {
+          head: ['Catalog model', 'Format', 'Capacity', 'Catalog dimensions', 'Weight', 'Carton'],
+          rows: [
+            ['108-1000 PP', 'Injection PP', '1,000 ml', '108 × 180 × 70 mm', '29 g', '500 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Use the Single Row for Sample Planning',
+        body: 'For a first inquiry, copy the model code, 108mm caliber, 1,000ml listed capacity, 108 × 180 × 70mm catalog dimensions, 29g listed weight and 500 pieces per carton. These fields help the factory identify the intended row; they do not replace a physical sample or final technical drawing.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before Ordering',
+        body: 'Request the final drawing, rim profile, lid or sealing-film match and a physical cup-and-closure sample. Usable fill level, temperature rating, food-contact documents, printing, MOQ, price, lead time and carrier or machine compatibility are 待工厂确认 for the selected model.'
+      }
+    ],
+    faqs: [
+      { q: 'What capacity is listed for the 108-1000 PP model?', a: 'The supplied catalog lists the 108-1000 PP model at 1,000ml.' },
+      { q: 'What are the listed dimensions and weight?', a: 'The catalog lists 108 × 180 × 70mm and 29g. Confirm the dimension order, tolerance and final drawing with the factory.' },
+      { q: 'How many pieces are listed per carton?', a: 'The 108-1000 PP row lists 500 pieces per carton. Confirm the final packing configuration for the ordered version.' },
+      { q: 'Does 108mm guarantee a matching lid?', a: 'No. Nominal caliber alone does not establish rim-profile or closure compatibility. Test the selected cup and lid or sealing setup together.' }
+    ]
   }
 }
