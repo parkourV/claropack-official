@@ -9,6 +9,10 @@ const relatedGuides = {
   'cup-lid-compatibility-guide': ['90mm-injection-lid-selection-guide', 'strawless-sipper-lids-guide', 'cup-sealing-film-machine-guide'],
   'paper-vs-pla-cups-guide': ['paper-cup-wall-types-guide', 'sustainable-cup-sourcing-guide', 'hot-drink-cup-selection-guide'],
   'pet-vs-pp-cups': ['95mm-pet-pp-menu-planning-guide', 'injection-pp-cup-model-weight-guide', 'pet-cup-weight-cost-guide'],
+  '108mm-1000ml-injection-pp-cup-guide': ['119mm-pp-cup-size-chart-700ml-1000ml', '90mm-flat-bottom-injection-pp-cup-size-chart', 'injection-pp-cup-model-weight-guide'],
+  '85mm-anti-scald-screw-lid-pp-cup-chart': ['108mm-1000ml-injection-pp-cup-guide', 'cup-lid-compatibility-guide', 'hot-drink-cup-selection-guide'],
+  '109mm-pp-fruit-bucket-torch-cup-size-chart': ['119mm-pp-cup-size-chart-700ml-1000ml', '108mm-1000ml-injection-pp-cup-guide', 'injection-pp-cup-model-weight-guide'],
+  '119mm-pp-cup-size-chart-700ml-1000ml': ['109mm-pp-fruit-bucket-torch-cup-size-chart', '108mm-1000ml-injection-pp-cup-guide', '95mm-round-injection-pp-cups-selection-guide'],
 }
 
 export default function BlogPost() {
@@ -48,8 +52,8 @@ export default function BlogPost() {
           '@type': 'BreadcrumbList',
           itemListElement: [
             { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://claropack.com/' },
-            { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://claropack.com/blog' },
-            { '@type': 'ListItem', position: 3, name: post.title, item: `https://claropack.com/blog/${slug}` },
+            { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://claropack.com/blog/' },
+            { '@type': 'ListItem', position: 3, name: post.title, item: `https://claropack.com/blog/${slug}/` },
           ],
         },
         post.faqs && {

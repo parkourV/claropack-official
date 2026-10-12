@@ -22,8 +22,30 @@ async function checkFile(filePath, route) {
 
         // 3. Ensure each generated page exposes its canonical URL to crawlers.
         const canonical = `https://claropack.com${route === '/' ? '/' : `${route}/`}`;
-        if (!content.includes(`rel="canonical" href="${canonical}"`)) {
-            throw new Error(`Canonical URL missing or incorrect: ${canonical}`);
+        const canonicalMatches = content.match(/<link\s+rel="canonical"\s+href="[^"]+"\s*\/?\s*>/gi) || [];
+        if (canonicalMatches.length !== 1 || !content.includes(`rel="canonical" href="${canonical}"`)) {
+            throw new Error(`Canonical URL missing, duplicated or incorrect: ${canonical}`);
+        }
+
+        const title = content.match(/<title>([^<]*)<\/title>/i)?.[1]?.trim() || '';
+        const description = content.match(/<meta name="description" content="([^"]*)"/i)?.[1]?.trim() || '';
+        if (title.length < 25 || title.length > 65) {
+            console.warn(`⚠️ ${route}: title length is ${title.length}; target 25-65.`);
+        }
+        if (description.length < 70 || description.length > 165) {
+            console.warn(`⚠️ ${route}: description length is ${description.length}; target 70-165.`);
+        }
+
+        const jsonLdBlocks = [...content.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi)];
+        if (!jsonLdBlocks.length) {
+            console.warn(`⚠️ ${route}: JSON-LD is not present.`);
+        }
+        for (const block of jsonLdBlocks) {
+            try {
+                JSON.parse(block[1]);
+            } catch {
+                throw new Error('Invalid JSON-LD in rendered page.');
+            }
         }
 
         // 4. Local source images prevent a third-party hotlink failure from breaking a page.
@@ -110,7 +132,8 @@ async function run() {
         'https://claropack.com/blog/119mm-pp-cup-size-chart-700ml-1000ml',
         'https://claropack.com/blog/109mm-pp-fruit-bucket-torch-cup-size-chart',
         'https://claropack.com/blog/85mm-anti-scald-screw-lid-pp-cup-chart',
-        'https://claropack.com/blog/108mm-1000ml-injection-pp-cup-guide'
+        'https://claropack.com/blog/108mm-1000ml-injection-pp-cup-guide',
+        'https://claropack.com/blog/105mm-dessert-bucket-pp-cup-guide'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}/</loc>`)) {
@@ -181,7 +204,8 @@ async function run() {
         { path: 'blog/119mm-pp-cup-size-chart-700ml-1000ml/index.html', route: '/blog/119mm-pp-cup-size-chart-700ml-1000ml' },
         { path: 'blog/109mm-pp-fruit-bucket-torch-cup-size-chart/index.html', route: '/blog/109mm-pp-fruit-bucket-torch-cup-size-chart' },
         { path: 'blog/85mm-anti-scald-screw-lid-pp-cup-chart/index.html', route: '/blog/85mm-anti-scald-screw-lid-pp-cup-chart' },
-        { path: 'blog/108mm-1000ml-injection-pp-cup-guide/index.html', route: '/blog/108mm-1000ml-injection-pp-cup-guide' }
+        { path: 'blog/108mm-1000ml-injection-pp-cup-guide/index.html', route: '/blog/108mm-1000ml-injection-pp-cup-guide' },
+        { path: 'blog/105mm-dessert-bucket-pp-cup-guide/index.html', route: '/blog/105mm-dessert-bucket-pp-cup-guide' }
     ];
 
     let allPassed = true;

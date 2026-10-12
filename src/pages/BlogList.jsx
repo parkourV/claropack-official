@@ -25,13 +25,13 @@ export default function BlogList() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://claropack.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://claropack.com/blog' },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://claropack.com/blog/' },
         ],
       },
       {
         '@type': 'Blog',
         name: 'Claropack Packaging Insights',
-        url: 'https://claropack.com/blog',
+        url: 'https://claropack.com/blog/',
         blogPost: postList.map((post) => ({
           '@type': 'BlogPosting',
           headline: post.title,

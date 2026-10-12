@@ -8,8 +8,8 @@ export default function Contact() {
   const [error, setError] = useState(null)
 
   useSEO({
-    title: 'Get a Quote | Custom PET & PP Cups MOQ 1,000 pcs — Claropack',
-    description: 'Request pricing for custom printed PET cold cups, PP cups and lids. Tell us size, quantity and logo — quotation within 24 hours. WhatsApp +86 181 0251 1685.',
+    title: 'Custom PET & PP Cup Quote | Claropack',
+    description: 'Request PET cups, PP cups or lids with your target size, quantity and artwork brief. Response time: within 24 hours on business days.'
   })
 
   async function handleSubmit(e) {
@@ -42,7 +42,7 @@ export default function Contact() {
       <section className="page-hero">
         <div className="container">
           <h1>Contact Us</h1>
-          <p>Get a quotation within 24 hours. The more details you share, the faster we can quote.</p>
+          <p>Share your size, quantity and artwork brief. Our response time is within 24 hours on business days.</p>
         </div>
       </section>
 
@@ -65,7 +65,7 @@ export default function Contact() {
           <form className="inquiry-form" data-component="b2b-form" onSubmit={handleSubmit}>
             {sent && (
               <div className="form-success">
-                Thank you! Your inquiry has been recorded. We will get back to you within 24 hours.
+                        Thank you! Your inquiry has been recorded. We will get back to you within 24 hours on business days.
                 You can also email us directly at jackygary6666@gmail.com.
               </div>
             )}

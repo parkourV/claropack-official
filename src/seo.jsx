@@ -25,7 +25,10 @@ export function useSEO({ title, description, type = 'website', image, imageAlt }
     setMeta('name', 'twitter:title', title)
     setMeta('name', 'twitter:description', description)
     setMeta('name', 'twitter:image', ogImage)
+    setMeta('name', 'twitter:url', canonicalUrl)
     setLink('canonical', canonicalUrl)
+    setLink('alternate', canonicalUrl, 'en')
+    setLink('alternate', canonicalUrl, 'x-default')
     window.scrollTo(0, 0)
   }, [title, description, type, image, pathname])
 }
@@ -40,11 +43,13 @@ function setMeta(attr, key, content) {
   el.setAttribute('content', content)
 }
 
-function setLink(rel, href) {
-  let el = document.head.querySelector(`link[rel="${rel}"]`)
+function setLink(rel, href, hreflang) {
+  const selector = hreflang ? `link[rel="${rel}"][hreflang="${hreflang}"]` : `link[rel="${rel}"]`
+  let el = document.head.querySelector(selector)
   if (!el) {
     el = document.createElement('link')
     el.setAttribute('rel', rel)
+    if (hreflang) el.setAttribute('hreflang', hreflang)
     document.head.appendChild(el)
   }
   el.setAttribute('href', href)

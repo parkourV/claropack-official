@@ -2266,7 +2266,7 @@ export const posts = {
     ]
   },
   '107mm-pet-jumbo-cups-30oz-32oz-guide': {
-    title: '107mm PET Jumbo Cups: 30oz and 32oz Model Specifications and Lid Matching',
+    title: '107mm PET Jumbo Cups: 30oz/32oz Specs & Lid Fit',
     description: 'Compare the 107mm jumbo PET cup models by capacity, height, base diameter, weight and carton quantity using Claropack catalog specifications.',
     date: '2026-09-23',
     author: 'Claropack Sourcing Advisor',
@@ -2314,7 +2314,7 @@ export const posts = {
     ]
   },
   '95mm-round-injection-pp-cups-selection-guide': {
-    title: '95mm Round Injection PP Cups: Choosing Between 500ml, 650ml and 750ml',
+    title: '95mm Round PP Cups: 500ml, 650ml & 750ml',
     description: 'Compare the 95mm round injection-molded PP cup models by capacity, height, base diameter and weight using Claropack catalog specifications.',
     date: '2026-09-24',
     author: 'Claropack Sourcing Advisor',
@@ -2521,8 +2521,8 @@ export const posts = {
     ]
   },
   '109mm-pp-fruit-bucket-torch-cup-size-chart': {
-    title: '109mm PP Cup Size Chart: Fruit Bucket and Torch Models | Claropack',
-    description: 'Compare three listed large-format PP cup models by format, capacity, dimensions, weight and carton quantity. Confirm the catalog dimension convention and final fit before ordering.',
+    title: '109mm PP Cup Chart: Fruit Bucket & Torch Models',
+    description: 'Compare four listed 109mm PP rows by format, capacity, dimensions, weight and carton quantity. Confirm the Torch row with a final drawing before ordering.',
     date: '2026-10-10',
     author: 'Claropack Sourcing Advisor',
     img: '/assets/images/prod-pp-hard.webp',
@@ -2572,7 +2572,7 @@ export const posts = {
     ]
   },
   '85mm-anti-scald-screw-lid-pp-cup-chart': {
-    title: '85mm PP Cup Size Chart: Anti-Scald and Screw-Lid Models | Claropack',
+    title: '85mm PP Cup Chart: Anti-Scald & Screw-Lid Models',
     description: 'Compare three listed 85mm PP cup models by format, capacity, dimensions, weight and carton quantity. Confirm use, lid fit and final documents before ordering.',
     date: '2026-10-11',
     author: 'Claropack Sourcing Advisor',
@@ -2667,6 +2667,56 @@ export const posts = {
       { q: 'What are the listed dimensions and weight?', a: 'The catalog lists 108 × 180 × 70mm and 29g. Confirm the dimension order, tolerance and final drawing with the factory.' },
       { q: 'How many pieces are listed per carton?', a: 'The 108-1000 PP row lists 500 pieces per carton. Confirm the final packing configuration for the ordered version.' },
       { q: 'Does 108mm guarantee a matching lid?', a: 'No. Nominal caliber alone does not establish rim-profile or closure compatibility. Test the selected cup and lid or sealing setup together.' }
+    ]
+  },
+  '105mm-dessert-bucket-pp-cup-guide': {
+    title: '105mm Dessert Bucket PP Cups: 400ml, 500ml & 700ml',
+    description: 'Compare three listed 105mm Dessert Bucket PP cup models by capacity, dimensions, weight and carton quantity before requesting samples.',
+    date: '2026-10-12',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'The PP catalog lists three 105mm Dessert Bucket models from 400ml to 700ml. Compare the complete rows before checking lid, carrier and filling fit.',
+    quickFacts: [
+      { label: 'Catalog format', value: '105mm Dessert Bucket PP' },
+      { label: 'Listed capacities', value: '400 / 500 / 700ml' },
+      { label: 'Listed weights', value: '47.5 / 48.5 / 53.5g' },
+      { label: 'Carton quantity', value: '400 pcs per model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Three 105mm Dessert Bucket Rows in the Catalog',
+        body: 'The supplied injection PP catalog lists three 105mm Dessert Bucket models. They share the nominal caliber and 400-piece carton quantity, but capacity, catalog dimensions and weight change by model. Use the full row when planning samples, storage and the intended dessert or beverage application.'
+      },
+      {
+        type: 'comparison',
+        h2: '105mm Dessert Bucket PP Catalog Specifications',
+        body: 'The values below reproduce the three supplied catalog rows. Request the final drawing to confirm dimension order, tolerances, rim profile and production revision before ordering.',
+        table: {
+          head: ['Catalog model', 'Format', 'Capacity', 'Catalog dimensions', 'Weight', 'Carton'],
+          rows: [
+            ['400 Dessert Bucket PP', 'Dessert Bucket PP', '400 ml', '105 × 85 × 79 mm', '47.5 g', '400 pcs'],
+            ['500 Dessert Bucket PP', 'Dessert Bucket PP', '500 ml', '105 × 109 × 77 mm', '48.5 g', '400 pcs'],
+            ['700 Dessert Bucket PP', 'Dessert Bucket PP', '700 ml', '105 × 127 × 81 mm', '53.5 g', '400 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Compare Capacity, Height and Weight Together',
+        body: 'The 400ml row lists 105 × 85 × 79mm and 47.5g; the 500ml row lists 105 × 109 × 77mm and 48.5g; and the 700ml row lists 105 × 127 × 81mm and 53.5g. These are catalog references for model selection, not approval of usable fill level, carrier fit or end-use performance.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before Ordering',
+        body: 'Copy the exact model, capacity, catalog dimensions, weight and 400-piece carton quantity into the supplier request. Ask for a final drawing and physical cup-and-closure sample. Rim-profile fit, lid or sealing-film compatibility, temperature rating, food-contact documents, printing, MOQ, price and lead time are 待工厂确认 for the selected model.'
+      }
+    ],
+    faqs: [
+      { q: 'Which capacities are listed for the 105mm Dessert Bucket PP series?', a: 'The catalog lists 400ml, 500ml and 700ml models.' },
+      { q: 'Do all three 105mm models use the same carton quantity?', a: 'Yes. Each listed 105mm Dessert Bucket row shows 400 pieces per carton. Confirm the final packing configuration for the ordered version.' },
+      { q: 'Which listed model is the lightest?', a: 'The 400ml row lists 47.5g, the 500ml row lists 48.5g and the 700ml row lists 53.5g. Confirm production tolerance with the factory.' },
+      { q: 'Does the 105mm caliber guarantee a matching lid?', a: 'No. Nominal caliber alone does not establish rim-profile or closure compatibility. Test the selected cup and lid or sealing setup together.' }
     ]
   }
 }

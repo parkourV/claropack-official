@@ -23,8 +23,8 @@ export default function Category() {
           '@type': 'BreadcrumbList',
           itemListElement: [
             { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://claropack.com/' },
-            { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://claropack.com/products' },
-            { '@type': 'ListItem', position: 3, name: cat.name, item: `https://claropack.com/products/${slug}` },
+            { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://claropack.com/products/' },
+            { '@type': 'ListItem', position: 3, name: cat.name, item: `https://claropack.com/products/${slug}/` },
           ],
         },
         {

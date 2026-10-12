@@ -55,15 +55,15 @@ const solutions = [
 
 export default function Home() {
   useSEO({
-    title: 'PET Cups Manufacturer China | Custom Plastic Cups Wholesale — Claropack',
-    description: 'Factory-direct PET cold cups, injection PP cups, lids and paper cups. PET sizes from 74mm to 107mm and 3oz to 32oz. Custom logo printing from 1,000 pcs.',
+    title: 'PET & PP Cups Manufacturer | Custom Packaging — Claropack',
+    description: 'Compare PET cold cups, injection PP cups, lids and paper cups by caliber, capacity and carton data. Request samples and model-specific documents.',
   })
   useJsonLd({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Claropack',
-    url: 'https://claropack.com',
-    description: 'Factory-direct supplier of disposable PET cold cups, injection PP cups, lids, paper cups and food packaging.',
+    url: 'https://claropack.com/',
+    description: 'Supplier of disposable PET cold cups, injection PP cups, lids, paper cups and food packaging.',
     email: 'jackygary6666@gmail.com',
     contactPoint: { '@type': 'ContactPoint', contactType: 'sales', telephone: '+86-181-0251-1685', availableLanguage: ['English', 'Chinese'] },
     address: { '@type': 'PostalAddress', addressRegion: 'Guangdong', addressCountry: 'CN' },
@@ -210,7 +210,7 @@ export default function Home() {
       <section className="cta-band">
         <div className="container">
           <h2>Ready to source your custom cups?</h2>
-          <p>Send us your size, quantity and logo — get a quotation within 24 hours.</p>
+          <p>Send us your size, quantity and logo — our team responds within 24 hours on business days.</p>
           <Link to="/contact" className="btn btn-primary">Start Your Inquiry</Link>
         </div>
       </section>

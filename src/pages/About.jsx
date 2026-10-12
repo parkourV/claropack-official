@@ -13,8 +13,8 @@ const steps = [
 
 export default function About() {
   useSEO({
-    title: 'Production Base & Quality Control | Plastic Cup Factory China — Claropack',
-    description: 'Partner factories in Guangdong with raw material traceability, finished-product inspection, ODM/OEM custom molds and full-color logo printing on PET & PP cups.',
+    title: 'PET & PP Cup Production Support | Quality Control — Claropack',
+    description: 'Review Claropack partner-factory workflows in Guangdong, including material traceability, finished-product inspection and custom PET/PP cup projects.'
   })
   return (
     <>
@@ -30,8 +30,8 @@ export default function About() {
           <div>
             <h2>A Custom Manufacturer, Not a Reseller</h2>
             <p>
-              We run an integrated production chain — from raw material to forming, printing and
-              packing — so buyers get factory-direct pricing, consistent quality and honest lead times.
+              We coordinate a production workflow — from raw material review to forming, printing and
+              packing — so buyers can compare specifications, inspection steps and delivery requirements.
             </p>
             <p>
               Our team supports ODM and OEM projects: custom calibers, capacities, exclusive

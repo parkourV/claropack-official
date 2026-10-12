@@ -7,7 +7,7 @@ import { spawn } from "child_process";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = path.resolve(__dirname, "../dist");
 const CHROME_PATH = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
-const PORT = 4173;
+const PORT = Number(process.env.PREVIEW_PORT || 4173);
 
 const routes = [
   "/",
@@ -71,6 +71,7 @@ const routes = [
   "/blog/109mm-pp-fruit-bucket-torch-cup-size-chart",
   "/blog/85mm-anti-scald-screw-lid-pp-cup-chart",
   "/blog/108mm-1000ml-injection-pp-cup-guide",
+  "/blog/105mm-dessert-bucket-pp-cup-guide",
   "/about",
   "/contact"
 ];
