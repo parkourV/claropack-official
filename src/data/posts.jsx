@@ -2718,5 +2718,54 @@ export const posts = {
       { q: 'Which listed model is the lightest?', a: 'The 400ml row lists 47.5g, the 500ml row lists 48.5g and the 700ml row lists 53.5g. Confirm production tolerance with the factory.' },
       { q: 'Does the 105mm caliber guarantee a matching lid?', a: 'No. Nominal caliber alone does not establish rim-profile or closure compatibility. Test the selected cup and lid or sealing setup together.' }
     ]
+  },
+  '82mm-square-pp-cup-size-chart': {
+    title: '82mm Square PP Cups: 520ml and 700ml Size Chart',
+    description: 'Compare the listed 82mm Square PP cup models by capacity, dimensions, weight and carton quantity before requesting a matched sample.',
+    date: '2026-10-13',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pp-square.webp',
+    excerpt: 'The injection PP catalog lists two 82mm Square models at 520ml and 700ml. Use the complete model rows to plan samples and confirm closure fit.',
+    quickFacts: [
+      { label: 'Catalog format', value: '82mm Square PP' },
+      { label: 'Listed capacities', value: '520 / 700ml' },
+      { label: 'Listed weights', value: '17 / 23g' },
+      { label: 'Carton quantity', value: '500 pcs per model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Two 82mm Square PP Rows in the Catalog',
+        body: 'The supplied injection PP catalog lists two 82mm Square PP models. Both rows use the same nominal caliber and carton quantity, while the capacity, height and listed weight change between the 520ml and 700ml formats. Compare the complete model row instead of selecting by caliber alone.'
+      },
+      {
+        type: 'comparison',
+        h2: '82mm Square PP Catalog Specifications',
+        body: 'The table reproduces the two supplied 82mm Square PP rows. Request the final drawing to confirm dimension order, tolerances, rim profile and production revision before ordering.',
+        table: {
+          head: ['Catalog model', 'Format', 'Capacity', 'Catalog dimensions', 'Weight', 'Carton'],
+          rows: [
+            ['82-520 Square PP', 'Square PP', '520 ml', '82 × 145 × 50 mm', '17 g', '500 pcs'],
+            ['82-700 Square PP', 'Square PP', '700 ml', '82 × 175 × 50 mm', '23 g', '500 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Compare the 520ml and 700ml Formats',
+        body: 'The 82-520 row lists 82 × 145 × 50mm and 17g, while the 82-700 row lists 82 × 175 × 50mm and 23g. Both rows list 500 pieces per carton. These are catalog references for selection and packing planning, not approval of usable fill level, lid fit or end-use performance.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before Ordering',
+        body: 'Include the exact model code, capacity, catalog dimensions, weight and carton quantity in the supplier request. Ask for the final drawing and a physical cup-and-closure sample. Rim-profile fit, lid or sealing-film compatibility, temperature rating, food-contact documents, printing, MOQ, price and lead time are 待工厂确认 for the selected model.'
+      }
+    ],
+    faqs: [
+      { q: 'Which capacities are listed for the 82mm Square PP series?', a: 'The catalog lists a 520ml 82-520 Square PP model and a 700ml 82-700 Square PP model.' },
+      { q: 'Do both 82mm Square models have the same carton quantity?', a: 'Yes. Both supplied rows list 500 pieces per carton. Confirm the final packing configuration for the ordered version.' },
+      { q: 'Which 82mm Square model is lighter?', a: 'The 520ml row lists 17g and the 700ml row lists 23g. Confirm production tolerance with the factory.' },
+      { q: 'Does the 82mm caliber guarantee a matching lid?', a: 'No. Nominal caliber alone does not establish rim-profile or closure compatibility. Test the selected cup and lid or sealing setup together.' }
+    ]
   }
 }
