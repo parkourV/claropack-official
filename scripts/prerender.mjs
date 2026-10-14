@@ -73,6 +73,7 @@ const routes = [
   "/blog/108mm-1000ml-injection-pp-cup-guide",
   "/blog/105mm-dessert-bucket-pp-cup-guide",
   "/blog/82mm-square-pp-cup-size-chart",
+  "/blog/90mm-straight-pp-cup-size-chart",
   "/about",
   "/contact"
 ];

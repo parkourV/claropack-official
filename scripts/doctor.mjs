@@ -134,7 +134,8 @@ async function run() {
         'https://claropack.com/blog/85mm-anti-scald-screw-lid-pp-cup-chart',
         'https://claropack.com/blog/108mm-1000ml-injection-pp-cup-guide',
         'https://claropack.com/blog/105mm-dessert-bucket-pp-cup-guide',
-        'https://claropack.com/blog/82mm-square-pp-cup-size-chart'
+        'https://claropack.com/blog/82mm-square-pp-cup-size-chart',
+        'https://claropack.com/blog/90mm-straight-pp-cup-size-chart'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}/</loc>`)) {
@@ -207,7 +208,8 @@ async function run() {
         { path: 'blog/85mm-anti-scald-screw-lid-pp-cup-chart/index.html', route: '/blog/85mm-anti-scald-screw-lid-pp-cup-chart' },
         { path: 'blog/108mm-1000ml-injection-pp-cup-guide/index.html', route: '/blog/108mm-1000ml-injection-pp-cup-guide' },
         { path: 'blog/105mm-dessert-bucket-pp-cup-guide/index.html', route: '/blog/105mm-dessert-bucket-pp-cup-guide' },
-        { path: 'blog/82mm-square-pp-cup-size-chart/index.html', route: '/blog/82mm-square-pp-cup-size-chart' }
+        { path: 'blog/82mm-square-pp-cup-size-chart/index.html', route: '/blog/82mm-square-pp-cup-size-chart' },
+        { path: 'blog/90mm-straight-pp-cup-size-chart/index.html', route: '/blog/90mm-straight-pp-cup-size-chart' }
     ];
 
     let allPassed = true;

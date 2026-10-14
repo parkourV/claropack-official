@@ -2767,5 +2767,54 @@ export const posts = {
       { q: 'Which 82mm Square model is lighter?', a: 'The 520ml row lists 17g and the 700ml row lists 23g. Confirm production tolerance with the factory.' },
       { q: 'Does the 82mm caliber guarantee a matching lid?', a: 'No. Nominal caliber alone does not establish rim-profile or closure compatibility. Test the selected cup and lid or sealing setup together.' }
     ]
+  },
+  '90mm-straight-pp-cup-size-chart': {
+    title: '90mm Straight PP Cups: 500ml and 700ml Size Chart',
+    description: 'Compare the listed 90mm Straight PP cup models by capacity, dimensions, weight and carton quantity before requesting a matched sample.',
+    date: '2026-10-14',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'The injection PP catalog lists two 90mm Straight models at 500ml and 700ml. Compare their dimensions and weights before confirming the final cup and closure setup.',
+    quickFacts: [
+      { label: 'Catalog format', value: '90mm Straight PP' },
+      { label: 'Listed capacities', value: '500 / 700ml' },
+      { label: 'Listed weights', value: '17 / 24.5g' },
+      { label: 'Carton quantity', value: '300 pcs per model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Two 90mm Straight PP Rows in the Catalog',
+        body: 'The supplied injection PP catalog lists two 90mm Straight PP models. Both rows use the same nominal caliber and carton quantity, while the capacity, height, base dimension and listed weight differ. Compare the exact model row rather than selecting by 90mm caliber alone.'
+      },
+      {
+        type: 'comparison',
+        h2: '90mm Straight PP Catalog Specifications',
+        body: 'The table reproduces the two supplied 90mm Straight PP rows. Confirm dimension order, tolerances, rim profile and the current production drawing before ordering.',
+        table: {
+          head: ['Catalog model', 'Format', 'Capacity', 'Catalog dimensions', 'Weight', 'Carton'],
+          rows: [
+            ['90-500 Straight PP', 'Straight PP', '500 ml', '90 × 97 × 51.5 mm', '17 g', '300 pcs'],
+            ['90-700 Straight PP', 'Straight PP', '700 ml', '90 × 152 × 68 mm', '24.5 g', '300 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Compare the 500ml and 700ml Formats',
+        body: 'The 90-500 row lists 90 × 97 × 51.5mm and 17g, while the 90-700 row lists 90 × 152 × 68mm and 24.5g. Both rows list 300 pieces per carton. These values are catalog references for model selection and packing planning, not approval of usable fill level, lid fit or end-use performance.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before Ordering',
+        body: 'Include the exact model code, capacity, catalog dimensions, weight and carton quantity in the supplier request. Ask for the final drawing and a physical cup-and-closure sample. Rim-profile fit, lid or sealing-film compatibility, temperature rating, food-contact documents, printing, MOQ, price and lead time are 待工厂确认 for the selected model.'
+      }
+    ],
+    faqs: [
+      { q: 'Which capacities are listed for the 90mm Straight PP series?', a: 'The catalog lists a 500ml 90-500 Straight PP model and a 700ml 90-700 Straight PP model.' },
+      { q: 'Do both 90mm Straight models use the same carton quantity?', a: 'Yes. Both supplied rows list 300 pieces per carton. Confirm the final packing configuration for the ordered version.' },
+      { q: 'Which 90mm Straight model is lighter?', a: 'The 500ml row lists 17g and the 700ml row lists 24.5g. Confirm production tolerance with the factory.' },
+      { q: 'Does the 90mm caliber guarantee a matching lid?', a: 'No. Nominal caliber alone does not establish rim-profile or closure compatibility. Test the selected cup and lid or sealing setup together.' }
+    ]
   }
 }
