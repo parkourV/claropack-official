@@ -2816,5 +2816,58 @@ export const posts = {
       { q: 'Which 90mm Straight model is lighter?', a: 'The 500ml row lists 17g and the 700ml row lists 24.5g. Confirm production tolerance with the factory.' },
       { q: 'Does the 90mm caliber guarantee a matching lid?', a: 'No. Nominal caliber alone does not establish rim-profile or closure compatibility. Test the selected cup and lid or sealing setup together.' }
     ]
+  },
+  '90mm-high-foot-pp-cup-size-chart': {
+    title: '90mm High-Foot PP Cups: 400ml to 700ml Size Chart',
+    description: 'Compare six listed 90mm High-Foot PP cup models by capacity, dimensions, weight and carton quantity before requesting samples.',
+    date: '2026-10-15',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'The injection PP catalog lists six 90mm High-Foot models from 400ml to 700ml. Use the exact rows to compare dimensions and listed weights before ordering.',
+    quickFacts: [
+      { label: 'Catalog format', value: '90mm High-Foot PP' },
+      { label: 'Listed capacities', value: '400–700ml' },
+      { label: 'Listed weights', value: '13–24.5g' },
+      { label: 'Carton quantity', value: '500 pcs per model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Six 90mm High-Foot PP Rows in the Catalog',
+        body: 'The supplied injection PP catalog lists six 90mm High-Foot PP models. The rows share the same nominal caliber and carton quantity, while capacity, height, base dimension and listed weight vary. Compare the exact model row instead of treating the 90mm caliber as a complete specification.'
+      },
+      {
+        type: 'comparison',
+        h2: '90mm High-Foot PP Catalog Specifications',
+        body: 'The table reproduces the six supplied 90mm High-Foot PP rows. Confirm dimension order, tolerances, rim profile, foot geometry and the current production drawing before ordering.',
+        table: {
+          head: ['Catalog model', 'Format', 'Capacity', 'Catalog dimensions', 'Weight', 'Carton'],
+          rows: [
+            ['90-400 High-Foot PP', 'High-Foot PP', '400 ml', '90 × 122 × 53 mm', '13 g', '500 pcs'],
+            ['90-500 High-Foot PP', 'High-Foot PP', '500 ml', '90 × 147 × 53 mm', '16.5 g', '500 pcs'],
+            ['90-520 High-Foot PP', 'High-Foot PP', '520 ml', '90 × 156 × 52 mm', '17.2 g', '500 pcs'],
+            ['90-600 High-Foot PP', 'High-Foot PP', '600 ml', '90 × 175 × 55 mm', '21 g', '500 pcs'],
+            ['90-650 High-Foot PP', 'High-Foot PP', '650 ml', '90 × 183 × 56 mm', '24 g', '500 pcs'],
+            ['90-700 High-Foot PP', 'High-Foot PP', '700 ml', '90 × 210 × 53 mm', '24.5 g', '500 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Capacity, Height and Listed Weight Range',
+        body: 'The catalog rows span 400ml to 700ml. Listed dimensions range from 90 × 122 × 53mm for the 400ml row to 90 × 210 × 53mm for the 700ml row, while listed weights range from 13g to 24.5g. These are catalog references for model selection and packing planning, not approval of usable fill level, lid fit or end-use performance.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before Ordering',
+        body: 'Include the exact model code, capacity, catalog dimensions, weight and carton quantity in the supplier request. Ask for the final drawing and a physical cup-and-closure sample. Foot geometry, rim-profile fit, lid or sealing-film compatibility, temperature rating, food-contact documents, printing, MOQ, price and lead time are 待工厂确认 for the selected model.'
+      }
+    ],
+    faqs: [
+      { q: 'Which capacities are listed for the 90mm High-Foot PP series?', a: 'The catalog lists 400ml, 500ml, 520ml, 600ml, 650ml and 700ml models.' },
+      { q: 'Do all six 90mm High-Foot models use the same carton quantity?', a: 'Yes. Each supplied row lists 500 pieces per carton. Confirm the final packing configuration for the ordered version.' },
+      { q: 'Which 90mm High-Foot model is lightest?', a: 'The 400ml row lists 13g. The 700ml row lists 24.5g. Confirm production tolerance for the selected model.' },
+      { q: 'Does the 90mm caliber guarantee a matching lid?', a: 'No. Nominal caliber and the High-Foot label do not establish rim-profile, foot or closure compatibility. Test the selected cup and lid or sealing setup together.' }
+    ]
   }
 }
