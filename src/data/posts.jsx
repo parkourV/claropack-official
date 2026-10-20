@@ -2820,7 +2820,7 @@ export const posts = {
   '90mm-high-foot-pp-cup-size-chart': {
     title: '90mm High-Foot PP Cups: 400ml to 700ml Size Chart',
     description: 'Compare six listed 90mm High-Foot PP cup models by capacity, dimensions, weight and carton quantity before requesting samples.',
-    date: '2026-10-15',
+    date: '2026-10-20',
     author: 'Claropack Sourcing Advisor',
     img: '/assets/images/prod-pp-hard.webp',
     excerpt: 'The injection PP catalog lists six 90mm High-Foot models from 400ml to 700ml. Use the exact rows to compare dimensions and listed weights before ordering.',
