@@ -75,6 +75,7 @@ const routes = [
   "/blog/82mm-square-pp-cup-size-chart",
   "/blog/90mm-straight-pp-cup-size-chart",
   "/blog/90mm-high-foot-pp-cup-size-chart",
+  "/blog/90mm-wide-foot-pp-cup-size-chart",
   "/about",
   "/contact"
 ];

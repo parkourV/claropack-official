@@ -136,7 +136,8 @@ async function run() {
         'https://claropack.com/blog/105mm-dessert-bucket-pp-cup-guide',
         'https://claropack.com/blog/82mm-square-pp-cup-size-chart',
         'https://claropack.com/blog/90mm-straight-pp-cup-size-chart',
-        'https://claropack.com/blog/90mm-high-foot-pp-cup-size-chart'
+        'https://claropack.com/blog/90mm-high-foot-pp-cup-size-chart',
+        'https://claropack.com/blog/90mm-wide-foot-pp-cup-size-chart'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}/</loc>`)) {
@@ -211,7 +212,8 @@ async function run() {
         { path: 'blog/105mm-dessert-bucket-pp-cup-guide/index.html', route: '/blog/105mm-dessert-bucket-pp-cup-guide' },
         { path: 'blog/82mm-square-pp-cup-size-chart/index.html', route: '/blog/82mm-square-pp-cup-size-chart' },
         { path: 'blog/90mm-straight-pp-cup-size-chart/index.html', route: '/blog/90mm-straight-pp-cup-size-chart' },
-        { path: 'blog/90mm-high-foot-pp-cup-size-chart/index.html', route: '/blog/90mm-high-foot-pp-cup-size-chart' }
+        { path: 'blog/90mm-high-foot-pp-cup-size-chart/index.html', route: '/blog/90mm-high-foot-pp-cup-size-chart' },
+        { path: 'blog/90mm-wide-foot-pp-cup-size-chart/index.html', route: '/blog/90mm-wide-foot-pp-cup-size-chart' }
     ];
 
     let allPassed = true;

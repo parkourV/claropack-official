@@ -2869,5 +2869,55 @@ export const posts = {
       { q: 'Which 90mm High-Foot model is lightest?', a: 'The 400ml row lists 13g. The 700ml row lists 24.5g. Confirm production tolerance for the selected model.' },
       { q: 'Does the 90mm caliber guarantee a matching lid?', a: 'No. Nominal caliber and the High-Foot label do not establish rim-profile, foot or closure compatibility. Test the selected cup and lid or sealing setup together.' }
     ]
+  },
+  '90mm-wide-foot-pp-cup-size-chart': {
+    title: '90mm Wide-Foot PP Cups: 360ml, 500ml and 700ml',
+    description: 'Compare three listed 90mm Wide-Foot PP cup models by capacity, dimensions, weight and carton quantity before requesting samples.',
+    date: '2026-10-21',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'The injection PP catalog lists three 90mm Wide-Foot models at 360ml, 500ml and 700ml. Compare the complete rows before confirming the final cup and closure setup.',
+    quickFacts: [
+      { label: 'Catalog format', value: '90mm Wide-Foot PP' },
+      { label: 'Listed capacities', value: '360 / 500 / 700ml' },
+      { label: 'Listed weights', value: '12.8 / 16 / 24g' },
+      { label: 'Carton quantity', value: '500 pcs per model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Three 90mm Wide-Foot PP Rows in the Catalog',
+        body: 'The supplied injection PP catalog lists three 90mm Wide-Foot PP models. They share the nominal caliber and carton quantity, while capacity, catalog dimensions and listed weight vary. Use the complete model row for sample planning rather than selecting by 90mm caliber alone.'
+      },
+      {
+        type: 'comparison',
+        h2: '90mm Wide-Foot PP Catalog Specifications',
+        body: 'The table below reproduces the three supplied 90mm Wide-Foot PP rows. Confirm dimension order, tolerances, rim profile, foot geometry and the current production drawing before ordering.',
+        table: {
+          head: ['Catalog model', 'Format', 'Capacity', 'Catalog dimensions', 'Weight', 'Carton'],
+          rows: [
+            ['90-360 Wide-Foot PP', 'Wide-Foot PP', '360 ml', '90 × 97 × 56 mm', '12.8 g', '500 pcs'],
+            ['90-500 Wide-Foot PP', 'Wide-Foot PP', '500 ml', '90 × 137 × 56 mm', '16 g', '500 pcs'],
+            ['90-700 Wide-Foot PP', 'Wide-Foot PP', '700 ml', '90 × 183 × 55 mm', '24 g', '500 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Compare Capacity, Foot Profile and Listed Weight',
+        body: 'The 90-360 row lists 360ml, 90 × 97 × 56mm and 12.8g. The 90-500 row lists 500ml, 90 × 137 × 56mm and 16g. The 90-700 row lists 700ml, 90 × 183 × 55mm and 24g. All three rows list 500 pieces per carton. These are catalog references for model selection and packing planning, not approval of usable fill level, lid fit or end-use performance.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before Ordering',
+        body: 'Include the exact model code, capacity, catalog dimensions, weight and carton quantity in the supplier request. Ask for the final drawing and a physical cup-and-closure sample. Foot geometry, rim-profile fit, lid or sealing-film compatibility, temperature rating, food-contact documents, printing, MOQ, price and lead time are 待工厂确认 for the selected model.'
+      }
+    ],
+    faqs: [
+      { q: 'Which capacities are listed for the 90mm Wide-Foot PP series?', a: 'The catalog lists 360ml, 500ml and 700ml models.' },
+      { q: 'Do all three 90mm Wide-Foot models use the same carton quantity?', a: 'Yes. Each supplied row lists 500 pieces per carton. Confirm the final packing configuration for the ordered version.' },
+      { q: 'Which 90mm Wide-Foot model is lightest?', a: 'The 360ml row lists 12.8g, the 500ml row lists 16g and the 700ml row lists 24g. Confirm production tolerance for the selected model.' },
+      { q: 'Does the 90mm caliber guarantee a matching lid?', a: 'No. Nominal caliber and the Wide-Foot label do not establish rim-profile, foot or closure compatibility. Test the selected cup and lid or sealing setup together.' }
+    ]
   }
 }

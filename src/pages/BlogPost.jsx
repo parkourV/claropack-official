@@ -13,6 +13,7 @@ const relatedGuides = {
   '85mm-anti-scald-screw-lid-pp-cup-chart': ['108mm-1000ml-injection-pp-cup-guide', 'cup-lid-compatibility-guide', 'hot-drink-cup-selection-guide'],
   '109mm-pp-fruit-bucket-torch-cup-size-chart': ['119mm-pp-cup-size-chart-700ml-1000ml', '108mm-1000ml-injection-pp-cup-guide', 'injection-pp-cup-model-weight-guide'],
   '119mm-pp-cup-size-chart-700ml-1000ml': ['109mm-pp-fruit-bucket-torch-cup-size-chart', '108mm-1000ml-injection-pp-cup-guide', '95mm-round-injection-pp-cups-selection-guide'],
+  '90mm-wide-foot-pp-cup-size-chart': ['90mm-high-foot-pp-cup-size-chart', '90mm-straight-pp-cup-size-chart', '90mm-flat-bottom-injection-pp-cup-size-chart'],
 }
 
 export default function BlogPost() {
