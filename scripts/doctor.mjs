@@ -137,7 +137,8 @@ async function run() {
         'https://claropack.com/blog/82mm-square-pp-cup-size-chart',
         'https://claropack.com/blog/90mm-straight-pp-cup-size-chart',
         'https://claropack.com/blog/90mm-high-foot-pp-cup-size-chart',
-        'https://claropack.com/blog/90mm-wide-foot-pp-cup-size-chart'
+        'https://claropack.com/blog/90mm-wide-foot-pp-cup-size-chart',
+        'https://claropack.com/blog/92mm-pet-cup-size-chart-200ml-500ml'
     ];
     for (const url of requiredSitemapUrls) {
         if (!sitemap.includes(`<loc>${url}/</loc>`)) {
@@ -213,7 +214,8 @@ async function run() {
         { path: 'blog/82mm-square-pp-cup-size-chart/index.html', route: '/blog/82mm-square-pp-cup-size-chart' },
         { path: 'blog/90mm-straight-pp-cup-size-chart/index.html', route: '/blog/90mm-straight-pp-cup-size-chart' },
         { path: 'blog/90mm-high-foot-pp-cup-size-chart/index.html', route: '/blog/90mm-high-foot-pp-cup-size-chart' },
-        { path: 'blog/90mm-wide-foot-pp-cup-size-chart/index.html', route: '/blog/90mm-wide-foot-pp-cup-size-chart' }
+        { path: 'blog/90mm-wide-foot-pp-cup-size-chart/index.html', route: '/blog/90mm-wide-foot-pp-cup-size-chart' },
+        { path: 'blog/92mm-pet-cup-size-chart-200ml-500ml/index.html', route: '/blog/92mm-pet-cup-size-chart-200ml-500ml' }
     ];
 
     let allPassed = true;

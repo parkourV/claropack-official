@@ -2919,5 +2919,59 @@ export const posts = {
       { q: 'Which 90mm Wide-Foot model is lightest?', a: 'The 360ml row lists 12.8g, the 500ml row lists 16g and the 700ml row lists 24g. Confirm production tolerance for the selected model.' },
       { q: 'Does the 90mm caliber guarantee a matching lid?', a: 'No. Nominal caliber and the Wide-Foot label do not establish rim-profile, foot or closure compatibility. Test the selected cup and lid or sealing setup together.' }
     ]
+  },
+  '92mm-pet-cup-size-chart-200ml-500ml': {
+    title: '92mm PET Cups: 200ml to 500ml Catalog Size Chart',
+    description: 'Compare seven listed 92mm PET cup models by capacity, catalog dimensions, weight and carton quantity; check lid fit against the selected model.',
+    date: '2026-10-23',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pet.webp',
+    excerpt: 'Seven current 92mm PET catalog rows cover 200ml to 500ml. Compare the exact model, listed dimensions and weight before requesting a drawing or cup-and-lid sample.',
+    quickFacts: [
+      { label: 'Catalog series', value: '92mm PET' },
+      { label: 'Listed capacities', value: '200 / 260 / 340 / 350 / 400 / 420 / 500ml' },
+      { label: 'Listed weights', value: '7 / 8 / 10 / 10 / 11 / 11.5 / 13.5g' },
+      { label: 'Carton quantity', value: '1,000 pcs per listed model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Choose a Model, Not Only a Caliber',
+        body: 'The current PET catalog has seven 92mm-series cup rows, with listed capacities from 200ml to 500ml. The series name is 92mm, while the first number in each listed dimension string is 93mm. The supplied data do not explain this difference; do not infer a rim tolerance or lid specification from it. Request the final factory drawing and sample for the exact model.'
+      },
+      {
+        type: 'comparison',
+        h2: '92mm PET Cup Catalog Rows',
+        body: 'The dimensions below reproduce the catalog strings without assigning an unverified order to the measurements. Weights and carton quantities are also catalog values, not production tolerances or minimum order quantities.',
+        table: {
+          head: ['Catalog model', 'Capacity', 'Catalog dimensions', 'Listed weight', 'Carton'],
+          rows: [
+            ['92-200 PET', '200 ml', '93 × 56 × 55 mm', '7 g', '1,000 pcs'],
+            ['92-260 PET', '260 ml', '93 × 71 × 55 mm', '8 g', '1,000 pcs'],
+            ['92-340 PET', '340 ml', '93 × 91 × 58 mm', '10 g', '1,000 pcs'],
+            ['92-350 PET', '350 ml', '93 × 80 × 67 mm', '10 g', '1,000 pcs'],
+            ['92-400 PET', '400 ml', '93 × 107 × 57 mm', '11 g', '1,000 pcs'],
+            ['92-420 PET', '420 ml', '93 × 109 × 57 mm', '11.5 g', '1,000 pcs'],
+            ['92-500 PET', '500 ml', '93 × 132 × 56 mm', '13.5 g', '1,000 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Why the 340ml and 350ml Rows Need Separate Checks',
+        body: 'The 92-340 PET and 92-350 PET rows both list 10g, but their catalog dimensions differ: 93 × 91 × 58mm versus 93 × 80 × 67mm. A shared weight does not establish identical cup geometry, usable fill level or closure fit. Compare the model codes and request separate drawings and samples if both are being considered.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Include in a Supplier Inquiry',
+        body: 'Quote the exact catalog model, its listed capacity, dimension string, weight and 1,000-piece carton quantity. Ask the factory to confirm the dimension order and tolerance, actual rim profile, matched lid or sealing film, usable fill level, temperature rating, food-contact documents, printing, MOQ, price and lead time. Those details are 待工厂确认; carton quantity is not an MOQ. See the current PET catalog for other sizes and compare the 90mm and 95mm series separately.'
+      }
+    ],
+    faqs: [
+      { q: 'Which 92mm PET capacities are listed?', a: 'The current catalog lists 200ml, 260ml, 340ml, 350ml, 400ml, 420ml and 500ml models in this series.' },
+      { q: 'Why do the dimension strings start with 93mm?', a: 'The catalog labels this series 92mm but lists dimension strings starting with 93mm. The reason and exact rim specification are 待工厂确认; request a final drawing and sample.' },
+      { q: 'Do all seven models have the same carton quantity?', a: 'Each of the seven supplied rows lists 1,000 pcs per carton. MOQ and final packing configuration are 待工厂确认.' },
+      { q: 'Can a lid be selected from the 92mm label alone?', a: 'No. Rim profile and lid or sealing-film fit are 待工厂确认 for the exact cup model; test a physical cup-and-closure sample.' }
+    ]
   }
 }
