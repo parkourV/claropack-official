@@ -2973,5 +2973,58 @@ export const posts = {
       { q: 'Do all seven models have the same carton quantity?', a: 'Each of the seven supplied rows lists 1,000 pcs per carton. MOQ and final packing configuration are 待工厂确认.' },
       { q: 'Can a lid be selected from the 92mm label alone?', a: 'No. Rim profile and lid or sealing-film fit are 待工厂确认 for the exact cup model; test a physical cup-and-closure sample.' }
     ]
+  },
+  '90mm-u-shape-pp-cup-size-chart': {
+    title: '90mm U-Shape PP Cups: 260ml to 700ml Size Chart',
+    description: 'Compare six listed 90mm U-Shape PP cup models by capacity, catalog dimensions, weight and carton quantity before requesting a matched sample.',
+    date: '2026-10-25',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'The injection PP catalog lists six 90mm U-Shape models from 260ml to 700ml. Compare the complete model rows before confirming cup, lid or sealing-film fit.',
+    quickFacts: [
+      { label: 'Catalog format', value: '90mm U-Shape PP' },
+      { label: 'Listed capacities', value: '260 / 360 / 380 / 400 / 500 / 700ml' },
+      { label: 'Listed weights', value: '8.5 / 11 / 13 / 13 / 15 / 22g' },
+      { label: 'Carton quantity', value: '500 pcs per model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Six 90mm U-Shape PP Rows in the Catalog',
+        body: 'The supplied injection PP catalog lists six 90mm U-Shape PP models. They share the nominal 90mm caliber and a listed carton quantity of 500 pieces, while capacities, catalog dimensions and listed weights vary. Use the exact model row for selection; the U-Shape label alone does not establish usable fill level or closure compatibility.'
+      },
+      {
+        type: 'comparison',
+        h2: '90mm U-Shape PP Catalog Specifications',
+        body: 'The table reproduces the six supplied 90mm U-Shape PP rows. Confirm dimension order, tolerances, rim profile, cup geometry and the current production drawing before ordering.',
+        table: {
+          head: ['Catalog model', 'Format', 'Capacity', 'Catalog dimensions', 'Weight', 'Carton'],
+          rows: [
+            ['90-260 U PP', 'U-Shape PP', '260 ml', '90 × 62 × 60 mm', '8.5 g', '500 pcs'],
+            ['90-360 U PP', 'U-Shape PP', '360 ml', '90 × 95 × 63 mm', '11 g', '500 pcs'],
+            ['90-380 U PP', 'U-Shape PP', '380 ml', '90 × 95 × 65 mm', '13 g', '500 pcs'],
+            ['90-400 U PP', 'U-Shape PP', '400 ml', '90 × 100 × 65 mm', '13 g', '500 pcs'],
+            ['90-500 U PP', 'U-Shape PP', '500 ml', '90 × 125 × 65 mm', '15 g', '500 pcs'],
+            ['90-700 U PP', 'U-Shape PP', '700 ml', '90 × 170 × 65 mm', '22 g', '500 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Compare the 360ml and 380ml Rows Carefully',
+        body: 'The 90-360 U PP row lists 360ml, 90 × 95 × 63mm and 11g. The 90-380 U PP row lists 380ml, 90 × 95 × 65mm and 13g. Their first two listed dimension values are the same, but the final value and weight differ. Treat them as separate catalog models and request separate drawings or samples when both are under consideration.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before Ordering',
+        body: 'Include the exact model code, capacity, catalog dimensions, weight and carton quantity in the supplier request. Ask the factory to confirm dimension order and tolerance, rim profile, matched lid or sealing film, usable fill level, temperature rating, food-contact documents, printing, MOQ, price and lead time. These details are 待工厂确认; the listed 500-piece carton quantity is not a verified MOQ.'
+      }
+    ],
+    faqs: [
+      { q: 'Which capacities are listed for the 90mm U-Shape PP series?', a: 'The catalog lists 260ml, 360ml, 380ml, 400ml, 500ml and 700ml models.' },
+      { q: 'Do all six models use the same carton quantity?', a: 'Each supplied 90mm U-Shape row lists 500 pieces per carton. Confirm final packing configuration for the ordered version.' },
+      { q: 'Which 90mm U-Shape model is lightest?', a: 'The 260ml row lists 8.5g. The 700ml row lists 22g. Confirm production tolerance for the selected model.' },
+      { q: 'Does the 90mm caliber guarantee a matching lid?', a: 'No. Nominal caliber and the U-Shape label do not establish rim-profile or closure compatibility. Test the selected cup and lid or sealing setup together.' }
+    ]
   }
 }
