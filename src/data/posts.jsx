@@ -3026,5 +3026,65 @@ export const posts = {
       { q: 'Which 90mm U-Shape model is lightest?', a: 'The 260ml row lists 8.5g. The 700ml row lists 22g. Confirm production tolerance for the selected model.' },
       { q: 'Does the 90mm caliber guarantee a matching lid?', a: 'No. Nominal caliber and the U-Shape label do not establish rim-profile or closure compatibility. Test the selected cup and lid or sealing setup together.' }
     ]
-  }
+  },
+  '90mm-pet-cup-size-chart-260ml-600ml': {
+    title: '90mm PET Cups: 260ml to 600ml Catalog Size Chart',
+    description: 'Compare six 90mm PET cup models from 260ml to 600ml by catalog dimensions, listed weight and carton quantity. Confirm final fit before ordering.',
+    date: '2026-11-11',
+    dateModified: '2026-11-11',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pet.webp',
+    excerpt: 'The PET catalog lists six 90mm models from 260ml to 600ml. Compare each complete row before requesting a drawing, matched lid sample or quotation.',
+    quickFacts: [
+      { label: 'Catalog series', value: '90mm PET cups' },
+      { label: 'Listed capacities', value: '260 / 300 / 380 / 400 / 500 / 600ml' },
+      { label: 'Listed weights', value: '8 / 9.5 / 10 / 11 / 13.5 / 15g' },
+      { label: 'Carton quantity', value: '1,000 pcs per listed model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Why Compare the Complete 90mm PET Row?',
+        body: 'The current PET catalog lists six 90mm models from 260ml to 600ml. A shared nominal caliber is only one sourcing field: the catalog dimensions, capacity, listed weight and carton quantity vary by model. Use the complete row when planning a menu, carrier or filling setup, then request the final drawing and physical sample before production.'
+      },
+      {
+        type: 'comparison',
+        h2: '90mm PET Cup Catalog Specifications',
+        body: 'The table below reproduces the six 90mm PET rows from the current category data. The dimension strings are catalog references; confirm their measurement order, tolerances and final production revision with the factory.',
+        table: {
+          head: ['Catalog model', 'Caliber', 'Capacity', 'Catalog dimensions', 'Listed weight', 'Carton'],
+          rows: [
+            ['90-260 PET', '90 mm', '260 ml', '90 × 79 × 54 mm', '8 g', '1,000 pcs'],
+            ['90-300 PET', '90 mm', '300 ml', '90 × 89 × 52 mm', '9.5 g', '1,000 pcs'],
+            ['90-380 PET', '90 mm', '380 ml', '90 × 108 × 57 mm', '10 g', '1,000 pcs'],
+            ['90-400 PET', '90 mm', '400 ml', '90 × 116 × 56 mm', '11 g', '1,000 pcs'],
+            ['90-500 PET', '90 mm', '500 ml', '90 × 137 × 52 mm', '13.5 g', '1,000 pcs'],
+            ['90-600 PET', '90 mm', '600 ml', '90 × 153 × 55 mm', '15 g', '1,000 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Use Capacity and Height Together',
+        body: 'The 90-260 PET row is listed at 260ml, 90 × 79 × 54mm and 8g, while the 90-600 PET row is listed at 600ml, 90 × 153 × 55mm and 15g. The intermediate rows should be compared by their own model code and dimension string rather than by capacity alone. Check the selected model against your holder, carrier and filling equipment.'
+      },
+      {
+        type: 'text',
+        h2: 'Do Not Assume Lid or Temperature Compatibility',
+        body: 'The category data identifies these as 90mm PET rows and lists their catalog specifications, but it does not establish a universal lid profile, sealing-film match, temperature rating, food-contact document set, printing option, MOQ, price or lead time for every model. These details are Pending factory confirmation. Request a matched cup-and-lid sample and the final technical documents for the exact model.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Include in a Supplier Inquiry',
+        body: 'State the exact model code, 90mm caliber, listed capacity, catalog dimensions, listed weight and 1,000-piece carton reference. Add your intended beverage, lid or sealing requirement, artwork status and destination market. Ask the factory to confirm rim profile, closure fit, temperature use, food-contact documents, printing, MOQ, price, lead time and final packing configuration.'
+      }
+    ],
+    faqs: [
+      { q: 'Which 90mm PET capacities are listed in the catalog?', a: 'The current category data lists 260ml, 300ml, 380ml, 400ml, 500ml and 600ml models.' },
+      { q: 'Do all six 90mm PET models have the same carton quantity?', a: 'Each of the six supplied rows lists 1,000 pieces per carton. Confirm the final packing configuration for the ordered version.' },
+      { q: 'Can I select one lid for every 90mm PET model?', a: 'No assumption should be made from the nominal caliber alone. Confirm the exact rim profile and matched lid or sealing setup with a physical sample for the selected model.' },
+      { q: 'Are these 90mm PET cups suitable for hot drinks?', a: 'The supplied category data does not provide a verified temperature rating for these exact rows. Treat temperature use as Pending factory confirmation and request written documentation before ordering.' }
+    ]
+  },
+
 }
