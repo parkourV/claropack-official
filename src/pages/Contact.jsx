@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useSEO } from '../seo.jsx'
 import { supabase } from '../supabaseClient'
 
@@ -41,6 +42,9 @@ export default function Contact() {
     <>
       <section className="page-hero">
         <div className="container">
+          <nav className="breadcrumb" aria-label="Breadcrumb">
+            <Link to="/">Home</Link> <span aria-hidden="true">/</span> <span aria-current="page">Contact</span>
+          </nav>
           <h1>Contact Us</h1>
           <p>Share your size, quantity and artwork brief. Our response time is within 24 hours on business days.</p>
         </div>

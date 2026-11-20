@@ -23,6 +23,7 @@ export default function BlogList() {
     '@graph': [
       {
         '@type': 'BreadcrumbList',
+        '@id': 'https://claropack.com/blog/#breadcrumb',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://claropack.com/' },
           { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://claropack.com/blog/' },
@@ -62,7 +63,7 @@ export default function BlogList() {
             {postList.map((post) => (
               <Link to={`/blog/${post.slug}`} className="cat-card" key={post.slug}>
                 <div className="cat-art" style={{ height: 200 }}>
-                  <img src={getBlogImage(post.slug, post.img)} alt={post.title} style={{ height: '100%', objectFit: 'cover', borderRadius: '12px 12px 0 0' }} loading="lazy" />
+                  <img src={getBlogImage(post.slug, post.img)} alt={post.title} width="800" height="450" style={{ width: '100%', height: '100%', aspectRatio: '16 / 9', objectFit: 'cover', borderRadius: '12px 12px 0 0' }} loading="lazy" />
                 </div>
                 <div className="cat-body">
                   <div style={{ fontSize: '0.8rem', color: '#64748B', marginBottom: 8 }}>{`${post.date} • ${post.author}`}</div>

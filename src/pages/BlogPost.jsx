@@ -44,15 +44,18 @@ export default function BlogPost() {
           mainEntityOfPage: `https://claropack.com/blog/${slug}/`,
           author: {
             '@type': 'Organization',
-            name: 'Claropack'
+            name: 'Claropack',
+            '@id': 'https://claropack.com/#organization'
           },
           publisher: {
             '@type': 'Organization',
-            name: 'Claropack'
+            name: 'Claropack',
+            '@id': 'https://claropack.com/#organization'
           }
         },
         {
           '@type': 'BreadcrumbList',
+          '@id': `https://claropack.com/blog/${slug}/#breadcrumb`,
           itemListElement: [
             { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://claropack.com/' },
             { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://claropack.com/blog/' },
@@ -78,7 +81,7 @@ export default function BlogPost() {
       <section className="page-hero">
         <div className="container">
           <nav className="breadcrumb" aria-label="Breadcrumb">
-            <Link to="/">Home</Link> <span>/</span> <Link to="/blog">Blog</Link> <span>/</span> <strong>Article</strong>
+            <Link to="/">Home</Link> <span aria-hidden="true">/</span> <Link to="/blog">Blog</Link> <span aria-hidden="true">/</span> <span aria-current="page">{post.title}</span>
           </nav>
           <div style={{ fontSize: '0.9rem', color: '#64748B', marginBottom: 12 }}>{`${post.date} • By ${post.author}`}</div>
           <h1 style={{ maxWidth: 800 }}>{post.title}</h1>
@@ -87,7 +90,7 @@ export default function BlogPost() {
 
       <article className="section">
         <div className="container" style={{ maxWidth: 800 }}>
-          <img src={getBlogImage(slug, post.img)} alt={post.title} style={{ width: '100%', borderRadius: '12px', marginBottom: 40 }} />
+          <img src={getBlogImage(slug, post.img)} alt={post.title} width="800" height="450" style={{ width: '100%', height: 'auto', aspectRatio: '16 / 9', objectFit: 'cover', borderRadius: '12px', marginBottom: 40 }} />
           
           {post.quickFacts && (
             <div className="quick-facts" style={{ marginBottom: 40, padding: '24px', background: '#F0F9FF', borderRadius: '12px', border: '1px solid #BAE6FD' }}>

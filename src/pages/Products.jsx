@@ -15,7 +15,7 @@ const CATS = categoryKeys.map(([label]) => label)
 const imageStyle = { width: '100%', height: '100%', objectFit: 'contain' }
 
 function productArt(src, fallback, alt) {
-  return <img src={getImage(src, fallback)} alt={alt} style={imageStyle} loading="lazy" />
+  return <img src={getImage(src, fallback)} alt={alt} width="800" height="800" style={imageStyle} loading="lazy" />
 }
 
 function fallbackFor(slug) {
@@ -47,6 +47,9 @@ export default function Products() {
     <>
       <section className="page-hero">
         <div className="container">
+          <nav className="breadcrumb" aria-label="Breadcrumb">
+            <Link to="/">Home</Link> <span aria-hidden="true">/</span> <span aria-current="page">Products</span>
+          </nav>
           <h1>Products</h1>
           <p>Browse the latest PET and injection PP catalog rows. Printing, MOQ, documents and final fit are confirmed per model.</p>
         </div>

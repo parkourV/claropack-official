@@ -6,6 +6,7 @@ export default function NotFound() {
   useSEO({
     title: '404 - Page Not Found | Claropack',
     description: 'The page you are looking for does not exist. Return to Claropack home for PET and PP cup solutions.',
+    noindex: true,
   })
 
   return (

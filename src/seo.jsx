@@ -5,7 +5,7 @@ const SITE = 'https://claropack.com'
 const DEFAULT_OG_IMAGE = '/assets/images/hero-banner.webp'
 
 // Sets per-route title, description, canonical and social metadata.
-export function useSEO({ title, description, type = 'website', image, imageAlt }) {
+export function useSEO({ title, description, type = 'website', image, imageAlt, noindex = false }) {
   const { pathname } = useLocation()
   useEffect(() => {
     const selectedImage = image || DEFAULT_OG_IMAGE
@@ -13,6 +13,7 @@ export function useSEO({ title, description, type = 'website', image, imageAlt }
     const canonicalUrl = SITE + (pathname === '/' ? '/' : `${pathname.replace(/\/+$/, '')}/`)
     document.title = title
     setMeta('name', 'description', description)
+    setMeta('name', 'robots', noindex ? 'noindex,nofollow' : 'index,follow')
     setMeta('property', 'og:site_name', 'Claropack')
     setMeta('property', 'og:locale', 'en_US')
     setMeta('property', 'og:title', title)
@@ -30,7 +31,7 @@ export function useSEO({ title, description, type = 'website', image, imageAlt }
     setLink('alternate', canonicalUrl, 'en')
     setLink('alternate', canonicalUrl, 'x-default')
     window.scrollTo(0, 0)
-  }, [title, description, type, image, pathname])
+  }, [title, description, type, image, imageAlt, noindex, pathname])
 }
 
 function setMeta(attr, key, content) {

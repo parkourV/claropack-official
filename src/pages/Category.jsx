@@ -21,6 +21,7 @@ export default function Category() {
       '@graph': [
         {
           '@type': 'BreadcrumbList',
+          '@id': `https://claropack.com/products/${slug}/#breadcrumb`,
           itemListElement: [
             { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://claropack.com/' },
             { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://claropack.com/products/' },
@@ -73,7 +74,7 @@ export default function Category() {
       <section className="section">
         <div className="container about-grid">
           <div className="sol-art" style={{ background: '#fff' }}>
-              <img src={getImage(cat.img, categoryFallback)} alt={cat.name} style={{ width: '100%', borderRadius: '12px' }} loading="lazy" />
+              <img src={getImage(cat.img, categoryFallback)} alt={`${cat.name} catalog product range`} width="800" height="800" style={{ width: '100%', height: 'auto', aspectRatio: '1 / 1', objectFit: 'contain', borderRadius: '12px' }} loading="lazy" />
 
           </div>
           <div>
@@ -122,7 +123,9 @@ export default function Category() {
                 <div style={{ height: '220px', background: '#f8fafc', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
                   <img
                     src={getImage(imgIdx !== -1 ? row[imgIdx] : cat.img, categoryFallback)}
-                    alt={row[0]}
+                    alt={`${row[0]} ${cat.name} catalog product`}
+                    width="800"
+                    height="800"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
                 </div>
@@ -178,7 +181,7 @@ export default function Category() {
             {cat.related.map((r) => (
               <Link to={`/products/${r}`} className="cat-card" key={r}>
                 <div className="cat-art">
-                  <img src={getImage(categories[r].img, r === 'injection-pp-cups' ? fallbackImages.pp : r === 'lids-sealing-films' ? fallbackImages.lids : r === 'paper-pla-cups' ? fallbackImages.paper : fallbackImages.pet)} alt={categories[r].name} style={{ height: 110, objectFit: 'contain' }} loading="lazy" />
+                  <img src={getImage(categories[r].img, r === 'injection-pp-cups' ? fallbackImages.pp : r === 'lids-sealing-films' ? fallbackImages.lids : r === 'paper-pla-cups' ? fallbackImages.paper : fallbackImages.pet)} alt={`${categories[r].name} catalog product line`} width="800" height="800" style={{ height: 110, width: 'auto', objectFit: 'contain' }} loading="lazy" />
                 </div>
                 <div className="cat-body">
                   <h3>{categories[r].name}</h3>

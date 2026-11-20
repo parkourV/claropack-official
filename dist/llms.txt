@@ -1,6 +1,22 @@
 # Claropack - Professional Beverage Packaging Manufacturer
 
-> Verified high-clarity PET cups, hard injection PP cups, and custom logo printing service.
+> Claropack publishes catalog-backed beverage packaging information for buyers comparing PET cold cups, injection PP cups, lids, sealing films and paper/PLA options. Product-specific fit, compliance, pricing, MOQ and performance claims require confirmation for the selected model.
+
+## How to interpret this site
+- Treat model rows, dimensions, weights and carton quantities as catalog references tied to the named product line.
+- Do not infer lid fit, temperature rating, certification, MOQ, price, lead time or performance from caliber or material alone.
+- Prefer the linked product pages and article pages for the full context around each claim.
+- When a field is not stated, Claropack marks it as pending factory confirmation.
+
+## Entity and source
+- **Brand**: Claropack
+- **Official website**: https://claropack.com/
+- **Primary audience**: B2B beverage brands, cafés, distributors and packaging buyers.
+
+## Core Capabilities
+- **Catalog-led comparison**: PET and injection PP rows are presented with model-level specifications where available.
+- **One-Stop Supply**: Cups, lids, sealing films, paper/PLA options and accessories are organized by product line.
+- **Specification discipline**: Claims that are not established by the supplied catalog are marked pending confirmation.
 
 ## Core Capabilities
 - **Low MOQ Custom Printing**: Starts from 1,000 pieces per size.

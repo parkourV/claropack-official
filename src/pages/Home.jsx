@@ -9,7 +9,7 @@ import { fallbackImages, productImages, verifiedImages, getBlogImage, getImage }
 const featuredGuides = ['cup-custom-printing-methods-guide', 'hot-drink-cup-selection-guide', 'pet-cups-cold-chain-performance', 'us-standard-98mm-pet-cups-guide']
 
 function verifiedArt(src, fallback, alt) {
-  return <img src={getImage(src, fallback)} alt={alt} style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" />
+  return <img src={getImage(src, fallback)} alt={alt} width="800" height="800" style={{ width: '100%', height: '100%', objectFit: 'contain' }} loading="lazy" />
 }
 
 const categories = [
@@ -60,13 +60,25 @@ export default function Home() {
   })
   useJsonLd({
     '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Claropack',
-    url: 'https://claropack.com/',
-    description: 'Supplier of disposable PET cold cups, injection PP cups, lids, paper cups and food packaging.',
-    email: 'jackygary6666@gmail.com',
-    contactPoint: { '@type': 'ContactPoint', contactType: 'sales', telephone: '+86-181-0251-1685', availableLanguage: ['English', 'Chinese'] },
-    address: { '@type': 'PostalAddress', addressRegion: 'Guangdong', addressCountry: 'CN' },
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': 'https://claropack.com/#organization',
+        name: 'Claropack',
+        url: 'https://claropack.com/',
+        description: 'Supplier of disposable PET cold cups, injection PP cups, lids, paper cups and food packaging.',
+        email: 'jackygary6666@gmail.com',
+        contactPoint: { '@type': 'ContactPoint', contactType: 'sales', telephone: '+86-181-0251-1685', availableLanguage: ['English', 'Chinese'] },
+        address: { '@type': 'PostalAddress', addressRegion: 'Guangdong', addressCountry: 'CN' },
+      },
+      {
+        '@type': 'WebSite',
+        '@id': 'https://claropack.com/#website',
+        url: 'https://claropack.com/',
+        name: 'Claropack',
+        publisher: { '@id': 'https://claropack.com/#organization' },
+      },
+    ],
   })
   return (
     <>

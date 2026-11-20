@@ -20,6 +20,9 @@ export default function About() {
     <>
       <section className="page-hero">
         <div className="container">
+          <nav className="breadcrumb" aria-label="Breadcrumb">
+            <Link to="/">Home</Link> <span aria-hidden="true">/</span> <span aria-current="page">Factory</span>
+          </nav>
           <h1>Our Production Base</h1>
           <p>Partner factories, quality control and export management in Guangdong, China.</p>
         </div>
