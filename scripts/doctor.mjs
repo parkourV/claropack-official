@@ -79,6 +79,7 @@ async function run() {
 
     const sitemap = await fs.readFile(path.join(DIST_DIR, 'sitemap.xml'), 'utf-8');
     const requiredSitemapUrls = [
+        'https://claropack.com/blog/80mm-injection-pp-cup-size-chart',
         'https://claropack.com/blog/pet-vs-pp-cups',
         'https://claropack.com/blog/cup-lid-compatibility-guide',
         'https://claropack.com/blog/bubble-tea-cup-sizes-guide',
@@ -219,7 +220,8 @@ async function run() {
         { path: 'blog/90mm-wide-foot-pp-cup-size-chart/index.html', route: '/blog/90mm-wide-foot-pp-cup-size-chart' },
         { path: 'blog/92mm-pet-cup-size-chart-200ml-500ml/index.html', route: '/blog/92mm-pet-cup-size-chart-200ml-500ml' },
         { path: 'blog/90mm-u-shape-pp-cup-size-chart/index.html', route: '/blog/90mm-u-shape-pp-cup-size-chart' },
-        { path: 'blog/90mm-pet-cup-size-chart-260ml-600ml/index.html', route: '/blog/90mm-pet-cup-size-chart-260ml-600ml' }
+        { path: 'blog/90mm-pet-cup-size-chart-260ml-600ml/index.html', route: '/blog/90mm-pet-cup-size-chart-260ml-600ml' },
+        { path: 'blog/80mm-injection-pp-cup-size-chart/index.html', route: '/blog/80mm-injection-pp-cup-size-chart' }
     ];
 
     let allPassed = true;

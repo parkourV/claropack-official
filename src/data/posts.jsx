@@ -3086,5 +3086,54 @@ export const posts = {
       { q: 'Are these 90mm PET cups suitable for hot drinks?', a: 'The supplied category data does not provide a verified temperature rating for these exact rows. Treat temperature use as Pending factory confirmation and request written documentation before ordering.' }
     ]
   },
+  '80mm-injection-pp-cup-size-chart': {
+    title: '80mm Injection PP Cups: 360ml and 500ml Catalog Size Chart',
+    description: 'Compare the two listed 80mm Injection PP cup models by capacity, catalog dimensions, weight and carton quantity before requesting a matched sample.',
+    date: '2026-11-20',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pp-hard.webp',
+    excerpt: 'The injection PP catalog lists two 80mm models at 360ml and 500ml. Compare their complete catalog rows before confirming the final cup and closure setup.',
+    quickFacts: [
+      { label: 'Catalog format', value: '80mm Injection PP' },
+      { label: 'Listed capacities', value: '360 / 500ml' },
+      { label: 'Listed weights', value: '13 / 20g' },
+      { label: 'Carton quantity', value: '500 pcs per model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'Two 80mm Injection PP Rows in the Catalog',
+        body: 'The supplied injection PP catalog lists two 80mm Injection PP models: 80-360 Injection PP and 80-500 Injection PP. Both rows use the same nominal 80mm caliber and list 500 pieces per carton, while capacity, catalog dimensions and listed weight differ. Use the complete model row when planning a sample, menu or packing setup.'
+      },
+      {
+        type: 'comparison',
+        h2: '80mm Injection PP Catalog Specifications',
+        body: 'The table reproduces the two supplied 80mm Injection PP rows. Confirm dimension order, tolerances, rim profile and the current production drawing before ordering.',
+        table: {
+          head: ['Catalog model', 'Format', 'Capacity', 'Catalog dimensions', 'Weight', 'Carton'],
+          rows: [
+            ['80-360 Injection PP', 'Injection PP', '360 ml', '80 × 123 × 52 mm', '13 g', '500 pcs'],
+            ['80-500 Injection PP', 'Injection PP', '500 ml', '80 × 161 × 57 mm', '20 g', '500 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Compare Capacity, Height and Listed Weight',
+        body: 'The 80-360 row lists 360ml, 80 × 123 × 52mm and 13g. The 80-500 row lists 500ml, 80 × 161 × 57mm and 20g. Both rows list 500 pieces per carton. These are catalog references for model selection and packing planning, not approval of usable fill level, lid fit or end-use performance.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Confirm Before Ordering',
+        body: 'Include the exact model code, capacity, catalog dimensions, weight and carton quantity in the supplier request. Ask for the final drawing and a physical cup-and-closure sample. Rim-profile fit, lid or sealing-film compatibility, temperature rating, food-contact documents, printing, MOQ, price and lead time are 待工厂确认 for the selected model.'
+      }
+    ],
+    faqs: [
+      { q: 'Which capacities are listed for the 80mm Injection PP series?', a: 'The catalog lists a 360ml 80-360 Injection PP model and a 500ml 80-500 Injection PP model.' },
+      { q: 'Do both 80mm models use the same carton quantity?', a: 'Yes. Both supplied rows list 500 pieces per carton. Confirm the final packing configuration for the ordered version.' },
+      { q: 'Which 80mm model is lighter?', a: 'The 360ml row lists 13g and the 500ml row lists 20g. Confirm production tolerance with the factory.' },
+      { q: 'Does the 80mm caliber guarantee a matching lid?', a: 'No. Nominal caliber alone does not establish rim-profile or closure compatibility. Test the selected cup and lid or sealing setup together.' }
+    ]
+  },
 
 }
