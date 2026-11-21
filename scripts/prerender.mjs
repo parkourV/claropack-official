@@ -80,6 +80,7 @@ const routes = [
   "/blog/90mm-u-shape-pp-cup-size-chart",
   "/blog/90mm-pet-cup-size-chart-260ml-600ml",
   "/blog/80mm-injection-pp-cup-size-chart",
+  "/blog/90mm-u-shape-pet-cup-size-chart-300ml-700ml",
   "/about",
   "/contact"
 ];

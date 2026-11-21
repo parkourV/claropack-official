@@ -3135,5 +3135,64 @@ export const posts = {
       { q: 'Does the 80mm caliber guarantee a matching lid?', a: 'No. Nominal caliber alone does not establish rim-profile or closure compatibility. Test the selected cup and lid or sealing setup together.' }
     ]
   },
+  '90mm-u-shape-pet-cup-size-chart-300ml-700ml': {
+    title: '90mm U-Shape PET Cups: 300ml to 700ml Catalog Size Chart',
+    description: 'Compare six listed 90mm U-shape PET cup models from 300ml to 700ml by catalog dimensions, weight and carton quantity. Confirm final fit before ordering.',
+    date: '2026-11-21',
+    dateModified: '2026-11-21',
+    author: 'Claropack Sourcing Advisor',
+    img: '/assets/images/prod-pet.webp',
+    excerpt: 'The PET catalog lists six 90mm U-shape models from 300ml to 700ml. Compare each complete row before requesting a drawing, matched lid sample or quotation.',
+    quickFacts: [
+      { label: 'Catalog format', value: '90mm U-shape PET cups' },
+      { label: 'Listed capacities', value: '300 / 360 / 400 / 500 / 600 / 700ml' },
+      { label: 'Listed weights', value: '9 / 10 / 11 / 13.5 / 14 / 16.2g' },
+      { label: 'Carton quantity', value: '1,000 pcs per listed model' }
+    ],
+    content: [
+      {
+        type: 'text',
+        h2: 'What the 90mm U-Shape PET Series Covers',
+        body: 'The current PET catalog lists six 90mm U-shape models from 300ml to 700ml. The rounded format can be evaluated for cold-drink menus that need a distinctive profile, but the complete catalog row still matters: capacity, dimensions, listed weight and carton quantity vary by model. Use the exact model code in a supplier inquiry.'
+      },
+      {
+        type: 'comparison',
+        h2: '90mm U-Shape PET Cup Catalog Specifications',
+        body: 'The table below reproduces the six 90mm U-shape PET rows from the current category data. Confirm dimension order, tolerances, rim profile and the current production drawing before ordering.',
+        table: {
+          head: ['Catalog model', 'Caliber', 'Capacity', 'Catalog dimensions', 'Listed weight', 'Carton'],
+          rows: [
+            ['90-300 U PET', '90 mm', '300 ml', '90 × 83 × 62 mm', '9 g', '1,000 pcs'],
+            ['90-360 U PET', '90 mm', '360 ml', '90 × 92 × 62 mm', '10 g', '1,000 pcs'],
+            ['90-400 U PET', '90 mm', '400 ml', '90 × 98 × 62 mm', '11 g', '1,000 pcs'],
+            ['90-500 U PET', '90 mm', '500 ml', '90 × 118 × 62 mm', '13.5 g', '1,000 pcs'],
+            ['90-600 U PET', '90 mm', '600 ml', '90 × 140 × 60 mm', '14 g', '1,000 pcs'],
+            ['90-700 U PET', '90 mm', '700 ml', '90 × 153 × 60 mm', '16.2 g', '1,000 pcs']
+          ]
+        }
+      },
+      {
+        type: 'text',
+        h2: 'Compare Capacity, Height and Listed Weight Together',
+        body: 'The 90-300 U PET row is listed at 300ml, 90 × 83 × 62mm and 9g, while the 90-700 U PET row is listed at 700ml, 90 × 153 × 60mm and 16.2g. The intermediate models should be selected by their own model code and dimension string rather than by capacity alone. Check the selected model against your holder, carrier and filling equipment.'
+      },
+      {
+        type: 'text',
+        h2: 'Do Not Infer Lid or Temperature Compatibility',
+        body: 'The category data identifies these as 90mm U-shape PET rows and lists their catalog specifications, but it does not establish a universal lid profile, sealing-film match, temperature rating, food-contact document set, printing option, MOQ, price or lead time for every model. These details are Pending factory confirmation. Request a matched cup-and-lid sample and the final technical documents for the exact model.'
+      },
+      {
+        type: 'text',
+        h2: 'What to Include in a Supplier Inquiry',
+        body: 'State the exact model code, 90mm caliber, listed capacity, catalog dimensions, listed weight and 1,000-piece carton reference. Add your intended beverage, lid or sealing requirement, artwork status and destination market. Ask the factory to confirm rim profile, closure fit, temperature use, food-contact documents, printing, MOQ, price, lead time and final packing configuration.'
+      }
+    ],
+    faqs: [
+      { q: 'Which 90mm U-shape PET capacities are listed in the catalog?', a: 'The current category data lists 300ml, 360ml, 400ml, 500ml, 600ml and 700ml U-shape PET models.' },
+      { q: 'Do all six 90mm U-shape PET models have the same carton quantity?', a: 'Each of the six supplied rows lists 1,000 pieces per carton. Confirm the final packing configuration for the ordered version.' },
+      { q: 'Can I select one lid for every 90mm U-shape PET model?', a: 'No assumption should be made from the nominal caliber alone. Confirm the exact rim profile and matched lid or sealing setup with a physical sample for the selected model.' },
+      { q: 'Are these 90mm U-shape PET cups suitable for hot drinks?', a: 'The supplied category data does not provide a verified temperature rating for these exact rows. Treat temperature use as Pending factory confirmation and request written documentation before ordering.' }
+    ]
+  },
 
 }
