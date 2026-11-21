@@ -100,7 +100,7 @@ export const posts = {
     ]
   },
   'bubble-tea-cup-sizes-guide': {
-    title: 'Bubble Tea Cup Sizes Chart: 12oz, 16oz, 22oz in oz & ml (Boba Guide)',
+    title: 'Bubble Tea Cup Sizes: 12oz, 16oz & 22oz Chart',
     description: 'Complete bubble tea cup sizes chart. Compare small/medium/large boba volumes, factory specs for 12/16/22oz, and request free samples. Verified factory-direct data.',
     date: '2026-07-31',
     dateModified: '2026-09-05',
@@ -174,7 +174,7 @@ export const posts = {
     ]
   },
   'how-to-import-plastic-cups-from-china': {
-    title: 'How to Import Plastic Cups from China: A Complete Guide on MOQ and Logistics',
+    title: 'How to Import Plastic Cups from China: MOQ & Logistics',
     description: 'A step-by-step guide for beverage brands on importing disposable cups from China. Learn about MOQ, custom logo printing, shipping costs, and quality inspection.',
     date: '2026-08-09',
     author: 'Claropack Logistics',
@@ -267,8 +267,8 @@ export const posts = {
     ]
   },
   'cup-sealing-film-machine-guide': {
-    title: 'Cup Sealing Film & Sealing Machine Guide: Choosing the Right Film for PET and PP Cups',
-    description: 'How to choose cup sealing film and match it to your cups and sealing machine. Compare PP vs PET film, 90/95/98mm caliber fit, round vs square cups, and custom-printed film for boba and coffee brands.',
+    title: 'Cup Sealing Film & Machine Guide: PET vs PP',
+    description: 'Choose cup sealing film for PET and PP cups. Compare material matching, 90/95/98mm caliber checks, round or square formats and custom film questions.',
     date: '2026-08-18',
     author: 'Claropack Technical Team',
     img: '/assets/images/prod-lids.webp',
@@ -321,8 +321,8 @@ export const posts = {
     ]
   },
   'paper-vs-pla-cups-guide': {
-    title: 'Paper Cups vs PLA Cups: A Cost and Compliance Guide for Eco-Focused Brands',
-    description: 'Compare paper cups and compostable PLA cups for your beverage brand. Understand wall types, coatings, capacity ranges and compliance considerations for plastic-reduction markets.',
+    title: 'Paper vs PLA Cups: Cost & Compliance Guide',
+    description: 'Compare paper and PLA cups by wall type, coating, disposal route and compliance questions. Use this guide to plan a lower-plastic beverage packaging range.',
     date: '2026-08-18',
     author: 'Claropack Sourcing Advisor',
     img: '/assets/images/prod-pla.webp',
@@ -372,7 +372,7 @@ export const posts = {
   },
   'cup-caliber-standardization-guide': {
     title: 'How Cup Caliber Standardization Cuts Your Lid Inventory Costs',
-    description: 'Standardizing cup calibers across your menu reduces lid SKUs, storage space and mismatch waste. Learn how the 90-107mm caliber system simplifies beverage packaging inventory.',
+    description: 'Standardizing cup calibers reduces lid SKUs and mismatch waste. Learn how 90–107mm catalog calibers can simplify beverage packaging inventory.',
     date: '2026-08-18',
     author: 'Claropack Sourcing Advisor',
     img: '/assets/images/prod-pet.webp',
@@ -421,8 +421,8 @@ export const posts = {
     ]
   },
   'square-injection-pp-cups-branding': {
-    title: 'Square Injection PP Cups: A Differentiation Play for Premium Tea Brands',
-    description: 'The 92mm square injection PP cup is a distinctive on-shelf format for brands that want to stand out. Learn its specs, finishes and branding advantages over round cups.',
+    title: 'Square Injection PP Cups: 92mm Branding Guide',
+    description: 'See how 92mm square injection PP cups differ from round formats. Compare catalog specifications, finishes and branding questions before ordering.',
     date: '2026-08-18',
     author: 'Claropack Experts',
     img: 'https://s.alicdn.com/@sc04/kf/H65d52da855444a21bcf176295e5ef55ay/-10oz-12oz-14oz-16oz-20oz-22oz.jpg',
@@ -469,7 +469,7 @@ export const posts = {
     ]
   },
   'pet-cup-capacity-carton-planning-guide': {
-    title: 'PET Cup Capacity and Carton Planning Guide: Match Sizes to Your Menu',
+    title: 'PET Cup Capacity & Carton Planning Guide',
     description: 'Plan a PET cup range using verified caliber, capacity, weight and carton quantities. Compare 3oz to 32oz models before requesting a like-for-like quotation.',
     date: '2026-08-25',
     author: 'Claropack Sourcing Advisor',
@@ -773,8 +773,8 @@ export const posts = {
     ]
   },
   'injection-vs-thermoformed-cups': {
-    title: 'Injection Molding vs Thermoforming: How Your Cup Is Actually Made',
-    description: 'Understand the two ways beverage cups are produced. Compare injection-molded PP cups and thermoformed PET cups by wall rigidity, weight and use, using verified Claropack specifications.',
+    title: 'Injection Molding vs Thermoforming Cups',
+    description: 'Compare injection-molded PP and thermoformed PET cups by wall rigidity, listed weight and intended use, using Claropack catalog specifications.',
     date: '2026-08-28',
     author: 'Claropack Technical Team',
     img: 'https://sc04.alicdn.com/kf/H5d65f2f3b70e4747885020dbda86e7706/277911013/H5d65f2f3b70e4747885020dbda86e7706.jpg',
@@ -821,7 +821,7 @@ export const posts = {
     ]
   },
   'large-format-30-32oz-cups-guide': {
-    title: 'Large-Format Cups (30-32oz): A Sourcing Guide for Smoothies & Shareables',
+    title: 'Large-Format Cups: 30–32oz PET Sourcing Guide',
     description: 'Source 30oz and 32oz large-format cups with confidence. Compare verified 107mm caliber specs, weight and carton quantity for smoothies and shareable drinks.',
     date: '2026-08-28',
     author: 'Claropack Sourcing Advisor',
@@ -864,7 +864,7 @@ export const posts = {
     ]
   },
   'leak-proof-takeaway-cups-and-carriers': {
-    title: 'Leak-Proof Takeaway Cups & Carrier Solutions: A Delivery Reliability Guide',
+    title: 'Leak-Proof Takeaway Cups & Carriers',
     description: 'How to stop drink spills in delivery. Match lids, sealing film and cup carriers to your cups for leak-proof takeaway.',
     date: '2026-08-25',
     author: 'Claropack Logistics',
@@ -955,8 +955,8 @@ export const posts = {
     ]
   },
   'hot-drink-cup-selection-guide': {
-    title: 'Hot Drink Cup Selection Guide: PP, Double-Wall and Ripple-Wall Options',
-    description: 'Which cups are safe for hot drinks? Compare injection PP cups and double/ripple-wall paper cups by temperature tolerance, insulation and grip, using verified Claropack specifications.',
+    title: 'Hot Drink Cup Selection: PP, Double-Wall & Ripple-Wall',
+    description: 'Choose hot drink cups by material, wall construction, insulation and grip. Compare injection PP with double-wall and ripple-wall paper options.',
     date: '2026-08-31',
     author: 'Claropack Technical Team',
     img: '/assets/images/prod-pp-hard.webp',
@@ -1005,8 +1005,8 @@ export const posts = {
     ]
   },
   'custom-printed-cups-guide': {
-    title: 'Custom Printed Cups: A Guide to Logo Printing, MOQ and Artwork',
-    description: 'How to order custom printed PET, PP and paper cups. Understand the 1,000 pcs custom-print MOQ, artwork requirements, printing methods and what to confirm before production.',
+    title: 'Custom Printed Cups: Logo, MOQ & Artwork Guide',
+    description: 'Plan custom printed PET, PP and paper cups. Review artwork, printing method, model selection and commercial details to confirm before production.',
     date: '2026-09-05',
     author: 'Claropack Sourcing Advisor',
     img: 'https://sc04.alicdn.com/kf/S762fb78064724a9587096e674227c6d2F/277911013/S762fb78064724a9587096e674227c6d2F.jpg',
@@ -1109,7 +1109,7 @@ export const posts = {
   },
   'food-grade-cups-fda-guide': {
     title: 'Are Plastic Cups Food Safe? PET, PP and FDA Food-Grade Explained',
-    description: 'Understand what food-grade means for disposable cups. Learn how PET and PP food-contact materials, recycling codes and temperature limits affect food safety for beverages.',
+    description: 'Understand food-grade PET and PP cups, recycling codes and temperature boundaries. Use this checklist to confirm food-contact documents for your market.',
     date: '2026-09-05',
     author: 'Claropack Technical Team',
     img: 'https://sc04.alicdn.com/kf/A54c37877967647febb925f07b9a65f8ef/277911013/A54c37877967647febb925f07b9a65f8ef.jpg',
@@ -1313,7 +1313,7 @@ export const posts = {
   },
   'smoothie-and-slush-cup-sizes-guide': {
     title: 'Smoothie & Slush Cup Sizes: 16oz, 22oz & 32oz in oz and ml',
-    description: 'A cup sizing guide for smoothies, slushies and blended drinks. Compare 16oz, 22oz and 32oz cups in oz and ml, and choose the right clear PET cup and dome lid for thick, layered drinks.',
+    description: 'Compare 16oz, 22oz and 32oz smoothie and slush cup sizes in oz and ml. Review clear PET and dome-lid questions for thick or layered drinks.',
     date: '2026-09-06',
     dateModified: '2026-09-06',
     author: 'Claropack Sourcing Advisor',
@@ -1362,7 +1362,7 @@ export const posts = {
   },
   'sustainable-cup-sourcing-guide': {
     title: 'Sustainable Cup Sourcing: PLA, Paper & Recyclable Options Explained',
-    description: 'A practical guide to sourcing more sustainable disposable cups. Compare PLA, paper and recyclable plastic options, what certifications to ask for, and how to balance cost with eco goals.',
+    description: 'Compare PLA, paper and recyclable plastic cups. Review certification questions, disposal routes and cost trade-offs before selecting a sustainable packaging line.',
     date: '2026-09-06',
     dateModified: '2026-09-06',
     author: 'Claropack Sourcing Advisor',
@@ -1410,7 +1410,7 @@ export const posts = {
   },
   'cafe-cup-buying-guide': {
     title: 'Cafe Cup Buying Guide: Materials, Lids, MOQ & Suppliers',
-    description: 'A procurement guide for cafes choosing cup materials, lids, MOQ, custom printing and supplier questions. Use the coffee cup sizes chart separately for 8oz, 12oz and 16oz sizing.',
+    description: 'A procurement guide for cafes choosing materials, lids, MOQ, custom printing and suppliers. Use the separate coffee cup sizes chart for 8oz, 12oz and 16oz sizing.',
     date: '2026-09-06',
     dateModified: '2026-09-06',
     author: 'Claropack Sourcing Advisor',
@@ -1463,8 +1463,8 @@ export const posts = {
     ]
   },
   'cup-custom-printing-methods-guide': {
-    title: 'Custom Logo Printing for Disposable Cups: Offset vs. Silk Screen Methods',
-    description: 'Learn the differences between offset and silk screen printing for PET, PP, and paper cups. Compare color accuracy, MOQ, and cost to find the best branding method for your beverage shop.',
+    title: 'Custom Cup Printing: Offset vs Silk Screen',
+    description: 'Compare offset and silk screen printing for PET, PP and paper cups. Review color, artwork, MOQ and method questions before approving production.',
     date: '2026-09-09',
     author: 'Claropack Branding Team',
     img: 'https://sc04.alicdn.com/kf/Hb6f3a2d7d82247beb2f33ef50111b5ffn/277911013/Hb6f3a2d7d82247beb2f33ef50111b5ffn.jpg',
@@ -1520,8 +1520,8 @@ export const posts = {
     ]
   },
   'pet-dessert-cups-sourcing-guide': {
-    title: '74mm PET Dessert Cups: A Sourcing Guide for Parfaits, Yogurts and Samples',
-    description: 'How to source 3oz (74mm) PET dessert cups. Compare 3.8g thermoformed PET specs, lid options and why the 74mm caliber is the industry standard for miniature packaging.',
+    title: '74mm PET Dessert Cups: 3oz Sourcing Guide',
+    description: 'Source 74mm PET dessert cups for parfaits, yogurt and samples. Compare the listed 3oz model specifications and confirm lid, packing and commercial details.',
     date: '2026-09-11',
     author: 'Claropack Sourcing Advisor',
     img: '/assets/images/prod-pet.webp',
@@ -1568,8 +1568,8 @@ export const posts = {
     ]
   },
   'u-shape-pet-vs-pp-cups-comparison': {
-    title: 'U-Shape PET vs PP Cups: Choosing the Right Rounded Bottom for Your Brand',
-    description: 'Compare thermoformed PET U-shape cups with injection-molded PP U-shape cups. Learn the differences in clarity, rigidity, and price point for premium boba and fruit tea packaging.',
+    title: 'U-Shape PET vs PP Cups: Rounded-Bottom Guide',
+    description: 'Compare U-shape PET and PP cups by clarity, rigidity and model-specific fit questions for boba and fruit tea packaging.',
     date: '2026-09-12',
     author: 'Claropack Sourcing Advisor',
     img: 'https://s.alicdn.com/@sc04/kf/H990f57f30f3e4baaba8fb457a45ceb86q/-U-PET-89-.jpg',
@@ -1615,7 +1615,7 @@ export const posts = {
   'pet-cup-printing-design-guide': {
 
     title: 'PET Cup Printing Guide: 5 Design Tips to Avoid Distorted Logos',
-    description: 'Master custom logo printing on clear PET cups. Learn about safe printing margins, color opacity on transparent plastic, and how to prepare artwork for our 1,000 pcs MOQ lines.',
+    description: 'Design clearer PET cup artwork with safe print margins, color contrast and artwork preparation questions for custom production.',
     date: '2026-09-12',
     author: 'Claropack Design Team',
     img: 'https://sc04.alicdn.com/kf/Hb6f3a2d7d82247beb2f33ef50111b5ffn/277911013/Hb6f3a2d7d82247beb2f33ef50111b5ffn.jpg',
@@ -1666,7 +1666,7 @@ export const posts = {
   },
   '90mm-injection-lid-selection-guide': {
     title: '90mm Injection Lid Guide: Funnel, Switch, and Double-Hole Options',
-    description: 'Choose the right 90mm injection lid for your boba or coffee shop. Compare funnel lids, switch/heart lids, and double-hole designs for leak-proof delivery and premium branding.',
+    description: 'Compare 90mm injection lid formats, including funnel, switch and double-hole options. Confirm the exact cup rim, fit and branding requirements before ordering.',
     date: '2026-09-13',
     author: 'Claropack Technical Team',
     img: 'https://s.alicdn.com/@sc04/kf/H36ca355dfda5454992e5cee9b5d0c6cap/JH-PP-90-.jpg',
@@ -1716,7 +1716,7 @@ export const posts = {
   },
   'starbucks-vs-dunkin-iced-cup-sizes': {
     title: 'Starbucks vs Dunkin Iced Cup Sizes: A PET Sourcing Guide',
-    description: 'Compare Starbucks (Tall, Grande, Venti, Trenta) and Dunkin (Small, Medium, Large) iced cup sizes in oz and ml. Learn which PET cup calibers (98mm, 107mm) match these industry standards.',
+    description: 'Compare Starbucks and Dunkin iced cup size names in oz and ml, then review 98mm and 107mm PET caliber questions for menu planning.',
     date: '2026-09-13',
     author: 'Claropack Sourcing Advisor',
     img: 'https://s.alicdn.com/@sc04/kf/H315c7fed8f6a4272a09f308bd7593a11u.jpg',
@@ -1773,8 +1773,8 @@ export const posts = {
     ]
   },
   'custom-cup-printing-cost-guide': {
-    title: 'Custom Cup Printing Costs: Understanding Plate Fees and Unit Prices',
-    description: 'A detailed breakdown of custom printing costs for PET and PP cups. Learn about one-time plate fees, unit price factors, and how to get the best ROI on branded packaging.',
+    title: 'Custom Cup Printing Costs: Plates & Unit Prices',
+    description: 'Understand the cost factors behind custom PET and PP cup printing, including plate questions, unit-price drivers and quotation details to confirm.',
     date: '2026-09-13',
     author: 'Claropack Finance Team',
     img: 'https://sc04.alicdn.com/kf/Ha6ee2076261f4b7196edbbc1c95a2877I/277911013/Ha6ee2076261f4b7196edbbc1c95a2877I.jpg',
@@ -1824,8 +1824,8 @@ export const posts = {
     ]
   },
   'pet-cup-recycling-sustainability-guide': {
-    title: 'PET Cup Recycling Guide: Navigating Global Sustainability Regulations',
-    description: 'Understand PET (Recycling Code 1) circularity. Learn about food-grade certification, plastic-reduction policies in EU/US, and how to choose sustainable packaging for your beverage brand.',
+    title: 'PET Cup Recycling Guide: Code 1 & Market Checks',
+    description: 'Review PET recycling code 1, food-contact documentation and market-specific sustainability questions before choosing a PET packaging option.',
     date: '2026-09-14',
     author: 'Claropack Sustainability Team',
     img: 'https://sc04.alicdn.com/kf/Hda46d3302d8f45c2820ccbea15c86c76Y/-PLA-.jpg',
