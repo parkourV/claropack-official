@@ -1,7 +1,7 @@
 export const posts = {
   'pet-vs-pp-cups': {
-    title: 'PET vs PP Cups: The Ultimate Comparison Guide for Beverage Brands',
-    description: 'Which is better for your brand, PET or PP plastic cups? Compare transparency, temperature resistance, weight, and costs in this professional guide for the boba and coffee industry.',
+    title: 'PET Cup vs Regular Cup: PET vs PP Comparison Guide',
+    description: 'What is a PET cup, and how does it compare with a regular PP cup? Compare clarity, temperature boundaries, sealing film and recycling codes for beverage packaging buyers.',
     date: '2026-07-29',
     author: 'Claropack Experts',
     img: '/assets/images/prod-pet.webp',
@@ -15,8 +15,8 @@ export const posts = {
     content: [
       {
         type: 'text',
-        h2: 'Why the Material Choice Matters',
-        body: 'For boba shops, coffee houses, and juice bars, the cup is more than just a container—it\'s a marketing tool. The clarity of the cup dictates how your drink looks on Instagram, while the sturdiness affects the customer experience during delivery. The two industry standards are PET (Polyethylene Terephthalate) and PP (Polypropylene).'
+        h2: 'What Is a PET Cup vs a Regular PP Cup?',
+        body: 'A PET cup is a clear cold-drink cup made from polyethylene terephthalate. In beverage packaging, a regular plastic cup may refer to several formats; this comparison uses injection PP cups as the reference point. The material, caliber and exact model determine which drink, lid and sealing setup should be evaluated.'
       },
       {
         type: 'comparison',
@@ -46,13 +46,15 @@ export const posts = {
       }
     ],
     faqs: [
-      { q: 'Can I use the same lids for PET and PP cups?', a: 'Only if the caliber (rim diameter) matches. We produce standardized 90, 95, and 98mm calibers for both materials to help our clients simplify their lid inventory.' },
-      { q: 'Is PET more environmentally friendly than PP?', a: 'PET (Code 1) is the most widely recycled plastic in the world and has a more established recycling stream. PP (Code 5) is also recyclable but depends more on local municipal facilities.' }
+      { q: 'What is a PET cup?', a: 'A PET cup is a clear cup for cold beverages made from polyethylene terephthalate. Confirm the exact model specification and intended use before ordering.' },
+      { q: 'Is a PET cup the same as a regular plastic cup?', a: 'No. “Regular plastic cup” is a broad phrase. PET and injection PP are different materials with different clarity, temperature boundaries and model-level compatibility requirements.' },
+      { q: 'Can I use the same lids for PET and PP cups?', a: 'Only if the caliber and rim profile match. Nominal diameter alone does not prove compatibility; confirm the selected cup and lid or sealing setup with a sample.' },
+      { q: 'Is PET more environmentally friendly than PP?', a: 'PET and PP have different recycling streams. Local recycling access and the exact product specification should be checked for the destination market.' }
     ]
   },
   'cup-lid-compatibility-guide': {
-    title: 'Plastic Cup Lid Size Chart: The Complete Guide to 90mm, 95mm, and 98mm Compatibility',
-    description: 'Stop the leaks! Learn how to match PET and PP cup calibers (90mm, 95mm, 98mm) with the right flat, dome, and sipper lids. A must-read for bubble tea and coffee shop owners.',
+    title: 'Plastic Cup Sizes Chart: 90mm, 95mm & 98mm Lid Compatibility',
+    description: 'Use this plastic cup sizes chart to compare 90mm, 95mm and 98mm calibers, then match PET and PP cups with the correct flat, dome or sipper lid after sample testing.',
     date: '2026-07-30',
     dateModified: '2026-09-05',
     author: 'Claropack Technical Team',
@@ -67,8 +69,8 @@ export const posts = {
     content: [
       {
         type: 'text',
-        h2: 'The Caliber System Explained',
-        body: 'In the beverage packaging industry, "Caliber" refers to the outer rim diameter of the cup. To ensure a leak-proof seal, the lid diameter must match the cup caliber exactly. The most common international standards are 90mm, 95mm, and 98mm. Standardizing your shop around one or two calibers can drastically reduce your storage space and inventory costs.'
+        h2: 'Plastic Cup Sizes: Start With the Rim Diameter',
+        body: 'A plastic cup sizes chart is useful only when it keeps caliber separate from capacity. In the beverage packaging industry, caliber refers to the outer rim diameter, while capacity describes the listed drink volume. The 90mm, 95mm and 98mm rows below are size references; the final lid fit still depends on the exact rim profile and sample check.'
       },
       {
         type: 'comparison',
@@ -92,8 +94,9 @@ export const posts = {
       }
     ],
     faqs: [
-      { q: 'Can a 95mm lid fit a 98mm cup?', a: 'No. Even a 3mm difference will result in a loose fit and inevitable leaks. Always match the lid diameter exactly to the cup caliber.' },
-      { q: 'Do you offer customized lids?', a: 'Yes. We can emboss your logo on PET lids or print custom designs on sealing films. Contact our team for the specific mold requirements.' }
+      { q: 'What plastic cup sizes are covered in this chart?', a: 'The chart covers 90mm, 92mm, 95mm, 98mm and 107mm catalog caliber rows, with listed capacities and lid types shown where available.' },
+      { q: 'Can a 95mm lid fit a 98mm cup?', a: 'Do not assume it can. A 3mm nominal difference can produce a poor fit; confirm the exact rim profile and test the selected cup-and-lid combination.' },
+      { q: 'Do you offer customized lids?', a: 'Custom lid and sealing-film options depend on the selected model and artwork. Ask the factory to confirm the specific mold, print and fit requirements.' }
     ]
   },
   'bubble-tea-cup-sizes-guide': {
@@ -1053,8 +1056,8 @@ export const posts = {
     ]
   },
   'coffee-cup-sizes-guide': {
-    title: 'Coffee Cup Sizes Guide: 8oz, 12oz and 16oz Hot and Iced Standards',
-    description: 'A practical guide to coffee cup sizes for hot and iced service. Compare 8oz, 12oz and 16oz standards and choose between paper hot cups and PET iced cups.',
+    title: 'Coffee Cup Sizes Chart: 8oz vs 12oz vs 16oz',
+    description: 'Compare coffee cup sizes in an 8oz, 12oz and 16oz chart. See hot paper cup and iced PET routes, then plan a clear size and lid system for your menu.',
     date: '2026-09-05',
     author: 'Claropack Sourcing Advisor',
     img: '/assets/images/prod-paper.webp',
@@ -1068,13 +1071,13 @@ export const posts = {
     content: [
       {
         type: 'text',
-        h2: 'The Coffee Size Language',
-        body: 'Coffee shops standardize around three hot sizes: 8oz for espresso-based short drinks, 12oz for a regular coffee, and 16oz for a large. Iced coffee moves to clear PET cups so the drink and its ice look appealing. Understanding this hot-versus-cold split is the first step to a clean, low-SKU coffee packaging plan.'
+        h2: 'Coffee Cup Sizes: 8oz, 12oz and 16oz',
+        body: 'A practical coffee cup sizes chart starts with three hot-serving references: 8oz for smaller espresso-based drinks, 12oz for a regular coffee and 16oz for a large serving. Iced coffee uses a separate cold-cup route, so compare the drink temperature and rim format instead of treating every cup size as interchangeable.'
       },
       {
         type: 'comparison',
-        h2: 'Coffee Cup Size Reference',
-        body: 'A quick reference for matching coffee drinks to cup type and size.',
+        h2: 'Coffee Cup Sizes Chart: 8oz vs 12oz vs 16oz',
+        body: 'Use this coffee cup sizes chart to compare 8oz, 12oz and 16oz serving references before choosing the paper or PET route.',
         table: {
           head: ['Size', 'Typical Drink', 'Cup Type', 'Notes'],
           rows: [
@@ -1098,9 +1101,10 @@ export const posts = {
       }
     ],
     faqs: [
-      { q: 'What is the most common coffee cup size?', a: '12oz is the standard for a regular hot coffee such as a latte or cappuccino, with 8oz for espresso drinks and 16oz for large sizes.' },
-      { q: 'Should iced coffee use paper or PET cups?', a: 'Iced coffee is best in clear PET cold cups, which showcase the drink and resist condensation. Paper cups are reserved for hot service.' },
-      { q: 'Can one lid size cover my coffee menu?', a: 'Yes. Standardizing hot cups around one caliber, and iced PET cups around 98mm, lets a single lid cover multiple sizes and reduces your inventory.' }
+      { q: 'What is the most common coffee cup size?', a: '12oz is the usual regular hot-coffee reference, with 8oz for smaller espresso-based drinks and 16oz for a large serving.' },
+      { q: 'What is the difference between an 8oz, 12oz and 16oz cup?', a: 'The three sizes are commonly used as small, regular and large serving references. Confirm the actual fill level and cup specification for the selected supplier model.' },
+      { q: 'Should iced coffee use paper or PET cups?', a: 'Use the material specified for the drink temperature and selected model. PET is used for cold-drink routes in this guide; confirm the exact temperature and fit requirements before ordering.' },
+      { q: 'Can one lid size cover my coffee menu?', a: 'Only when the cup rims share a confirmed compatible caliber and profile. A capacity match alone does not prove lid compatibility.' }
     ]
   },
   'food-grade-cups-fda-guide': {
@@ -1405,8 +1409,8 @@ export const posts = {
     ]
   },
   'cafe-cup-buying-guide': {
-    title: 'Cafe Cup Buying Guide: How to Choose Cups, Sizes & Suppliers',
-    description: 'A complete buying guide for cafes and drink shops. Learn how to choose cup material, sizes, lids and a supplier, and how to plan MOQ and custom printing for your first order.',
+    title: 'Cafe Cup Buying Guide: Materials, Lids, MOQ & Suppliers',
+    description: 'A procurement guide for cafes choosing cup materials, lids, MOQ, custom printing and supplier questions. Use the coffee cup sizes chart separately for 8oz, 12oz and 16oz sizing.',
     date: '2026-09-06',
     dateModified: '2026-09-06',
     author: 'Claropack Sourcing Advisor',
@@ -1422,8 +1426,8 @@ export const posts = {
     content: [
       {
         type: 'text',
-        h2: 'Step 1: Choose Your Materials',
-        body: 'Start by splitting your menu into cold and hot. Cold drinks (iced coffee, fruit tea, smoothies) present best in crystal-clear PET. Hot drinks (lattes, hot milk tea) need PP cups or insulated paper cups that tolerate heat. Most cafes carry both. For a full breakdown of the trade-offs, see our PET vs PP cups comparison.'
+        h2: 'Step 1: Choose Materials Before Sizes',
+        body: 'Start by splitting your menu into cold and hot, then choose the material route. Cold drinks such as iced coffee, fruit tea and smoothies can use clear PET models; hot drinks need a verified PP or insulated paper route. This procurement page focuses on material and supplier decisions, while the separate coffee cup sizes chart covers 8oz, 12oz and 16oz sizing.'
       },
       {
         type: 'comparison',
@@ -1442,20 +1446,20 @@ export const posts = {
       },
       {
         type: 'text',
-        h2: 'Step 2: Standardize Sizes and Lids',
-        body: 'Pick a small set of core sizes — most cafes do well with 12oz, 16oz and 22oz — and standardize on one caliber (commonly 95mm) so a single lid and sealing film covers your range. This minimizes inventory and simplifies restocking. See the bubble tea cup sizes chart for the full size-to-ml breakdown and caliber notes.'
+        h2: 'Step 2: Confirm Caliber, Lid and Sample Fit',
+        body: 'After choosing the menu range, confirm the exact cup caliber, rim profile and closure setup. A nominal diameter or capacity alone does not prove lid compatibility. Request a physical cup-and-lid or sealing sample before approving the final purchase specification.'
       },
       {
         type: 'text',
-        h2: 'Step 3: Plan MOQ and Branding',
-        body: 'Custom-printed cups typically start from around 1,000 pieces per size. If you are just starting, keep the first order lean — limit sizes and consider branding through printed sealing film so one roll covers every cup. See our cup MOQ guide and custom printed cups guide for details, then request a quote with your chosen sizes and materials.'
+        h2: 'Step 3: Prepare MOQ and Branding Questions',
+        body: 'For a supplier inquiry, state the exact model, material, capacity, caliber, artwork status and destination market. MOQ, price, lead time, printing method and final packing configuration remain dependent on the selected product and are Pending factory confirmation; request written terms rather than assuming a universal threshold.'
       }
     ],
     faqs: [
-      { q: 'What cups do I need to open a cafe?', a: 'At minimum: clear PET cups for cold drinks, PP or paper cups for hot drinks, matching lids, and sealing film if you serve boba. Standardize sizes to keep it simple.' },
-      { q: 'How many sizes should a cafe stock?', a: 'Most cafes run three core sizes (12/16/22oz). Fewer sizes on a shared caliber means simpler inventory and lower MOQ commitments.' },
-      { q: 'What is the minimum order for custom cups?', a: 'Custom printing usually starts from about 1,000 pieces per size. Stock (unprinted) cups can often be ordered in smaller quantities.' },
-      { q: 'How do I brand cups on a small budget?', a: 'Print your logo on the sealing film instead of every cup size — one printed roll brands all your cups at once, keeping your first order affordable.' }
+      { q: 'What should a cafe ask a cup supplier first?', a: 'Share the material, exact model, capacity, caliber, artwork status and destination market, then request the drawing, sample and written commercial terms.' },
+      { q: 'How do I confirm cup and lid compatibility?', a: 'Match the exact rim profile and caliber, then test the cup with the intended lid or sealing setup. Do not approve fit from capacity alone.' },
+      { q: 'What is the minimum order for custom cups?', a: 'MOQ depends on the selected product, printing method, size and artwork. Treat the exact MOQ as Pending factory confirmation until the supplier confirms it in writing.' },
+      { q: 'Where should cafe cup size questions go?', a: 'Use this page for procurement and supplier decisions. Use the separate coffee cup sizes chart for the 8oz, 12oz and 16oz size comparison.' }
     ]
   },
   'cup-custom-printing-methods-guide': {
